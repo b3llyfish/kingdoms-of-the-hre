@@ -1,0 +1,231 @@
+﻿required_de_jure_county_percentage_as_decimal = {
+	value = 0.5
+	if = {
+		limit = { root.legitimacy_level = 5 }
+		subtract = 0.25
+	}
+	if = {
+		limit = { root.legitimacy_level = 4 }
+		subtract = 0.20
+	}
+	if = {
+		limit = { root.legitimacy_level = 3 }
+		subtract = 0.15
+	}
+}
+
+kingdom_bavaria_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_bavaria }
+		}
+		add = 1
+	}
+}
+
+kingdom_bavaria_required_county_total = {
+	value = 0
+	title:k_bavaria = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_bohemia_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_bohemia }
+		}
+		add = 1
+	}
+}
+
+kingdom_bohemia_required_county_total = {
+	value = 0
+	title:k_bohemia = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_frisia_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_frisia }
+		}
+		add = 1
+	}
+}
+
+kingdom_frisia_required_county_total = {
+	value = 0
+	title:k_frisia = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_lotharingia_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_lotharingia }
+		}
+		add = 1
+	}
+}
+
+kingdom_lotharingia_required_county_total = {
+	value = 0
+	title:k_lotharingia = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_aquitaine_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_aquitaine }
+		}
+		add = 1
+	}
+}
+
+kingdom_aquitaine_required_county_total = {
+	value = 0
+	title:k_aquitaine = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_brittany_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_brittany }
+		}
+		add = 1
+	}
+}
+
+kingdom_brittany_required_county_total = {
+	value = 0
+	title:k_brittany = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_france_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_france }
+		}
+		add = 1
+	}
+}
+
+kingdom_france_required_county_total = {
+	value = 0
+	title:k_france = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_burgundy_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_burgundy }
+		}
+		add = 1
+	}
+}
+
+kingdom_burgundy_required_county_total = {
+	value = 0
+	title:k_burgundy = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_italy_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_italy }
+		}
+		add = 1
+	}
+}
+
+kingdom_italy_required_county_total = {
+	value = 0
+	title:k_italy = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}

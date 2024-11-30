@@ -1,0 +1,4 @@
+﻿l_english:
+ hre_cannot_create_kingdom: "This [kingdom|E] is within the Holy Roman Empire's sphere of influence.\nAs a [vassal|E] of the Holy Roman Empire this must be created via the $form_hre_kingdom_decision$ decision"
+ coronation_culture_acceptance_bonus_desc: "Coronation of [vassal.GetShortUIName] by [emperor.GetShortUIName]"
+ petition_gift_modifier: "Trendy Trinkets"

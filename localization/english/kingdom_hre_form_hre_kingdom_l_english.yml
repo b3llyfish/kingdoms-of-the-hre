@@ -1,0 +1,69 @@
+﻿l_english:
+ form_hre_kingdom_decision: "Petition the Emperor for a Kingdom"
+ form_hre_kingdom_decision_desc: "My influence over the region is without question and my right to rule is proved in everything apart from name.\n\nIt is time for Emperor to acknowledge this and bestow upon me the [title|E] of a [kingdom|E]."
+ form_hre_kingdom_decision_tooltip: "Petition the Emperor for a [kingdom|E] [title|E]."
+ form_hre_kingdom_decision_confirm: "Send the petition!"
+ form_hre_kingdom_decision_kingdom_criteria_met: "Meets at least one of the Kingdom specific requirements"
+ form_hre_kingdom_decision_effect_selected: "You petition the Emperor for the selected Kingdom"
+ form_hre_kingdom_decision_emperor_opinion: "The Emperor's opinion of you will greatly affect their decision"
+ form_hre_kingdom_decision_hook: "Having a strong hook on the Emperor can guarantee success"
+ 
+ choose_kingdom: "Petition for a Kingdom."
+ required_amount_of_titles: "Must have at least 2 [duchy|E] [titles|E]."
+ 
+ choose_bavaria_name: "Bavaria"
+ choose_bavaria_desc: "Petition for the Kingdom of Bavaria"
+ choose_bavaria_tooltip: "Kingdom of Bavaria"
+ not_enough_bavaria_counties: "You only have [SCOPE.ScriptValue('kingdom_bavaria_county_count')|0] of [SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0] required [counties|E].
+ require_bavaria_culture: "Culture must be Bavarian or derived from it"
+ 
+ choose_bohemia_name: "Bohemia"
+ choose_bohemia_desc: "Petition for the Kingdom of Bohemia"
+ choose_bohemia_tooltip: "Kingdom of Bohemia"
+ not_enough_bohemia_counties: "You only have [SCOPE.ScriptValue('kingdom_bohemia_county_count')|0] of [SCOPE.ScriptValue('kingdom_bohemia_required_county_total')|0] required [counties|E].
+ require_bohemia_culture: "Culture must be Czech or derived from it"
+ 
+ choose_frisia_name: "Frisia"
+ choose_frisia_desc: "Petition for the Kingdom of Frisia"
+ choose_frisia_tooltip: "Kingdom of Frisia"
+ not_enough_frisia_counties: "You only have [SCOPE.ScriptValue('kingdom_frisia_county_count')|0] of [SCOPE.ScriptValue('kingdom_frisia_required_county_total')|0] required [counties|E].
+ require_frisia_culture: "Culture must be Frisian or derived from it"
+
+ choose_lotharingia_name: "Lotharingia"
+ choose_lotharingia_desc: "Petition for the Kingdom of Lotharingia"
+ choose_lotharingia_tooltip: "Kingdom of Lotharingia"
+ not_enough_lotharingia_counties: "You only have [SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0] of [SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0] required [counties|E].
+ require_lotharingia_culture: "Culture must be Franconian or derived from it"
+ 
+ choose_italy_name: "Italy"
+ choose_italy_desc: "Petition for the Kingdom of Italy"
+ choose_italy_tooltip: "Kingdom of Italy"
+ not_enough_italy_counties: "You only have [SCOPE.ScriptValue('kingdom_italy_county_count')|0] of [SCOPE.ScriptValue('kingdom_italy_required_county_total')|0] required [counties|E].
+ require_italy_culture: "Culture must be Cisalpine/Italian or derived from it"
+ 
+ choose_brittany_name: "Brittany"
+ choose_brittany_desc: "Petition for the Kingdom of Brittany"
+ choose_brittany_tooltip: "Kingdom of Brittany"
+ not_enough_brittany_counties: "You only have [SCOPE.ScriptValue('kingdom_brittany_county_count')|0] of [SCOPE.ScriptValue('kingdom_brittany_required_county_total')|0] required [counties|E].
+ require_brittany_culture: "Culture must be Breton or derived from it"
+ 
+ choose_aquitaine_name: "Aquitaine"
+ choose_aquitaine_desc: "Petition for the Kingdom of Aquitaine"
+ choose_aquitaine_tooltip: "Kingdom of Aquitaine"
+ not_enough_aquitaine_counties: "You only have [SCOPE.ScriptValue('kingdom_aquitaine_county_count')|0] of [SCOPE.ScriptValue('kingdom_aquitaine_required_county_total')|0] required [counties|E].
+ require_aquitaine_culture: "Culture must be Occitan or derived from it"
+ 
+ choose_france_name: "France"
+ choose_france_desc: "Petition for the Kingdom of France"
+ choose_france_tooltip: "Kingdom of France"
+ not_enough_france_counties: "You only have [SCOPE.ScriptValue('kingdom_france_county_count')|0] of [SCOPE.ScriptValue('kingdom_france_required_county_total')|0] required [counties|E].
+ require_france_culture: "Culture must be French or derived from it"
+ 
+ choose_burgundy_name: "Burgundy"
+ choose_burgundy_desc: "Petition for the Kingdom of Burgundy"
+ choose_burgundy_tooltip: "Kingdom of Burgundy"
+ not_enough_burgundy_counties: "You only have [SCOPE.ScriptValue('kingdom_burgundy_county_count')|0] of [SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0] required [counties|E].
+ require_burgundy_culture: "Culture must be French/Occitan or derived from it"
+
+ is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
+ requires_culture: "Must have or be a child of [root.culture.GetName] culture"

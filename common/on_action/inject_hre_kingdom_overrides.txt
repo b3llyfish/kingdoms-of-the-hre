@@ -1,0 +1,121 @@
+﻿on_game_start = {
+	on_actions = {
+		reassign_hre_kingdoms
+	}
+}
+
+reassign_hre_kingdoms = {
+	effect = {
+		## germanic kingdoms
+		# k_bavaria
+		title:d_bavaria = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_nordgau = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_salzburg = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_augsburg = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_steyermark = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_osterreich = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_tyrol = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_carinthia = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_krain = { set_de_jure_liege_title = title:k_bavaria }
+		title:d_istria = { set_de_jure_liege_title = title:k_bavaria }
+		# k_bohemia
+		title:d_bohemia = { set_de_jure_liege_title = title:k_bohemia }
+		title:d_moravia = { set_de_jure_liege_title = title:k_bohemia }
+		# k_east_francia (germany)
+		title:d_west_franconia = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_east_franconia = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_hesse = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_currezia = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_alsace = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_swabia = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_anhalt = { set_de_jure_liege_title = title:k_east_francia }
+		title:d_thuringia = { set_de_jure_liege_title = title:k_east_francia }
+		# k_frisia
+		title:d_holland = { set_de_jure_liege_title = title:k_frisia }
+		title:d_gelre = { set_de_jure_liege_title = title:k_frisia }
+		title:d_utrecht = { set_de_jure_liege_title = title:k_frisia }
+		title:d_frisia = { set_de_jure_liege_title = title:k_frisia }
+		# k_lotharingia
+		title:d_luxembourg = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_brabant = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_julich = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_upper_lorraine = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_lower_lorraine = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_bar = { set_de_jure_liege_title = title:k_lotharingia }
+		# set empire depending on start date
+		if = {
+			limit = {
+				game_start_date = 867.1.1
+			}
+			title:k_bavaria = { set_de_jure_liege_title = title:e_germany }
+			title:k_bohemia = { set_de_jure_liege_title = title:e_west_slavia }
+			title:k_east_francia = { set_de_jure_liege_title = title:e_germany }
+			title:k_frisia = { set_de_jure_liege_title = title:e_germany }
+			title:k_lotharingia = { set_de_jure_liege_title = title:e_germany }
+		}
+		else = {
+			title:k_bavaria = { set_de_jure_liege_title = title:e_hre }
+			title:k_bohemia = { set_de_jure_liege_title = title:e_hre }
+			title:k_east_francia = { set_de_jure_liege_title = title:e_hre }
+			title:k_frisia = { set_de_jure_liege_title = title:e_hre }
+			title:k_lotharingia = { set_de_jure_liege_title = title:e_hre }
+		}
+		## french kingdoms
+		# k_aquitaine
+		if = {
+			limit = {
+				game_start_date = 867.1.1
+			}
+			title:d_gascogne = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_aquitaine = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_toulouse = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_languedoc = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_armagnac = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_poitou = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_auvergne = { set_de_jure_liege_title = title:k_aquitaine }
+			title:d_bourbon = { set_de_jure_liege_title = title:k_aquitaine }
+			title:k_aquitaine = { set_de_jure_liege_title = title:e_france }
+		}
+		else = {
+			# france and aquitaine are merged in other start dates
+			title:d_gascogne = { set_de_jure_liege_title = title:k_france }
+			title:d_aquitaine = { set_de_jure_liege_title = title:k_france }
+			title:d_toulouse = { set_de_jure_liege_title = title:k_france }
+			title:d_languedoc = { set_de_jure_liege_title = title:k_france }
+			title:d_armagnac = { set_de_jure_liege_title = title:k_france }
+			title:d_poitou = { set_de_jure_liege_title = title:k_france }
+			title:d_auvergne = { set_de_jure_liege_title = title:k_france }
+			title:d_bourbon = { set_de_jure_liege_title = title:k_france }
+		}
+		# k_brittany
+		title:d_brittany = { set_de_jure_liege_title = title:k_brittany }
+		title:k_brittany = { set_de_jure_liege_title = title:e_france }
+		# k_burgundy
+		title:d_provence = { set_de_jure_liege_title = title:k_burgundy }
+		title:d_savoie = { set_de_jure_liege_title = title:k_burgundy }
+		title:d_dauphine = { set_de_jure_liege_title = title:k_burgundy }
+		title:d_upper_burgundy = { set_de_jure_liege_title = title:k_burgundy }
+		title:d_transjurania = { set_de_jure_liege_title = title:k_burgundy }
+		title:k_burgundy = { set_de_jure_liege_title = title:e_france }
+		# k_france
+		title:d_valois = { set_de_jure_liege_title = title:k_france }
+		title:d_berry = { set_de_jure_liege_title = title:k_france }
+		title:d_anjou = { set_de_jure_liege_title = title:k_france }
+		title:d_normandy = { set_de_jure_liege_title = title:k_france }
+		title:d_orleans = { set_de_jure_liege_title = title:k_france }
+		title:d_champagne = { set_de_jure_liege_title = title:k_france }
+		title:d_burgundy = { set_de_jure_liege_title = title:k_france }
+		title:d_flanders = { set_de_jure_liege_title = title:k_france }
+		title:k_france = { set_de_jure_liege_title = title:e_france }
+		## k_italy
+		title:d_friuli = { set_de_jure_liege_title = title:k_italy }
+		title:d_verona = { set_de_jure_liege_title = title:k_italy }
+		title:d_piedmonte = { set_de_jure_liege_title = title:k_italy }
+		title:d_lombardia = { set_de_jure_liege_title = title:k_italy }
+		title:d_genoa = { set_de_jure_liege_title = title:k_italy }
+		title:d_emilia = { set_de_jure_liege_title = title:k_italy }
+		title:d_pisa = { set_de_jure_liege_title = title:k_italy }
+		title:d_toscana = { set_de_jure_liege_title = title:k_italy }
+		title:k_italy = { set_de_jure_liege_title = title:e_italy }
+	}
+}

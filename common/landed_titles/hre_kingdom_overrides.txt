@@ -1,0 +1,383 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+
+# germanic kingdoms
+k_bavaria = {
+	color = { 70 80 80 }
+	
+	capital = c_regensburg
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_bavaria
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_central_germanic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+k_bohemia = {
+	color = { 176 110 32 }
+	
+	capital = c_praha # Praha
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_bohemia
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:czech
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+k_east_francia = {	#Germany
+	color = { 160 160 160 }
+	
+	capital = c_frankfurt
+	
+	can_create = {
+		OR = {
+			# allow if HRE title does not exist
+			NOT = { exists = title:e_hre.holder }
+			# OR if your top liege does not have the HRE title
+			top_liege = {
+				NOT = { has_title = title:e_hre }
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:franconian
+			}
+			add = @correct_culture_primary_score
+		}
+		if = {
+			limit = {
+				NOT = { culture = culture:franconian }
+				culture = { has_cultural_pillar = heritage_central_germanic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+k_frisia = {
+	color = { 245 100 20 }
+	
+	capital = c_holland #Holland
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_frisia
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			OR = {
+				culture = culture:frisian
+				culture = culture:dutch
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:frisian
+					culture = culture:dutch
+				}
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+k_lotharingia = {
+	color = { 110 110 160 }
+	
+	capital = c_luxembourg #Luxemburg
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_lotharingia
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_central_germanic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = culture:french
+					culture = culture:norman
+					culture = culture:occitan
+				}
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+# french kingdoms
+k_aquitaine = {
+	color = { 101 50 253 }
+	
+	capital = c_bordeaux # Bordaeux
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_aquitaine
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = { has_title = title:k_france }
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:occitan
+			}
+			add = @correct_culture_primary_score
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = culture:norman
+					culture = culture:french
+				}
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+k_brittany = {
+	color = { 197 215 217 }
+	
+	capital = c_vannes # Vannes
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_brittany
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			culture = { has_cultural_pillar = heritage_brythonic }
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:breton
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
+k_burgundy = {
+	color = { 134 0 37 }
+	
+	capital	= c_venaissin # Arles
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_burgundy
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:french
+					culture = culture:norman
+					culture = culture:occitan
+				}
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+k_france = {
+	color = { 15 27 187 }
+	
+	capital = c_ile_de_france
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_france
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:french
+			}
+			add = @correct_culture_primary_score
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = culture:norman
+					culture = culture:occitan
+				}
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+}
+# italy
+k_italy = {
+	color = { 244 227 160 }
+	
+	capital = c_lombardia # Pavia
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+				faith = { religion_tag = christianity_religion }
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_italy
+			}
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:italian
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}

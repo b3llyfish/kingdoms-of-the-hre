@@ -1,0 +1,549 @@
+﻿namespace = kingdoms_hre
+
+## Required scopes:
+# emperor - the Emperor
+# vassal - the character asking for the kingdom
+# target_title - the title under question
+
+## Events
+# kingdoms_hre.0001 - Vassal prepares the petition
+# kingdoms_hre.0002 - Emperor receives the petition
+# kingdoms_hre.0003 - Emperor accepts the petition
+# kingdoms_hre.0004 - Hidden post accept title effects
+# kingdoms_hre.0005 - Emperor rejects the petition
+# kingdoms_hre.0006 - Emperor blackmailed by vassal
+# kingdoms_hre.0007 - Vassal gains title via blackmail
+
+kingdoms_hre.0001 = {
+	type = character_event
+	title = kingdoms_hre.0001.title
+	desc = kingdoms_hre.0001.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:vassal
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = scope:emperor
+		animation = personality_honorable
+	}
+	
+	# Normal
+	option = {
+		name = kingdoms_hre.0001.a
+		custom_tooltip = kingdoms_hre.0001.tooltip
+		scope:emperor = {
+			trigger_event = {
+				id = kingdoms_hre.0002
+				days = 5
+			}
+		}
+		ai_chance = {
+			base = 50
+			# ai should try to offset poor emperor opinion by favouring other options
+			modifier = {
+				top_liege ?= {
+					save_temporary_opinion_value_as = { name = opinion_of_you target = root }
+					scope:opinion_of_you < neutral_opinion
+				}
+				factor = 0.75
+			}
+			modifier = {
+				has_trait = arrogant
+				factor = 3
+			}
+		}
+	}
+	# Diplomacy Check
+	option = {
+		name = kingdoms_hre.0001.b
+		custom_tooltip = kingdoms_hre.0001.b.tooltip
+		duel = {
+			skill = diplomacy
+			value = scope:emperor.diplomacy
+			50 = {
+				desc = kingdoms_hre.0001.b.success
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = 3
+				}
+				save_scope_value_as = {
+					name = letter_positive
+					value = yes
+				}
+				custom_tooltip = kingdoms_hre.0001.b.success.tooltip
+				send_interface_message = {
+					type = event_generic_good_text
+					title = kingdoms_hre.0001.b.success
+					desc = kingdoms_hre.0001.b.success.tooltip
+					left_icon = scope:vassal
+					right_icon = scope:emperor
+				}
+			}
+			50 = {
+				desc = kingdoms_hre.0001.b.failure
+				compare_modifier = {
+					value = scope:duel_value
+					multiplier = -3
+				}
+				save_scope_value_as = {
+					name = letter_negative
+					value = yes
+				}
+				custom_tooltip = kingdoms_hre.0001.b.failure.tooltip
+				send_interface_message = {
+					type = event_generic_bad_text
+					title = kingdoms_hre.0001.b.failure
+					desc = kingdoms_hre.0001.b.failure.tooltip
+					left_icon = scope:vassal
+					right_icon = scope:emperor
+				}
+			}
+		}
+		custom_tooltip = kingdoms_hre.0001.tooltip
+		scope:emperor = {
+			trigger_event = {
+				id = kingdoms_hre.0002
+				days = 5
+			}
+		}
+		stress_impact = {
+			shy = minor_stress_gain
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = {
+					value = scope:vassal.diplomacy
+					subtract = scope:emperor.diplomacy
+					multiply = 10
+				}
+			}
+			modifier = {
+				diplomacy >= {
+					value = scope:emperor.diplomacy
+					add = 5
+				}
+				factor = 3
+			}
+		}
+	}
+	# Gift
+	option = {
+		name = kingdoms_hre.0001.c
+		scope:emperor = {
+			add_character_modifier = {
+				modifier = petition_gift_modifier
+				years = 2
+			}
+		}
+		save_scope_value_as = {
+			name = bought_gifts
+			value = yes
+		}
+		scope:vassal = {
+			remove_short_term_gold = kingdom_gift_amount
+		}
+		custom_tooltip = kingdoms_hre.0001.c.tooltip
+		custom_tooltip = kingdoms_hre.0001.tooltip
+		scope:emperor = {
+			trigger_event = {
+				id = kingdoms_hre.0002
+				days = 5
+			}
+		}
+		stress_impact = {
+			greedy = minor_stress_gain
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				gold < kingdom_gift_amount
+				add = {
+					subtract = 25
+				}
+			}
+			modifier = {
+				gold >= kingdom_gift_amount
+				add = 25
+			}
+			modifier = {
+				has_trait = generous
+				factor = 3
+			}
+			
+		}
+	}
+	# Blackmail
+	option = {
+		name = kingdoms_hre.0001.d
+		custom_tooltip = kingdoms_hre.0001.d.tooltip
+		trigger = {
+			has_strong_usable_hook = scope:emperor
+		}
+		show_as_unavailable = { always = yes }
+		stress_impact = {
+			just = medium_stress_gain
+			forgiving = major_stress_gain
+			honest = major_stress_gain
+			compassionate = massive_stress_gain
+		}
+		add_internal_flag = special
+		scope:emperor = {
+			trigger_event = {
+				id = kingdoms_hre.0006
+				days = 5
+			}
+		}
+		ai_chance = {
+			base = 1000
+		}
+	}
+}
+
+kingdoms_hre.0002 = {
+	type = character_event
+	title = kingdoms_hre.0002.title
+	desc = kingdoms_hre.0002.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:emperor
+		animation = personality_rational
+	}
+	
+	right_portrait = {
+		character = scope:vassal
+		animation = personality_bold
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				exists = scope:letter_positive
+			}
+			add_opinion = {
+				target = scope:vassal
+				modifier = reputation_opinion
+				opinion = low_positive_opinion
+			}
+		}
+		if = {
+			limit = {
+				exists = scope:letter_negative
+			}
+			add_opinion = {
+				target = scope:vassal
+				modifier = reputation_opinion
+				opinion = low_negative_opinion
+			}
+		}
+	}
+	# Accepts
+	option = {
+		name = {
+			text = {
+				first_valid = {
+					triggered_desc = {
+						trigger = {
+							has_different_culture_heritage = {
+								CULTURE = culture
+								OTHER_CULTURE = scope:vassal.culture
+							}
+						}
+						desc = kingdoms_hre.0002.a.culture
+					}
+					desc = kingdoms_hre.0002.a
+				}
+			}
+		}
+		custom_tooltip = kingdoms_hre.0002.a.tooltip
+		custom_tooltip = kingdoms_hre.protected_revoke_rights
+		if = {
+			limit = {
+				has_different_culture_heritage = {
+					CULTURE = culture
+					OTHER_CULTURE = scope:vassal.culture
+				}
+			}
+			custom_tooltip = kingdoms_hre.0002.a.culture.tooltip
+		}
+		custom_tooltip = kingdoms_hre.powerful_vassals_irritated
+		scope:vassal = {
+			trigger_event = {
+				id = kingdoms_hre.0003
+				days = 3
+			}
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				add = ai_petition_acceptance_chance_percent_value
+			}
+		}
+	}
+	# Rejects
+	option = {
+		name = kingdoms_hre.0002.c
+		scope:vassal = {
+			trigger_event = {
+				id = kingdoms_hre.0005
+				days = 3
+			}
+		}
+		custom_tooltip = kingdoms_hre.0002.c.tooltip
+		custom_tooltip = kingdoms_hre.0002.c.tooltip.claim
+		if = {
+			limit = {
+				exists = scope:letter_positive
+			}
+			remove_opinion = {
+				target = scope:vassal
+				modifier = reputation_opinion
+			}
+		}
+		ai_chance = {
+			base = 200
+			modifier = {
+				add = ai_petition_rejection_chance_percent_value
+			}
+		}
+	}
+}
+
+kingdoms_hre.0003 = {
+	type = character_event
+	title = kingdoms_hre.0003.title
+	desc = kingdoms_hre.0003.desc
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:vassal
+		animation = personality_bold
+	}
+	
+	right_portrait = {
+		character = scope:emperor
+		animation = personality_honorable
+	}
+	
+	option = {
+		name = kingdoms_hre.0003.a
+		grant_kingdom_title = {
+			TARGET_TITLE = scope:target_title
+			OWNER = scope:vassal
+		}
+		add_opinion = {
+			target = scope:emperor
+			modifier = received_title_kingdom
+		}
+		trigger_event = kingdoms_hre.0004
+	}
+}
+
+kingdoms_hre.0005 = {
+	type = character_event
+	title = kingdoms_hre.0005.title
+	desc = kingdoms_hre.0005.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:vassal
+		animation = anger
+	}
+	
+	right_portrait = {
+		character = scope:emperor
+		animation = dismissal
+	}
+
+	option = {
+		name = kingdoms_hre.0005.a
+		add_opinion = {
+			target = scope:emperor
+			modifier = outraged_opinion
+			opinion = very_high_negative_opinion
+		}
+		if = {
+			limit = {
+				can_set_relation_potential_rival_trigger = { CHARACTER = scope:emperor }
+			}
+			set_relation_potential_rival = scope:emperor
+		}
+		ai_chance = {
+			base = 60
+			modifier = {
+				OR = {
+					has_trait = "just"
+					has_trait = "patient"
+				}
+				add = 40
+			}
+		}
+	}
+	
+	option = {
+		name = kingdoms_hre.0005.b
+		add_opinion = {
+			target = scope:emperor
+			modifier = outraged_opinion
+			opinion = very_high_negative_opinion
+		}
+		if = {
+			limit = {
+				can_set_relation_potential_rival_trigger = { CHARACTER = scope:emperor }
+			}
+			set_relation_potential_rival = scope:emperor
+		}
+		add_unpressed_claim = title:e_hre
+		ai_chance = {
+			base = 30
+			modifier = {
+				has_trait = "ambitious"
+				add = 1000
+			}
+			modifier = {
+				OR = {
+					has_trait = "wrathful"
+					has_trait = "forgiving"
+				}
+				add = 300
+			}
+			modifier = {
+				has_trait = "impatient"
+				add = 130
+			}
+			
+		}
+	}
+	
+	option = {
+		name = kingdoms_hre.0005.c
+		add_opinion = {
+			target = scope:emperor
+			modifier = disappointed_opinion
+			opinion = low_negative_opinion
+		}
+		ai_chance = {
+			base = 10
+			modifier = {
+				has_trait = "content"
+				add = 1000
+			}
+			modifier = {
+				OR = {
+					has_trait = "forgiving"
+					has_trait = "humble"
+					has_trait = "trusting"
+				}
+				add = 190
+			}
+		}
+	}
+}
+
+kingdoms_hre.0006 = {
+	type = character_event
+	title = kingdoms_hre.0006.title
+	desc = kingdoms_hre.0006.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:emperor
+		animation = shock
+	}
+	
+	right_portrait = {
+		character = scope:vassal
+		animation = scheme
+	}
+	
+	option = {
+		name = kingdoms_hre.0006.a
+		add_opinion = {
+			target = scope:vassal
+			modifier = betrayal_opinion
+			opinion = -75
+		}
+		set_relation_rival = {
+			target = scope:vassal
+			reason = kingdoms_hre.0006.rival.reason
+		}
+		custom_tooltip = kingdoms_hre.0002.a.tooltip
+		custom_tooltip = kingdoms_hre.protected_revoke_rights
+		custom_tooltip = kingdoms_hre.0006.use.hook
+		custom_tooltip = kingdoms_hre.powerful_vassals_irritated
+		scope:vassal = {
+			trigger_event = {
+				id = kingdoms_hre.0007
+				days = 3
+			}
+		}
+	}
+}
+
+kingdoms_hre.0007 = {
+	type = character_event
+	title = kingdoms_hre.0007.title
+	desc = kingdoms_hre.0007.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:vassal
+		animation = personality_dishonorable
+	}
+	
+	right_portrait = {
+		character = scope:emperor
+		animation = personality_vengeful
+	}
+	
+	option = {
+		name = kingdoms_hre.0007.a
+		grant_kingdom_title = {
+			TARGET_TITLE = scope:target_title
+			OWNER = scope:vassal
+		}
+		use_hook = scope:emperor
+		trigger_event = kingdoms_hre.0004
+	}
+}
+
+kingdoms_hre.0004 = {
+	scope = none
+	hidden = yes
+	immediate = {
+		irritate_powerful_duchy_vassals = {
+			LIEGE = scope:emperor
+		}
+		notify_players_grant_kingdom_title = {
+			TARGET_TITLE = scope:target_title
+			OWNER = scope:vassal
+		}
+		if = {
+			limit = {
+				has_different_culture_heritage = {
+					CULTURE = scope:emperor.culture
+					OTHER_CULTURE = scope:vassal.culture
+				}
+			}
+			add_culture_acceptance_to_hre_cultures = {
+				EMPEROR_CULTURE = scope:emperor.culture
+				TARGET_CULTURE = scope:vassal.culture
+			}
+		}
+	}
+}

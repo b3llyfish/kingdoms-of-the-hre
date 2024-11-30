@@ -1,0 +1,10 @@
+﻿kingdoms_hre_culture_requirement = {
+	
+	categories = { difficulty tweaks ai }
+	
+	default = kingdoms_hre_culture_required
+	
+	kingdoms_hre_culture_required = {}
+	
+	kingdoms_hre_culture_not_required = {}
+}

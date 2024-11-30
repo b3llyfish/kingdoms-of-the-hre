@@ -1,0 +1,58 @@
+﻿# As there is no way to get heritage from culture this effect is limited to:
+#
+# cultures with a central germanic heritage
+# cultures with a frankish heritage
+# single culture that isn't any of the above
+#
+# These have been chosen as they are the most likely cultures for an AI emperor
+add_culture_acceptance_to_hre_cultures = {
+	if = {
+		limit = {
+			$EMPEROR_CULTURE$ = {
+				has_cultural_pillar = heritage_central_germanic
+			}
+		}
+		every_culture_global = {
+			limit = {
+				has_cultural_pillar = heritage_central_germanic
+			}
+			change_cultural_acceptance = {
+				target = $TARGET_CULTURE$
+				value = kingdom_grant_culture_acceptance_percentage
+				desc = coronation_culture_acceptance_bonus_desc
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			$EMPEROR_CULTURE$ = {
+				has_cultural_pillar = heritage_frankish
+			}
+		}
+		every_culture_global = {
+			limit = {
+				has_cultural_pillar = heritage_frankish
+			}
+			change_cultural_acceptance = {
+				target = $TARGET_CULTURE$
+				value = kingdom_grant_culture_acceptance_percentage
+				desc = coronation_culture_acceptance_bonus_desc
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_different_culture_heritage = {
+				CULTURE = $EMPEROR_CULTURE$
+				OTHER_CULTURE = $TARGET_CULTURE$
+			}
+		}
+		$EMPEROR_CULTURE$ = {
+			change_cultural_acceptance = {
+				target = $TARGET_CULTURE$
+				value = kingdom_grant_culture_acceptance_percentage
+				desc = coronation_culture_acceptance_bonus_desc
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿has_different_culture_heritage = {
+	$CULTURE$ = {
+		NOT = {
+			has_same_culture_heritage = $OTHER_CULTURE$
+		}
+	}
+}
+
+is_or_child_of_culture = {
+	$CULTURE$ = {
+		OR = {
+			this = $PARENT_CULTURE$
+			any_parent_culture_or_above = {
+				this = $PARENT_CULTURE$
+			}
+		}
+	}
+}

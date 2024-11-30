@@ -1,0 +1,64 @@
+﻿emperor_opinion_of_vassal = {
+	value = 0
+	if = {
+		limit = {
+			scope:emperor = {
+				save_temporary_opinion_value_as = { name = opinion_of_vassal target = scope:vassal }
+			}
+		}
+		add = scope:opinion_of_vassal
+	}
+}
+
+ai_petition_acceptance_chance_percent_value = {
+	value = emperor_opinion_of_vassal
+	if = {
+		limit = {
+			is_hre_elector = {
+				CHARACTER = scope:vassal
+			}
+		}
+		add = 15
+	}
+	if = {
+		limit = {
+			scope:vassal = { is_powerful_vassal = yes }
+		}
+		add = 25
+	}
+	if = {
+		limit = {
+			exists = scope:letter_positive
+		}
+		add = 25
+	}
+	if = {
+		limit = {
+			exists = scope:bought_gifts
+		}
+		add = 15
+	}
+	if = {
+		limit = {
+			exists = scope:letter_negative
+		}
+		subtract = 25
+	}
+	add = {
+		value = scope:emperor.ai_honor
+		max = 25
+		min = -25
+	}
+}
+
+ai_petition_rejection_chance_percent_value = {
+	value = ai_petition_acceptance_chance_percent_value
+	multiply = -1
+}
+
+ai_diplomacy_option_comparison_weight = {
+	value = 0
+	add = root.diplomacy
+	subtract = scope:emperor.diplomacy
+	multiply = 10
+}
