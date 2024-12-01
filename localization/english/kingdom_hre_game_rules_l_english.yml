@@ -1,6 +1,6 @@
 ﻿l_english:
  rule_kingdoms_hre_culture_requirement: "Kingdoms of the HRE: Culture Check"
  setting_kingdoms_hre_culture_required: "Required"
- setting_kingdoms_hre_culture_required_desc: "Kingdom petitions will require a relevant culture check"
+ setting_kingdoms_hre_culture_required_desc: "Certain kingdom petitions will require a relevant culture check"
  setting_kingdoms_hre_culture_not_required: "Not Required"
  setting_kingdoms_hre_culture_not_required_desc: "Kingdom petitions will #Z not#! require a relevant culture check"

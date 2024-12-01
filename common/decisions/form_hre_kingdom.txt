@@ -1,4 +1,4 @@
-﻿form_hre_kingdom_decision = {
+form_hre_kingdom_decision = {
 	ai_goal = yes
 	
 	picture = {
@@ -130,18 +130,6 @@
 						TARGET_KINGDOM = title:k_bavaria
 					}
 				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_bavaria_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:bavarian
-						}
-					}
-				}
 			}
 			current_description = choose_bavaria_desc
 			localization = choose_bavaria_name
@@ -256,18 +244,6 @@
 						TARGET_KINGDOM = title:k_lotharingia
 					}
 				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_lotharingia_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:franconian
-						}
-					}
-				}
 			}
 			current_description = choose_lotharingia_desc
 			localization = choose_lotharingia_name
@@ -301,21 +277,16 @@
 					limit = {
 						has_game_rule = kingdoms_hre_culture_required
 					}
-					trigger_if = {
-						limit = {
-							has_game_rule = kingdoms_hre_culture_required
-						}
-						custom_tooltip = {
-							text = require_burgundy_culture
-							OR = {
-								is_or_child_of_culture = {
-									CULTURE = culture
-									PARENT_CULTURE = culture:french
-								}
-								is_or_child_of_culture = {
-									CULTURE = culture
-									PARENT_CULTURE = culture:occitan
-								}
+					custom_tooltip = {
+						text = require_burgundy_culture
+						OR = {
+							is_or_child_of_culture = {
+								CULTURE = culture
+								PARENT_CULTURE = culture:french
+							}
+							is_or_child_of_culture = {
+								CULTURE = culture
+								PARENT_CULTURE = culture:occitan
 							}
 						}
 					}
