@@ -1,4 +1,4 @@
-﻿grant_kingdom_title = {
+grant_kingdom_title = {
 	create_title_and_vassal_change = {
 		type = created
 		save_scope_as = change
@@ -14,6 +14,15 @@
 	vassal_contract_set_obligation_level = {
 		type = title_revocation_rights
 		level = 1
+	}
+
+	if = {
+		limit = {
+			scope:target_title = title:k_austria
+		}
+		create_archduchy_austria_title = {
+			OWNER = $OWNER$
+		}
 	}
 }
 

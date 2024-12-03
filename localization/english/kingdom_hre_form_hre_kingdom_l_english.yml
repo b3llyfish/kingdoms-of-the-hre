@@ -15,7 +15,6 @@
  choose_bavaria_desc: "Petition for the Kingdom of Bavaria"
  choose_bavaria_tooltip: "Kingdom of Bavaria"
  not_enough_bavaria_counties: "You only have [SCOPE.ScriptValue('kingdom_bavaria_county_count')|0] of [SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0] required [counties|E].
- require_bavaria_culture: "Culture must be Bavarian or derived from it"
  
  choose_bohemia_name: "Bohemia"
  choose_bohemia_desc: "Petition for the Kingdom of Bohemia"
@@ -33,7 +32,6 @@
  choose_lotharingia_desc: "Petition for the Kingdom of Lotharingia"
  choose_lotharingia_tooltip: "Kingdom of Lotharingia"
  not_enough_lotharingia_counties: "You only have [SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0] of [SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0] required [counties|E].
- require_lotharingia_culture: "Culture must be Franconian or derived from it"
  
  choose_italy_name: "Italy"
  choose_italy_desc: "Petition for the Kingdom of Italy"
@@ -65,5 +63,8 @@
  not_enough_burgundy_counties: "You only have [SCOPE.ScriptValue('kingdom_burgundy_county_count')|0] of [SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0] required [counties|E].
  require_burgundy_culture: "Culture must be French/Occitan or derived from it"
 
+ choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]"
+ choose_austria_tooltip: "[GetTitleByKey('k_austria').GetName] will be formed with [GetTitleByKey('d_osterreich').GetName] and [GetTitleByKey('d_steyermark').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_carinthia').GetName] then the [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] and [GetTitleByKey('d_istria').GetName] will also become a de jure part of [GetTitleByKey('k_austria').GetName].\n\nForming this Kingdom will grant you Primogeniture succession type."
+ 
  is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"

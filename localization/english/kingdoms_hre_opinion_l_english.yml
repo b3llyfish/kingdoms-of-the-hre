@@ -1,0 +1,3 @@
+﻿l_english:
+ divided_kingdom: "[CHARACTER.GetShortUIName|U] and [TARGET_CHARACTER.GetShortUIName] became rivals after the formation of a new Kingdom."
+ broke_apart_my_kingdom: "Broke apart my Kingdom"

@@ -95,6 +95,10 @@ form_hre_kingdom_decision = {
 						TARGET_KINGDOM = title:k_aquitaine
 					}
 				}
+				AND = {
+					NOT = { exists = title:k_austria.holder }
+					completely_controls_region = custom_core_austria
+				}
 			}
 		}
 	}
@@ -114,10 +118,32 @@ form_hre_kingdom_decision = {
 	}
 	
 	widget = {
-		gui = "decision_view_widget_option_list_generic"
+		gui = "decision_view_widget_generic_multichoice_with_effects"
 		controller = decision_option_list_controller
 		decision_to_second_step_button = "choose_kingdom"
 		
+		### austria
+		item = {
+			value = choose_austria
+			is_valid = {
+				NOT = { exists = title:k_austria.holder }
+				completely_controls_region = custom_core_austria
+				dynasty ?= { dynasty_prestige_level >= 5 }
+				prestige_level >= high_prestige_level
+				
+			}
+			localization = choose_austria_name
+			icon = "gfx/interface/icons/kingdoms_hre/austria.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						completely_controls_region = custom_core_austria
+					}
+					add = 100
+				}
+			}
+		}
 		### bavaria
 		item = {
 			value = choose_bavaria
@@ -587,6 +613,16 @@ form_hre_kingdom_decision = {
 				scope:choose_aquitaine = yes
 			}
 			title:k_aquitaine = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# austria
+		else_if = {
+			limit = {
+				scope:choose_austria = yes
+			}
+			title:k_austria = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001

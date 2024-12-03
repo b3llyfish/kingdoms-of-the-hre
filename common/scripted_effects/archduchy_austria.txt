@@ -1,0 +1,53 @@
+create_archduchy_austria_title = {
+	$OWNER$ = {
+		hidden_effect = {
+			title:k_austria = {
+				set_de_jure_liege_title = title:e_hre
+				copy_title_history = title:d_osterreich
+			}
+		}
+		
+		title:d_osterreich = { set_de_jure_liege_title = title:k_austria }
+		title:d_steyermark = { set_de_jure_liege_title = title:k_austria }
+		
+		# if d_carinthia moves to k_austria then d_krain and d_istria would be isolated from k_bavaria
+		# they game dislikes this, as the original decision would try and assign d_krain and d_istria to k_croatia
+		# if the austrian character didn't hold them
+		#
+		# it feels odd the k_croatia suddenly gets more de jure duchies having done nothing
+		# so if holds d_carinthia transfer the isolated duchies to k_austria instead
+		if = {
+			limit = {
+				completely_controls = title:d_carinthia
+			}
+			title:d_carinthia = { set_de_jure_liege_title = title:k_austria }
+			title:d_krain = { set_de_jure_liege_title = title:k_austria }
+			title:d_istria = { set_de_jure_liege_title = title:k_austria }
+		}
+		
+		# give primogeniture
+		if = {
+			limit = {
+				NOT = { has_realm_law = single_heir_succession_law }
+			}
+			add_realm_law_skip_effects = single_heir_succession_law
+		}
+		
+		# if Bavarian king exists form a rivalry and worsen their opinion of the Emperor
+		if = {
+			limit = {
+				exists = title:k_bavaria.holder
+			}
+			set_relation_rival = {
+				target = title:k_bavaria.holder
+				reason = divided_kingdom
+			}
+			title:k_bavaria.holder = {
+				add_opinion = {
+					target = title:e_hre.holder
+					modifier = broke_apart_my_kingdom
+				}
+			}
+		}
+	}
+}
