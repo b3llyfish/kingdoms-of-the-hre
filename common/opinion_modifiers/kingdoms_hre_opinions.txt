@@ -1,4 +1,5 @@
 broke_apart_my_kingdom = {
 	opinion = -50
 	decaying = yes
+	monthly_change = 0.1
 }
