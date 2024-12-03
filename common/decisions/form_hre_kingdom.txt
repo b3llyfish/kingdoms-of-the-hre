@@ -17,6 +17,7 @@ form_hre_kingdom_decision = {
 		top_liege ?= {
 			has_title = title:e_hre
 		}
+		highest_held_title_tier = tier_duchy
 	}
 	
 	is_valid = {
@@ -106,7 +107,6 @@ form_hre_kingdom_decision = {
 	is_valid_showing_failures_only = {
 		custom_tooltip = {
 			text = required_amount_of_titles
-			highest_held_title_tier = tier_duchy
 			any_sub_realm_duchy = {
 				count >= 2
 			}
