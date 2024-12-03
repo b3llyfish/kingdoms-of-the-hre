@@ -1,3 +1,9 @@
 ﻿l_english:
  divided_kingdom: "[CHARACTER.GetShortUIName|U] and [TARGET_CHARACTER.GetShortUIName] became rivals after the formation of a new Kingdom."
  broke_apart_my_kingdom: "Broke apart my Kingdom"
+ favouritism: "Emperor bestowed a title on another vassal"
+ rejected_title_kingdom: "Emperor rejected my Kingdom petition"
+ rejected_title_kingdom_minor: "Emperor rejected my Kingdom petition, but that's ok..."
+ letter_positive: "Received a convincing letter"
+ letter_negative: "Received an unconvincing letter"
+ blackmailed_title_kingdom: "Blackmailed me for a Kingdom"

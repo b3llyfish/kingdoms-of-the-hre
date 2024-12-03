@@ -230,8 +230,7 @@ kingdoms_hre.0002 = {
 			}
 			add_opinion = {
 				target = scope:vassal
-				modifier = reputation_opinion
-				opinion = low_positive_opinion
+				modifier = letter_positive
 			}
 		}
 		if = {
@@ -240,8 +239,7 @@ kingdoms_hre.0002 = {
 			}
 			add_opinion = {
 				target = scope:vassal
-				modifier = reputation_opinion
-				opinion = low_negative_opinion
+				modifier = letter_negative
 			}
 		}
 	}
@@ -374,8 +372,7 @@ kingdoms_hre.0005 = {
 		name = kingdoms_hre.0005.a
 		add_opinion = {
 			target = scope:emperor
-			modifier = outraged_opinion
-			opinion = very_high_negative_opinion
+			modifier = rejected_title_kingdom
 		}
 		if = {
 			limit = {
@@ -399,8 +396,7 @@ kingdoms_hre.0005 = {
 		name = kingdoms_hre.0005.b
 		add_opinion = {
 			target = scope:emperor
-			modifier = outraged_opinion
-			opinion = very_high_negative_opinion
+			modifier = rejected_title_kingdom
 		}
 		if = {
 			limit = {
@@ -434,8 +430,7 @@ kingdoms_hre.0005 = {
 		name = kingdoms_hre.0005.c
 		add_opinion = {
 			target = scope:emperor
-			modifier = disappointed_opinion
-			opinion = low_negative_opinion
+			modifier = rejected_title_kingdom_minor
 		}
 		ai_chance = {
 			base = 10
@@ -477,8 +472,7 @@ kingdoms_hre.0006 = {
 		name = kingdoms_hre.0006.a
 		add_opinion = {
 			target = scope:vassal
-			modifier = betrayal_opinion
-			opinion = -75
+			modifier = blackmailed_title_kingdom
 		}
 		set_relation_rival = {
 			target = scope:vassal

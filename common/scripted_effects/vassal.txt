@@ -1,4 +1,4 @@
-﻿irritate_powerful_duchy_vassals = {
+irritate_powerful_duchy_vassals = {
 	$LIEGE$ = {
 		every_powerful_vassal = {
 			limit = {
@@ -6,8 +6,7 @@
 			}
 			add_opinion = {
 				target = $LIEGE$
-				modifier = irritated_opinion
-				opinion = low_negative_opinion
+				modifier = favouritism
 			}
 		}
 	}

@@ -1,5 +1,39 @@
 broke_apart_my_kingdom = {
 	opinion = -50
+	monthly_change = 0.2
 	decaying = yes
-	monthly_change = 0.1
+}
+
+favouritism = {
+	opinion = -20
+	years = 5
+	stacking = yes
+}
+
+rejected_title_kingdom = {
+	opinion = -50
+	monthly_change = 0.2
+	decaying = yes
+}
+
+rejected_title_kingdom_minor = {
+	opinion = -15
+	monthly_change = 0.2
+	decaying = yes
+}
+
+
+letter_positive = {
+	opinion = 20
+	years = 2
+}
+
+letter_negative = {
+	opinion = -20
+	years = 2
+}
+
+blackmailed_title_kingdom = {
+	opinion = -50
+	years = 30
 }

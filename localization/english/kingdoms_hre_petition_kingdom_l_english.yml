@@ -45,7 +45,7 @@
  kingdoms_hre.0006.title: "Blackmail!"
  kingdoms_hre.0006.desc: "A petition has arrived from [vassal.GetShortUIName] stating their claim to the [target_title.GetName]. It is extremely brief, barely providing any evidence for their claim.\n\nI am ready to dismiss it as some sort of bizarre joke when I read the final paragraph.\n\n[vassal.GetShortUIName] knows about my [secret|E]! What's more they are threatening to reveal it unless I accept the petition."
  kingdoms_hre.0006.a: "I have no choice but to give in to their demand..."
- kingdoms_hre.0006.rival.reason: "[TARGET_CHARACTER.GetShortUIName|U] blackmailed [CHARACTER.GetShortUIName] into granting a Kingdom title."
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName] and [TARGET_CHARACTER.GetShortUIName|U] became rivals after a successful blackmailing."
  kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] uses their hook on you."
  # Vassal gains title via blackmail
  kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$"
