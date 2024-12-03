@@ -281,6 +281,13 @@ form_hre_kingdom_decision = {
 		custom_tooltip = form_hre_kingdom_decision_effect_selected
 		custom_tooltip = form_hre_kingdom_decision_emperor_opinion
 		custom_tooltip = form_hre_kingdom_decision_hook
+		custom_tooltip = form_hre_kingdom_decision_vassal_contract_change
+		if = {
+			limit = {
+				has_dlc_feature = legends
+			}
+			custom_tooltip = form_hre_kingdom_decision_gain_heroic_legend_seed
+		}
 		top_liege = {
 			save_scope_as = emperor
 		}

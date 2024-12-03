@@ -15,7 +15,9 @@ grant_kingdom_title = {
 		type = title_revocation_rights
 		level = 1
 	}
-
+	
+	legend_seed_new_title_effect = yes
+	
 	if = {
 		limit = {
 			scope:target_title = title:k_austria

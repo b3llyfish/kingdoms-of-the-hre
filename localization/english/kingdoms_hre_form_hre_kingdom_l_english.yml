@@ -7,6 +7,8 @@
  form_hre_kingdom_decision_effect_selected: "You petition the Emperor for the selected Kingdom"
  form_hre_kingdom_decision_emperor_opinion: "The Emperor's opinion of you will greatly affect their decision"
  form_hre_kingdom_decision_hook: "Having a strong hook on the Emperor can guarantee success"
+ form_hre_kingdom_decision_vassal_contract_change: "If successful you will have protected title revocation rights added to your vassal contract"
+ form_hre_kingdom_decision_gain_heroic_legend_seed: "If successful you will gain a Heroic [legend_seed|E]"
  
  choose_kingdom: "Petition for a Kingdom."
  required_amount_of_titles: "Must have at least 2 [duchy|E] [titles|E]."

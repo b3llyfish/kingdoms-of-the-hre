@@ -1,4 +1,4 @@
-﻿namespace = kingdoms_hre
+namespace = kingdoms_hre
 
 ## Required scopes:
 # emperor - the Emperor
@@ -334,6 +334,10 @@ kingdoms_hre.0003 = {
 		animation = personality_honorable
 	}
 	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+	}
+	
 	option = {
 		name = kingdoms_hre.0003.a
 		grant_kingdom_title = {
@@ -509,6 +513,10 @@ kingdoms_hre.0007 = {
 	right_portrait = {
 		character = scope:emperor
 		animation = personality_vengeful
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
 	}
 	
 	option = {
