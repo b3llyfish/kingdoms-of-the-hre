@@ -1,4 +1,4 @@
-﻿controls_enough_of_kingdom = {
+controls_enough_of_kingdom = {
 	$TARGET_KINGDOM$ = {
 		any_de_jure_county = {
 			percent > required_de_jure_county_percentage_as_decimal
@@ -32,6 +32,234 @@ can_create_hre_kingdom = {
 					}
 					$TARGET_TITLE$ = title:k_burgundy
 					$TARGET_TITLE$ = title:k_italy
+				}
+			}
+		}
+	}
+}
+
+can_choose_austria = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_austria.holder }
+		completely_controls_region = custom_core_austria
+		dynasty ?= { dynasty_prestige_level >= 5 }
+		prestige_level >= high_prestige_level
+	}
+}
+
+can_choose_bavaria = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_bavaria.holder }
+		custom_tooltip = {
+			text = not_enough_bavaria_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_bavaria
+			}
+		}
+	}
+}
+
+can_choose_bohemia = {
+	$CHARACTER$ = {
+		title:k_bohemia = { target_is_de_jure_liege_or_above = title:e_hre }
+		NOT = { exists = title:k_bohemia.holder }
+		custom_tooltip = {
+			text = not_enough_bohemia_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_bohemia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_bohemia_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:czech
+				}
+			}
+		}
+	}
+}
+
+can_choose_frisia = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_frisia.holder }
+		custom_tooltip = {
+			text = not_enough_frisia_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_frisia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_frisia_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:frisian
+				}
+			}
+		}
+	}
+}
+
+can_choose_lotharingia = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_lotharingia.holder }
+		custom_tooltip = {
+			text = not_enough_lotharingia_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_lotharingia
+			}
+		}
+	}
+}
+
+can_choose_burgundy = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_burgundy.holder }
+		custom_tooltip = {
+			text = not_enough_burgundy_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_burgundy
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_burgundy_culture
+				OR = {
+					is_or_child_of_culture = {
+						CULTURE = culture
+						PARENT_CULTURE = culture:french
+					}
+					is_or_child_of_culture = {
+						CULTURE = culture
+						PARENT_CULTURE = culture:occitan
+					}
+				}
+			}
+		}
+	}
+}
+
+can_choose_italy = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_italy.holder }
+		custom_tooltip = {
+			text = not_enough_italy_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_italy
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_italy_culture
+				OR = {
+					is_or_child_of_culture = {
+						CULTURE = culture
+						PARENT_CULTURE = culture:cisalpine
+					}
+					is_or_child_of_culture = {
+						CULTURE = culture
+						PARENT_CULTURE = culture:italian
+					}
+				}
+			}
+		}
+	}
+}
+
+can_choose_aquitaine = {
+	$CHARACTER$ = {
+		title:k_aquitaine = { target_is_de_jure_liege_or_above = title:e_hre }
+		# account for french unification decision
+		kingdom_aquitaine_required_county_total > 0
+		NOT = { exists = title:k_aquitaine.holder }
+		custom_tooltip = {
+			text = not_enough_aquitaine_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_aquitaine
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_aquitaine_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:occitan
+				}
+			}
+		}
+	}
+}
+
+can_choose_brittany = {
+	$CHARACTER$ = {
+		title:k_brittany = { target_is_de_jure_liege_or_above = title:e_hre }
+		NOT = { exists = title:k_brittany.holder }
+		custom_tooltip = {
+			text = not_enough_brittany_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_brittany
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_brittany_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:breton
+				}
+			}
+		}
+	}
+}
+
+can_choose_france = {
+	$CHARACTER$ = {
+		title:k_france = { target_is_de_jure_liege_or_above = title:e_hre }
+		NOT = { exists = title:k_france.holder }
+		custom_tooltip = {
+			text = not_enough_france_counties
+			controls_enough_of_kingdom = {
+				CHARACTER = root
+				TARGET_KINGDOM = title:k_france
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_france_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:french
 				}
 			}
 		}

@@ -33,73 +33,16 @@ form_hre_kingdom_decision = {
 		custom_tooltip = {
 			text = form_hre_kingdom_decision_kingdom_criteria_met
 			OR = {
-				AND = {
-					NOT = { exists = title:k_bavaria.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_bavaria
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_bohemia.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_bohemia
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_frisia.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_frisia
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_lotharingia.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_lotharingia
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_burgundy.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_burgundy
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_italy.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_italy
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_brittany.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_brittany
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_france.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_france
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_aquitaine.holder }
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_aquitaine
-					}
-				}
-				AND = {
-					NOT = { exists = title:k_austria.holder }
-					completely_controls_region = custom_core_austria
-				}
+				can_choose_austria = { CHARACTER = root }
+				can_choose_bavaria = { CHARACTER = root }
+				can_choose_bohemia = { CHARACTER = root }
+				can_choose_frisia = { CHARACTER = root }
+				can_choose_lotharingia = { CHARACTER = root }
+				can_choose_burgundy = { CHARACTER = root }
+				can_choose_italy = { CHARACTER = root }
+				can_choose_aquitaine = { CHARACTER = root }
+				can_choose_brittany = { CHARACTER = root }
+				can_choose_france = { CHARACTER = root }
 			}
 		}
 	}
@@ -125,13 +68,7 @@ form_hre_kingdom_decision = {
 		### austria
 		item = {
 			value = choose_austria
-			is_valid = {
-				NOT = { exists = title:k_austria.holder }
-				completely_controls_region = custom_core_austria
-				dynasty ?= { dynasty_prestige_level >= 5 }
-				prestige_level >= high_prestige_level
-				
-			}
+			is_valid = { can_choose_austria = { CHARACTER = root } }
 			localization = choose_austria_name
 			icon = "gfx/interface/icons/kingdoms_hre/austria.dds"
 			ai_chance = {
@@ -147,16 +84,7 @@ form_hre_kingdom_decision = {
 		### bavaria
 		item = {
 			value = choose_bavaria
-			is_valid = {
-				NOT = { exists = title:k_bavaria.holder }
-				custom_tooltip = {
-					text = not_enough_bavaria_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_bavaria
-					}
-				}
-			}
+			is_valid = { can_choose_bavaria = { CHARACTER = root } }
 			current_description = choose_bavaria_desc
 			localization = choose_bavaria_name
 			icon = "gfx/interface/icons/kingdoms_hre/bavaria.dds"
@@ -179,28 +107,7 @@ form_hre_kingdom_decision = {
 			is_shown = {
 				title:k_bohemia = { target_is_de_jure_liege_or_above = title:e_hre }
 			}
-			is_valid = {
-				NOT = { exists = title:k_bohemia.holder }
-				custom_tooltip = {
-					text = not_enough_bohemia_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_bohemia
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_bohemia_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:czech
-						}
-					}
-				}
-			}
+			is_valid = { can_choose_bohemia = { CHARACTER = root } }
 			current_description = choose_bohemia_desc
 			localization = choose_bohemia_name
 			icon = "gfx/interface/icons/kingdoms_hre/bohemia.dds"
@@ -220,28 +127,7 @@ form_hre_kingdom_decision = {
 		### frisia
 		item = {
 			value = choose_frisia
-			is_valid = {
-				NOT = { exists = title:k_frisia.holder }
-				custom_tooltip = {
-					text = not_enough_frisia_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_frisia
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_frisia_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:frisian
-						}
-					}
-				}
-			}
+			is_valid = { can_choose_frisia = { CHARACTER = root } }
 			current_description = choose_frisia_desc
 			localization = choose_frisia_name
 			icon = "gfx/interface/icons/kingdoms_hre/frisia.dds"
@@ -261,16 +147,7 @@ form_hre_kingdom_decision = {
 		### lotharingia
 		item = {
 			value = choose_lotharingia
-			is_valid = {
-				NOT = { exists = title:k_lotharingia.holder }
-				custom_tooltip = {
-					text = not_enough_lotharingia_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_lotharingia
-					}
-				}
-			}
+			is_valid = { can_choose_lotharingia = { CHARACTER = root } }
 			current_description = choose_lotharingia_desc
 			localization = choose_lotharingia_name
 			icon = "gfx/interface/icons/kingdoms_hre/lotharingia.dds"
@@ -290,34 +167,7 @@ form_hre_kingdom_decision = {
 		### burgundy
 		item = {
 			value = choose_burgundy
-			is_valid = {
-				NOT = { exists = title:k_burgundy.holder }
-				custom_tooltip = {
-					text = not_enough_burgundy_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_burgundy
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_burgundy_culture
-						OR = {
-							is_or_child_of_culture = {
-								CULTURE = culture
-								PARENT_CULTURE = culture:french
-							}
-							is_or_child_of_culture = {
-								CULTURE = culture
-								PARENT_CULTURE = culture:occitan
-							}
-						}
-					}
-				}
-			}
+			is_valid = { can_choose_burgundy = { CHARACTER = root } }
 			current_description = choose_burgundy_desc
 			localization = choose_burgundy_name
 			icon = "gfx/interface/icons/kingdoms_hre/burgundy.dds"
@@ -337,34 +187,7 @@ form_hre_kingdom_decision = {
 		### italy
 		item = {
 			value = choose_italy
-			is_valid = {
-				NOT = { exists = title:k_italy.holder }
-				custom_tooltip = {
-					text = not_enough_italy_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_italy
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_italy_culture
-						OR = {
-							is_or_child_of_culture = {
-								CULTURE = culture
-								PARENT_CULTURE = culture:cisalpine
-							}
-							is_or_child_of_culture = {
-								CULTURE = culture
-								PARENT_CULTURE = culture:italian
-							}
-						}
-					}
-				}
-			}
+			is_valid = { can_choose_italy = { CHARACTER = root } }
 			current_description = choose_italy_desc
 			localization = choose_italy_name
 			icon = "gfx/interface/icons/kingdoms_hre/italy.dds"
@@ -381,34 +204,38 @@ form_hre_kingdom_decision = {
 				}
 			}
 		}
+		### aquitaine
+		item = {
+			value = choose_aquitaine
+			is_shown = {
+				title:k_aquitaine = { target_is_de_jure_liege_or_above = title:e_hre }
+				# account for french unification decision
+				kingdom_aquitaine_required_county_total > 0
+			}
+			is_valid = { can_choose_aquitaine = { CHARACTER = root } }
+			current_description = choose_aquitaine_desc
+			localization = choose_aquitaine_name
+			icon = "gfx/interface/icons/kingdoms_hre/aquitaine.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_kingdom = {
+							CHARACTER = root
+							TARGET_KINGDOM = title:k_aquitaine
+						}
+					}
+					add = 100
+				}
+			}
+		}
 		### brittany
 		item = {
 			value = choose_brittany
 			is_shown = {
 				title:k_brittany = { target_is_de_jure_liege_or_above = title:e_hre }
 			}
-			is_valid = {
-				NOT = { exists = title:k_brittany.holder }
-				custom_tooltip = {
-					text = not_enough_brittany_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_brittany
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_brittany_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:breton
-						}
-					}
-				}
-			}
+			is_valid = { can_choose_brittany = { CHARACTER = root } }
 			current_description = choose_brittany_desc
 			localization = choose_brittany_name
 			icon = "gfx/interface/icons/kingdoms_hre/brittany.dds"
@@ -431,28 +258,7 @@ form_hre_kingdom_decision = {
 			is_shown = {
 				title:k_france = { target_is_de_jure_liege_or_above = title:e_hre }
 			}
-			is_valid = {
-				NOT = { exists = title:k_france.holder }
-				custom_tooltip = {
-					text = not_enough_france_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_france
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_france_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:french
-						}
-					}
-				}
-			}
+			is_valid = { can_choose_france = { CHARACTER = root } }
 			current_description = choose_france_desc
 			localization = choose_france_name
 			icon = "gfx/interface/icons/kingdoms_hre/france.dds"
@@ -463,52 +269,6 @@ form_hre_kingdom_decision = {
 						controls_enough_of_kingdom = {
 							CHARACTER = root
 							TARGET_KINGDOM = title:k_france
-						}
-					}
-					add = 100
-				}
-			}
-		}
-		### aquitaine
-		item = {
-			value = choose_aquitaine
-			is_shown = {
-				title:k_aquitaine = { target_is_de_jure_liege_or_above = title:e_hre }
-				# account for french unification decision
-				kingdom_aquitaine_required_county_total > 0
-			}
-			is_valid = {
-				NOT = { exists = title:k_aquitaine.holder }
-				custom_tooltip = {
-					text = not_enough_aquitaine_counties
-					controls_enough_of_kingdom = {
-						CHARACTER = root
-						TARGET_KINGDOM = title:k_aquitaine
-					}
-				}
-				trigger_if = {
-					limit = {
-						has_game_rule = kingdoms_hre_culture_required
-					}
-					custom_tooltip = {
-						text = require_aquitaine_culture
-						is_or_child_of_culture = {
-							CULTURE = culture
-							PARENT_CULTURE = culture:occitan
-						}
-					}
-				}
-			}
-			current_description = choose_aquitaine_desc
-			localization = choose_aquitaine_name
-			icon = "gfx/interface/icons/kingdoms_hre/aquitaine.dds"
-			ai_chance = {
-				value = 0
-				if = {
-					limit = {
-						controls_enough_of_kingdom = {
-							CHARACTER = root
-							TARGET_KINGDOM = title:k_aquitaine
 						}
 					}
 					add = 100
