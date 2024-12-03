@@ -1,4 +1,4 @@
-﻿emperor_opinion_of_vassal = {
+emperor_opinion_of_vassal = {
 	value = 0
 	if = {
 		limit = {
@@ -48,6 +48,18 @@ ai_petition_acceptance_chance_percent_value = {
 		value = scope:emperor.ai_honor
 		max = 25
 		min = -25
+	}
+	if = {
+		limit = {
+			has_game_rule = kingdoms_hre_emperor_acceptance_modifier_doubled
+		}
+		multiply = 2
+	}
+	else_if = {
+		limit = {
+			has_game_rule = kingdoms_hre_emperor_acceptance_modifier_halved
+		}
+		multiply = 0.5
 	}
 }
 

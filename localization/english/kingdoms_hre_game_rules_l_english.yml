@@ -4,3 +4,11 @@
  setting_kingdoms_hre_culture_required_desc: "Certain kingdom petitions will require a relevant culture check"
  setting_kingdoms_hre_culture_not_required: "Not Required"
  setting_kingdoms_hre_culture_not_required_desc: "Kingdom petitions will #Z not#! require a relevant culture check"
+ 
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Kingdoms of the HRE: Emperor's Acceptance Modifier"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "No modifier"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Emperor's acceptance chance for the kingdom petition will be unmodified"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Doubled"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Emperor's acceptance chance for the kingdom petition will be doubled"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Halved"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Emperor's acceptance chance for the kingdom petition will be halved"
