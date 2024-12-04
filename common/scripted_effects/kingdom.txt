@@ -41,6 +41,14 @@ grant_kingdom_title = {
 			OWNER = $OWNER$
 		}
 	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_switzerland
+		}
+		create_switzerland_title = {
+			OWNER = $OWNER$
+		}
+	}
 }
 
 notify_players_grant_kingdom_title = {

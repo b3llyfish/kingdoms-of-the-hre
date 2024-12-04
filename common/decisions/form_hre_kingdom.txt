@@ -17,7 +17,7 @@ form_hre_kingdom_decision = {
 		top_liege ?= {
 			has_title = title:e_hre
 		}
-		highest_held_title_tier = tier_duchy
+		highest_held_title_tier <= tier_duchy
 	}
 	
 	is_valid = {
@@ -38,6 +38,7 @@ form_hre_kingdom_decision = {
 				can_choose_bohemia = { CHARACTER = root }
 				can_choose_frisia = { CHARACTER = root }
 				can_choose_lotharingia = { CHARACTER = root }
+				can_choose_switzerland = { CHARACTER = root }
 				can_choose_burgundy = { CHARACTER = root }
 				can_choose_italy = { CHARACTER = root }
 				can_choose_aquitaine = { CHARACTER = root }
@@ -159,6 +160,22 @@ form_hre_kingdom_decision = {
 							CHARACTER = root
 							TARGET_KINGDOM = title:k_lotharingia
 						}
+					}
+					add = 100
+				}
+			}
+		}
+		### switzerland
+		item = {
+			value = choose_switzerland
+			is_valid = { can_choose_switzerland = { CHARACTER = root } }
+			localization = choose_switzerland_name
+			icon = "gfx/interface/icons/kingdoms_hre/switzerland.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						completely_controls_region = custom_core_switzerland
 					}
 					add = 100
 				}
@@ -390,6 +407,16 @@ form_hre_kingdom_decision = {
 				scope:choose_austria = yes
 			}
 			title:k_austria = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# switzerland
+		else_if = {
+			limit = {
+				scope:choose_switzerland = yes
+			}
+			title:k_switzerland = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001

@@ -1,3 +1,6 @@
-﻿kingdom_gift_amount = 300
+kingdom_gift_amount = 300
 
 kingdom_grant_culture_acceptance_percentage = 25
+
+# if spread then that is 10 dev per county
+swiss_development_required_amount = 60

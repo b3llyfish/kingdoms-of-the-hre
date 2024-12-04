@@ -1,4 +1,4 @@
-﻿required_de_jure_county_percentage_as_decimal = {
+required_de_jure_county_percentage_as_decimal = {
 	value = 0.5
 	if = {
 		limit = { root.legitimacy_level = 5 }
@@ -228,4 +228,12 @@ kingdom_italy_required_county_total = {
 	}
 	multiply = required_de_jure_county_percentage_as_decimal
 	ceiling = yes
+}
+
+kingdom_swiss_development_county_total = {
+	value = 0
+	every_county_in_region = {
+		region = custom_core_switzerland
+		add = development_level
+	}
 }

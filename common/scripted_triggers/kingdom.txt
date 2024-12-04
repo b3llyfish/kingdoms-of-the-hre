@@ -124,6 +124,18 @@ can_choose_lotharingia = {
 	}
 }
 
+can_choose_switzerland = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_switzerland.holder }
+		completely_controls_region = custom_core_switzerland
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = swiss_not_enough_development
+			kingdom_swiss_development_county_total >= swiss_development_required_amount
+		}
+	}
+}
+
 can_choose_burgundy = {
 	$CHARACTER$ = {
 		NOT = { exists = title:k_burgundy.holder }

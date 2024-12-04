@@ -67,6 +67,10 @@
 
  choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]"
  choose_austria_tooltip: "[GetTitleByKey('k_austria').GetName] will be formed with [GetTitleByKey('d_osterreich').GetName] and [GetTitleByKey('d_steyermark').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_carinthia').GetName] then the [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] and [GetTitleByKey('d_istria').GetName] will also become a de jure part of [GetTitleByKey('k_austria').GetName].\n\nForming this Kingdom will grant you Primogeniture succession type."
- 
+
+ choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]"
+ choose_switzerland_tooltip: "[GetTitleByKey('k_switzerland').GetName] will be formed with [GetTitleByKey('d_transjurania').GetName] and [GetTitleByKey('d_currezia').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_savoie').GetName] then it will also become a de jure part of [GetTitleByKey('k_switzerland').GetName].\n\nForming this Kingdom will grant you Absolute Crown Authority law."
+ swiss_not_enough_development: "Requires at least [SCOPE.ScriptValue('swiss_development_required_amount')|0] development in [counties|E] within [GetGeographicalRegion('custom_core_switzerland').GetName] (currently [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
+
  is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"
