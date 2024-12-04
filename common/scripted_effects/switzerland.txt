@@ -1,7 +1,7 @@
 create_switzerland_title = {
 	$OWNER$ = {
 		hidden_effect = {
-			title:switzerland = {
+			title:k_switzerland = {
 				set_de_jure_liege_title = title:e_hre
 				copy_title_history = title:d_transjurania
 			}

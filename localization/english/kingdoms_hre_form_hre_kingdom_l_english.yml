@@ -13,55 +13,46 @@
  choose_kingdom: "Petition for a Kingdom."
  required_amount_of_titles: "Must have at least 2 [duchy|E] [titles|E]."
  
- choose_bavaria_name: "Bavaria"
- choose_bavaria_desc: "Petition for the Kingdom of Bavaria"
- choose_bavaria_tooltip: "Kingdom of Bavaria"
+ choose_bavaria_name: "[GetTitleByKey('k_bavaria').GetNameNoTooltip]"
+ choose_bavaria_tooltip: "Petition for [GetTitleByKey('k_bavaria').GetName]"
  not_enough_bavaria_counties: "You only have [SCOPE.ScriptValue('kingdom_bavaria_county_count')|0] of [SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0] required [counties|E].
  
- choose_bohemia_name: "Bohemia"
- choose_bohemia_desc: "Petition for the Kingdom of Bohemia"
- choose_bohemia_tooltip: "Kingdom of Bohemia"
+ choose_bohemia_name: "[GetTitleByKey('k_bohemia').GetNameNoTooltip]"
+ choose_bohemia_tooltip: "Petition for [GetTitleByKey('k_bohemia').GetName]"
  not_enough_bohemia_counties: "You only have [SCOPE.ScriptValue('kingdom_bohemia_county_count')|0] of [SCOPE.ScriptValue('kingdom_bohemia_required_county_total')|0] required [counties|E].
  require_bohemia_culture: "Culture must be Czech or derived from it"
  
- choose_frisia_name: "Frisia"
- choose_frisia_desc: "Petition for the Kingdom of Frisia"
- choose_frisia_tooltip: "Kingdom of Frisia"
+ choose_frisia_name: "[GetTitleByKey('k_frisia').GetNameNoTooltip]"
+ choose_frisia_tooltip: "Petition for [GetTitleByKey('k_frisia').GetName]"
  not_enough_frisia_counties: "You only have [SCOPE.ScriptValue('kingdom_frisia_county_count')|0] of [SCOPE.ScriptValue('kingdom_frisia_required_county_total')|0] required [counties|E].
  require_frisia_culture: "Culture must be Frisian or derived from it"
 
- choose_lotharingia_name: "Lotharingia"
- choose_lotharingia_desc: "Petition for the Kingdom of Lotharingia"
- choose_lotharingia_tooltip: "Kingdom of Lotharingia"
+ choose_lotharingia_name: "[GetTitleByKey('k_lotharingia').GetNameNoTooltip]"
+ choose_lotharingia_tooltip: "Petition for [GetTitleByKey('k_lotharingia').GetName]"
  not_enough_lotharingia_counties: "You only have [SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0] of [SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0] required [counties|E].
  
- choose_italy_name: "Italy"
- choose_italy_desc: "Petition for the Kingdom of Italy"
- choose_italy_tooltip: "Kingdom of Italy"
+ choose_italy_name: "[GetTitleByKey('k_italy').GetNameNoTooltip]"
+ choose_italy_tooltip: "Petition for [GetTitleByKey('k_italy').GetName]"
  not_enough_italy_counties: "You only have [SCOPE.ScriptValue('kingdom_italy_county_count')|0] of [SCOPE.ScriptValue('kingdom_italy_required_county_total')|0] required [counties|E].
  require_italy_culture: "Culture must be Cisalpine/Italian or derived from it"
  
- choose_brittany_name: "Brittany"
- choose_brittany_desc: "Petition for the Kingdom of Brittany"
- choose_brittany_tooltip: "Kingdom of Brittany"
+ choose_brittany_name: "[GetTitleByKey('k_brittany').GetNameNoTooltip]"
+ choose_brittany_tooltip: "Petition for [GetTitleByKey('k_brittany').GetName]"
  not_enough_brittany_counties: "You only have [SCOPE.ScriptValue('kingdom_brittany_county_count')|0] of [SCOPE.ScriptValue('kingdom_brittany_required_county_total')|0] required [counties|E].
  require_brittany_culture: "Culture must be Breton or derived from it"
  
- choose_aquitaine_name: "Aquitaine"
- choose_aquitaine_desc: "Petition for the Kingdom of Aquitaine"
- choose_aquitaine_tooltip: "Kingdom of Aquitaine"
+ choose_aquitaine_name: "[GetTitleByKey('k_aquitaine').GetNameNoTooltip]"
+ choose_aquitaine_tooltip: "Petition for [GetTitleByKey('k_aquitaine').GetName]"
  not_enough_aquitaine_counties: "You only have [SCOPE.ScriptValue('kingdom_aquitaine_county_count')|0] of [SCOPE.ScriptValue('kingdom_aquitaine_required_county_total')|0] required [counties|E].
  require_aquitaine_culture: "Culture must be Occitan or derived from it"
  
- choose_france_name: "France"
- choose_france_desc: "Petition for the Kingdom of France"
- choose_france_tooltip: "Kingdom of France"
+ choose_france_name: "[GetTitleByKey('k_france').GetNameNoTooltip]"
+ choose_france_tooltip: "Petition for [GetTitleByKey('k_france').GetName]"
  not_enough_france_counties: "You only have [SCOPE.ScriptValue('kingdom_france_county_count')|0] of [SCOPE.ScriptValue('kingdom_france_required_county_total')|0] required [counties|E].
  require_france_culture: "Culture must be French or derived from it"
  
- choose_burgundy_name: "Burgundy"
- choose_burgundy_desc: "Petition for the Kingdom of Burgundy"
- choose_burgundy_tooltip: "Kingdom of Burgundy"
+ choose_burgundy_name: "[GetTitleByKey('k_burgundy').GetNameNoTooltip]"
+ choose_burgundy_tooltip: "Petition for [GetTitleByKey('k_burgundy').GetName]"
  not_enough_burgundy_counties: "You only have [SCOPE.ScriptValue('kingdom_burgundy_county_count')|0] of [SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0] required [counties|E].
  require_burgundy_culture: "Culture must be French/Occitan or derived from it"
 

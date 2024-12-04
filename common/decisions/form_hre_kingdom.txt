@@ -86,7 +86,6 @@ form_hre_kingdom_decision = {
 		item = {
 			value = choose_bavaria
 			is_valid = { can_choose_bavaria = { CHARACTER = root } }
-			current_description = choose_bavaria_desc
 			localization = choose_bavaria_name
 			icon = "gfx/interface/icons/kingdoms_hre/bavaria.dds"
 			ai_chance = {
@@ -109,7 +108,6 @@ form_hre_kingdom_decision = {
 				title:k_bohemia = { target_is_de_jure_liege_or_above = title:e_hre }
 			}
 			is_valid = { can_choose_bohemia = { CHARACTER = root } }
-			current_description = choose_bohemia_desc
 			localization = choose_bohemia_name
 			icon = "gfx/interface/icons/kingdoms_hre/bohemia.dds"
 			ai_chance = {
@@ -129,7 +127,6 @@ form_hre_kingdom_decision = {
 		item = {
 			value = choose_frisia
 			is_valid = { can_choose_frisia = { CHARACTER = root } }
-			current_description = choose_frisia_desc
 			localization = choose_frisia_name
 			icon = "gfx/interface/icons/kingdoms_hre/frisia.dds"
 			ai_chance = {
@@ -149,7 +146,6 @@ form_hre_kingdom_decision = {
 		item = {
 			value = choose_lotharingia
 			is_valid = { can_choose_lotharingia = { CHARACTER = root } }
-			current_description = choose_lotharingia_desc
 			localization = choose_lotharingia_name
 			icon = "gfx/interface/icons/kingdoms_hre/lotharingia.dds"
 			ai_chance = {
@@ -185,7 +181,6 @@ form_hre_kingdom_decision = {
 		item = {
 			value = choose_burgundy
 			is_valid = { can_choose_burgundy = { CHARACTER = root } }
-			current_description = choose_burgundy_desc
 			localization = choose_burgundy_name
 			icon = "gfx/interface/icons/kingdoms_hre/burgundy.dds"
 			ai_chance = {
@@ -205,7 +200,6 @@ form_hre_kingdom_decision = {
 		item = {
 			value = choose_italy
 			is_valid = { can_choose_italy = { CHARACTER = root } }
-			current_description = choose_italy_desc
 			localization = choose_italy_name
 			icon = "gfx/interface/icons/kingdoms_hre/italy.dds"
 			ai_chance = {
@@ -230,7 +224,6 @@ form_hre_kingdom_decision = {
 				kingdom_aquitaine_required_county_total > 0
 			}
 			is_valid = { can_choose_aquitaine = { CHARACTER = root } }
-			current_description = choose_aquitaine_desc
 			localization = choose_aquitaine_name
 			icon = "gfx/interface/icons/kingdoms_hre/aquitaine.dds"
 			ai_chance = {
@@ -253,7 +246,6 @@ form_hre_kingdom_decision = {
 				title:k_brittany = { target_is_de_jure_liege_or_above = title:e_hre }
 			}
 			is_valid = { can_choose_brittany = { CHARACTER = root } }
-			current_description = choose_brittany_desc
 			localization = choose_brittany_name
 			icon = "gfx/interface/icons/kingdoms_hre/brittany.dds"
 			ai_chance = {
@@ -276,7 +268,6 @@ form_hre_kingdom_decision = {
 				title:k_france = { target_is_de_jure_liege_or_above = title:e_hre }
 			}
 			is_valid = { can_choose_france = { CHARACTER = root } }
-			current_description = choose_france_desc
 			localization = choose_france_name
 			icon = "gfx/interface/icons/kingdoms_hre/france.dds"
 			ai_chance = {
