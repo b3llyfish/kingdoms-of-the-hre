@@ -21,3 +21,16 @@ kingdoms_hre_emperor_acceptance_modifier = {
 	
 	kingdoms_hre_emperor_acceptance_modifier_halved = {}
 }
+
+kingdoms_hre_austria_renown = {
+	
+	categories = { difficulty tweaks ai }
+	
+	default = kingdoms_hre_culture_reputable
+	
+	kingdoms_hre_culture_noteworthy = {}
+	
+	kingdoms_hre_culture_reputable = {}
+	
+	kingdoms_hre_culture_well_known = {}
+}

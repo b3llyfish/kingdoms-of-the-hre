@@ -42,7 +42,7 @@ can_choose_austria = {
 	$CHARACTER$ = {
 		NOT = { exists = title:k_austria.holder }
 		completely_controls_region = custom_core_austria
-		dynasty ?= { dynasty_prestige_level >= 5 }
+		dynasty ?= { dynasty_prestige_level >= austria_required_renown_level }
 		prestige_level >= high_prestige_level
 	}
 }

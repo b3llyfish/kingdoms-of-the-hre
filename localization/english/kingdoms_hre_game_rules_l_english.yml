@@ -12,3 +12,11 @@
  setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Emperor's acceptance chance for the kingdom petition will be doubled"
  setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Halved"
  setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Emperor's acceptance chance for the kingdom petition will be halved"
+ 
+ rule_kingdoms_hre_austria_renown: "Kingdoms of the HRE: Austria Renown Level"
+ setting_kingdoms_hre_culture_noteworthy: "Noteworthy"
+ setting_kingdoms_hre_culture_noteworthy_desc: "The Austria petition will require a renown level of #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_reputable: "Reputable"
+ setting_kingdoms_hre_culture_reputable_desc: "The Austria petition will require a renown level of #Z Reputable#!"
+ setting_kingdoms_hre_culture_well_known: "Well-Known"
+ setting_kingdoms_hre_culture_well_known_desc: "The Austria petition will require a renown level of #Z Well-Known#!"

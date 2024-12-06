@@ -2,7 +2,52 @@ kingdom_gift_amount = 300
 
 kingdom_grant_culture_acceptance_percentage = 25
 
-# if spread then that is 10 dev per county
-swiss_development_required_amount = 60
+swiss_development_required_amount = {
+	value = 0
+	if = {
+		limit = {
+			game_start_date = 867.1.1
+		}
+		# around 7 dev per county
+		add = 42
+	}
+	else = {
+		# around 10 dev per county
+		add = 60
+	}
+}
 
-saxon_military_strength_value = 3500
+saxon_military_strength_value = {
+	value = 0
+	if = {
+		limit = {
+			game_start_date = 867.1.1
+		}
+		add = 2500
+	}
+	else = {
+		add = 3500
+	}
+}
+
+austria_required_renown_level = {
+	value = 0
+	if = {
+		limit = {
+			has_game_rule = kingdoms_hre_culture_noteworthy
+		}
+		add = 3
+	}
+	else_if = {
+		limit = {
+			has_game_rule = kingdoms_hre_culture_reputable
+		}
+		add = 4
+	}
+	else_if = {
+		limit = {
+			has_game_rule = kingdoms_hre_culture_well_known
+		}
+		add = 5
+	}
+}
