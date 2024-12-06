@@ -124,6 +124,45 @@ can_choose_lotharingia = {
 	}
 }
 
+controls_at_least_two_saxony_duchies = {
+	any_sub_realm_duchy = {
+		OR = {
+			this = title:d_anhalt
+			this = title:d_meissen
+			this = title:d_lausitz
+			this = title:d_thuringia
+		}
+		count >= 2
+	}
+}
+
+can_choose_saxony = {
+	$CHARACTER$ = {
+		NOT = { exists = title:k_saxony.holder }
+		custom_tooltip = {
+			text = core_saxony_duchies_required
+			controls_at_least_two_saxony_duchies = yes
+		}
+		prestige_level >= high_prestige_level
+		custom_tooltip = {
+			text = saxon_military_strength_requirement
+			max_military_strength >= saxon_military_strength_value
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_saxony_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:saxon
+				}
+			}
+		}
+	}
+}
+
 can_choose_switzerland = {
 	$CHARACTER$ = {
 		NOT = { exists = title:k_switzerland.holder }

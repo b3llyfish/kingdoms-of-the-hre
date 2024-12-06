@@ -38,6 +38,7 @@ form_hre_kingdom_decision = {
 				can_choose_bohemia = { CHARACTER = root }
 				can_choose_frisia = { CHARACTER = root }
 				can_choose_lotharingia = { CHARACTER = root }
+				can_choose_saxony = { CHARACTER = root }
 				can_choose_switzerland = { CHARACTER = root }
 				can_choose_burgundy = { CHARACTER = root }
 				can_choose_italy = { CHARACTER = root }
@@ -156,6 +157,22 @@ form_hre_kingdom_decision = {
 							CHARACTER = root
 							TARGET_KINGDOM = title:k_lotharingia
 						}
+					}
+					add = 100
+				}
+			}
+		}
+		### saxony
+		item = {
+			value = choose_saxony
+			is_valid = { can_choose_saxony= { CHARACTER = root } }
+			localization = choose_saxony_name
+			icon = "gfx/interface/icons/kingdoms_hre/saxony.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_at_least_two_saxony_duchies = yes
 					}
 					add = 100
 				}
@@ -408,6 +425,16 @@ form_hre_kingdom_decision = {
 				scope:choose_switzerland = yes
 			}
 			title:k_switzerland = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# saxony
+		else_if = {
+			limit = {
+				scope:choose_saxony = yes
+			}
+			title:k_saxony = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001

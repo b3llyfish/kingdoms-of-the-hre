@@ -57,11 +57,19 @@
  require_burgundy_culture: "Culture must be French/Occitan or derived from it"
 
  choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]"
- choose_austria_tooltip: "[GetTitleByKey('k_austria').GetName] will be formed with [GetTitleByKey('d_osterreich').GetName] and [GetTitleByKey('d_steyermark').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_carinthia').GetName] then the [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] and [GetTitleByKey('d_istria').GetName] will also become a de jure part of [GetTitleByKey('k_austria').GetName].\n\nForming this Kingdom will grant you Primogeniture succession type."
+ choose_austria_tooltip: "[GetTitleByKey('k_austria').GetName] will be formed with [GetTitleByKey('d_osterreich').GetName] and [GetTitleByKey('d_steyermark').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_carinthia').GetName] then the [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] and [GetTitleByKey('d_istria').GetName] will also become a de jure part of [GetTitleByKey('k_austria').GetName].\n\nForming this Kingdom will grant you Primogeniture succession law."
 
  choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]"
  choose_switzerland_tooltip: "[GetTitleByKey('k_switzerland').GetName] will be formed with [GetTitleByKey('d_transjurania').GetName] and [GetTitleByKey('d_currezia').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_savoie').GetName] then it will also become a de jure part of [GetTitleByKey('k_switzerland').GetName].\n\nForming this Kingdom will grant you Absolute Crown Authority law."
  swiss_not_enough_development: "Requires at least [SCOPE.ScriptValue('swiss_development_required_amount')|0] development in [counties|E] within [GetGeographicalRegion('custom_core_switzerland').GetName] (currently [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
 
+ choose_saxony_name: "[GetTitleByKey('k_saxony').GetNameNoTooltip]"
+ choose_saxony_tooltip: "[GetTitleByKey('k_saxony').GetName] will be formed with [GetTitleByKey('d_anhalt').GetName], [GetTitleByKey('d_lausitz').GetName] and [GetTitleByKey('d_meissen').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_thuringia').GetName] then it will also become a de jure part of [GetTitleByKey('k_saxony').GetName].\n\nForming this Kingdom will grant you Saxon Elective succession law."
+ require_saxony_culture: "Culture must be Saxon or derived from it"
+ custom_core_saxony: "Saxony"
+ core_saxony_duchies_required: "Require at least 2 [duchy|E] titles that are within the region of [GetGeographicalRegion('custom_core_saxony').GetName]"
+ saxon_military_strength_requirement: "Require current military strength of [SCOPE.ScriptValue('saxon_military_strength_value')|0] or higher (currently [SCOPE.ScriptValue('military_strength_value')|0])"
+ random_saxony_culture_convert: "Random chance owned Polabian culture counties within the [GetTitleByKey('k_saxony').GetNameNoTooltip] will change to your culture"
+ 
  is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"

@@ -307,7 +307,7 @@ kingdoms_hre.0002 = {
 			}
 		}
 		ai_chance = {
-			base = 200
+			base = 175
 			modifier = {
 				add = ai_petition_rejection_chance_percent_value
 			}
