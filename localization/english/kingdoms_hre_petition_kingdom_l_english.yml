@@ -1,7 +1,7 @@
 ﻿l_english:
  # Common
  kingdoms_hre.kingdom_of: "The Kingdom of [target_title.GetNameNoTierNoTooltip]"
- kingdoms_hre.golden_bull: "The Golden Bull of [emperor.GetCapitalLocation.GetName]"
+ kingdoms_hre.golden_bull: "The Golden Bull of [emperor.GetCapitalLocation.GetNameNoTooltip]"
  kingdoms_hre.powerful_vassals_irritated: "Bestowing a [kingdom|E] will irritate your powerful [duchy|E] vassals"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] will have protected title revocation rights added to their vassal contract"
  # Vassal prepares the petition
@@ -31,7 +31,7 @@
  kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] may fabricate a claim on #Z [GetTitleByKey('e_hre').GetName]#!! "
  # Emperor accepts the petition
  kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$"
- kingdoms_hre.0003.desc: "In an elaborate ceremony in [emperor.GetCapitalLocation.GetName] the Emperor has decreed a new Golden Bull. \n\nIt declares that [vassal.GetName] has an imperial right to rule over [target_title.GetNameNoTierNoTooltip] and formalises their claim as [vassal.Custom('GetQueenKing')|U] of the region.\n\nThis is truly a magnificent day for the [vassal.GetDynastyName|U] dynasty!"
+ kingdoms_hre.0003.desc: "In an elaborate ceremony in [emperor.GetCapitalLocation.GetNameNoTooltip] the Emperor has decreed a new Golden Bull. \n\nIt declares that [vassal.GetName] has an imperial right to rule over [target_title.GetNameNoTierNoTooltip] and formalises their claim as [vassal.Custom('GetQueenKing')|U] of the region.\n\nThis is truly a magnificent day for the [vassal.GetDynastyName|U] dynasty!"
  kingdoms_hre.0003.a: "The Emperor has recognised the rightful [vassal.Custom('GetQueenKing')|U] of [target_title.GetNameNoTierNoTooltip]!"
  kingdoms_hre.0003.a.interface.title: "Emperor bestows a Kingdom"
  kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] has been granted the Kingdom of [target_title.GetNameNoTierNoTooltip]"
@@ -49,5 +49,5 @@
  kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] uses their hook on you."
  # Vassal gains title via blackmail
  kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$"
- kingdoms_hre.0007.desc: "Fearing his secret getting out the Emperor has accepted the petition. At a rushed ceremony in [emperor.GetCapitalLocation.GetName] a Golden Bull is signed announcing me as the new [vassal.Custom('GetQueenKing')|U] of [target_title.GetNameNoTierNoTooltip].\n\nAs soon as it is over me and my entourage are ushered out of court and told to quickly leave. The Emperor is nowhere to be found, clearly still shaken by my knowledge of his [secret|E].\n\nThere may be repercussions to my blackmail but for now the day is mine. I am finally [vassal.Custom('GetQueenKing')|U]!"
+ kingdoms_hre.0007.desc: "Fearing his secret getting out the Emperor has accepted the petition. At a rushed ceremony in [emperor.GetCapitalLocation.GetNameNoTooltip] a Golden Bull is signed announcing me as the new [vassal.Custom('GetQueenKing')|U] of [target_title.GetNameNoTierNoTooltip].\n\nAs soon as it is over me and my entourage are ushered out of court and told to quickly leave. The Emperor is nowhere to be found, clearly still shaken by my knowledge of his [secret|E].\n\nThere may be repercussions to my blackmail but for now the day is mine. I am finally [vassal.Custom('GetQueenKing')|U]!"
  kingdoms_hre.0007.a: "You can get anything with a little leverage..."
