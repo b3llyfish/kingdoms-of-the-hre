@@ -37,7 +37,7 @@ grant_kingdom_title = {
 		limit = {
 			scope:target_title = title:k_austria
 		}
-		create_archduchy_austria_title = {
+		create_austria_title = {
 			OWNER = $OWNER$
 		}
 	}
