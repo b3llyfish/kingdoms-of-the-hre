@@ -1,4 +1,4 @@
-hre_vassal_kingdom_male_title = {
+﻿hre_vassal_kingdom_male_title = {
 	type = character
 	gender = male
 	special = holder

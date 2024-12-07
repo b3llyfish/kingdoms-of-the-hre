@@ -1,4 +1,4 @@
-create_saxony_title = {
+﻿create_saxony_title = {
 	$OWNER$ = {
 		hidden_effect = {
 			title:k_saxony = {

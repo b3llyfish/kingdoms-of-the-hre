@@ -1,4 +1,4 @@
-create_switzerland_title = {
+﻿create_switzerland_title = {
 	$OWNER$ = {
 		hidden_effect = {
 			title:k_switzerland = {

@@ -1,4 +1,4 @@
-grant_kingdom_title = {
+﻿grant_kingdom_title = {
 	hidden_effect = {
 		if = {
 			limit = {

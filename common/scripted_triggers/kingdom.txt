@@ -1,4 +1,4 @@
-controls_enough_of_kingdom = {
+﻿controls_enough_of_kingdom = {
 	$TARGET_KINGDOM$ = {
 		any_de_jure_county = {
 			percent > required_de_jure_county_percentage_as_decimal

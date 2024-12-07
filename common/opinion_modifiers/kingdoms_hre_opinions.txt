@@ -1,4 +1,4 @@
-broke_apart_my_kingdom = {
+﻿broke_apart_my_kingdom = {
 	opinion = -50
 	monthly_change = 0.2
 	decaying = yes

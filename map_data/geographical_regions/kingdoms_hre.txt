@@ -1,4 +1,4 @@
-custom_core_saxony = {
+﻿custom_core_saxony = {
 	duchies = {
 		d_anhalt d_meissen d_lausitz d_thuringia
 	}

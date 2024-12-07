@@ -1,4 +1,4 @@
-kingdom_gift_amount = 300
+﻿kingdom_gift_amount = 300
 
 kingdom_grant_culture_acceptance_percentage = 25
 

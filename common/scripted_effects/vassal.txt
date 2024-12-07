@@ -1,4 +1,4 @@
-irritate_powerful_duchy_vassals = {
+﻿irritate_powerful_duchy_vassals = {
 	$LIEGE$ = {
 		every_powerful_vassal = {
 			limit = {

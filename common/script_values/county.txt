@@ -1,4 +1,4 @@
-required_de_jure_county_percentage_as_decimal = {
+﻿required_de_jure_county_percentage_as_decimal = {
 	value = 0.5
 	if = {
 		limit = { root.legitimacy_level = 5 }

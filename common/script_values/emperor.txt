@@ -1,4 +1,4 @@
-emperor_opinion_of_vassal = {
+﻿emperor_opinion_of_vassal = {
 	value = 0
 	if = {
 		limit = {

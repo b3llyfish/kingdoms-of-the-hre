@@ -1,4 +1,4 @@
-kingdoms_hre_culture_requirement = {
+﻿kingdoms_hre_culture_requirement = {
 	
 	categories = { difficulty tweaks ai }
 	
