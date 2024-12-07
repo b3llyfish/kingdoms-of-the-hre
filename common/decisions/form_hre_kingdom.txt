@@ -165,7 +165,7 @@ form_hre_kingdom_decision = {
 		### saxony
 		item = {
 			value = choose_saxony
-			is_valid = { can_choose_saxony= { CHARACTER = root } }
+			is_valid = { can_choose_saxony = { CHARACTER = root } }
 			localization = choose_saxony_name
 			icon = "gfx/interface/icons/kingdoms_hre/saxony.dds"
 			ai_chance = {
