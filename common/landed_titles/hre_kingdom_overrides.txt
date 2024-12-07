@@ -381,3 +381,10 @@ k_italy = {
 		}
 	}
 }
+
+# remove definite_form
+k_switzerland = {
+	color = { 255 80 80 }
+	
+	capital = c_bern
+}
