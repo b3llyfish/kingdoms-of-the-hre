@@ -23,10 +23,10 @@ saxon_military_strength_value = {
 		limit = {
 			game_start_date = 867.1.1
 		}
-		add = 2500
+		add = 2000
 	}
 	else = {
-		add = 3500
+		add = 3000
 	}
 }
 

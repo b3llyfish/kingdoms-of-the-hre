@@ -64,10 +64,10 @@
  swiss_not_enough_development: "Requires at least [SCOPE.ScriptValue('swiss_development_required_amount')|0] development in [counties|E] within [GetGeographicalRegion('custom_core_switzerland').GetName] (currently [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
 
  choose_saxony_name: "[GetTitleByKey('k_saxony').GetNameNoTooltip]"
- choose_saxony_tooltip: "Petition for [GetTitleByKey('k_saxony').GetName]\n\n[GetTitleByKey('k_saxony').GetNameNoTooltip] will be formed with [GetTitleByKey('d_anhalt').GetName], [GetTitleByKey('d_lausitz').GetName] and [GetTitleByKey('d_meissen').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_thuringia').GetName] then it will also become a de jure part of [GetTitleByKey('k_saxony').GetNameNoTooltip].\n\nForming this Kingdom will grant you Saxon Elective succession law."
+ choose_saxony_tooltip: "Petition for [GetTitleByKey('k_saxony').GetName]\n\n[GetTitleByKey('k_saxony').GetNameNoTooltip] will be formed with [GetTitleByKey('d_anhalt').GetName].\n\nIf you fully control the [GetTitleByKey('d_lausitz').GetName] and [GetTitleByKey('d_meissen').GetName], or they are de jure part of the Holy Roman Empire, then they will also become a de jure part of [GetTitleByKey('k_saxony').GetNameNoTooltip].\n\nIf you fully control the [GetTitleByKey('d_thuringia').GetName] then it will also become a de jure part of [GetTitleByKey('k_saxony').GetNameNoTooltip].\n\nForming this Kingdom will grant you Saxon Elective succession law."
  require_saxony_culture: "Culture must be Saxon or derived from it"
  custom_core_saxony: "Saxony"
- core_saxony_duchies_required: "Require at least 2 [duchy|E] titles that are within the region of [GetGeographicalRegion('custom_core_saxony').GetName]"
+ core_saxony_duchies_required: "Requires full control of [GetTitleByKey('d_anhalt').GetName] and full control of another [duchy|E] within the region of [GetGeographicalRegion('custom_core_saxony').GetName]"
  saxon_military_strength_requirement: "Require current military strength of [SCOPE.ScriptValue('saxon_military_strength_value')|0] or higher (currently [SCOPE.ScriptValue('military_strength_value')|0])"
  random_saxony_culture_convert: "Random chance owned Polabian culture counties within the [GetTitleByKey('k_saxony').GetNameNoTooltip] will change to your culture"
  

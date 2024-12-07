@@ -125,14 +125,11 @@ can_choose_lotharingia = {
 }
 
 controls_at_least_two_saxony_duchies = {
-	any_sub_realm_duchy = {
-		OR = {
-			this = title:d_anhalt
-			this = title:d_meissen
-			this = title:d_lausitz
-			this = title:d_thuringia
-		}
-		count >= 2
+	completely_controls = title:d_anhalt
+	OR = {
+		completely_controls = title:d_meissen
+		completely_controls = title:d_lausitz
+		completely_controls = title:d_thuringia
 	}
 }
 

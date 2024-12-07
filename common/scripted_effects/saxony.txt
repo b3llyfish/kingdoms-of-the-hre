@@ -1,15 +1,46 @@
 create_saxony_title = {
 	$OWNER$ = {
 		hidden_effect = {
-			title:k_switzerland = {
+			title:k_saxony = {
 				set_de_jure_liege_title = title:e_hre
-				copy_title_history = title:k_saxony
+				copy_title_history = title:d_anhalt
+			}
+			if = {
+				limit = {
+					exists = title:k_sorbia
+					completely_controls = title:d_meissen
+					completely_controls = title:d_lausitz
+				}
+				# nothing will exist of sorbia afterwards
+				destroy_title = title:k_sorbia
 			}
 		}
 		
 		title:d_anhalt = { set_de_jure_liege_title = title:k_saxony }
-		title:d_lausitz = { set_de_jure_liege_title = title:k_saxony }
-		title:d_meissen = { set_de_jure_liege_title = title:k_saxony }
+
+		if = {
+			limit = {
+				OR = {
+					completely_controls = title:d_lausitz
+					title:d_lausitz = {
+						target_is_de_jure_liege_or_above = title:e_hre
+					}
+				}
+			}
+			title:d_lausitz = { set_de_jure_liege_title = title:d_lausitz }
+		}
+		
+		if = {
+			limit = {
+				OR = {
+					completely_controls = title:d_meissen
+					title:d_meissen = {
+						target_is_de_jure_liege_or_above = title:e_hre
+					}
+				}
+			}
+			title:d_meissen = { set_de_jure_liege_title = title:d_meissen }
+		}
 		
 		if = {
 			limit = {
