@@ -39,17 +39,23 @@ can_create_hre_kingdom = {
 }
 
 can_choose_austria = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_austria.holder }
+	}
+	$CHARACTER$ = {
 		completely_controls_region = custom_core_austria
 		dynasty ?= { dynasty_prestige_level >= austria_required_renown_level }
-		prestige_level >= high_prestige_level
+		prestige_level >= medium_prestige_level
 	}
 }
 
 can_choose_bavaria = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_bavaria.holder }
+	}
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_bavaria_counties
 			controls_enough_of_kingdom = {
@@ -61,9 +67,12 @@ can_choose_bavaria = {
 }
 
 can_choose_bohemia = {
-	$CHARACTER$ = {
-		title:k_bohemia = { target_is_de_jure_liege_or_above = title:e_hre }
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_bohemia.holder }
+	}
+	title:k_bohemia = { target_is_de_jure_liege_or_above = title:e_hre }
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_bohemia_counties
 			controls_enough_of_kingdom = {
@@ -87,8 +96,11 @@ can_choose_bohemia = {
 }
 
 can_choose_frisia = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_frisia.holder }
+	}
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_frisia_counties
 			controls_enough_of_kingdom = {
@@ -112,8 +124,11 @@ can_choose_frisia = {
 }
 
 can_choose_lotharingia = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_lotharingia.holder }
+	}
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_lotharingia_counties
 			controls_enough_of_kingdom = {
@@ -134,13 +149,16 @@ controls_at_least_two_saxony_duchies = {
 }
 
 can_choose_saxony = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_saxony.holder }
+	}
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = core_saxony_duchies_required
 			controls_at_least_two_saxony_duchies = yes
 		}
-		prestige_level >= high_prestige_level
+		prestige_level >= medium_prestige_level
 		custom_tooltip = {
 			text = saxon_military_strength_requirement
 			max_military_strength >= saxon_military_strength_value
@@ -161,10 +179,13 @@ can_choose_saxony = {
 }
 
 can_choose_switzerland = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_switzerland.holder }
+	}
+	$CHARACTER$ = {
 		completely_controls_region = custom_core_switzerland
-		prestige_level >= high_prestige_level
+		prestige_level >= medium_prestige_level
 		custom_tooltip = {
 			text = swiss_not_enough_development
 			kingdom_swiss_development_county_total >= swiss_development_required_amount
@@ -173,8 +194,11 @@ can_choose_switzerland = {
 }
 
 can_choose_burgundy = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_burgundy.holder }
+	}
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_burgundy_counties
 			controls_enough_of_kingdom = {
@@ -204,8 +228,11 @@ can_choose_burgundy = {
 }
 
 can_choose_italy = {
-	$CHARACTER$ = {
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_italy.holder }
+	}
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_italy_counties
 			controls_enough_of_kingdom = {
@@ -235,11 +262,14 @@ can_choose_italy = {
 }
 
 can_choose_aquitaine = {
-	$CHARACTER$ = {
-		title:k_aquitaine = { target_is_de_jure_liege_or_above = title:e_hre }
-		# account for french unification decision
-		kingdom_aquitaine_required_county_total > 0
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_aquitaine.holder }
+	}
+	title:k_aquitaine = { target_is_de_jure_liege_or_above = title:e_hre }
+	# account for french unification decision
+	kingdom_aquitaine_required_county_total > 0
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_aquitaine_counties
 			controls_enough_of_kingdom = {
@@ -263,9 +293,12 @@ can_choose_aquitaine = {
 }
 
 can_choose_brittany = {
-	$CHARACTER$ = {
-		title:k_brittany = { target_is_de_jure_liege_or_above = title:e_hre }
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_brittany.holder }
+	}
+	title:k_brittany = { target_is_de_jure_liege_or_above = title:e_hre }
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_brittany_counties
 			controls_enough_of_kingdom = {
@@ -289,9 +322,12 @@ can_choose_brittany = {
 }
 
 can_choose_france = {
-	$CHARACTER$ = {
-		title:k_france = { target_is_de_jure_liege_or_above = title:e_hre }
+	custom_tooltip = {
+		text = kingdom_already_exists
 		NOT = { exists = title:k_france.holder }
+	}
+	title:k_france = { target_is_de_jure_liege_or_above = title:e_hre }
+	$CHARACTER$ = {
 		custom_tooltip = {
 			text = not_enough_france_counties
 			controls_enough_of_kingdom = {
