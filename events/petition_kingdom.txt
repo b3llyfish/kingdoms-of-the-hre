@@ -280,6 +280,7 @@ kingdoms_hre.0002 = {
 			}
 		}
 		ai_chance = {
+			# emperor base accept chance
 			base = 50
 			modifier = {
 				add = ai_petition_acceptance_chance_percent_value
@@ -297,16 +298,8 @@ kingdoms_hre.0002 = {
 		}
 		custom_tooltip = kingdoms_hre.0002.c.tooltip
 		custom_tooltip = kingdoms_hre.0002.c.tooltip.claim
-		if = {
-			limit = {
-				exists = scope:letter_positive
-			}
-			remove_opinion = {
-				target = scope:vassal
-				modifier = reputation_opinion
-			}
-		}
 		ai_chance = {
+			# emperor base reject chance
 			base = 175
 			modifier = {
 				add = ai_petition_rejection_chance_percent_value
