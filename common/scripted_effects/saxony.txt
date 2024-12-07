@@ -27,7 +27,7 @@ create_saxony_title = {
 					}
 				}
 			}
-			title:d_lausitz = { set_de_jure_liege_title = title:d_lausitz }
+			title:d_lausitz = { set_de_jure_liege_title = title:k_saxony }
 		}
 		
 		if = {
@@ -39,7 +39,7 @@ create_saxony_title = {
 					}
 				}
 			}
-			title:d_meissen = { set_de_jure_liege_title = title:d_meissen }
+			title:d_meissen = { set_de_jure_liege_title = title:k_saxony }
 		}
 		
 		if = {
@@ -66,7 +66,7 @@ create_saxony_title = {
 					}
 				}
 				random = {
-					chance = 50
+					chance = 75
 					set_county_culture = $OWNER$.culture
 				}
 			}
