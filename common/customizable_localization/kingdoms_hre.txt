@@ -1,4 +1,4 @@
-GetHreMaleFemaleTitle = {
+﻿GetHreMaleFemaleTitle = {
 	type = character
 	
 	text = {

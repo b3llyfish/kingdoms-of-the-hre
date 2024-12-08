@@ -62,7 +62,7 @@
 						any_this_title_or_de_jure_above = { this = title:d_savoie }
 					}
 					random = {
-						chance = 65
+						chance = 50
 						set_county_culture = $OWNER$.culture
 					}
 				}
