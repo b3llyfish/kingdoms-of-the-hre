@@ -3,7 +3,7 @@
 	gender = male
 	special = holder
 	priority = 60
-	titles = { k_bavaria k_bohemia k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy }
+	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy }
 	de_jure_liege = { e_hre }
 	flavourization_rules = {
 		top_liege = no
@@ -16,7 +16,7 @@ hre_vassal_kingdom_female_title = {
 	gender = female
 	special = holder
 	priority = 60
-	titles = { k_bavaria k_bohemia k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy }
+	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy }
 	flavourization_rules = {
 		top_liege = no
 		only_vassals = yes
@@ -25,7 +25,7 @@ hre_vassal_kingdom_female_title = {
 
 hre_vassal_kingdom_title = {
 	type = title
-	titles = { k_bavaria k_bohemia k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy }
+	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy }
 	priority = 60
 	flavourization_rules = {
 		top_liege = no

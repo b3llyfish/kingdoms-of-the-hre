@@ -1,0 +1,57 @@
+GetHreMaleFemaleTitle = {
+	type = character
+	
+	text = {
+		trigger = {
+			title:k_bohemia = scope:second
+			is_male = yes
+		}
+		localization_key = king
+	}
+	
+	text = {
+		trigger = {
+			title:k_bohemia = scope:second
+			is_female = yes
+		}
+		localization_key = king_female
+	}
+	
+	text = {
+		trigger = {
+			title:k_austria = scope:second
+			is_male = yes
+		}
+		localization_key = archduke
+	}
+	
+	text = {
+		trigger = {
+			title:k_austria = scope:second
+			is_female = yes
+		}
+		localization_key = archduchess
+	}
+	
+	text = {
+		trigger = {
+			NOR = {
+				title:k_bohemia = scope:second
+				title:k_austria = scope:second
+			}
+			is_male = yes
+		}
+		localization_key = prince
+	}
+	
+	text = {
+		trigger = {
+			NOR = {
+				title:k_bohemia = scope:second
+				title:k_austria = scope:second
+			}
+			is_female = yes
+		}
+		localization_key = princess
+	}
+}
