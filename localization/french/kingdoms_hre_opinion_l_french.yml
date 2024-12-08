@@ -1,0 +1,9 @@
+﻿l_french:
+ divided_kingdom: "[CHARACTER.GetShortUIName|U] et [TARGET_CHARACTER.GetShortUIName] sont devenus rivaux après la formation d'un nouveau royaume."
+ broke_apart_my_kingdom: "A brisé mon royaume"
+ favouritism: "L'empereur a accordé un titre à un autre vassal"
+ rejected_title_kingdom: "L'empereur a rejeté ma pétition du royaume"
+ rejected_title_kingdom_minor: "L'empereur a rejeté ma pétition du Royaume, mais c'est OK ..."
+ letter_positive: "Reçu une lettre convaincante"
+ letter_negative: "Reçu une lettre peu convaincante"
+ blackmailed_title_kingdom: "M'a chanté pour un royaume"

@@ -1,0 +1,4 @@
+﻿l_german:
+ hre_cannot_create_kingdom: "Dieser [kingdom|E] befindet sich im Einflussbereich des Heiligen Römischen Reiches."
+ coronation_culture_acceptance_bonus_desc: "Krönung von [vassal.GetShortUIName] durch [emperor.GetShortUIName]"
+ petition_gift_modifier: "Trendige Schmuckstücke"

@@ -1,0 +1,4 @@
+﻿l_spanish:
+ hre_cannot_create_kingdom: "Esto [kingdom|E] está dentro de la esfera de influencia del imperio del Sacro Imperio Romano."
+ coronation_culture_acceptance_bonus_desc: "Coronación de [vassal.GetShortUIName] por [emperor.GetShortUIName]"
+ petition_gift_modifier: "Baratijas de moda"

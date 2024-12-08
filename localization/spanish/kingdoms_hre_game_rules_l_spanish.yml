@@ -1,0 +1,22 @@
+﻿l_spanish:
+ rule_kingdoms_hre_culture_requirement: "Reinos del HRE: control de cultura"
+ setting_kingdoms_hre_culture_required: "Required"
+ setting_kingdoms_hre_culture_required_desc: "Ciertas peticiones de reino requerirán un control de cultura relevante"
+ setting_kingdoms_hre_culture_not_required: "Not Required"
+ setting_kingdoms_hre_culture_not_required_desc: "¡Las peticiones del reino #Z not#!requiere un control de cultura relevante"
+ 
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Reinos del HRE: modificador de aceptación del emperador"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Sin modificador"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "La posibilidad de aceptación del emperador para la petición del reino no se modificará"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Duplicado"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "La posibilidad de aceptación del emperador para la petición del reino se duplicará"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Reducido a la mitad"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "La posibilidad de aceptación del emperador para la petición del reino se reducirá a la mitad"
+ 
+ rule_kingdoms_hre_austria_renown: "Reinos del HRE: Nivel de renombre de Austria"
+ setting_kingdoms_hre_culture_noteworthy: "Notable"
+ setting_kingdoms_hre_culture_noteworthy_desc: "¡La petición de Austria requerirá un nivel de renombre de #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_reputable: "Reputable"
+ setting_kingdoms_hre_culture_reputable_desc: "¡La petición de Austria requerirá un nivel de renombre de #Z Reputable#!"
+ setting_kingdoms_hre_culture_well_known: "Bien conocido"
+ setting_kingdoms_hre_culture_well_known_desc: "¡La petición de Austria requerirá un nivel de renombre de #Z Well-Known#!"

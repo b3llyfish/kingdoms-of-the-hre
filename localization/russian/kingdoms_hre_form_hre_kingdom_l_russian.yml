@@ -1,0 +1,77 @@
+﻿l_russian:
+ form_hre_kingdom_decision: "Петиции об императоре о королевстве"
+ form_hre_kingdom_decision_desc: "Мое влияние на регион без вопросов, и мое право на правило доказано во всем, кроме имени. \n \n Пришло время императору признать это и дарить мне [title|E] [kingdom|E]."
+ form_hre_kingdom_decision_tooltip: "Петиции Императору для [kingdom|E] [title|E]."
+ form_hre_kingdom_decision_confirm: "Отправьте петицию!"
+ form_hre_kingdom_decision_kingdom_criteria_met: "Соответствует хотя бы одним из конкретных требований Королевства"
+ form_hre_kingdom_decision_effect_selected: "Вы ходатайствуете об Императоре о выбранном королевстве"
+ form_hre_kingdom_decision_emperor_opinion: "Мнение императора о вас сильно повлияет на их решение"
+ form_hre_kingdom_decision_hook: "Наличие сильного крючка на императоре может гарантировать успех"
+ form_hre_kingdom_decision_vassal_contract_change: "В случае успеха у вас будут права на отзыв титула, добавленные в ваш васальный контракт"
+ form_hre_kingdom_decision_gain_heroic_legend_seed: "В случае успеха вы получите героический [legend_seed|E]"
+ 
+ choose_kingdom: "Ходатайство о королевстве."
+ required_amount_of_titles: "Должен иметь как минимум 2 [duchy|E] [titles|E]."
+ 
+ choose_bavaria_name: "[GetTitleByKey('k_bavaria').GetNameNoTooltip]"
+ choose_bavaria_tooltip: "Ходатайство за [GetTitleByKey('k_bavaria').GetName]"
+ not_enough_bavaria_counties: "You only have [SCOPE.ScriptValue('kingdom_bavaria_county_count')|0] of [SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0] required [counties|E].
+ 
+ choose_bohemia_name: "[GetTitleByKey('k_bohemia').GetNameNoTooltip]"
+ choose_bohemia_tooltip: "Ходатайство за [GetTitleByKey('k_bohemia').GetName]"
+ not_enough_bohemia_counties: "You only have [SCOPE.ScriptValue('kingdom_bohemia_county_count')|0] of [SCOPE.ScriptValue('kingdom_bohemia_required_county_total')|0] required [counties|E].
+ require_bohemia_culture: "Культура должна быть чешской или из нее"
+ 
+ choose_frisia_name: "[GetTitleByKey('k_frisia').GetNameNoTooltip]"
+ choose_frisia_tooltip: "Ходатайство за [GetTitleByKey('k_frisia').GetName]"
+ not_enough_frisia_counties: "You only have [SCOPE.ScriptValue('kingdom_frisia_county_count')|0] of [SCOPE.ScriptValue('kingdom_frisia_required_county_total')|0] required [counties|E].
+ require_frisia_culture: "Культура должна быть фризской или извлеченной из нее"
+
+ choose_lotharingia_name: "[GetTitleByKey('k_lotharingia').GetNameNoTooltip]"
+ choose_lotharingia_tooltip: "Ходатайство за [GetTitleByKey('k_lotharingia').GetName]"
+ not_enough_lotharingia_counties: "You only have [SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0] of [SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0] required [counties|E].
+ 
+ choose_italy_name: "[GetTitleByKey('k_italy').GetNameNoTooltip]"
+ choose_italy_tooltip: "Ходатайство за [GetTitleByKey('k_italy').GetName]"
+ not_enough_italy_counties: "You only have [SCOPE.ScriptValue('kingdom_italy_county_count')|0] of [SCOPE.ScriptValue('kingdom_italy_required_county_total')|0] required [counties|E].
+ require_italy_culture: "Культура должна быть цизальпин/итальянский или полученная от нее"
+ 
+ choose_brittany_name: "[GetTitleByKey('k_brittany').GetNameNoTooltip]"
+ choose_brittany_tooltip: "Ходатайство за [GetTitleByKey('k_brittany').GetName]"
+ not_enough_brittany_counties: "You only have [SCOPE.ScriptValue('kingdom_brittany_county_count')|0] of [SCOPE.ScriptValue('kingdom_brittany_required_county_total')|0] required [counties|E].
+ require_brittany_culture: "Культура должна быть бретон или из нее"
+ 
+ choose_aquitaine_name: "[GetTitleByKey('k_aquitaine').GetNameNoTooltip]"
+ choose_aquitaine_tooltip: "Ходатайство за [GetTitleByKey('k_aquitaine').GetName]"
+ not_enough_aquitaine_counties: "You only have [SCOPE.ScriptValue('kingdom_aquitaine_county_count')|0] of [SCOPE.ScriptValue('kingdom_aquitaine_required_county_total')|0] required [counties|E].
+ require_aquitaine_culture: "Культура должна быть оксетанной или из нее"
+ 
+ choose_france_name: "[GetTitleByKey('k_france').GetNameNoTooltip]"
+ choose_france_tooltip: "Ходатайство за [GetTitleByKey('k_france').GetName]"
+ not_enough_france_counties: "You only have [SCOPE.ScriptValue('kingdom_france_county_count')|0] of [SCOPE.ScriptValue('kingdom_france_required_county_total')|0] required [counties|E].
+ require_france_culture: "Культура должна быть французской или из нее"
+ 
+ choose_burgundy_name: "[GetTitleByKey('k_burgundy').GetNameNoTooltip]"
+ choose_burgundy_tooltip: "Ходатайство за [GetTitleByKey('k_burgundy').GetName]"
+ not_enough_burgundy_counties: "You only have [SCOPE.ScriptValue('kingdom_burgundy_county_count')|0] of [SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0] required [counties|E].
+ require_burgundy_culture: "Культура должна быть французской/оксцитан"
+
+ choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]"
+ choose_austria_tooltip: "Петиция для [GetTitleByKey('k_austria').GetName] \n \n, [GetTitleByKey('k_austria').GetNameNoTooltip] будет сформирован с [GetTitleByKey('d_osterreich').GetName] и [GetTitleByKey('d_steyermark').GetName] как de jure duchies. \n \n, Если вы полностью управляете [GetTitleByKey('d_carinthia').GetName], тогда[GetTitleByKey('d_carinthia').GetNameNoTooltip], [GetTitleByKey('d_krain').GetName] и [GetTitleByKey('d_istria').GetName] также станут частью дежурской части [GetTitleByKey('k_austria').GetNameNoTooltip]. \n \n, формирующего это королевство, даст вам закон о правопреемстве."
+
+ choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]"
+ choose_switzerland_tooltip: "Петиция для [GetTitleByKey('k_switzerland').GetName] \n \n, [GetTitleByKey('k_switzerland').GetNameNoTooltip] будет сформирован с [GetTitleByKey('d_transjurania').GetName] и [GetTitleByKey('d_currezia').GetName] как de jure duchies. \n \n, Если вы полностью управляете [GetTitleByKey('d_savoie').GetName], тогда[GetTitleByKey('d_savoie').GetNameNoTooltip] также станет частью де -jure частью [GetTitleByKey('k_switzerland').GetNameNoTooltip]. \n \n, формирующей это королевство, даст вам абсолютный закон о авторитете короны."
+ swiss_not_enough_development: "Требуется хотя бы [SCOPE.ScriptValue('swiss_development_required_amount')|0] разработка в [counties|E] в [GetGeographicalRegion('custom_core_switzerland').GetName] (в настоящее время [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
+ random_switzerland_culture_convert: "Случайный случайный французский или цизальпиновая культура округа в [GetTitleByKey('d_savoie').GetNameNoTooltip] изменится на вашу культуру"
+ 
+ choose_saxony_name: "[GetTitleByKey('k_saxony').GetNameNoTooltip]"
+ choose_saxony_tooltip: "Петиция для [GetTitleByKey('k_saxony').GetName] \n \n, [GetTitleByKey('k_saxony').GetNameNoTooltip] будет сформирован с [GetTitleByKey('d_anhalt').GetName]. \n \n, Если вы полностью управляете [GetTitleByKey('d_lausitz').GetName] или это де -jure часть [GetTitleByKey('e_hre').GetName] Затем [GetTitleByKey('d_lausitz').GetNameNoTooltip] также станет частью дежурской части [GetTitleByKey('k_saxony').GetNameNoTooltip]. \n \n, если вы полностью контролируете [GetTitleByKey('d_meissen').GetName] или это часть [GetTitleByKey('e_hre').GetNameNoTooltip], то [GetTitleByKey('d_meissen').GetNameNoTooltip]Также станет частью de jure частью [GetTitleByKey('k_saxony').GetNameNoTooltip]. \n \n, если вы полностью контролируете [GetTitleByKey('d_thuringia').GetName], то [GetTitleByKey('d_thuringia').GetNameNoTooltip] также станет частью de jure часть [GetTitleByKey('k_saxony').GetNameNoTooltip]. \n {@@@@@@@@@@@} Формирование этого королевства даст вам саксонский закон о правопреемстве."
+ require_saxony_culture: "Культура должна быть саксонской или из нее"
+ custom_core_saxony: "Саксония"
+ core_saxony_duchies_required: "Требуется полное управление [GetTitleByKey('d_anhalt').GetName] и полное управление другим [duchy|E] в области [GetGeographicalRegion('custom_core_saxony').GetName]"
+ saxon_military_strength_requirement: "Требовать текущей военной силы [SCOPE.ScriptValue('saxon_military_strength_value')|0] или выше (в настоящее время [SCOPE.ScriptValue('military_strength_value')|0])"
+ random_saxony_culture_convert: "Случайный случайный принадлежащий полабианской культуре округа в рамках [GetTitleByKey('k_saxony').GetNameNoTooltip] изменится на вашу культуру"
+ 
+ is_hre_vassal: "Это вассал Императора Священного Римского."
+ requires_culture: "Должен быть или быть ребенком [root.culture.GetName] культуры"
+ kingdom_already_exists: "Это королевство уже существует"

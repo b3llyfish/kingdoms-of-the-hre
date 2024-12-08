@@ -1,0 +1,22 @@
+﻿l_korean:
+ rule_kingdoms_hre_culture_requirement: "HRE의 왕국 : 문화 확인"
+ setting_kingdoms_hre_culture_required: "필수의"
+ setting_kingdoms_hre_culture_required_desc: "특정 왕국 청원에는 관련 문화 점검이 필요합니다"
+ setting_kingdoms_hre_culture_not_required: "필요하지 않습니다"
+ setting_kingdoms_hre_culture_not_required_desc: "왕국 청원은 #Z not#!관련 문화 점검이 필요합니다"
+ 
+ rule_kingdoms_hre_emperor_acceptance_modifier: "HRE의 왕국 : 황제의 수용 수정 자"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "수정자가 없습니다"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "왕국 청원에 대한 황제의 수락 기회는 수정되지 않습니다."
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "두 배"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "왕국 청원에 대한 황제의 수락 기회는 두 배가됩니다."
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "절반"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "왕국 청원에 대한 황제의 수락 기회는 절반으로 줄어 듭니다."
+ 
+ rule_kingdoms_hre_austria_renown: "HRE의 왕국 : 오스트리아 명성 수준"
+ setting_kingdoms_hre_culture_noteworthy: "주목할만한"
+ setting_kingdoms_hre_culture_noteworthy_desc: "오스트리아 청원에는 #Z Noteworthy#의 유명한 수준이 필요합니다!"
+ setting_kingdoms_hre_culture_reputable: "평판"
+ setting_kingdoms_hre_culture_reputable_desc: "오스트리아 청원에는 #Z Reputable#의 유명한 수준이 필요합니다!"
+ setting_kingdoms_hre_culture_well_known: "잘 알려진"
+ setting_kingdoms_hre_culture_well_known_desc: "오스트리아 청원에는 #Z Well-Known#의 유명한 수준이 필요합니다!"

@@ -1,0 +1,22 @@
+﻿l_german:
+ rule_kingdoms_hre_culture_requirement: "Königreiche der HRE: Kulturprüfung"
+ setting_kingdoms_hre_culture_required: "Erforderlich"
+ setting_kingdoms_hre_culture_required_desc: "Bestimmte Kingdom -Petitionen erfordern eine relevante Kulturprüfung"
+ setting_kingdoms_hre_culture_not_required: "Nicht erforderlich"
+ setting_kingdoms_hre_culture_not_required_desc: "Kingdom Petitions wird #Z not#!benötigen eine relevante Kulturprüfung"
+ 
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Königreiche des HRE: Kaiser -Akzeptanzmodifikator"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Kein Modifikator"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Die Akzeptanzchance des Kaisers für die Kingdom -Petition wird nicht modifiziert sein"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Verdoppelt"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Die Akzeptanzchance des Kaisers für die Kingdom -Petition wird verdoppelt"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Halbiert"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Die Akzeptanzchance des Kaisers für die Kingdom -Petition wird halbiert sein"
+ 
+ rule_kingdoms_hre_austria_renown: "Königreiche des HRE: Österreich Renommee"
+ setting_kingdoms_hre_culture_noteworthy: "Bemerkenswert"
+ setting_kingdoms_hre_culture_noteworthy_desc: "Die Österreich -Petition erfordert ein renommiertes Maß an #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_reputable: "Seriös"
+ setting_kingdoms_hre_culture_reputable_desc: "Die Österreich -Petition erfordert ein renommiertes Maß an #Z Reputable#!"
+ setting_kingdoms_hre_culture_well_known: "Bekannt"
+ setting_kingdoms_hre_culture_well_known_desc: "Die Österreich -Petition erfordert ein renommiertes Maß an #Z Well-Known#!"

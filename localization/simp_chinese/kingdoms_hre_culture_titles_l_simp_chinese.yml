@@ -1,0 +1,4 @@
+﻿l_simp_chinese:
+ hre_vassal_kingdom_male_title: "$title_prince$"
+ hre_vassal_kingdom_female_title: "$title_princess$"
+ hre_vassal_kingdom_title: "$title_principality$"

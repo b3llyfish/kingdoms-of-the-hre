@@ -1,0 +1,22 @@
+﻿l_french:
+ rule_kingdoms_hre_culture_requirement: "Kingdoms of the HRE: Culture Check"
+ setting_kingdoms_hre_culture_required: "Requis"
+ setting_kingdoms_hre_culture_required_desc: "Certaines pétitions du Royaume nécessiteront un contrôle culturel pertinent"
+ setting_kingdoms_hre_culture_not_required: "Pas requis"
+ setting_kingdoms_hre_culture_not_required_desc: "Les pétitions du Royaume seront #Z not#!exiger une vérification culturelle pertinente"
+ 
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Kingdoms of the HRE: Emperor's Acceptance Modificateur"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Pas de modificateur"
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "La chance d'acceptation de l'empereur pour la pétition du Royaume ne sera pas modifiée"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Doublé"
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "La chance d'acceptation de l'empereur pour la pétition du Royaume sera doublée"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Divisé par deux"
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "La chance d'acceptation de l'empereur pour la pétition du Royaume sera divisée par deux"
+ 
+ rule_kingdoms_hre_austria_renown: "Royaumes du niveau HRE: Autriche de renommée"
+ setting_kingdoms_hre_culture_noteworthy: "Remarquable"
+ setting_kingdoms_hre_culture_noteworthy_desc: "La pétition autrichienne nécessitera un niveau de renom de #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_reputable: "Honorable"
+ setting_kingdoms_hre_culture_reputable_desc: "La pétition autrichienne nécessitera un niveau de renom de #Z Reputable#!"
+ setting_kingdoms_hre_culture_well_known: "Bien connu"
+ setting_kingdoms_hre_culture_well_known_desc: "La pétition autrichienne nécessitera un niveau de renom de #Z Well-Known#!"
