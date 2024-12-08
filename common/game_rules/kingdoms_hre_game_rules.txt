@@ -1,4 +1,4 @@
-﻿kingdoms_hre_culture_requirement = {
+kingdoms_hre_culture_requirement = {
 	
 	categories = { difficulty tweaks ai }
 	
@@ -15,11 +15,11 @@ kingdoms_hre_emperor_acceptance_modifier = {
 	
 	default = kingdoms_hre_emperor_acceptance_modifier_default
 	
+	kingdoms_hre_emperor_acceptance_modifier_halved = {}
+	
 	kingdoms_hre_emperor_acceptance_modifier_default = {}
 	
 	kingdoms_hre_emperor_acceptance_modifier_doubled = {}
-	
-	kingdoms_hre_emperor_acceptance_modifier_halved = {}
 }
 
 kingdoms_hre_austria_renown = {
