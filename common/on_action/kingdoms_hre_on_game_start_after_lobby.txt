@@ -1,0 +1,20 @@
+﻿on_game_start_after_lobby = {
+	on_actions = {
+		tag_game_start_holy_roman_emperor
+	}
+}
+
+tag_game_start_holy_roman_emperor = {
+	effect = {
+		if = {
+			limit = {
+				NOT = {
+					game_start_date = 867.1.1
+				}
+			}
+			title:e_hre.holder = {
+				set_variable = current_holy_roman_emperor
+			}
+		}
+	}
+}

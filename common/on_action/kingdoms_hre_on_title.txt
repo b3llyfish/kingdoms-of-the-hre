@@ -1,0 +1,28 @@
+﻿on_title_gain = {
+	on_actions = {
+		tag_holy_roman_emperor
+	}
+}
+
+on_title_gain_inheritance = {
+	on_actions = {
+		tag_holy_roman_emperor
+	}
+}
+
+on_title_gain_usurpation = {
+	on_actions = {
+		tag_holy_roman_emperor
+	}
+}
+
+tag_holy_roman_emperor = {
+	effect = {
+		if = {
+			limit = {
+				scope:title = title:e_hre
+			}
+			set_variable = current_holy_roman_emperor
+		}
+	}
+}

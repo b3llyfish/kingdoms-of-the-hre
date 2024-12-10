@@ -1,0 +1,17 @@
+﻿on_death = {
+	on_actions = {
+		# unnecessary but probably best to cleanup
+		untag_holy_roman_emperor
+	}
+}
+
+untag_holy_roman_emperor = {
+	effect = {
+		if = {
+			limit = {
+				has_variable = current_holy_roman_emperor
+			}
+			remove_variable = current_holy_roman_emperor
+		}
+	}
+}
