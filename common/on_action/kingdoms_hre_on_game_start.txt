@@ -1,10 +1,12 @@
 ﻿on_game_start = {
 	on_actions = {
-		reassign_hre_kingdoms
+		inject_updated_kingdom_titles
 	}
 }
 
-reassign_hre_kingdoms = {
+# assign all duchies back onto the updated kingdoms
+# assign each updated kingdom to the correct empire
+inject_updated_kingdom_titles = {
 	effect = {
 		## germanic kingdoms
 		# k_bavaria
