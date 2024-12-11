@@ -124,7 +124,8 @@ These mods do similar things and could be use an alternative. They are assumed t
 * [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms]No HRE Kingdoms[/url] - Prevents the AI from forming HRE Kingdoms
 
 [h2] Localization [/h2]
-Basic localization for supported locales has been provided by using [url=https://github.com/b3llyfish/CK3_LocalizationChanger].
+Basic localization for supported locales has been provided by using [url=https://github.com/b3llyfish/CK3_LocalizationChanger]CK3_LocalizationChanger[/url].
+
 I am accepting any localization improvements via mods and will happily link them below. 
 If your chosen language is listed below then this mod must be used to support your localization. 
 
