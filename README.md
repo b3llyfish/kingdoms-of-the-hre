@@ -116,6 +116,7 @@ This mod will likely be incompatible with mods in the following areas:
 * mods that update the Kingdom definitions of the HRE Kingdoms
 * mods that change the form Austria or Switzerland decisions (though the underlying scripted effects are untouched)
 * mods that change flavorization of the HRE Kingdoms
+* mods that more duchies to the HRE Kingdoms
 
 [h3] Similar Mods [/h3]
 These mods do similar things and could be use an alternative. They are assumed to be incompatible with this mod.
@@ -123,7 +124,11 @@ These mods do similar things and could be use an alternative. They are assumed t
 * [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms]No HRE Kingdoms[/url] - Prevents the AI from forming HRE Kingdoms
 
 [h2] Localization [/h2]
-Localization for supported locales has been provided by using [url=https://github.com/b3llyfish/CK3_LocalizationChanger].
+Basic localization for supported locales has been provided by using [url=https://github.com/b3llyfish/CK3_LocalizationChanger].
+I am accepting any localization improvements via mods and will happily link them below. 
+If your chosen language is listed below then this mod must be used to support your localization. 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3090564070]Chinese Localization Mod[/url] - thanks to [url=https://steamcommunity.com/profiles/76561198113539588]無壹[/url]
 
 [h2] Bug/Issues [/h2]
 This mod has been tested to the best of my abilities. If any bugs or issues are found please described them in a comment.
