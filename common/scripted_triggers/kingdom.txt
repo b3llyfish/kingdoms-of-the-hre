@@ -1,4 +1,4 @@
-﻿controls_enough_of_kingdom = {
+controls_enough_of_kingdom = {
 	$TARGET_KINGDOM$ = {
 		any_de_jure_county = {
 			percent > required_de_jure_county_percentage_as_decimal
@@ -33,6 +33,19 @@ can_create_hre_kingdom = {
 					$TARGET_TITLE$ = title:k_burgundy
 					$TARGET_TITLE$ = title:k_italy
 				}
+			}
+		}
+	}
+}
+
+controls_enough_of_region = {
+	any_county_in_region  = {
+		region = $TARGET_REGION$
+		percent > required_de_jure_county_percentage_as_decimal
+		OR = {
+			holder = $CHARACTER$
+			holder = {
+				target_is_liege_or_above = $CHARACTER$
 			}
 		}
 	}
@@ -148,21 +161,48 @@ controls_at_least_two_saxony_duchies = {
 	}
 }
 
-can_choose_saxony = {
+are_sorbia_duchies_de_jure_hre = {
+	title:d_meissen = { target_is_de_jure_liege_or_above = title:e_hre }
+	title:d_lausitz = { target_is_de_jure_liege_or_above = title:e_hre }
+}
+
+can_choose_upper_saxony = {
 	custom_tooltip = {
 		text = kingdom_already_exists
-		NOT = { exists = title:k_saxony.holder }
+		NOT = { exists = title:k_upper_saxony.holder }
 	}
 	$CHARACTER$ = {
-		custom_tooltip = {
-			text = core_saxony_duchies_required
-			controls_at_least_two_saxony_duchies = yes
+		trigger_if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = no
+			}
+			custom_tooltip = {
+				text = not_enough_upper_saxony_without_sorbia_counties
+				controls_enough_of_region = {
+					CHARACTER = root
+					TARGET_REGION = custom_upper_saxony_without_sorbia
+				}
+			}
+			capital_province = {
+				geographical_region = custom_upper_saxony_without_sorbia
+			}
+		}
+		trigger_if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = yes
+			}
+			custom_tooltip = {
+				text = not_enough_upper_saxony_counties
+				controls_enough_of_region = {
+					CHARACTER = root
+					TARGET_REGION = custom_upper_saxony
+				}
+			}
+			capital_province = {
+				geographical_region = custom_upper_saxony
+			}
 		}
 		prestige_level >= medium_prestige_level
-		custom_tooltip = {
-			text = saxon_military_strength_requirement
-			max_military_strength >= saxon_military_strength_value
-		}
 		trigger_if = {
 			limit = {
 				has_game_rule = kingdoms_hre_culture_required

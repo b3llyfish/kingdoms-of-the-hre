@@ -1,0 +1,10 @@
+k_upper_saxony = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_irminsul.dds"
+		color1 = "yellow"
+		color2 = "green"
+		instance = { scale = { 0.8 0.8 }  }
+	}
+}

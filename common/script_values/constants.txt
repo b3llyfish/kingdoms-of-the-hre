@@ -1,6 +1,8 @@
-﻿kingdom_gift_amount = 300
+kingdom_gift_amount = 300
 
 kingdom_grant_culture_acceptance_percentage = 25
+
+kingdom_upper_saxony_polabian_culture_acceptance_percentage = 40
 
 swiss_development_required_amount = {
 	value = 0
@@ -14,19 +16,6 @@ swiss_development_required_amount = {
 	else = {
 		# around 10 dev per county
 		add = 60
-	}
-}
-
-saxon_military_strength_value = {
-	value = 0
-	if = {
-		limit = {
-			game_start_date = 867.1.1
-		}
-		add = 2000
-	}
-	else = {
-		add = 3000
 	}
 }
 

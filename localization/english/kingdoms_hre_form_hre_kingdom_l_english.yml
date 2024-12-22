@@ -63,14 +63,24 @@
  choose_switzerland_tooltip: "Petition for the [GetTitleByKey('k_switzerland').GetName]\n\nThe [GetTitleByKey('k_switzerland').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_transjurania').GetName] and the [GetTitleByKey('d_currezia').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_savoie').GetName] then the [GetTitleByKey('d_savoie').GetNameNoTooltip] will also become a de jure part of the [GetTitleByKey('k_switzerland').GetNameNoTooltip].\n\nForming this Kingdom will grant you Absolute Crown Authority law."
  swiss_not_enough_development: "Requires at least [SCOPE.ScriptValue('swiss_development_required_amount')|0] development in [counties|E] within [GetGeographicalRegion('custom_core_switzerland').GetName] (currently [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
  random_switzerland_culture_convert: "Random chance owned French or Cisalpine culture counties within the [GetTitleByKey('d_savoie').GetNameNoTooltip] will change to your culture"
- 
- choose_saxony_name: "[GetTitleByKey('k_saxony').GetNameNoTooltip]"
- choose_saxony_tooltip: "Petition for the [GetTitleByKey('k_saxony').GetName]\n\nThe [GetTitleByKey('k_saxony').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_anhalt').GetName].\n\nIf you fully control the [GetTitleByKey('d_lausitz').GetName] or it is a de jure part of the [GetTitleByKey('e_hre').GetName] then the [GetTitleByKey('d_lausitz').GetNameNoTooltip] will also become a de jure part of the [GetTitleByKey('k_saxony').GetNameNoTooltip].\n\nIf you fully control the [GetTitleByKey('d_meissen').GetName] or it is a de jure part of the [GetTitleByKey('e_hre').GetNameNoTooltip] then the [GetTitleByKey('d_meissen').GetNameNoTooltip] will also become a de jure part of the [GetTitleByKey('k_saxony').GetNameNoTooltip].\n\nIf you fully control the [GetTitleByKey('d_thuringia').GetName] then the [GetTitleByKey('d_thuringia').GetNameNoTooltip] will also become a de jure part of the [GetTitleByKey('k_saxony').GetNameNoTooltip].\n\nForming this Kingdom will grant you Saxon Elective succession law."
+
  require_saxony_culture: "Culture must be Saxon or derived from it"
- custom_core_saxony: "Saxony"
- core_saxony_duchies_required: "Requires full control of [GetTitleByKey('d_anhalt').GetName] and full control of another [duchy|E] within the region of [GetGeographicalRegion('custom_core_saxony').GetName]"
- saxon_military_strength_requirement: "Require current military strength of [SCOPE.ScriptValue('saxon_military_strength_value')|0] or higher (currently [SCOPE.ScriptValue('military_strength_value')|0])"
+ choose_upper_saxony_name: "[GetTitleByKey('k_upper_saxony').GetNameNoTooltip]"
+ choose_upper_saxony_tooltip: "Petition for the [GetTitleByKey('k_upper_saxony').GetName]\n\nThe [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_anhalt').GetName], the [GetTitleByKey('d_thuringia').GetName], the [GetTitleByKey('d_meissen').GetName] and the [GetTitleByKey('d_lausitz').GetName] as de jure duchies."
+ not_enough_upper_saxony_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_upper_saxony').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
+ choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$"
+ choose_upper_saxony_without_sorbia_tooltip: "Petition for the [GetTitleByKey('k_upper_saxony').GetName]\n\nThe [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_anhalt').GetName] and the [GetTitleByKey('d_thuringia').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_meissen').GetName] or [GetTitleByKey('d_lausitz').GetName] then both of these duchies will become a de jure part of the [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] and the [GetTitleByKey('k_sorbia').GetName] title will be destroyed."
+ not_enough_upper_saxony_without_sorbia_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
  random_saxony_culture_convert: "Random chance owned Polabian culture counties within the [GetTitleByKey('k_saxony').GetNameNoTooltip] will change to your culture"
+ upper_saxony_culture: "A hybrid culture will be formed between [vassal.GetCulture.GetNameNoTooltip] and Polabian."
+ upper_saxony_culture_convert: "Polabian [counties|E] within the [GetTitleByKey('k_upper_saxony').GetName] will adopt the new culture. [vassal.GetCulture.GetNameNoTooltip] vassals whose capital are within the Upper Saxony region will also adopt the new culture."
+
+ k_upper_saxony: "Upper Saxony"
+ k_upper_saxony_adj: "Upper Saxon"
+ k_upper_saxony_pre: "Upper Saxo"
+
+ custom_upper_saxony: "Upper Saxony"
+ custom_upper_saxony_without_sorbia: "$custom_upper_saxony$"
  
  is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"

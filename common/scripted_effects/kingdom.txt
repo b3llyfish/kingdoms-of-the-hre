@@ -1,4 +1,4 @@
-﻿grant_kingdom_title = {
+grant_kingdom_title = {
 	hidden_effect = {
 		if = {
 			limit = {
@@ -51,9 +51,9 @@
 	}
 	else_if = {
 		limit = {
-			scope:target_title = title:k_saxony
+			scope:target_title = title:k_upper_saxony
 		}
-		create_saxony_title = {
+		create_upper_saxony_title = {
 			OWNER = $OWNER$
 		}
 	}

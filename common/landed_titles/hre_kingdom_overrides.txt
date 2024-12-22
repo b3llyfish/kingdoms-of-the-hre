@@ -1,6 +1,7 @@
-﻿@correct_culture_primary_score = 100
+@correct_culture_primary_score = 100
 @better_than_the_alternatives_score = 50
 
+## existing
 # germanic kingdoms
 k_bavaria = {
 	color = { 70 80 80 }
@@ -382,6 +383,23 @@ k_italy = {
 	}
 }
 
+## creatables
+k_lower_saxony = {
+	color = { 187 170 145 }
+	
+	capital = c_minden
+}
+k_upper_saxony = {
+	color = { 195 157 136 }
+	
+	capital = c_dessau
+}
+# define without duchies
+k_saxony = {
+	color = { 120 25 25 }
+	
+	capital = c_dessau
+}
 # remove definite_form
 k_switzerland = {
 	color = { 255 80 80 }

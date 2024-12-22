@@ -1,4 +1,4 @@
-﻿required_de_jure_county_percentage_as_decimal = {
+required_de_jure_county_percentage_as_decimal = {
 	value = 0.5
 	if = {
 		limit = { root.legitimacy_level = 5 }
@@ -236,4 +236,48 @@ kingdom_swiss_development_county_total = {
 		region = custom_core_switzerland
 		add = development_level
 	}
+}
+
+kingdom_upper_saxony_county_count = {
+	value = 0
+	if = {
+		limit = {
+			are_sorbia_duchies_de_jure_hre = no
+		}
+		every_sub_realm_county = {
+			limit = {
+				title_province = { geographical_region = custom_upper_saxony_without_sorbia }
+			}
+			add = 1
+		}
+	}
+	else = {
+		every_sub_realm_county = {
+			limit = {
+				title_province = { geographical_region = custom_upper_saxony }
+			}
+			add = 1
+		}
+	}
+}
+
+kingdom_upper_saxony_required_county_total = {
+	value = 0
+	if = {
+		limit = {
+			are_sorbia_duchies_de_jure_hre = no
+		}
+		every_county_in_region  = {
+			region = custom_upper_saxony_without_sorbia
+			add = 1
+		}
+	}
+	else = {
+		every_county_in_region  = {
+			region = custom_upper_saxony
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
 }

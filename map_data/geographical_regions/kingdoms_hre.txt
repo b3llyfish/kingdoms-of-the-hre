@@ -1,5 +1,11 @@
-﻿custom_core_saxony = {
+custom_upper_saxony = {
 	duchies = {
 		d_anhalt d_meissen d_lausitz d_thuringia
+	}
+}
+
+custom_upper_saxony_without_sorbia = {
+	duchies = {
+		d_anhalt d_thuringia
 	}
 }

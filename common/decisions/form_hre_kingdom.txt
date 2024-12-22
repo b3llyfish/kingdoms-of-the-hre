@@ -1,4 +1,4 @@
-﻿form_hre_kingdom_decision = {
+form_hre_kingdom_decision = {
 	ai_goal = yes
 	
 	picture = {
@@ -38,7 +38,7 @@
 				can_choose_bohemia = { CHARACTER = root }
 				can_choose_frisia = { CHARACTER = root }
 				can_choose_lotharingia = { CHARACTER = root }
-				can_choose_saxony = { CHARACTER = root }
+				can_choose_upper_saxony = { CHARACTER = root }
 				can_choose_switzerland = { CHARACTER = root }
 				can_choose_burgundy = { CHARACTER = root }
 				can_choose_italy = { CHARACTER = root }
@@ -162,22 +162,6 @@
 				}
 			}
 		}
-		### saxony
-		item = {
-			value = choose_saxony
-			is_valid = { can_choose_saxony = { CHARACTER = root } }
-			localization = choose_saxony_name
-			icon = "gfx/interface/icons/kingdoms_hre/saxony.dds"
-			ai_chance = {
-				value = 0
-				if = {
-					limit = {
-						controls_at_least_two_saxony_duchies = yes
-					}
-					add = 100
-				}
-			}
-		}
 		### switzerland
 		item = {
 			value = choose_switzerland
@@ -189,6 +173,46 @@
 				if = {
 					limit = {
 						completely_controls_region = custom_core_switzerland
+					}
+					add = 100
+				}
+			}
+		}
+		### upper saxony
+		item = {
+			value = choose_upper_saxony
+			is_shown = { are_sorbia_duchies_de_jure_hre = yes }
+			is_valid = { can_choose_upper_saxony = { CHARACTER = root } }
+			localization = choose_upper_saxony_name
+			icon = "gfx/interface/icons/kingdoms_hre/upper_saxony.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_upper_saxony
+						}
+					}
+					add = 100
+				}
+			}
+		}
+		### upper saxony (without sorbia de jure)
+		item = {
+			value = choose_upper_saxony_without_sorbia
+			is_shown = { are_sorbia_duchies_de_jure_hre = no }
+			is_valid = { can_choose_upper_saxony = { CHARACTER = root } }
+			localization = choose_upper_saxony_without_sorbia_name
+			icon = "gfx/interface/icons/kingdoms_hre/upper_saxony.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_upper_saxony_without_sorbia
+						}
 					}
 					add = 100
 				}
@@ -429,12 +453,15 @@
 			}
 			trigger_event = kingdoms_hre.0001
 		}
-		# saxony
+		# upper saxony
 		else_if = {
 			limit = {
-				scope:choose_saxony = yes
+				OR = {
+					scope:choose_upper_saxony = yes
+					scope:choose_upper_saxony_without_sorbia = yes
+				}
 			}
-			title:k_saxony = {
+			title:k_upper_saxony = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001
