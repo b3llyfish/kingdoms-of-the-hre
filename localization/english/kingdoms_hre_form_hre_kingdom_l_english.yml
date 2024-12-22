@@ -75,12 +75,20 @@
  upper_saxony_culture: "A hybrid culture will be formed between [vassal.GetCulture.GetNameNoTooltip] and Polabian."
  upper_saxony_culture_convert: "Polabian [counties|E] within the [GetTitleByKey('k_upper_saxony').GetName] will adopt the new culture. [vassal.GetCulture.GetNameNoTooltip] vassals whose capital are within the Upper Saxony region will also adopt the new culture."
 
+ choose_lower_saxony_name: "[GetTitleByKey('k_lower_saxony').GetNameNoTooltip]"
+ choose_lower_saxony_tooltip: "Petition for the [GetTitleByKey('k_lower_saxony').GetName]\n\nThe [GetTitleByKey('k_lower_saxony').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_angria').GetName], the [GetTitleByKey('d_holstein').GetName], the [GetTitleByKey('d_ostfalen').GetName] and the [GetTitleByKey('d_westfalen').GetName] as de jure duchies."
+ not_enough_lower_saxony_counties: "[SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_lower_saxony').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]."
+
  k_upper_saxony: "Upper Saxony"
  k_upper_saxony_adj: "Upper Saxon"
  k_upper_saxony_pre: "Upper Saxo"
+ k_lower_saxony: "Lower Saxony"
+ k_lower_saxony_adj: "Lower Saxon"
+ k_lower_saxony_pre: "Lower Saxo"
 
  custom_upper_saxony: "Upper Saxony"
  custom_upper_saxony_without_sorbia: "$custom_upper_saxony$"
+ custom_lower_saxony: "Lower Saxony"
  
  is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"

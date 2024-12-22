@@ -1,4 +1,4 @@
-create_upper_saxony_title = {
+﻿create_upper_saxony_title = {
 	$OWNER$ = {
 		hidden_effect = {
 			$OWNER$.culture = {

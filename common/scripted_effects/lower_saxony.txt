@@ -1,0 +1,12 @@
+﻿create_lower_saxony_title = {
+	$OWNER$ = {
+		hidden_effect = {
+			title:k_lower_saxony = { set_de_jure_liege_title = title:e_hre }
+		}
+		
+		title:d_angria = { set_de_jure_liege_title = title:k_lower_saxony }
+		title:d_holstein = { set_de_jure_liege_title = title:k_lower_saxony }
+		title:d_ostfalen = { set_de_jure_liege_title = title:k_lower_saxony }
+		title:d_westfalen = { set_de_jure_liege_title = title:k_lower_saxony }
+	}
+}

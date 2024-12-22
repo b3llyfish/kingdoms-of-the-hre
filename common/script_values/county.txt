@@ -1,4 +1,4 @@
-required_de_jure_county_percentage_as_decimal = {
+﻿required_de_jure_county_percentage_as_decimal = {
 	value = 0.5
 	if = {
 		limit = { root.legitimacy_level = 5 }
@@ -277,6 +277,26 @@ kingdom_upper_saxony_required_county_total = {
 			region = custom_upper_saxony
 			add = 1
 		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}
+
+kingdom_lower_saxony_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			title_province = { geographical_region = custom_lower_saxony }
+		}
+		add = 1
+	}
+}
+
+kingdom_lower_saxony_required_county_total = {
+	value = 0
+	every_county_in_region  = {
+		region = custom_lower_saxony
+		add = 1
 	}
 	multiply = required_de_jure_county_percentage_as_decimal
 	ceiling = yes

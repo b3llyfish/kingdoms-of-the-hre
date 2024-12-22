@@ -8,3 +8,16 @@ k_upper_saxony = {
 		instance = { scale = { 0.8 0.8 }  }
 	}
 }
+
+k_lower_saxony={
+	pattern="pattern_solid.dds"
+	color1=orange
+	colored_emblem={
+		color1=white
+		color2=green
+		texture="ce_irminsul.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+		}
+	}
+}

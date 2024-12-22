@@ -1,4 +1,4 @@
-controls_enough_of_kingdom = {
+﻿controls_enough_of_kingdom = {
 	$TARGET_KINGDOM$ = {
 		any_de_jure_county = {
 			percent > required_de_jure_county_percentage_as_decimal
@@ -384,6 +384,38 @@ can_choose_france = {
 				is_or_child_of_culture = {
 					CULTURE = culture
 					PARENT_CULTURE = culture:french
+				}
+			}
+		}
+	}
+}
+
+can_choose_lower_saxony = {
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_lower_saxony.holder }
+	}
+	$CHARACTER$ = {
+		custom_tooltip = {
+			text = not_enough_lower_saxony_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_lower_saxony
+			}
+		}
+		capital_province = {
+			geographical_region = custom_lower_saxony
+		}
+		prestige_level >= medium_prestige_level
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_saxony_culture
+				is_or_child_of_culture = {
+					CULTURE = culture
+					PARENT_CULTURE = culture:saxon
 				}
 			}
 		}
