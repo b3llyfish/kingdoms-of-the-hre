@@ -65,13 +65,13 @@
  random_switzerland_culture_convert: "Random chance owned French or Cisalpine culture counties within the [GetTitleByKey('d_savoie').GetNameNoTooltip] will change to your culture"
 
  require_saxony_culture: "Culture must be Saxon or derived from it"
+ 
  choose_upper_saxony_name: "[GetTitleByKey('k_upper_saxony').GetNameNoTooltip]"
  choose_upper_saxony_tooltip: "Petition for the [GetTitleByKey('k_upper_saxony').GetName]\n\nThe [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_anhalt').GetName], the [GetTitleByKey('d_thuringia').GetName], the [GetTitleByKey('d_meissen').GetName] and the [GetTitleByKey('d_lausitz').GetName] as de jure duchies."
  not_enough_upper_saxony_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_upper_saxony').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
  choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$"
  choose_upper_saxony_without_sorbia_tooltip: "Petition for the [GetTitleByKey('k_upper_saxony').GetName]\n\nThe [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_anhalt').GetName] and the [GetTitleByKey('d_thuringia').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_meissen').GetName] or [GetTitleByKey('d_lausitz').GetName] then both of these duchies will become a de jure part of the [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] and the [GetTitleByKey('k_sorbia').GetName] title will be destroyed."
  not_enough_upper_saxony_without_sorbia_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
- random_saxony_culture_convert: "Random chance owned Polabian culture counties within the [GetTitleByKey('k_saxony').GetNameNoTooltip] will change to your culture"
  upper_saxony_culture: "A hybrid culture will be formed between [vassal.GetCulture.GetNameNoTooltip] and Polabian."
  upper_saxony_culture_convert: "Polabian [counties|E] within the [GetTitleByKey('k_upper_saxony').GetName] will adopt the new culture. [vassal.GetCulture.GetNameNoTooltip] vassals whose capital are within the Upper Saxony region will also adopt the new culture."
 
