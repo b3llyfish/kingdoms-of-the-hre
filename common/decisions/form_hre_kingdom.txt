@@ -78,7 +78,10 @@
 				value = 0
 				if = {
 					limit = {
-						completely_controls_region = custom_core_austria
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_core_austria
+						}
 					}
 					add = 100
 				}
@@ -192,7 +195,10 @@
 				value = 0
 				if = {
 					limit = {
-						completely_controls_region = custom_core_switzerland
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_core_switzerland
+						}
 					}
 					add = 100
 				}

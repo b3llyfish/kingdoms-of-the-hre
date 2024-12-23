@@ -57,9 +57,18 @@ can_choose_austria = {
 		NOT = { exists = title:k_austria.holder }
 	}
 	$CHARACTER$ = {
-		completely_controls_region = custom_core_austria
+		custom_tooltip = {
+			text = not_enough_austria_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_core_austria
+			}
+		}
 		dynasty ?= { dynasty_prestige_level >= austria_required_renown_level }
 		prestige_level >= medium_prestige_level
+		capital_province = {
+			geographical_region = custom_core_austria
+		}
 	}
 }
 
@@ -228,11 +237,20 @@ can_choose_switzerland = {
 		NOT = { exists = title:k_switzerland.holder }
 	}
 	$CHARACTER$ = {
-		completely_controls_region = custom_core_switzerland
+		custom_tooltip = {
+			text = not_enough_switzerland_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_core_switzerland
+			}
+		}
 		prestige_level >= medium_prestige_level
 		custom_tooltip = {
 			text = swiss_not_enough_development
 			kingdom_swiss_development_county_total >= swiss_development_required_amount
+		}
+		capital_province = {
+			geographical_region = custom_core_switzerland
 		}
 	}
 }
