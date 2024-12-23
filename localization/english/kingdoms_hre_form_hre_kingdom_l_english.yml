@@ -93,3 +93,4 @@
  is_hre_vassal: "Is a vassal of the Holy Roman Emperor."
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"
  kingdom_already_exists: "This Kingdom already exists"
+ saxony_kingdom_already_exists: "The Kingdom of Saxony supersedes this Kingdom"

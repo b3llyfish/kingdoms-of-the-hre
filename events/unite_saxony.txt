@@ -1,0 +1,35 @@
+﻿namespace = unite_saxony
+
+## Events
+# unite_saxony.0001 - Unite Saxony
+
+unite_saxony.0001 = {
+	type = character_event
+	title = unite_saxony.0001.title
+	desc = unite_saxony.0001.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:new_saxon_king
+		animation = personality_honorable
+	}
+	
+	option = {
+		name = unite_saxony.0001.a
+		unite_saxony = {
+			OWNER = scope:new_saxon_king
+		}
+		scope:new_saxon_king = {
+			add_prestige = massive_prestige_value
+			dynasty = { add_dynasty_prestige = massive_dynasty_prestige_value }
+		}
+		scope:new_saxon_king.top_liege = {
+			add_opinion = {
+				target = scope:new_saxon_king
+				modifier = declared_saxon_king
+			}
+		}
+	}
+}

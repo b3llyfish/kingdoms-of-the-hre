@@ -1,75 +1,97 @@
-﻿create_saxony_title = {
-	$OWNER$ = {
-		hidden_effect = {
-			title:k_saxony = {
-				set_de_jure_liege_title = title:e_hre
-				copy_title_history = title:d_anhalt
+﻿unite_saxony = {
+	hidden_effect = {
+		title:k_saxony = { set_de_jure_liege_title = title:e_hre }
+		# use that fancy coa
+		title:k_saxony = { set_coa = k_saxon_electorate }
+		
+		if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = no
+				$OWNER$ = {
+					OR = {
+						completely_controls = title:d_meissen
+						completely_controls = title:d_lausitz
+					}
+				}
 			}
 			if = {
 				limit = {
-					exists = title:k_sorbia
-					completely_controls = title:d_meissen
-					completely_controls = title:d_lausitz
+					exists = title:k_sorbia.holder
 				}
-				# nothing will exist of sorbia afterwards
-				destroy_title = title:k_sorbia
-			}
-		}
-		
-		title:d_anhalt = { set_de_jure_liege_title = title:k_saxony }
-
-		if = {
-			limit = {
-				OR = {
-					completely_controls = title:d_lausitz
-					title:d_lausitz = {
-						target_is_de_jure_liege_or_above = title:e_hre
+				$OWNER$ = {
+					set_relation_rival = {
+						target = title:k_sorbia.holder
+						reason = divided_kingdom
 					}
 				}
 			}
-			title:d_lausitz = { set_de_jure_liege_title = title:k_saxony }
+			# will contain no duchies so destroy
+			destroy_title = title:k_sorbia
 		}
-		
-		if = {
-			limit = {
+	}
+	
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	
+	title:k_saxony = {
+		change_title_holder = {
+			holder = $OWNER$
+			change = scope:change
+		}
+		# add saxon elective law
+		add_title_law = saxon_elective_succession_law
+	}
+	resolve_title_and_vassal_change = scope:change
+	
+	# add all of current upper and lower duchies
+	title:d_angria = { set_de_jure_liege_title = title:k_saxony }
+	title:d_holstein = { set_de_jure_liege_title = title:k_saxony }
+	title:d_ostfalen = { set_de_jure_liege_title = title:k_saxony }
+	title:d_westfalen = { set_de_jure_liege_title = title:k_saxony }
+	title:d_anhalt = { set_de_jure_liege_title = title:k_saxony }
+	title:d_thuringia = { set_de_jure_liege_title = title:k_saxony }
+	if = {
+		limit = {
+			are_sorbia_duchies_de_jure_hre = no
+			$OWNER$ = {
 				OR = {
 					completely_controls = title:d_meissen
-					title:d_meissen = {
-						target_is_de_jure_liege_or_above = title:e_hre
-					}
+					completely_controls = title:d_lausitz
 				}
 			}
-			title:d_meissen = { set_de_jure_liege_title = title:k_saxony }
 		}
-		
+		title:d_meissen = { set_de_jure_liege_title = title:k_saxony }
+		title:d_lausitz = { set_de_jure_liege_title = title:k_saxony }
+	}
+	else_if = {
+		limit = {
+			are_sorbia_duchies_de_jure_hre = yes
+		}
+		title:d_meissen = { set_de_jure_liege_title = title:k_saxony }
+		title:d_lausitz = { set_de_jure_liege_title = title:k_saxony }
+	}
+	
+	hidden_effect = {
+		# copy history
 		if = {
 			limit = {
-				completely_controls = title:d_thuringia
+				title:k_upper_saxony = $OWNER$.primary_title
 			}
-			title:d_thuringia = { set_de_jure_liege_title = title:k_saxony }
+			copy_title_history = title:k_upper_saxony
 		}
-		
-		# give saxon elective succession
-		title:k_saxony = { add_title_law = saxon_elective_succession_law }
-		
-		# random chance for each polabian culture county to change culture
-		custom_tooltip = {
-			text = random_saxony_culture_convert
-			every_sub_realm_county = {
+		else_if = {
+			if = {
 				limit = {
-					culture = culture:polabian
-					OR = {
-						any_this_title_or_de_jure_above = { this = title:d_anhalt }
-						any_this_title_or_de_jure_above = { this = title:d_lausitz }
-						any_this_title_or_de_jure_above = { this = title:d_meissen }
-						any_this_title_or_de_jure_above = { this = title:d_thuringia }
-					}
+					title:k_lower_saxony = $OWNER$.primary_title
 				}
-				random = {
-					chance = 50
-					set_county_culture = $OWNER$.culture
-				}
+				copy_title_history = title:k_lower_saxony
 			}
 		}
+		# destroy upper and lower
+		destroy_title = title:k_upper_saxony
+		destroy_title = title:k_lower_saxony
 	}
 }

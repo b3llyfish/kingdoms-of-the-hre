@@ -1,0 +1,84 @@
+﻿unite_saxony_decision = {
+	ai_goal = yes
+	
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	
+	decision_group_type = major
+	
+	is_shown = {
+		OR = {
+			has_title = title:k_upper_saxony
+			has_title = title:k_lower_saxony
+		}
+	}
+	
+	is_valid = {
+		OR = {
+			custom_tooltip = {
+				text = owns_both_titles
+				owns_both_saxony_titles = yes
+			}
+			custom_tooltip = {
+				text = owns_upper_saxony_and_enough_lower_saxony
+				owns_upper_saxony_title_and_enough_lower_saxony = yes
+			}
+			trigger_if = {
+				limit = {
+					are_sorbia_duchies_de_jure_hre = yes
+				}
+				custom_tooltip = {
+					text = owns_lower_saxony_and_enough_upper_saxony
+					owns_lower_saxony_title_and_enough_upper_saxony = yes
+				}
+			}
+			trigger_if = {
+				limit = {
+					are_sorbia_duchies_de_jure_hre = no
+				}
+				custom_tooltip = {
+					text = owns_lower_saxony_and_enough_upper_saxony_without_sorbia
+					owns_lower_saxony_title_and_enough_upper_saxony_without_sorbia = yes
+				}
+			}
+		}
+		prestige_level >= high_prestige_level
+	}
+	
+	is_valid_showing_failures_only = {
+		faith = top_liege.faith	#Must share the faith of your emperor
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+		is_healthy = yes
+	}
+	
+	effect = {
+		root = {
+			save_scope_as = new_saxon_king
+		}
+		if = {
+			limit = {
+				exists = cp:councillor_chancellor
+			}
+			cp:councillor_chancellor = { save_scope_as = messenger }
+		}
+		else = {
+			random_vassal = { save_scope_as = messenger }
+		}
+		trigger_event = unite_saxony.0001
+	}
+	
+	cost = {
+		# no cost
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+	
+	ai_will_do = {
+		base = 100
+	}
+}

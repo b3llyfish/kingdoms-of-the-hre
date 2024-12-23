@@ -22,7 +22,6 @@ rejected_title_kingdom_minor = {
 	decaying = yes
 }
 
-
 letter_positive = {
 	opinion = 20
 	years = 2
@@ -36,4 +35,10 @@ letter_negative = {
 blackmailed_title_kingdom = {
 	opinion = -50
 	years = 30
+}
+
+declared_saxon_king = {
+	opinion = -40
+	years = 20
+	decaying = yes
 }

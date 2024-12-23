@@ -168,6 +168,10 @@ are_sorbia_duchies_de_jure_hre = {
 
 can_choose_upper_saxony = {
 	custom_tooltip = {
+		text = saxony_kingdom_already_exists
+		NOT = { exists = title:k_saxony.holder }
+	}
+	custom_tooltip = {
 		text = kingdom_already_exists
 		NOT = { exists = title:k_upper_saxony.holder }
 	}
@@ -392,6 +396,10 @@ can_choose_france = {
 
 can_choose_lower_saxony = {
 	custom_tooltip = {
+		text = saxony_kingdom_already_exists
+		NOT = { exists = title:k_saxony.holder }
+	}
+	custom_tooltip = {
 		text = kingdom_already_exists
 		NOT = { exists = title:k_lower_saxony.holder }
 	}
@@ -420,4 +428,33 @@ can_choose_lower_saxony = {
 			}
 		}
 	}
+}
+
+owns_both_saxony_titles = {
+	has_title = title:k_upper_saxony
+	has_title = title:k_lower_saxony
+}
+
+owns_upper_saxony_title_and_enough_lower_saxony = {
+	has_title = title:k_upper_saxony
+	controls_enough_of_region = {
+		CHARACTER = root
+		TARGET_REGION = custom_lower_saxony
+	}
+}
+
+owns_lower_saxony_title_and_enough_upper_saxony = {
+	controls_enough_of_region = {
+		CHARACTER = root
+		TARGET_REGION = custom_upper_saxony
+	}
+	has_title = title:k_lower_saxony
+}
+
+owns_lower_saxony_title_and_enough_upper_saxony_without_sorbia = {
+	controls_enough_of_region = {
+		CHARACTER = root
+		TARGET_REGION = custom_upper_saxony_without_sorbia
+	}
+	has_title = title:k_lower_saxony
 }

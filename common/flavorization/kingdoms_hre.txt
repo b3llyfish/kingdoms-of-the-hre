@@ -1,4 +1,4 @@
-﻿hre_vassal_kingdom_male_title = {
+﻿hre_vassal_principality_male_title = {
 	type = character
 	gender = male
 	priority = 100
@@ -11,7 +11,7 @@
 	flag = current_holy_roman_emperor
 }
 
-hre_vassal_kingdom_female_title = {
+hre_vassal_principality_female_title = {
 	type = character
 	gender = female
 	priority = 100
@@ -24,7 +24,7 @@ hre_vassal_kingdom_female_title = {
 	flag = current_holy_roman_emperor
 }
 
-hre_vassal_kingdom_title = {
+hre_vassal_principality_title = {
 	type = title
 	tier = kingdom
 	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy k_upper_saxony k_lower_saxony }
@@ -34,4 +34,27 @@ hre_vassal_kingdom_title = {
 		only_vassals = yes
 	}
 	flag = current_holy_roman_emperor
+}
+
+hre_vassal_kingdom_male_title = {
+	type = character
+	gender = male
+	priority = 100
+	tier = kingdom
+	titles = { k_saxony }
+}
+
+hre_vassal_kingdom_female_title = {
+	type = character
+	gender = female
+	priority = 100
+	tier = kingdom
+	titles = { k_saxony }
+}
+
+hre_vassal_kingdom_title = {
+	type = title
+	tier = kingdom
+	titles = { k_saxony }
+	priority = 100
 }
