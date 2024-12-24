@@ -1,4 +1,4 @@
-﻿form_hre_kingdom_decision = {
+form_hre_kingdom_decision = {
 	ai_goal = yes
 	
 	picture = {
@@ -61,6 +61,7 @@
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_at_war = no
+		is_healthy = yes
 	}
 	
 	widget = {
