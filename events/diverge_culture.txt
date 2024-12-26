@@ -1,0 +1,65 @@
+﻿namespace = diverge_culture
+
+## Events
+# diverge_culture.0001 - Diverge new culture
+# diverge_culture.0002 - Hidden event to do the work
+
+diverge_culture.0001 = {
+	type = character_event
+	title = diverge_culture.title
+	desc = diverge_culture.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:character
+		animation = thinking
+	}
+	
+	immediate = {
+		scope:character = {
+			primary_title = {
+				save_scope_as = primary_title
+			}
+		}
+	}
+	
+	option = {
+		name = diverge_culture.0001.a
+		custom_tooltip = {
+			text = diverge_culture.0001.a.tooltip
+			trigger_event = diverge_culture.0002
+		}
+		if = {
+			limit = {
+				primary_title = title:k_upper_saxony
+			}
+			custom_tooltip = diverge_culture.0001.a.tooltip.upper_saxony
+			custom_tooltip = diverge_culture.0001.a.tooltip.upper_saxony.convert
+		}
+		custom_tooltip = diverge_culture.0001.a.tooltip.vassals
+		ai_chance = {
+			# AI should always do this
+			base = 100
+		}
+	}
+	
+	option = {
+		name = diverge_culture.0001.b
+		ai_chance = {
+			# player only option
+			base = 0
+		}
+	}
+}
+
+diverge_culture.0002 = {
+	scope = none
+	hidden = yes
+	immediate = {
+		diverge_culture_with_conversion = {
+			CHARACTER = scope:character
+		}
+	}
+}

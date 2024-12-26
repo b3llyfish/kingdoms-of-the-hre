@@ -1,9 +1,6 @@
 ﻿create_upper_saxony_title = {
 	$OWNER$ = {
 		hidden_effect = {
-			$OWNER$.culture = {
-				save_scope_as = original_culture
-			}
 			title:k_upper_saxony = { set_de_jure_liege_title = title:e_hre }
 			if = {
 				limit = {
@@ -52,97 +49,20 @@
 		if = {
 			limit = {
 				has_dlc_feature = royal_court
-				scope:original_culture = {
-					is_hybrid_culture = no
+				NAND = {
+					is_ai = yes
+					has_game_rule = none_divergent_culture_ai_frequency
 				}
 			}
-			# create a hybrid culture between polabian and the character culture
-			custom_tooltip = {
-				text = upper_saxony_culture
-				create_hybrid_culture = culture:polabian
-			}
-			hidden_effect = {
-				# create_hybrid_culture randomly builds the culture , rebuild it here to be germanic based
-				scope:new_culture = {
-					set_heritage_from = scope:original_culture
-					# honour the hybridization laws and take language from polabian
-					set_language_from = culture:polabian
-					set_name_list = name_list_saxon
-					add_name_list = name_list_polabian
-					set_martial_custom_from = scope:original_culture
-					# remove ruling caste as kingdom will convert to new culture
-					if = {
-						limit = {
-							has_cultural_tradition = tradition_ruling_caste
-						}
-						remove_culture_tradition = tradition_ruling_caste
-					}
-					# remove konni raids as new culture should be considered germanic
-					if = {
-						limit = {
-							has_cultural_tradition = tradition_hussar
-						}
-						remove_culture_tradition = tradition_hussar
-					}
+			$OWNER$ = {
+				save_scope_as = character
+				culture = {
+					save_scope_as = current_culture
 				}
 			}
-			custom_tooltip = {
-				text = upper_saxony_culture_convert
-				title:k_upper_saxony = {
-					every_in_de_jure_hierarchy = {
-						limit = {
-							tier = tier_county
-						}
-						if = {
-							# flip polabian culture counties
-							limit = {
-								culture = culture:polabian
-							}
-							set_county_culture = scope:new_culture
-						}
-						# flip saxon vassals culture if their capital is in upper saxony region
-						holder = {
-							if = {
-								limit = {
-									culture = culture:saxon
-									OR = {
-										AND = {
-											are_sorbia_duchies_de_jure_hre = yes
-											capital_province = { geographical_region = custom_upper_saxony }
-										}
-										capital_province = { geographical_region = custom_upper_saxony_without_sorbia }
-									}
-								}
-								set_culture = scope:new_culture
-							}
-						}
-					}
-				}
-				every_sub_realm_county = {
-					limit = {
-						culture = culture:polabian
-						OR = {
-							any_this_title_or_de_jure_above = { this = title:d_anhalt }
-							any_this_title_or_de_jure_above = { this = title:d_lausitz }
-							any_this_title_or_de_jure_above = { this = title:d_meissen }
-							any_this_title_or_de_jure_above = { this = title:d_thuringia }
-						}
-					}
-					random = {
-						chance = 50
-						set_county_culture = scope:new_culture
-					}
-				}
-			}
-		}
-		else = {
-			# add a large amount of cultural acceptance between polabian and the character culture
-			scope:original_culture = {
-				change_cultural_acceptance = {
-					target = culture:polabian
-					value = kingdom_upper_saxony_polabian_culture_acceptance_percentage
-					desc = upper_saxony_culture_acceptance_bonus_desc
-				}
+			trigger_event = {
+				id = diverge_culture.0001
+				days = 7
 			}
 		}
 	}

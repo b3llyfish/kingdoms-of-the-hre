@@ -56,3 +56,80 @@ add_culture_acceptance_to_hre_cultures = {
 		}
 	}
 }
+
+# Calls the kingdom specific diverge culture function
+diverge_culture_with_conversion = {
+	$CHARACTER$ = {
+		if = {
+			limit = {
+				primary_title = title:k_upper_saxony
+			}
+			upper_saxony_culture_diverge = {
+				CHARACTER = $CHARACTER$
+			}
+		}
+	}
+}
+
+upper_saxony_culture_diverge = {
+	$CHARACTER$ = {
+		culture = {
+			save_scope_as = old_culture
+		}
+		create_divergent_culture = yes
+		scope:new_culture = {
+			# respect divergent rules and change culture pillar
+			set_culture_pillar = ethos_courtly
+			# build a unique set of traditions
+			clear_culture_traditions = yes
+			add_culture_tradition = tradition_hereditary_hierarchy
+			add_culture_tradition = tradition_formation_fighting
+			add_culture_tradition = tradition_storytellers
+		}
+		# build list of titles whose counties will be converted
+		title:d_anhalt = {
+			add_to_list = title_list
+		}
+		title:d_thuringia = {
+			add_to_list = title_list
+		}
+		title:c_naumburg = {
+			add_to_list = title_list
+		}
+		title:c_wolkenstein = {
+			add_to_list = title_list
+		}
+		title:c_vogtland = {
+			add_to_list = title_list
+		}
+		title:c_osterland = {
+			add_to_list = title_list
+		}
+		every_in_list = {
+			list = title_list
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					culture = culture:polabian
+				}
+				set_county_culture = scope:new_culture
+			}
+		}
+		every_vassal = {
+			limit = {
+				culture = scope:old_culture
+				OR = {
+					AND = {
+						are_sorbia_duchies_de_jure_hre = yes
+						capital_province = { geographical_region = custom_upper_saxony }
+					}
+					AND = {
+						are_sorbia_duchies_de_jure_hre = no
+						capital_province = { geographical_region = custom_upper_saxony_without_sorbia }
+					}
+				}
+			}
+			set_culture = scope:new_culture
+		}
+	}
+}

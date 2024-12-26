@@ -1,0 +1,9 @@
+﻿l_english:
+ diverge_culture.title: "A New Cultural Direction?"
+ diverge_culture.desc: "As the new [character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U] of [primary_title.GetNameNoTierNoTooltip] am I overseeing a great change in the region. The customs and traditions of its people are no exception.\n\nThere is an opportunity to steer ourselves away from the [current_culture.GetNameNoTooltip] lifestyle and into a new future. I need only to reach out and grasp it..."
+ diverge_culture.0001.a: "Let us forge a new path!"
+ diverge_culture.0001.a.tooltip: "You will diverge your culture from [current_culture.GetNameNoTooltip]"
+ diverge_culture.0001.a.tooltip.upper_saxony: "New culture will have the Ceremonious ethos and Hereditary Hierarchy, Formation Fighting Experts and Storytellers traditions"
+ diverge_culture.0001.a.tooltip.upper_saxony.convert: "A portion of Polabian cultured counties will convert to the new culture"
+ diverge_culture.0001.a.tooltip.vassals: "Vassals with your old culture whose capital is within your de jure Kingdom will convert to the new culture"
+ diverge_culture.0001.b: "No, too much has changed already"

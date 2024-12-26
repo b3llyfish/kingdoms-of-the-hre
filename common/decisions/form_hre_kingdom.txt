@@ -1,4 +1,4 @@
-form_hre_kingdom_decision = {
+﻿form_hre_kingdom_decision = {
 	ai_goal = yes
 	
 	picture = {
