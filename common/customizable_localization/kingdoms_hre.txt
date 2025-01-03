@@ -55,3 +55,33 @@
 		localization_key = princess
 	}
 }
+
+GetHreTitleTier = {
+	type = character
+	
+	text = {
+		trigger = {
+			title:k_bohemia = scope:second
+		}
+		localization_key = kingdom_feudal
+	}
+
+	text = {
+		trigger = {
+			title:k_austria = scope:second
+		}
+		localization_key = archduchy
+	}
+	
+	text = {
+		trigger = {
+			title:k_switzerland = scope:second
+		}
+		localization_key = swiss_confederation
+	}
+	
+	text = {
+		fallback = yes
+		localization_key = title_principality
+	}
+}

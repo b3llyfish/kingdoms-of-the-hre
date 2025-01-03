@@ -2,3 +2,5 @@
  hre_cannot_create_kingdom: "This [kingdom|E] is within the Holy Roman Empire's sphere of influence.\nAs a [vassal|E] of the Holy Roman Empire this must be created via the $form_hre_kingdom_decision$ decision"
  coronation_culture_acceptance_bonus_desc: "Coronation of [vassal.GetShortUIName] by [emperor.GetShortUIName]"
  petition_gift_modifier: "Trendy Trinkets"
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTier]"
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip]"

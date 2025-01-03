@@ -1,12 +1,12 @@
 ﻿l_english:
  # Common
- kingdoms_hre.kingdom_of: "The [target_title.GetNameNoTooltip]"
+ kingdoms_hre.kingdom_of: "The $loc_title_no_tooltip$"
  kingdoms_hre.golden_bull: "The Golden Bull of [emperor.GetCapitalLocation.GetNameNoTooltip]"
  kingdoms_hre.powerful_vassals_irritated: "Bestowing a [kingdom|E] will irritate your powerful [duchy|E] vassals"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] will have protected title revocation rights added to their vassal contract"
  # Vassal prepares the petition
  kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$"
- kingdoms_hre.0001.desc: "Through cunning and combat I have established myself as a leading power in the region of [target_title.GetNameNoTierNoTooltip]. My accumulation of land and titles exceeds that of mere [vassal.Custom('DuchessDuke')|U]. \n\nI am a [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] in all but in name and it is time that changed.\n\nI shall present a petition to the Emperor, requesting that they bestow upon me the [target_title.GetNameNoTooltip].\n\nEverything is ready to go, yet I wonder. Perhaps there is something more I can do to secure the Emperor's decision?"
+ kingdoms_hre.0001.desc: "Through cunning and combat I have established myself as a leading power in the region of [target_title.GetNameNoTierNoTooltip]. My accumulation of land and titles exceeds that of mere [vassal.Custom('DuchessDuke')|U]. \n\nI am a [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] in all but in name and it is time that changed.\n\nI shall present a petition to the Emperor, requesting that they bestow upon me the $loc_title$.\n\nEverything is ready to go, yet I wonder. Perhaps there is something more I can do to secure the Emperor's decision?"
  kingdoms_hre.0001.tooltip: "You await for a response from the Emperor"
  kingdoms_hre.0001.a: "My claim is just, the petition shall be enough"
  kingdoms_hre.0001.b: "I shall include a personal letter to the Emperor"
@@ -21,7 +21,7 @@
  kingdoms_hre.0001.d.tooltip: "You blackmail the Emperor!"
  # Emperor receives the petition
  kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$"
- kingdoms_hre.0002.desc: "A petition has arrived from [vassal.GetShortUIName], asserting [vassal.GetHerHis] claim to the [target_title.GetName] and requesting that I bestow upon them the title. \n\nI could accept the petition and gain a powerful supporter in [target_title.GetNameNoTierNoTooltip]. However other vassals in the Empire will not take kindly to this perceived 'favouritism'.\n\nIf I reject the petition then [vassal.GetShortUIName] will surely respond poorly and I risk an escalation with [vassal.GetHerHim].\n\nMy courtiers gather around me, patiently wait for my response..."
+ kingdoms_hre.0002.desc: "A petition has arrived from [vassal.GetShortUIName], asserting [vassal.GetHerHis] claim to the $loc_title$ and requesting that I bestow upon them the title. \n\nI could accept the petition and gain a powerful supporter in [target_title.GetNameNoTierNoTooltip]. However other vassals in the Empire will not take kindly to this perceived 'favouritism'.\n\nIf I reject the petition then [vassal.GetShortUIName] will surely respond poorly and I risk an escalation with [vassal.GetHerHim].\n\nMy courtiers gather around me, patiently wait for my response..."
  kingdoms_hre.0002.a: "Their claim is worthy, they shall be a [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!"
  kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] becomes the [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip]"
  kingdoms_hre.0002.a.culture: "This is an opportunity to align [vassal.GetCulture.GetName] interests with the Empire"
@@ -33,21 +33,21 @@
  kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$"
  kingdoms_hre.0003.desc: "In an elaborate ceremony in [emperor.GetCapitalLocation.GetNameNoTooltip] the Emperor has decreed a new Golden Bull. \n\nIt declares that [vassal.GetName] has an imperial right to rule over [target_title.GetNameNoTierNoTooltip] and formalises their claim as [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of the region.\n\nThis is truly a magnificent day for the [vassal.GetDynastyName|U] dynasty!"
  kingdoms_hre.0003.a: "The Emperor has recognised the rightful [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip]!"
- kingdoms_hre.0003.a.interface.title: "Emperor bestows a [target_title.GetTierAsNameNoTooltip]"
+ kingdoms_hre.0003.a.interface.title: "Emperor bestows a [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]"
  kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] has been granted the [target_title.GetNameNoTooltip]"
  # Emperor rejects the petition
  kingdoms_hre.0005.title: "The Emperor rejects!"
- kingdoms_hre.0005.desc: "The Emperor has rejected my petition!\n\nIn his response he makes vague statements around stability and tradition, but he and I both know why he has done this. The Emperor feels threatened by me!\n\nFor now the [target_title.GetName] is out of my grasp.\nI must go away and consider my next actions."
+ kingdoms_hre.0005.desc: "The Emperor has rejected my petition!\n\nIn his response he makes vague statements around stability and tradition, but he and I both know why he has done this. The Emperor feels threatened by me!\n\nFor now the $loc_title$ is out of my grasp.\nI must go away and consider my next actions."
  kingdoms_hre.0005.a: "That pompous oaf has no sense of decency or honour!"
  kingdoms_hre.0005.b: "If I cannot have a Kingdom then I shall take an Empire..."
  kingdoms_hre.0005.c: "How disappointing..."
  # Emperor blackmailed by vassal
  kingdoms_hre.0006.title: "Blackmail!"
- kingdoms_hre.0006.desc: "A petition has arrived from [vassal.GetShortUIName] stating their claim to the [target_title.GetName]. It is extremely brief, barely providing any evidence for their claim.\n\nI am ready to dismiss it as some sort of bizarre joke when I read the final paragraph.\n\n[vassal.GetShortUIName] knows about my [secret|E]! What's more they are threatening to reveal it unless I accept the petition."
+ kingdoms_hre.0006.desc: "A petition has arrived from [vassal.GetShortUIName] stating their claim to the $loc_title$. It is extremely brief, barely providing any evidence for their claim.\n\nI am ready to dismiss it as some sort of bizarre joke when I read the final paragraph.\n\n[vassal.GetShortUIName] knows about my [secret|E]! What's more they are threatening to reveal it unless I accept the petition."
  kingdoms_hre.0006.a: "I have no choice but to give in to their demand..."
- kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName] and [TARGET_CHARACTER.GetShortUIName|U] became rivals after a successful blackmailing."
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName|U] and [TARGET_CHARACTER.GetShortUIName|U] became rivals after a successful blackmailing."
  kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] uses their hook on you."
  # Vassal gains title via blackmail
  kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$"
- kingdoms_hre.0007.desc: "Fearing his secret getting out the Emperor has accepted the petition. At a rushed ceremony in [emperor.GetCapitalLocation.GetNameNoTooltip] a Golden Bull is signed announcing me as the new [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip].\n\nAs soon as it is over me and my entourage are ushered out of court and told to quickly leave. The Emperor is nowhere to be found, clearly still shaken by my knowledge of his [secret|E].\n\nThere may be repercussions to my blackmail but for now the day is mine. I am finally [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!"
+ kingdoms_hre.0007.desc: "Fearing his secret getting out the Emperor has accepted the petition. At a rushed ceremony in [emperor.GetCapitalLocation.GetNameNoTooltip] a Golden Bull is signed announcing me as the new [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip].\n\nAs soon as it is over me and my entourage are ushered out of court and told to quickly leave. The Emperor is nowhere to be found, clearly still shaken by my knowledge of his [secret|E].\n\nThere may be repercussions to my blackmail but for now the day is mine. I am finally a [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!"
  kingdoms_hre.0007.a: "You can get anything with a little leverage..."
