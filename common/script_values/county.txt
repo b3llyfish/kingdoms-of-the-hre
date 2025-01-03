@@ -341,3 +341,27 @@ kingdom_switzerland_required_county_total = {
 	multiply = required_de_jure_county_percentage_as_decimal
 	ceiling = yes
 }
+
+kingdom_pomerania_county_count = {
+	value = 0
+	every_sub_realm_county = {
+		limit = {
+			any_this_title_or_de_jure_above = { this = title:k_pomerania }
+		}
+		add = 1
+	}
+}
+
+kingdom_pomerania_required_county_total = {
+	value = 0
+	title:k_pomerania = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			add = 1
+		}
+	}
+	multiply = required_de_jure_county_percentage_as_decimal
+	ceiling = yes
+}

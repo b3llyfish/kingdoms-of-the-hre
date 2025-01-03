@@ -94,3 +94,8 @@
  requires_culture: "Must have or be a child of [root.culture.GetName] culture"
  kingdom_already_exists: "This Kingdom already exists"
  saxony_kingdom_already_exists: "The Kingdom of Saxony supersedes this Kingdom"
+
+ choose_pomerania_name: "Principality of [GetTitleByKey('k_pomerania').GetNameNoTierNoTooltip]"
+ choose_pomerania_tooltip: "Petition for the Principality of [GetTitleByKey('k_pomerania').GetNameNoTier]"
+ not_enough_pomerania_counties: "You only have [SCOPE.ScriptValue('kingdom_pomerania_county_count')|0] of [SCOPE.ScriptValue('kingdom_pomerania_required_county_total')|0] required [counties|E].
+ require_pomerania_culture: "Culture must be Pommeranian or derived from it"

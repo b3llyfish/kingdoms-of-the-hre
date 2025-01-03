@@ -46,6 +46,7 @@
 				can_choose_brittany = { CHARACTER = root }
 				can_choose_france = { CHARACTER = root }
 				can_choose_lower_saxony = { CHARACTER = root }
+				can_choose_pomerania = { CHARACTER = root }
 			}
 		}
 	}
@@ -283,6 +284,25 @@
 				}
 			}
 		}
+		### pomerania
+		item = {
+			value = choose_pomerania
+			is_valid = { can_choose_pomerania = { CHARACTER = root } }
+			localization = choose_pomerania_name
+			icon = "gfx/interface/icons/kingdoms_hre/pomerania.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_kingdom = {
+							CHARACTER = root
+							TARGET_KINGDOM = title:k_pomerania
+						}
+					}
+					add = 100
+				}
+			}
+		}
 		### aquitaine
 		item = {
 			value = choose_aquitaine
@@ -499,6 +519,16 @@
 				scope:choose_lower_saxony = yes
 			}
 			title:k_lower_saxony = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# pomerania
+		else_if = {
+			limit = {
+				scope:choose_pomerania = yes
+			}
+			title:k_pomerania = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001

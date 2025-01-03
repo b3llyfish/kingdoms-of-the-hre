@@ -382,6 +382,45 @@ k_italy = {
 		}
 	}
 }
+# pomerania
+k_pomerania = {
+	color = { 145 130 40 }
+	
+	capital = c_stettin # Szczecin
+	
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			NOT = {
+				has_title = title:e_hre
+			}
+		}
+		custom_tooltip = {
+			text = hre_cannot_create_kingdom
+			can_create_hre_kingdom = {
+				CHARACTER = root
+				TARGET_TITLE = title:k_pomerania
+			}
+		}
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			culture = culture:pommeranian
+		}
+	}
+	
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = culture:pommeranian
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+}
 
 ## creatables
 k_lower_saxony = {

@@ -109,7 +109,7 @@ inject_updated_kingdom_titles = {
 		title:d_burgundy = { set_de_jure_liege_title = title:k_france }
 		title:d_flanders = { set_de_jure_liege_title = title:k_france }
 		title:k_france = { set_de_jure_liege_title = title:e_france }
-		## k_italy
+		# k_italy
 		title:d_friuli = { set_de_jure_liege_title = title:k_italy }
 		title:d_verona = { set_de_jure_liege_title = title:k_italy }
 		title:d_piedmonte = { set_de_jure_liege_title = title:k_italy }
@@ -119,5 +119,11 @@ inject_updated_kingdom_titles = {
 		title:d_pisa = { set_de_jure_liege_title = title:k_italy }
 		title:d_toscana = { set_de_jure_liege_title = title:k_italy }
 		title:k_italy = { set_de_jure_liege_title = title:e_italy }
+		# k_pomerania
+		title:d_pommerania = { set_de_jure_liege_title = title:k_pomerania }
+		title:d_nordmark = { set_de_jure_liege_title = title:k_pomerania }
+		title:d_pomerelia = { set_de_jure_liege_title = title:k_pomerania }
+		title:d_ostmark = { set_de_jure_liege_title = title:k_pomerania }
+		title:k_pomerania = { set_de_jure_liege_title = title:e_wendish_empire }
 	}
 }
