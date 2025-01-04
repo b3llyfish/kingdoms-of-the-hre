@@ -99,9 +99,10 @@ can_choose_bohemia = {
 			}
 			custom_tooltip = {
 				text = require_bohemia_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:czech
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:czech
+					}
 				}
 			}
 		}
@@ -127,9 +128,10 @@ can_choose_frisia = {
 			}
 			custom_tooltip = {
 				text = require_frisia_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:frisian
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:frisian
+					}
 				}
 			}
 		}
@@ -213,9 +215,10 @@ can_choose_upper_saxony = {
 			}
 			custom_tooltip = {
 				text = require_saxony_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:saxon
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:saxon
+					}
 				}
 			}
 		}
@@ -265,15 +268,8 @@ can_choose_burgundy = {
 			}
 			custom_tooltip = {
 				text = require_burgundy_culture
-				OR = {
-					is_or_child_of_culture = {
-						CULTURE = culture
-						PARENT_CULTURE = culture:french
-					}
-					is_or_child_of_culture = {
-						CULTURE = culture
-						PARENT_CULTURE = culture:occitan
-					}
+				culture = {
+					has_cultural_pillar = heritage_frankish
 				}
 			}
 		}
@@ -299,15 +295,8 @@ can_choose_italy = {
 			}
 			custom_tooltip = {
 				text = require_italy_culture
-				OR = {
-					is_or_child_of_culture = {
-						CULTURE = culture
-						PARENT_CULTURE = culture:cisalpine
-					}
-					is_or_child_of_culture = {
-						CULTURE = culture
-						PARENT_CULTURE = culture:italian
-					}
+				culture = {
+					has_cultural_pillar = heritage_latin
 				}
 			}
 		}
@@ -336,9 +325,10 @@ can_choose_aquitaine = {
 			}
 			custom_tooltip = {
 				text = require_aquitaine_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:occitan
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:occitan
+					}
 				}
 			}
 		}
@@ -365,9 +355,10 @@ can_choose_brittany = {
 			}
 			custom_tooltip = {
 				text = require_brittany_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:breton
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:breton
+					}
 				}
 			}
 		}
@@ -394,9 +385,10 @@ can_choose_france = {
 			}
 			custom_tooltip = {
 				text = require_france_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:french
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:french
+					}
 				}
 			}
 		}
@@ -430,9 +422,10 @@ can_choose_lower_saxony = {
 			}
 			custom_tooltip = {
 				text = require_saxony_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:saxon
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:saxon
+					}
 				}
 			}
 		}
@@ -487,9 +480,10 @@ can_choose_pomerania = {
 			}
 			custom_tooltip = {
 				text = require_pomerania_culture
-				is_or_child_of_culture = {
-					CULTURE = culture
-					PARENT_CULTURE = culture:pommeranian
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:pommeranian
+					}
 				}
 			}
 		}

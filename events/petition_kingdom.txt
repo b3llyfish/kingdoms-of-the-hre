@@ -250,9 +250,10 @@ kingdoms_hre.0002 = {
 				first_valid = {
 					triggered_desc = {
 						trigger = {
-							has_different_culture_heritage = {
-								CULTURE = culture
-								OTHER_CULTURE = scope:vassal.culture
+							culture = {
+								does_not_have_same_culture_heritage = {
+									TARGET_CULTURE = scope:vassal.culture
+								}
 							}
 						}
 						desc = kingdoms_hre.0002.a.culture
@@ -265,9 +266,10 @@ kingdoms_hre.0002 = {
 		custom_tooltip = kingdoms_hre.protected_revoke_rights
 		if = {
 			limit = {
-				has_different_culture_heritage = {
-					CULTURE = culture
-					OTHER_CULTURE = scope:vassal.culture
+				culture = {
+					does_not_have_same_culture_heritage = {
+						TARGET_CULTURE = scope:vassal.culture
+					}
 				}
 			}
 			custom_tooltip = kingdoms_hre.0002.a.culture.tooltip
@@ -530,9 +532,10 @@ kingdoms_hre.0004 = {
 		}
 		if = {
 			limit = {
-				has_different_culture_heritage = {
-					CULTURE = scope:emperor.culture
-					OTHER_CULTURE = scope:vassal.culture
+				scope:emperor.culture = {
+					does_not_have_same_culture_heritage = {
+						TARGET_CULTURE = scope:vassal.culture
+					}
 				}
 			}
 			add_culture_acceptance_to_hre_cultures = {

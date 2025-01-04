@@ -1,18 +1,16 @@
-﻿has_different_culture_heritage = {
-	$CULTURE$ = {
-		NOT = {
-			has_same_culture_heritage = $OTHER_CULTURE$
-		}
+﻿# all triggers defined here are assumed to have a culture scope
+
+does_not_have_same_culture_heritage = {
+	NOT = {
+		has_same_culture_heritage = $TARGET_CULTURE$
 	}
 }
 
-is_or_child_of_culture = {
-	$CULTURE$ = {
-		OR = {
-			this = $PARENT_CULTURE$
-			any_parent_culture_or_above = {
-				this = $PARENT_CULTURE$
-			}
+is_culture_or_is_descendant_culture_of = {
+	OR = {
+		this = $TARGET_CULTURE$
+		any_parent_culture_or_above = {
+			this = $TARGET_CULTURE$
 		}
 	}
 }

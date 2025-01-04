@@ -42,9 +42,10 @@ add_culture_acceptance_to_hre_cultures = {
 	}
 	else_if = {
 		limit = {
-			has_different_culture_heritage = {
-				CULTURE = $EMPEROR_CULTURE$
-				OTHER_CULTURE = $TARGET_CULTURE$
+			$EMPEROR_CULTURE$ = {
+				does_not_have_same_culture_heritage = {
+					TARGET_CULTURE = $TARGET_CULTURE$
+				}
 			}
 		}
 		$EMPEROR_CULTURE$ = {
