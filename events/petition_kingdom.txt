@@ -1,4 +1,4 @@
-namespace = kingdoms_hre
+﻿namespace = kingdoms_hre
 
 ## Required scopes:
 # emperor - the Emperor
