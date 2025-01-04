@@ -1,4 +1,4 @@
-﻿namespace = kingdoms_hre
+namespace = kingdoms_hre
 
 ## Required scopes:
 # emperor - the Emperor
@@ -245,35 +245,9 @@ kingdoms_hre.0002 = {
 	}
 	# Accepts
 	option = {
-		name = {
-			text = {
-				first_valid = {
-					triggered_desc = {
-						trigger = {
-							culture = {
-								does_not_have_same_culture_heritage = {
-									TARGET_CULTURE = scope:vassal.culture
-								}
-							}
-						}
-						desc = kingdoms_hre.0002.a.culture
-					}
-					desc = kingdoms_hre.0002.a
-				}
-			}
-		}
+		name = kingdoms_hre.0002.a
 		custom_tooltip = kingdoms_hre.0002.a.tooltip
 		custom_tooltip = kingdoms_hre.protected_revoke_rights
-		if = {
-			limit = {
-				culture = {
-					does_not_have_same_culture_heritage = {
-						TARGET_CULTURE = scope:vassal.culture
-					}
-				}
-			}
-			custom_tooltip = kingdoms_hre.0002.a.culture.tooltip
-		}
 		custom_tooltip = kingdoms_hre.powerful_vassals_irritated
 		scope:vassal = {
 			trigger_event = {
@@ -529,19 +503,6 @@ kingdoms_hre.0004 = {
 		notify_players_grant_kingdom_title = {
 			TARGET_TITLE = scope:target_title
 			OWNER = scope:vassal
-		}
-		if = {
-			limit = {
-				scope:emperor.culture = {
-					does_not_have_same_culture_heritage = {
-						TARGET_CULTURE = scope:vassal.culture
-					}
-				}
-			}
-			add_culture_acceptance_to_hre_cultures = {
-				EMPEROR_CULTURE = scope:emperor.culture
-				TARGET_CULTURE = scope:vassal.culture
-			}
 		}
 	}
 }

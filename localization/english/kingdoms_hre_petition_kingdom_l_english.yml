@@ -24,8 +24,6 @@
  kingdoms_hre.0002.desc: "A petition has arrived from [vassal.GetShortUIName], asserting [vassal.GetHerHis] claim to the $loc_title$ and requesting that I bestow upon them the title. \n\nI could accept the petition and gain a powerful supporter in [target_title.GetNameNoTierNoTooltip]. However other vassals in the Empire will not take kindly to this perceived 'favouritism'.\n\nIf I reject the petition then [vassal.GetShortUIName] will surely respond poorly and I risk an escalation with [vassal.GetHerHim].\n\nMy courtiers gather around me, patiently wait for my response..."
  kingdoms_hre.0002.a: "Their claim is worthy, they shall be a [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!"
  kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] becomes the [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip]"
- kingdoms_hre.0002.a.culture: "This is an opportunity to align [vassal.GetCulture.GetName] interests with the Empire"
- kingdoms_hre.0002.a.culture.tooltip: "Cultural acceptance between #Z [vassal.GetCulture.GetName]#! and #Z [emperor.GetCulture.GetHeritage.GetName]#! cultures will increase by #Z [SCOPE.ScriptValue('kingdom_grant_culture_acceptance_percentage')|0]%#!"
  kingdoms_hre.0002.c: "Balance in the Empire is paramount, I must reject their petition"
  kingdoms_hre.0002.c.tooltip: "You relations with [vassal.GetShortUIName] severely worsen"
  kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] may fabricate a claim on #Z [GetTitleByKey('e_hre').GetName]#!!"
