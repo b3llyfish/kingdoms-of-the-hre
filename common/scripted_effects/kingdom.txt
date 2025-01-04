@@ -65,6 +65,37 @@
 			OWNER = $OWNER$
 		}
 	}
+	
+	# give option to diverge culture if criteria met
+	if = {
+		limit = {
+			has_dlc_feature = royal_court
+			# is not AI with disabled AI diverge culture game rule
+			NAND = {
+				is_ai = yes
+				has_game_rule = none_divergent_culture_ai_frequency
+			}
+			# is not a culture head
+			NOT = { culture.culture_head = $OWNER$ }
+			# has a least one county with the owner's culture or target title has unique diverge rules
+			OR = {
+				any_sub_realm_county = {
+					culture = $OWNER$.culture
+				}
+				scope:target_title = title:k_upper_saxony
+			}
+		}
+		$OWNER$ = {
+			save_scope_as = character
+			culture = {
+				save_scope_as = current_culture
+			}
+		}
+		trigger_event = {
+			id = diverge_culture.0001
+			days = 7
+		}
+	}
 }
 
 notify_players_grant_kingdom_title = {

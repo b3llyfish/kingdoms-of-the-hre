@@ -69,6 +69,11 @@ diverge_culture_with_conversion = {
 				CHARACTER = $CHARACTER$
 			}
 		}
+		else = {
+			generic_culture_diverge = {
+				CHARACTER = $CHARACTER$
+			}
+		}
 	}
 }
 
@@ -116,21 +121,26 @@ upper_saxony_culture_diverge = {
 				set_county_culture = scope:new_culture
 			}
 		}
-		every_vassal = {
-			limit = {
-				culture = scope:old_culture
-				OR = {
-					AND = {
-						are_sorbia_duchies_de_jure_hre = yes
-						capital_province = { geographical_region = custom_upper_saxony }
-					}
-					AND = {
-						are_sorbia_duchies_de_jure_hre = no
-						capital_province = { geographical_region = custom_upper_saxony_without_sorbia }
-					}
-				}
-			}
-			set_culture = scope:new_culture
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = scope:old_culture
+			NEW_CULTURE = scope:new_culture
+		}
+	}
+}
+
+# diverge culture like the AI would
+generic_culture_diverge = {
+	$CHARACTER$ = {
+		culture = {
+			save_scope_as = old_culture
+		}
+		create_divergent_culture_with_side_effects_excluding_cost = yes
+		culture = {
+			save_scope_as = new_culture
+		}
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = scope:old_culture
+			NEW_CULTURE = scope:new_culture
 		}
 	}
 }

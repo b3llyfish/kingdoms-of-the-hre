@@ -45,25 +45,5 @@
 			title:d_meissen = { set_de_jure_liege_title = title:k_upper_saxony }
 			title:d_lausitz = { set_de_jure_liege_title = title:k_upper_saxony }
 		}
-		
-		if = {
-			limit = {
-				has_dlc_feature = royal_court
-				NAND = {
-					is_ai = yes
-					has_game_rule = none_divergent_culture_ai_frequency
-				}
-			}
-			$OWNER$ = {
-				save_scope_as = character
-				culture = {
-					save_scope_as = current_culture
-				}
-			}
-			trigger_event = {
-				id = diverge_culture.0001
-				days = 7
-			}
-		}
 	}
 }

@@ -38,6 +38,10 @@ diverge_culture.0001 = {
 			custom_tooltip = diverge_culture.0001.a.tooltip.upper_saxony
 			custom_tooltip = diverge_culture.0001.a.tooltip.upper_saxony.convert
 		}
+		else = {
+			custom_tooltip = diverge_culture.0001.a.tooltip.generic
+			custom_tooltip = diverge_culture.0001.a.tooltip.generic.convert
+		}
 		custom_tooltip = diverge_culture.0001.a.tooltip.vassals
 		ai_chance = {
 			# AI should always do this
