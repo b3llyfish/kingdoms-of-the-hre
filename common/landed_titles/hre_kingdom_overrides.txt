@@ -456,6 +456,8 @@ k_upper_saxony = {
 # define without duchies
 k_saxony = {
 	color = { 120 25 25 }
+	
+	capital = c_dessau
 }
 # remove definite_form
 k_switzerland = {

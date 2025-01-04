@@ -41,10 +41,13 @@
 			holder = $OWNER$
 			change = scope:change
 		}
+	}
+	resolve_title_and_vassal_change = scope:change
+	
+	title:k_saxony = {
 		# add saxon elective law
 		add_title_law = saxon_elective_succession_law
 	}
-	resolve_title_and_vassal_change = scope:change
 	
 	# add all of current upper and lower duchies
 	title:d_angria = { set_de_jure_liege_title = title:k_saxony }
@@ -80,14 +83,18 @@
 			limit = {
 				title:k_upper_saxony = $OWNER$.primary_title
 			}
-			copy_title_history = title:k_upper_saxony
+			title:k_saxony = {
+				copy_title_history = title:k_upper_saxony
+			}
 		}
 		else_if = {
 			if = {
 				limit = {
 					title:k_lower_saxony = $OWNER$.primary_title
 				}
-				copy_title_history = title:k_lower_saxony
+				title:k_saxony = {
+					copy_title_history = title:k_lower_saxony
+				}
 			}
 		}
 		# destroy upper and lower
