@@ -19,9 +19,8 @@ k_bavaria = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_bavaria
 			}
 		}
 	}
@@ -51,9 +50,8 @@ k_bohemia = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_bohemia
 			}
 		}
 	}
@@ -115,9 +113,8 @@ k_frisia = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_frisia
 			}
 		}
 		trigger_if = {
@@ -159,9 +156,8 @@ k_lotharingia = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_lotharingia
 			}
 		}
 	}
@@ -202,9 +198,18 @@ k_aquitaine = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
-				CHARACTER = root
-				TARGET_TITLE = title:k_aquitaine
+			OR = {
+				is_not_hre_vassal = {
+					CHARACTER = root
+				}
+				AND = {
+					is_hre_vassal = {
+						CHARACTER = root
+					}
+					title:k_aquitaine = {
+						NOT = { target_is_de_jure_liege_or_above = title:e_hre }
+					}
+				}
 			}
 		}
 		trigger_if = {
@@ -249,9 +254,18 @@ k_brittany = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
-				CHARACTER = root
-				TARGET_TITLE = title:k_brittany
+			OR = {
+				is_not_hre_vassal = {
+					CHARACTER = root
+				}
+				AND = {
+					is_hre_vassal = {
+						CHARACTER = root
+					}
+					title:k_brittany = {
+						NOT = { target_is_de_jure_liege_or_above = title:e_hre }
+					}
+				}
 			}
 		}
 		trigger_if = {
@@ -287,9 +301,8 @@ k_burgundy = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_burgundy
 			}
 		}
 	}
@@ -323,9 +336,18 @@ k_france = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
-				CHARACTER = root
-				TARGET_TITLE = title:k_france
+			OR = {
+				is_not_hre_vassal = {
+					CHARACTER = root
+				}
+				AND = {
+					is_hre_vassal = {
+						CHARACTER = root
+					}
+					title:k_france = {
+						NOT = { target_is_de_jure_liege_or_above = title:e_hre }
+					}
+				}
 			}
 		}
 	}
@@ -366,9 +388,8 @@ k_italy = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_italy
 			}
 		}
 	}
@@ -399,9 +420,8 @@ k_pomerania = {
 		}
 		custom_tooltip = {
 			text = hre_cannot_create_kingdom
-			can_create_hre_kingdom = {
+			is_not_hre_vassal = {
 				CHARACTER = root
-				TARGET_TITLE = title:k_pomerania
 			}
 		}
 		trigger_if = {

@@ -12,28 +12,18 @@
 	}
 }
 
-# as its called within the landed title declaration we don't need to know the title
-# simply block HRE vassals
-can_create_hre_kingdom = {
+is_hre_vassal = {
 	$CHARACTER$ = {
-		OR = {
-			# is independent
-			is_independent_ruler = yes
-			# top liege is not hre
-			NOT = {
-				top_liege = { has_title = title:e_hre }
-			}
-			# top liege is hre and title is not de jure hre, burgundy or italy
-			AND = {
-				top_liege = { has_title = title:e_hre }
-				NOR = {
-					$TARGET_TITLE$ = {
-						target_is_de_jure_liege_or_above = title:e_hre
-					}
-					$TARGET_TITLE$ = title:k_burgundy
-					$TARGET_TITLE$ = title:k_italy
-					$TARGET_TITLE$ = title:k_pomerania
-				}
+		is_independent_ruler = no
+		top_liege = { has_title = title:e_hre }
+	}
+}
+
+is_not_hre_vassal = {
+	$CHARACTER$ = {
+		NOT = {
+			is_hre_vassal = {
+				CHARACTER = root
 			}
 		}
 	}
