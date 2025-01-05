@@ -1,4 +1,4 @@
-swiss_diverged = {
+﻿swiss_diverged = {
 	trigger = {
 		OR = {
 			capital_county ?= {

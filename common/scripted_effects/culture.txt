@@ -1,4 +1,4 @@
-# Calls the kingdom specific diverge culture function
+﻿# Calls the kingdom specific diverge culture function
 diverge_culture_with_conversion = {
 	$CHARACTER$ = {
 		if = {
@@ -25,6 +25,9 @@ diverge_culture_with_conversion = {
 	}
 }
 
+# setup unique culture
+# convert a bunch of polabian counties to upper saxony
+# offer convert to family, courtier and vassals
 upper_saxony_culture_diverge = {
 	$CHARACTER$ = {
 		culture = {
@@ -69,13 +72,17 @@ upper_saxony_culture_diverge = {
 				set_county_culture = scope:new_culture
 			}
 		}
-		convert_player_realm_from_old_culture_to_new_effect = {
-			OLD_CULTURE = scope:old_culture
-			NEW_CULTURE = scope:new_culture
-		}
+	}
+	convert_family_culture_and_notify_vassals_effect = {
+		CONVERTER = $CHARACTER$
+		OLD_CULTURE = scope:old_culture
+		NEW_CULTURE = scope:new_culture
 	}
 }
 
+# setup unique culture
+# convert d_transjurania and d_currezia to swiss
+# offer convert to family, courtier and vassals
 switzerland_culture_diverge = {
 	$CHARACTER$ = {
 		culture = {
@@ -103,19 +110,22 @@ switzerland_culture_diverge = {
 			every_in_de_jure_hierarchy = {
 				limit = {
 					tier = tier_county
-					culture = culture:old_culture
+					culture = scope:old_culture
 				}
 				set_county_culture = scope:new_culture
 			}
 		}
-		convert_player_realm_from_old_culture_to_new_effect = {
-			OLD_CULTURE = scope:old_culture
-			NEW_CULTURE = scope:new_culture
-		}
+	}
+	convert_family_culture_and_notify_vassals_effect = {
+		CONVERTER = $CHARACTER$
+		OLD_CULTURE = scope:old_culture
+		NEW_CULTURE = scope:new_culture
 	}
 }
 
 # diverge culture like the AI would
+# convert capital duchy
+# offer convert to family, courtier and vassals
 generic_culture_diverge = {
 	$CHARACTER$ = {
 		culture = {
@@ -125,9 +135,19 @@ generic_culture_diverge = {
 		culture = {
 			save_scope_as = new_culture
 		}
-		convert_player_realm_from_old_culture_to_new_effect = {
-			OLD_CULTURE = scope:old_culture
-			NEW_CULTURE = scope:new_culture
+		capital_county.duchy = {
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					culture = scope:old_culture
+				}
+				set_county_culture = scope:new_culture
+			}
 		}
+	}
+	convert_family_culture_and_notify_vassals_effect = {
+		CONVERTER = $CHARACTER$
+		OLD_CULTURE = scope:old_culture
+		NEW_CULTURE = scope:new_culture
 	}
 }
