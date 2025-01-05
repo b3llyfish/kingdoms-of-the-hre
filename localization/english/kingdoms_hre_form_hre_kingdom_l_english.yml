@@ -62,8 +62,6 @@
 
  choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]"
  choose_switzerland_tooltip: "Petition for the [GetTitleByKey('k_switzerland').GetName]\n\nThe [GetTitleByKey('k_switzerland').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_transjurania').GetName] and the [GetTitleByKey('d_currezia').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_savoie').GetName] then the [GetTitleByKey('d_savoie').GetNameNoTooltip] will also become a de jure part of the [GetTitleByKey('k_switzerland').GetNameNoTooltip].\n\nForming this Kingdom will grant you Absolute Crown Authority law."
- swiss_not_enough_development: "Requires at least [SCOPE.ScriptValue('swiss_development_required_amount')|0] development in [counties|E] within [GetGeographicalRegion('custom_core_switzerland').GetName] (currently [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
- random_switzerland_culture_convert: "Random chance owned French or Cisalpine culture counties within the [GetTitleByKey('d_savoie').GetNameNoTooltip] will change to your culture"
  not_enough_switzerland_counties: "[SCOPE.ScriptValue('kingdom_switzerland_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_core_switzerland').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_switzerland_county_count')|0]."
 
  require_saxony_culture: "Culture must be Saxon or derived from it"

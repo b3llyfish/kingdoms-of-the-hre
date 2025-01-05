@@ -239,10 +239,7 @@ can_choose_switzerland = {
 			}
 		}
 		prestige_level >= medium_prestige_level
-		custom_tooltip = {
-			text = swiss_not_enough_development
-			kingdom_swiss_development_county_total >= swiss_development_required_amount
-		}
+		stewardship >= high_skill_rating
 		capital_province = {
 			geographical_region = custom_core_switzerland
 		}

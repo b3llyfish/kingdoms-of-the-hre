@@ -230,14 +230,6 @@ kingdom_italy_required_county_total = {
 	ceiling = yes
 }
 
-kingdom_swiss_development_county_total = {
-	value = 0
-	every_county_in_region = {
-		region = custom_core_switzerland
-		add = development_level
-	}
-}
-
 kingdom_upper_saxony_county_count = {
 	value = 0
 	if = {

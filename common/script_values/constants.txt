@@ -1,23 +1,4 @@
-﻿kingdom_gift_amount = 300
-
-kingdom_grant_culture_acceptance_percentage = 25
-
-kingdom_upper_saxony_polabian_culture_acceptance_percentage = 40
-
-swiss_development_required_amount = {
-	value = 0
-	if = {
-		limit = {
-			game_start_date = 867.1.1
-		}
-		# around 7 dev per county
-		add = 42
-	}
-	else = {
-		# around 10 dev per county
-		add = 60
-	}
-}
+kingdom_gift_amount = 300
 
 austria_required_renown_level = {
 	value = 0

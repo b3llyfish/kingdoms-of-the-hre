@@ -45,28 +45,5 @@
 				}
 			}
 		}
-		
-		# random chance for each french or cisalpine culture county to change culture
-		if = {
-			limit = {
-				completely_controls = title:d_savoie
-			}
-			custom_tooltip = {
-				text = random_switzerland_culture_convert
-				every_sub_realm_county = {
-					limit = {
-						OR = {
-							culture = culture:french
-							culture = culture:cisalpine
-						}
-						any_this_title_or_de_jure_above = { this = title:d_savoie }
-					}
-					random = {
-						chance = 50
-						set_county_culture = $OWNER$.culture
-					}
-				}
-			}
-		}
 	}
 }

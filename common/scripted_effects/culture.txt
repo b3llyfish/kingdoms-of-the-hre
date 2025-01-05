@@ -1,4 +1,4 @@
-﻿# Calls the kingdom specific diverge culture function
+# Calls the kingdom specific diverge culture function
 diverge_culture_with_conversion = {
 	$CHARACTER$ = {
 		if = {
@@ -6,6 +6,14 @@ diverge_culture_with_conversion = {
 				primary_title = title:k_upper_saxony
 			}
 			upper_saxony_culture_diverge = {
+				CHARACTER = $CHARACTER$
+			}
+		}
+		else_if = {
+			limit = {
+				primary_title = title:k_switzerland
+			}
+			switzerland_culture_diverge = {
 				CHARACTER = $CHARACTER$
 			}
 		}
@@ -57,6 +65,45 @@ upper_saxony_culture_diverge = {
 				limit = {
 					tier = tier_county
 					culture = culture:polabian
+				}
+				set_county_culture = scope:new_culture
+			}
+		}
+		convert_player_realm_from_old_culture_to_new_effect = {
+			OLD_CULTURE = scope:old_culture
+			NEW_CULTURE = scope:new_culture
+		}
+	}
+}
+
+switzerland_culture_diverge = {
+	$CHARACTER$ = {
+		culture = {
+			save_scope_as = old_culture
+		}
+		create_divergent_culture = yes
+		# setup culture with city holding and development theme
+		scope:new_culture = {
+			set_culture_pillar = ethos_bureaucratic
+			clear_culture_traditions = yes
+			add_culture_tradition = tradition_city_keepers
+			add_culture_tradition = tradition_mountain_homes
+			add_culture_tradition = tradition_parochialism
+			add_culture_tradition = tradition_pacifism
+		}
+		# build list of titles whose counties will be converted
+		title:d_transjurania = {
+			add_to_list = title_list
+		}
+		title:d_currezia = {
+			add_to_list = title_list
+		}
+		every_in_list = {
+			list = title_list
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
+					culture = culture:old_culture
 				}
 				set_county_culture = scope:new_culture
 			}
