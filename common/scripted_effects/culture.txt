@@ -213,3 +213,11 @@ generic_culture_diverge = {
 		NEW_CULTURE = scope:new_culture
 	}
 }
+
+convert_to_local_culture = {
+	convert_family_culture_and_notify_vassals_effect = {
+		CONVERTER = $CHARACTER$
+		OLD_CULTURE = $CHARACTER$.culture
+		NEW_CULTURE = $CHARACTER$.capital_province.culture
+	}
+}

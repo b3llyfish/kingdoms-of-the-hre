@@ -13,3 +13,10 @@
  diverge_culture.0001.a.tooltip.austria: "New culture will have the $ethos_communal_name$ ethos and $tradition_astute_diplomats_name$, $tradition_music_theory_name$, $tradition_festivities_name$ and  $tradition_welcoming_name$ traditions"
  diverge_culture.0001.a.tooltip.austria.convert: "A portion of [GetGeographicalRegion('custom_core_austria').GetName] will convert to the new culture"
  diverge_culture.0001.b: "No, too much has changed already"
+
+ convert_to_local_culture.title: "A [character.Custom('GetQueenKing')|U] of the People?"
+ convert_to_local_culture.desc: "As the new [character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U] of [primary_title.GetNameNoTierNoTooltip] I am aware that the customs and traditions I follow differ from the people I rule over.\n\nMy reign would be smoother if I were to adopt the [character.GetCapitalLocation.GetCounty.GetCulture.GetName] ways..."
+ convert_to_local_culture.0001.a: "I shall become a true [character.GetCapitalLocation.GetCounty.GetCulture.GetName] [character.Custom('GetQueenKing')|U]!"
+ convert_to_local_culture.0001.a.tooltip: "You will convert to [character.GetCapitalLocation.GetCounty.GetCulture.GetName] culture"
+ convert_to_local_culture.0001.a.tooltip.vassals: "Close family and courtiers will convert to [character.GetCapitalLocation.GetCounty.GetCulture.GetName] culture. Vassal will be given a choice to adopt [character.GetCapitalLocation.GetCounty.GetCulture.GetName] culture."
+ convert_to_local_culture.0001.b: "Let us value the old ways and remain as [character.GetCulture.GetName]"

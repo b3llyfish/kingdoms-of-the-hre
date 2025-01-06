@@ -1,0 +1,58 @@
+﻿namespace = convert_to_local_culture
+
+## Events
+# convert_to_local_culture.0001 - Convert to local culture
+# convert_to_local_culture.0002 - Hidden event to do the work
+
+convert_to_local_culture.0001 = {
+	type = character_event
+	title = convert_to_local_culture.title
+	desc = convert_to_local_culture.desc
+	
+	theme = crown
+	background = throne_room
+	
+	left_portrait = {
+		character = scope:character
+		animation = thinking
+	}
+	
+	immediate = {
+		scope:character = {
+			primary_title = {
+				save_scope_as = primary_title
+			}
+		}
+	}
+	
+	option = {
+		name = convert_to_local_culture.0001.a
+		custom_tooltip = {
+			text = convert_to_local_culture.0001.a.tooltip
+			trigger_event = convert_to_local_culture.0002
+		}
+		custom_tooltip = convert_to_local_culture.0001.a.tooltip.vassals
+		ai_chance = {
+			# AI should always do this
+			base = 100
+		}
+	}
+	
+	option = {
+		name = convert_to_local_culture.0001.b
+		ai_chance = {
+			# player only option
+			base = 0
+		}
+	}
+}
+
+convert_to_local_culture.0002 = {
+	scope = none
+	hidden = yes
+	immediate = {
+		convert_to_local_culture = {
+			CHARACTER = scope:character
+		}
+	}
+}
