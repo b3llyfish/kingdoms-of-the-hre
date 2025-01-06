@@ -27,6 +27,30 @@ diverge_culture.0001 = {
 	
 	option = {
 		name = diverge_culture.0001.a
+		if = {
+			limit = {
+				culture = {
+					has_cultural_parameter = less_likely_to_culture_convert
+				}
+				OR = {
+					has_trait = compassionate
+					has_trait = gregarious
+					has_trait = diligent
+					has_trait = fickle
+					has_trait = humble
+					has_trait = trusting
+				}
+			}
+			add_stress = medium_stress_gain
+		}
+		else_if = {
+			limit = {
+				culture = {
+					has_cultural_parameter = less_likely_to_culture_convert
+				}
+			}
+			add_stress = major_stress_gain
+		}
 		custom_tooltip = {
 			text = diverge_culture.0001.a.tooltip
 			trigger_event = diverge_culture.0002
