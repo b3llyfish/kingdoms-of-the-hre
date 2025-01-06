@@ -1,0 +1,53 @@
+﻿archduchy_succession_decision = {
+	ai_goal = yes
+	
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_dynasty_house.dds"
+	}
+	
+	decision_group_type = major
+	
+	is_shown = {
+		has_title = title:k_austria
+		NOT = {
+			has_realm_law = single_heir_succession_law
+		}
+	}
+	
+	is_valid = {
+		dynasty ?= { dynasty_prestige_level >= austria_required_renown_level }
+		prestige_level >= high_prestige_level
+	}
+	
+	is_valid_showing_failures_only = {
+		faith = top_liege.faith	#Must share the faith of your emperor
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+		is_healthy = yes
+		exists = root.player_heir
+		primary_title = title:k_austria
+	}
+	
+	effect = {
+		send_interface_message = {
+			title = archduchy_succession_primogeniture_enacted_title
+			desc = archduchy_succession_primogeniture_enacted_desc
+			# give primogeniture
+			add_realm_law_skip_effects = single_heir_succession_law
+		}
+		add_prestige = massive_prestige_value
+	}
+	
+	cost = {
+		# no cost
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+	
+	ai_will_do = {
+		base = 100
+	}
+}

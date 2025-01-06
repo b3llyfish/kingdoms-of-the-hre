@@ -57,7 +57,7 @@
  require_burgundy_culture: "Culture must have Frankish heritage"
 
  choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]"
- choose_austria_tooltip: "Petition for the [GetTitleByKey('k_austria').GetName]\n\nThe [GetTitleByKey('k_austria').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_osterreich').GetName] and the [GetTitleByKey('d_steyermark').GetName] as de jure duchies.\n\nIf you fully control the [GetTitleByKey('d_carinthia').GetName] then the [GetTitleByKey('d_carinthia').GetNameNoTooltip], the [GetTitleByKey('d_krain').GetName] and the [GetTitleByKey('d_istria').GetName] will also become a de jure part of the [GetTitleByKey('k_austria').GetNameNoTooltip].\n\nForming this Kingdom will grant you Primogeniture succession law."
+ choose_austria_tooltip: "Petition for the [GetTitleByKey('k_austria').GetName]\n\nThe [GetTitleByKey('k_austria').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_osterreich').GetName] and the [GetTitleByKey('d_steyermark').GetName] as de jure duchies."
  not_enough_austria_counties: "[SCOPE.ScriptValue('kingdom_austria_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_core_austria').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_austria_county_count')|0]."
 
  choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]"

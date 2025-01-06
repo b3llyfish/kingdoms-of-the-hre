@@ -55,7 +55,6 @@ can_choose_austria = {
 				TARGET_REGION = custom_core_austria
 			}
 		}
-		dynasty ?= { dynasty_prestige_level >= austria_required_renown_level }
 		prestige_level >= medium_prestige_level
 		capital_province = {
 			geographical_region = custom_core_austria
