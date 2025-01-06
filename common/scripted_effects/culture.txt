@@ -17,6 +17,14 @@ diverge_culture_with_conversion = {
 				CHARACTER = $CHARACTER$
 			}
 		}
+		else_if = {
+			limit = {
+				primary_title = title:k_austria
+			}
+			austria_culture_diverge = {
+				CHARACTER = $CHARACTER$
+			}
+		}
 		else = {
 			generic_culture_diverge = {
 				CHARACTER = $CHARACTER$
@@ -44,10 +52,19 @@ upper_saxony_culture_diverge = {
 			add_culture_tradition = tradition_storytellers
 		}
 		# build list of titles whose counties will be converted
-		title:d_anhalt = {
+		title:c_magdeburg = {
 			add_to_list = title_list
 		}
-		title:d_thuringia = {
+		title:c_dessau = {
+			add_to_list = title_list
+		}
+		title:c_mersenburg = {
+			add_to_list = title_list
+		}
+		title:c_orlamunde = {
+			add_to_list = title_list
+		}
+		title:c_lobdaburg = {
 			add_to_list = title_list
 		}
 		title:c_naumburg = {
@@ -67,7 +84,6 @@ upper_saxony_culture_diverge = {
 			every_in_de_jure_hierarchy = {
 				limit = {
 					tier = tier_county
-					culture = culture:polabian
 				}
 				set_county_culture = scope:new_culture
 			}
@@ -110,7 +126,54 @@ switzerland_culture_diverge = {
 			every_in_de_jure_hierarchy = {
 				limit = {
 					tier = tier_county
-					culture = scope:old_culture
+				}
+				set_county_culture = scope:new_culture
+			}
+		}
+	}
+	convert_family_culture_and_notify_vassals_effect = {
+		CONVERTER = $CHARACTER$
+		OLD_CULTURE = scope:old_culture
+		NEW_CULTURE = scope:new_culture
+	}
+}
+
+# setup unique culture
+# convert d_transjurania and d_currezia to swiss
+# offer convert to family, courtier and vassals
+austria_culture_diverge = {
+	$CHARACTER$ = {
+		culture = {
+			save_scope_as = old_culture
+		}
+		create_divergent_culture = yes
+		# setup culture with diplomacy and feasting theme
+		scope:new_culture = {
+			set_culture_pillar = ethos_communal
+			clear_culture_traditions = yes
+			add_culture_tradition = tradition_astute_diplomats
+			add_culture_tradition = tradition_music_theory
+			add_culture_tradition = tradition_festivities
+			add_culture_tradition = tradition_welcoming
+		}
+		# build list of titles whose counties will be converted
+		title:d_osterreich = {
+			add_to_list = title_list
+		}
+		title:c_graz = {
+			add_to_list = title_list
+		}
+		title:c_murzzuschlag = {
+			add_to_list = title_list
+		}
+		title:c_pitten = {
+			add_to_list = title_list
+		}
+		every_in_list = {
+			list = title_list
+			every_in_de_jure_hierarchy = {
+				limit = {
+					tier = tier_county
 				}
 				set_county_culture = scope:new_culture
 			}
@@ -139,7 +202,6 @@ generic_culture_diverge = {
 			every_in_de_jure_hierarchy = {
 				limit = {
 					tier = tier_county
-					culture = scope:old_culture
 				}
 				set_county_culture = scope:new_culture
 			}

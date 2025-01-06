@@ -83,6 +83,8 @@
 					culture = $OWNER$.culture
 				}
 				scope:target_title = title:k_upper_saxony
+				scope:target_title = title:k_switzerland
+				scope:target_title = title:k_austria
 			}
 		}
 		$OWNER$ = {
