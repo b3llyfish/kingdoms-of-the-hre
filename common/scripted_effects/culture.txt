@@ -34,7 +34,7 @@ diverge_culture_with_conversion = {
 }
 
 # setup unique culture
-# convert a bunch of polabian counties to upper saxony
+# convert south-west upper saxony counties to new culture
 # offer convert to family, courtier and vassals
 upper_saxony_culture_diverge = {
 	$CHARACTER$ = {
@@ -47,9 +47,10 @@ upper_saxony_culture_diverge = {
 			set_culture_pillar = ethos_courtly
 			# build a unique set of traditions
 			clear_culture_traditions = yes
-			add_culture_tradition = tradition_hereditary_hierarchy
+			add_culture_tradition = tradition_ruling_caste
 			add_culture_tradition = tradition_formation_fighting
 			add_culture_tradition = tradition_storytellers
+			add_culture_tradition = tradition_zealous_people
 		}
 		# build list of titles whose counties will be converted
 		title:c_magdeburg = {
@@ -77,6 +78,15 @@ upper_saxony_culture_diverge = {
 			add_to_list = title_list
 		}
 		title:c_osterland = {
+			add_to_list = title_list
+		}
+		title:c_brene = {
+			add_to_list = title_list
+		}
+		title:c_meissen = {
+			add_to_list = title_list
+		}
+		title:c_dresden = {
 			add_to_list = title_list
 		}
 		every_in_list = {
