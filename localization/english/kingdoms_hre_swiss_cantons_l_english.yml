@@ -1,0 +1,10 @@
+﻿l_english:
+ swiss_cantons_decision: "Empower the Cantons"
+ swiss_cantons_decision_desc: "As the figurehead for the Swiss Cantons it is up to me to ensure they have the resources to grow and thrive.\n\nBy expanding the cities across [GetGeographicalRegion('custom_core_switzerland').GetName] we could create a strong trade network to allow our counties to flourish."
+ swiss_cantons_decision_tooltip: "Establish more cities for the Swiss Cantons"
+ swiss_cantons_decision_confirm: "More power to the Cantons!"
+ swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! cities are required in the region of [GetGeographicalRegion('custom_core_switzerland').GetName], (currently: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)"
+ swiss_cantons_primogeniture_enacted_title: "County gained modifier"
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] gained [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]"
+ empowered_swiss_cantons_modifier: "Powerful Swiss Cantons"
+ empowered_swiss_cantons_modifier_desc: "This county benefits from the influence of the Swiss Cantons, at the cost of some autonomy"

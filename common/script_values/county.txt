@@ -334,6 +334,19 @@ kingdom_switzerland_required_county_total = {
 	ceiling = yes
 }
 
+kingdom_switzerland_num_cities_total = {
+	value = 0
+	every_sub_realm_county = {
+		every_county_province = {
+			limit = {
+				has_holding_type = city_holding
+				geographical_region = custom_core_switzerland
+			}
+			add = 1
+		}
+	}
+}
+
 kingdom_pomerania_county_count = {
 	value = 0
 	every_sub_realm_county = {

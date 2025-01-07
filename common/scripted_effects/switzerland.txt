@@ -10,25 +10,6 @@
 		title:d_transjurania = { set_de_jure_liege_title = title:k_switzerland }
 		title:d_currezia = { set_de_jure_liege_title = title:k_switzerland }
 		
-		if = {
-			limit = {
-				completely_controls = title:d_savoie
-			}
-			title:d_savoie = { set_de_jure_liege_title = title:k_switzerland }
-		}
-		
-		# give absolute crown authority law
-		if = {
-			limit = {
-				OR = {
-					has_realm_law = crown_authority_0
-					has_realm_law = crown_authority_1
-					has_realm_law = crown_authority_2
-				}
-			}
-			add_realm_law_skip_effects = crown_authority_3
-		}
-		
 		# if Burgundy king exists form a rivalry and worsen their opinion of the Emperor
 		if = {
 			limit = {

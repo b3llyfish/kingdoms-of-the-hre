@@ -238,7 +238,6 @@ can_choose_switzerland = {
 			}
 		}
 		prestige_level >= medium_prestige_level
-		stewardship >= high_skill_rating
 		capital_province = {
 			geographical_region = custom_core_switzerland
 		}

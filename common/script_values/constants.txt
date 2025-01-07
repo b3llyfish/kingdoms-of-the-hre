@@ -21,3 +21,5 @@ austria_required_renown_level = {
 		add = 5
 	}
 }
+
+swiss_cantons_cities_required = 4

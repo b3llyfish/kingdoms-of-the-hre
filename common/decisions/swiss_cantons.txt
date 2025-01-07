@@ -1,0 +1,66 @@
+﻿swiss_cantons_decision = {
+	ai_goal = yes
+	
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/ep3_decision_city.dds"
+	}
+	
+	decision_group_type = major
+	
+	is_shown = {
+		has_title = title:k_switzerland
+	}
+	
+	is_valid = {
+		custom_tooltip = {
+			text = swiss_cantons_decision_num_cities
+			any_sub_realm_county = {
+				count >= swiss_cantons_cities_required
+				any_county_province = {
+					has_holding_type = city_holding
+					geographical_region = custom_core_switzerland
+				}
+			}
+		}
+		prestige_level >= high_prestige_level
+	}
+	
+	is_valid_showing_failures_only = {
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+		is_healthy = yes
+		primary_title = title:k_switzerland
+	}
+	
+	effect = {
+		every_county_in_region  = {
+			region = custom_core_switzerland
+			save_scope_as = county
+			holder = {
+				send_interface_message = {
+					title = swiss_cantons_primogeniture_enacted_title
+					desc = swiss_cantons_primogeniture_enacted_desc
+					scope:county = {
+						add_county_modifier = {
+							modifier = empowered_swiss_cantons_modifier
+						}
+					}
+				}
+			}
+		}
+		add_prestige = massive_prestige_value
+	}
+	
+	cost = {
+		# no cost
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+	
+	ai_will_do = {
+		base = 100
+	}
+}

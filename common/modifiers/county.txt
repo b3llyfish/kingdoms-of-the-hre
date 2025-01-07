@@ -1,0 +1,7 @@
+﻿empowered_swiss_cantons_modifier = {
+	icon = stewardship_positive
+	development_growth_factor = small_development_growth_gain
+	build_speed = -0.10
+	build_gold_cost = -0.10
+	monthly_county_control_growth_add = -0.05
+}
