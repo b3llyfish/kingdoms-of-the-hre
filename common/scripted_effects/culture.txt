@@ -1,4 +1,4 @@
-# Calls the kingdom specific diverge culture function
+﻿# Calls the kingdom specific diverge culture function
 diverge_culture_with_conversion = {
 	$CHARACTER$ = {
 		if = {
