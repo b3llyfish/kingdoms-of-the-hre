@@ -1,4 +1,4 @@
-﻿# Calls the kingdom specific diverge culture function
+# Calls the kingdom specific diverge culture function
 diverge_culture_with_conversion = {
 	$CHARACTER$ = {
 		if = {
@@ -58,7 +58,6 @@ upper_saxony_culture_diverge = {
 			add_culture_tradition = tradition_ruling_caste
 			add_culture_tradition = tradition_formation_fighting
 			add_culture_tradition = tradition_storytellers
-			add_culture_tradition = tradition_zealous_people
 		}
 		# build list of titles whose counties will be converted
 		title:c_magdeburg = {
@@ -133,7 +132,6 @@ switzerland_culture_diverge = {
 			add_culture_tradition = tradition_city_keepers
 			add_culture_tradition = tradition_mountain_homes
 			add_culture_tradition = tradition_parochialism
-			add_culture_tradition = tradition_pacifism
 		}
 		# build list of titles whose counties will be converted
 		title:d_transjurania = {
@@ -172,7 +170,6 @@ austria_culture_diverge = {
 		scope:new_culture = {
 			set_culture_pillar = ethos_communal
 			clear_culture_traditions = yes
-			add_culture_tradition = tradition_astute_diplomats
 			add_culture_tradition = tradition_music_theory
 			add_culture_tradition = tradition_festivities
 			add_culture_tradition = tradition_welcoming
@@ -217,7 +214,6 @@ slavinia_culture_diverge = {
 			set_culture_pillar = ethos_spiritual
 			clear_culture_traditions = yes
 			add_culture_tradition = tradition_ruling_caste
-			add_culture_tradition = tradition_fishermen
 			add_culture_tradition = tradition_monastic_communities
 			add_culture_tradition = tradition_adaptive_skirmishing
 		}
