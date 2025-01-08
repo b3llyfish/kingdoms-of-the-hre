@@ -34,3 +34,14 @@ kingdoms_hre_austria_renown = {
 	
 	kingdoms_hre_culture_well_known = {}
 }
+
+kingdoms_hre_capital_region_requirement = {
+	
+	categories = { difficulty tweaks ai }
+	
+	default = kingdoms_hre_capital_region_required
+	
+	kingdoms_hre_capital_region_required = {}
+	
+	kingdoms_hre_capital_region_not_required = {}
+}

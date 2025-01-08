@@ -55,10 +55,15 @@ can_choose_austria = {
 				TARGET_REGION = custom_core_austria
 			}
 		}
-		prestige_level >= medium_prestige_level
-		capital_province = {
-			geographical_region = custom_core_austria
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_core_austria
+			}
 		}
+		prestige_level >= medium_prestige_level
 	}
 }
 
@@ -188,9 +193,6 @@ can_choose_upper_saxony = {
 					TARGET_REGION = custom_upper_saxony_without_sorbia
 				}
 			}
-			capital_province = {
-				geographical_region = custom_upper_saxony_without_sorbia
-			}
 		}
 		trigger_if = {
 			limit = {
@@ -202,6 +204,21 @@ can_choose_upper_saxony = {
 					CHARACTER = root
 					TARGET_REGION = custom_upper_saxony
 				}
+			}
+		}
+		trigger_if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = no
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_upper_saxony_without_sorbia
+			}
+		}
+		trigger_if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = yes
+				has_game_rule = kingdoms_hre_capital_region_required
 			}
 			capital_province = {
 				geographical_region = custom_upper_saxony
@@ -237,10 +254,15 @@ can_choose_switzerland = {
 				TARGET_REGION = custom_core_switzerland
 			}
 		}
-		prestige_level >= medium_prestige_level
-		capital_province = {
-			geographical_region = custom_core_switzerland
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_core_switzerland
+			}
 		}
+		prestige_level >= medium_prestige_level
 	}
 }
 
@@ -407,8 +429,13 @@ can_choose_lower_saxony = {
 				TARGET_REGION = custom_lower_saxony
 			}
 		}
-		capital_province = {
-			geographical_region = custom_lower_saxony
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_lower_saxony
+			}
 		}
 		prestige_level >= medium_prestige_level
 		trigger_if = {
@@ -498,8 +525,13 @@ can_choose_slavinia = {
 				TARGET_REGION = custom_slavinia
 			}
 		}
-		capital_province = {
-			geographical_region = custom_slavinia
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_slavinia
+			}
 		}
 		prestige_level >= medium_prestige_level
 		trigger_if = {
