@@ -484,3 +484,34 @@ can_choose_pomerania = {
 		}
 	}
 }
+
+can_choose_slavinia = {
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_slavinia.holder }
+	}
+	$CHARACTER$ = {
+		custom_tooltip = {
+			text = not_enough_slavinia_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_slavinia
+			}
+		}
+		capital_province = {
+			geographical_region = custom_slavinia
+		}
+		prestige_level >= medium_prestige_level
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
+			}
+			custom_tooltip = {
+				text = require_slavinia_culture
+				culture = {
+					has_cultural_pillar = heritage_central_germanic
+				}
+			}
+		}
+	}
+}

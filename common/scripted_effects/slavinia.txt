@@ -1,0 +1,19 @@
+﻿create_slavinia_title = {
+	$OWNER$ = {
+		title:d_nordmark = { set_de_jure_liege_title = title:k_slavinia }
+		title:d_ostmark = { set_de_jure_liege_title = title:k_slavinia }
+		
+		title:k_slavinia = { set_de_jure_liege_title = title:e_hre }
+		
+		# if pomerania king exists form a rivalry
+		if = {
+			limit = {
+				exists = title:k_pomerania.holder
+			}
+			set_relation_rival = {
+				target = title:k_pomerania.holder
+				reason = divided_kingdom
+			}
+		}
+	}
+}

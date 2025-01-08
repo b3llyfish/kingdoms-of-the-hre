@@ -47,6 +47,7 @@
 				can_choose_france = { CHARACTER = root }
 				can_choose_lower_saxony = { CHARACTER = root }
 				can_choose_pomerania = { CHARACTER = root }
+				can_choose_slavinia = { CHARACTER = root }
 			}
 		}
 	}
@@ -303,6 +304,25 @@
 				}
 			}
 		}
+		### slavinia
+		item = {
+			value = choose_slavinia
+			is_valid = { can_choose_slavinia = { CHARACTER = root } }
+			localization = choose_slavinia_name
+			icon = "gfx/interface/icons/kingdoms_hre/slavinia.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_slavinia
+						}
+					}
+					add = 100
+				}
+			}
+		}
 		### aquitaine
 		item = {
 			value = choose_aquitaine
@@ -529,6 +549,15 @@
 				scope:choose_pomerania = yes
 			}
 			title:k_pomerania = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		else_if = {
+			limit = {
+				scope:choose_slavinia = yes
+			}
+			title:k_slavinia = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001

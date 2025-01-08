@@ -65,6 +65,14 @@
 			OWNER = $OWNER$
 		}
 	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_slavinia
+		}
+		create_slavinia_title = {
+			OWNER = $OWNER$
+		}
+	}
 	
 	# give option to change culture if criteria met
 	if = {
@@ -87,6 +95,7 @@
 					scope:target_title = title:k_upper_saxony
 					scope:target_title = title:k_switzerland
 					scope:target_title = title:k_austria
+					scope:target_title = title:k_slavinia
 					any_sub_realm_county = {
 						culture = $OWNER$.culture
 					}

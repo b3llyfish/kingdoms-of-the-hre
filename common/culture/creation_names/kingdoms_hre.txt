@@ -26,3 +26,31 @@
 		}
 	}
 }
+
+slavinian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_nordmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_ostmark = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_nordmark
+			has_primary_title = title:d_ostmark
+			has_primary_title = title:k_slavinia
+		}
+		culture = { has_cultural_pillar = heritage_central_germanic }
+		any_sub_realm_county = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			OR = {
+				duchy = title:d_nordmark
+				duchy = title:d_ostmark
+			}
+		}
+	}
+}

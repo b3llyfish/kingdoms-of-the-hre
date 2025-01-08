@@ -15,3 +15,9 @@ custom_lower_saxony = {
 		d_angria d_holstein d_ostfalen d_westfalen
 	}
 }
+
+custom_slavinia = {
+	duchies = {
+		d_nordmark d_ostmark
+	}
+}

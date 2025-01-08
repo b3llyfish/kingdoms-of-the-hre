@@ -1,4 +1,4 @@
-k_upper_saxony = {
+﻿k_upper_saxony = {
 	pattern = "pattern_solid.dds"
 	color1 = "black"
 	colored_emblem = {
@@ -19,5 +19,24 @@ k_lower_saxony={
 		instance={
 			scale={ 0.800000 0.800000 }
 		}
+	}
+}
+
+k_slavinia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "green_light"
+	colored_emblem = {
+		texture = "ce_griffin_rampant.dds"
+		color1 = "green_light"
+		color2 = "green_light"
+		color3 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 }  }
+	}
+	colored_emblem = {
+		texture = "ce_crown_small.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.542 0.073 } rotation = 12 scale = { 0.161 0.161 }  }
 	}
 }
