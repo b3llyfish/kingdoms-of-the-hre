@@ -9,6 +9,11 @@
 	
 	is_shown = {
 		has_title = title:k_switzerland
+		NOT = {
+			title:c_bern = {
+				has_county_modifier = empowered_swiss_cantons_modifier
+			}
+		}
 	}
 	
 	is_valid = {
