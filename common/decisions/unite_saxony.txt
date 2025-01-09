@@ -15,31 +15,62 @@
 	}
 	
 	is_valid = {
-		OR = {
-			custom_tooltip = {
-				text = owns_both_titles
-				owns_both_saxony_titles = yes
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_culture_required
 			}
 			custom_tooltip = {
-				text = owns_upper_saxony_and_enough_lower_saxony
-				owns_upper_saxony_title_and_enough_lower_saxony = yes
+				text = require_saxony_culture
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:saxon
+					}
+				}
+			}
+		}
+		OR = {
+			AND = {
+				has_title = title:k_upper_saxony
+				has_title = title:k_lower_saxony
+			}
+			AND = {
+				has_title = title:k_upper_saxony
+				custom_tooltip = {
+					text = unite_saxony_lower_saxony_counties_requirement
+					controls_enough_of_region = {
+						CHARACTER = root
+						TARGET_REGION = custom_lower_saxony
+					}
+				}
 			}
 			trigger_if = {
 				limit = {
 					are_sorbia_duchies_de_jure_hre = yes
 				}
-				custom_tooltip = {
-					text = owns_lower_saxony_and_enough_upper_saxony
-					owns_lower_saxony_title_and_enough_upper_saxony = yes
+				AND = {
+					has_title = title:k_lower_saxony
+					custom_tooltip = {
+						text = unite_saxony_upper_saxony_counties_requirement
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_upper_saxony
+						}
+					}
 				}
 			}
 			trigger_if = {
 				limit = {
 					are_sorbia_duchies_de_jure_hre = no
 				}
-				custom_tooltip = {
-					text = owns_lower_saxony_and_enough_upper_saxony_without_sorbia
-					owns_lower_saxony_title_and_enough_upper_saxony_without_sorbia = yes
+				AND = {
+					has_title = title:k_lower_saxony
+					custom_tooltip = {
+						text = unite_saxony_upper_saxony_without_sorbia_counties_requirement
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_upper_saxony_without_sorbia
+						}
+					}
 				}
 			}
 		}
@@ -47,7 +78,6 @@
 	}
 	
 	is_valid_showing_failures_only = {
-		faith = top_liege.faith	#Must share the faith of your emperor
 		is_capable_adult = yes
 		is_imprisoned = no
 		is_at_war = no
@@ -55,6 +85,20 @@
 	}
 	
 	effect = {
+		custom_tooltip = unite_saxony_decision_merge_new_kingdom_tooltip
+		if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = yes
+			}
+			custom_tooltip = unite_saxony_decision_merge_kingdoms_tooltip
+		}
+		else_if = {
+			limit = {
+				are_sorbia_duchies_de_jure_hre = no
+			}
+			custom_tooltip = unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip
+		}
+		custom_tooltip = unite_saxony_decision_title_law_tooltip
 		root = {
 			save_scope_as = new_saxon_king
 		}

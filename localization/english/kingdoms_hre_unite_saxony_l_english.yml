@@ -3,12 +3,18 @@
  unite_saxony_decision_desc: "For too long the Saxon people have been divided, squabbling amongst themselves whilst foreign powers infiltrate the region.\n\nHaving gained enough influence and land I am now in a position to end this. I will unite the Saxons under a true Saxon ruler."
  unite_saxony_decision_tooltip: "Unite the Saxon regions into a single Kingdom."
  unite_saxony_decision_confirm: "Establish the Kingdom of Saxony"
-
- owns_both_titles: "Holds both the [GetTitleByKey('k_upper_saxony').GetName] and the [GetTitleByKey('k_lower_saxony').GetName]"
- owns_lower_saxony_and_enough_upper_saxony: "Holds the [GetTitleByKey('k_lower_saxony').GetName] and enough of [GetGeographicalRegion('custom_upper_saxony').GetName] (currently [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0] / [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E])"
- owns_lower_saxony_and_enough_upper_saxony_without_sorbia: "Holds the [GetTitleByKey('k_lower_saxony').GetName] and enough of [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] (currently [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0] / [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E])"
- owns_upper_saxony_and_enough_lower_saxony: "Holds the [GetTitleByKey('k_upper_saxony').GetName] and enough of [GetGeographicalRegion('custom_lower_saxony').GetName]"
+ unite_saxony_decision_merge_new_kingdom_tooltip: "Gain the [GetTitleByKey('k_saxony').GetName]"
+ unite_saxony_decision_merge_kingdoms_tooltip: "All duchies within the regions of [GetGeographicalRegion('custom_upper_saxony').GetName] and [GetGeographicalRegion('custom_lower_saxony').GetName] will become a de jure part of the [GetTitleByKey('k_saxony').GetNameNoTooltip]"
+ unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip: "All duchies within the regions of [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] and [GetGeographicalRegion('custom_lower_saxony').GetName] will become de jure part of the [GetTitleByKey('k_saxony').GetNameNoTooltip]"
+ unite_saxony_decision_title_law_tooltip: "The [GetTitleByKey('k_saxony').GetNameNoTooltip] will have the succession law [GetLaw('saxon_elective_succession_law').GetName]"
  
+ unite_saxony_lower_saxony_counties_requirement: "Own [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] (currently own #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) within the region of [GetGeographicalRegion('custom_lower_saxony').GetName]"
+ unite_saxony_upper_saxony_counties_requirement: "Own [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (currently own #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) within the region of [GetGeographicalRegion('custom_upper_saxony').GetName]"
+ unite_saxony_upper_saxony_without_sorbia_counties_requirement: "Own [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (currently own #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) within the region of [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName]"
+
  unite_saxony.0001.title: "The Saxon [new_saxon_king.Custom('GetQueenKing')|U]"
  unite_saxony.0001.desc: "At your court in [new_saxon_king.GetCapitalLocation.GetNameNoTooltip] a grand ceremony is taking place. The room is packed with various dignitaries and figures from across both the upper and lower regions of Saxony. The chatter of the court comes to halt as [messenger.GetShortUIName] approaches the centre of the room.\n\n[messenger.GetShortUIName] delivers a rousing speech highlight the plight of the Saxon people over the years. He states the Emperor does not give the Saxons the respect they deserve.\nMany in the room nod in agreement. He concludes that we must unite under a Saxon [new_saxon_king.Custom('GetQueenKing')|U], and the right person is [new_saxon_king.GetName]!\nOne by one each participant kneels before your throne and pledges themselves to the new [new_saxon_king.Custom('GetQueenKing')|U] of Saxony.\n\nThe Emperor will not be happy with this, however after such a convincing ceremony they will unable to dismiss your new title."
  unite_saxony.0001.a: "All hail [new_saxon_king.GetFirstName], [new_saxon_king.Custom('GetQueenKing')|U] of the Saxons!"
+
+ unite_saxony_saxon_elective_enacted_title: "Gained New Title Succession Law"
+ unite_saxony_saxon_elective_enacted_desc: "[GetTitleByKey('k_saxony').GetName]'s title succession law is now [GetLaw('saxon_elective_succession_law').GetName]"
