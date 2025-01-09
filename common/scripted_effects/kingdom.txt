@@ -96,6 +96,7 @@
 					scope:target_title = title:k_switzerland
 					scope:target_title = title:k_austria
 					scope:target_title = title:k_slavinia
+					scope:target_title = title:k_lotharingia
 					any_sub_realm_county = {
 						culture = $OWNER$.culture
 					}
