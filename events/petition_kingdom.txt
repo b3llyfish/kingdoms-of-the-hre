@@ -13,6 +13,9 @@
 # kingdoms_hre.0005 - Emperor rejects the petition
 # kingdoms_hre.0006 - Emperor blackmailed by vassal
 # kingdoms_hre.0007 - Vassal gains title via blackmail
+# kingdoms_hre.0008 - Hidden event to check Emperor status
+# kingdoms_hre.0009 - Emperor died!
+# kingdoms_hre.0010 - Emperor lost title
 
 kingdoms_hre.0001 = {
 	type = character_event
@@ -35,11 +38,9 @@ kingdoms_hre.0001 = {
 	option = {
 		name = kingdoms_hre.0001.a
 		custom_tooltip = kingdoms_hre.0001.tooltip
-		scope:emperor = {
-			trigger_event = {
-				id = kingdoms_hre.0002
-				days = 5
-			}
+		trigger_event = {
+			id = kingdoms_hre.0008
+			days = petition_trigger_event_delay_days
 		}
 		ai_chance = {
 			base = 50
@@ -104,11 +105,9 @@ kingdoms_hre.0001 = {
 			}
 		}
 		custom_tooltip = kingdoms_hre.0001.tooltip
-		scope:emperor = {
-			trigger_event = {
-				id = kingdoms_hre.0002
-				days = 5
-			}
+		trigger_event = {
+			id = kingdoms_hre.0008
+			days = petition_trigger_event_delay_days
 		}
 		stress_impact = {
 			shy = minor_stress_gain
@@ -149,11 +148,9 @@ kingdoms_hre.0001 = {
 		}
 		custom_tooltip = kingdoms_hre.0001.c.tooltip
 		custom_tooltip = kingdoms_hre.0001.tooltip
-		scope:emperor = {
-			trigger_event = {
-				id = kingdoms_hre.0002
-				days = 5
-			}
+		trigger_event = {
+			id = kingdoms_hre.0008
+			days = petition_trigger_event_delay_days
 		}
 		stress_impact = {
 			greedy = minor_stress_gain
@@ -192,11 +189,13 @@ kingdoms_hre.0001 = {
 			compassionate = massive_stress_gain
 		}
 		add_internal_flag = special
-		scope:emperor = {
-			trigger_event = {
-				id = kingdoms_hre.0006
-				days = 5
-			}
+		save_scope_value_as = {
+			name = blackmailed
+			value = yes
+		}
+		trigger_event = {
+			id = kingdoms_hre.0008
+			days = petition_trigger_event_delay_days
 		}
 		ai_chance = {
 			base = 1000
@@ -248,10 +247,7 @@ kingdoms_hre.0002 = {
 		custom_tooltip = kingdoms_hre.protected_revoke_rights
 		custom_tooltip = kingdoms_hre.powerful_vassals_irritated
 		scope:vassal = {
-			trigger_event = {
-				id = kingdoms_hre.0003
-				days = 3
-			}
+			trigger_event = kingdoms_hre.0003
 		}
 		ai_chance = {
 			# emperor base accept chance
@@ -265,10 +261,7 @@ kingdoms_hre.0002 = {
 	option = {
 		name = kingdoms_hre.0002.c
 		scope:vassal = {
-			trigger_event = {
-				id = kingdoms_hre.0005
-				days = 3
-			}
+			trigger_event = kingdoms_hre.0005
 		}
 		custom_tooltip = kingdoms_hre.0002.c.tooltip
 		custom_tooltip = kingdoms_hre.0002.c.tooltip.claim
@@ -497,6 +490,118 @@ kingdoms_hre.0004 = {
 		notify_players_grant_kingdom_title = {
 			TARGET_TITLE = scope:target_title
 			OWNER = scope:vassal
+		}
+	}
+}
+
+kingdoms_hre.0008 = {
+	scope = none
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				scope:emperor = {
+					is_alive = no
+				}
+			}
+			scope:vassal = {
+				trigger_event = kingdoms_hre.0009
+			}
+		}
+		else_if = {
+			limit = {
+				scope:emperor = {
+					NOT = {
+						has_title = title:e_hre
+					}
+				}
+			}
+			scope:vassal = {
+				trigger_event = kingdoms_hre.0010
+			}
+		}
+		else_if = {
+			limit = {
+				exists = scope:blackmailed
+			}
+			scope:emperor = {
+				trigger_event = kingdoms_hre.0006
+			}
+		}
+		else = {
+			scope:emperor = {
+				trigger_event = kingdoms_hre.0002
+			}
+		}
+	}
+}
+
+kingdoms_hre.0009 = {
+	type = character_event
+	title = kingdoms_hre.0009.title
+	desc = kingdoms_hre.0009.desc
+	
+	immediate = {
+		scope:vassal.top_liege = {
+			save_scope_as = new_emperor
+		}
+	}
+	
+	theme = crown
+	
+	left_portrait = {
+		character = scope:vassal
+		animation = eyeroll
+	}
+	
+	right_portrait = {
+		character = scope:emperor
+		animation = dead
+	}
+	
+	lower_center_portrait = {
+		character = scope:new_emperor
+	}
+	
+	option = {
+		name = kingdoms_hre.0009.a
+		scope:vassal = {
+			remove_decision_cooldown = form_hre_kingdom_decision
+		}
+	}
+}
+
+kingdoms_hre.0010 = {
+	type = character_event
+	title = kingdoms_hre.0010.title
+	desc = kingdoms_hre.0010.desc
+	
+	immediate = {
+		scope:vassal.top_liege = {
+			save_scope_as = new_emperor
+		}
+	}
+	
+	theme = crown
+	
+	left_portrait = {
+		character = scope:vassal
+		animation = eyeroll
+	}
+	
+	right_portrait = {
+		character = scope:emperor
+		animation = shame
+	}
+	
+	lower_center_portrait = {
+		character = scope:vassal.top_liege
+	}
+	
+	option = {
+		name = kingdoms_hre.0010.a
+		scope:vassal = {
+			remove_decision_cooldown = form_hre_kingdom_decision
 		}
 	}
 }

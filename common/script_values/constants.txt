@@ -23,3 +23,5 @@ austria_required_renown_level = {
 }
 
 swiss_cantons_cities_required = 4
+
+petition_trigger_event_delay_days = 7

@@ -34,7 +34,7 @@
  kingdoms_hre.0003.a.interface.title: "Emperor bestows a [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]"
  kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] has been granted the [target_title.GetNameNoTooltip]"
  # Emperor rejects the petition
- kingdoms_hre.0005.title: "The Emperor rejects!"
+ kingdoms_hre.0005.title: "The Emperor Rejects!"
  kingdoms_hre.0005.desc: "The Emperor has rejected my petition!\n\nIn his response he makes vague statements around stability and tradition, but he and I both know why he has done this. The Emperor feels threatened by me!\n\nFor now the $loc_title$ is out of my grasp.\nI must go away and consider my next actions."
  kingdoms_hre.0005.a: "That pompous oaf has no sense of decency or honour!"
  kingdoms_hre.0005.b: "If I cannot have a Kingdom then I shall take an Empire..."
@@ -49,3 +49,11 @@
  kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$"
  kingdoms_hre.0007.desc: "Fearing his secret getting out the Emperor has accepted the petition. At a rushed ceremony in [emperor.GetCapitalLocation.GetNameNoTooltip] a Golden Bull is signed announcing me as the new [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip].\n\nAs soon as it is over me and my entourage are ushered out of court and told to quickly leave. The Emperor is nowhere to be found, clearly still shaken by my knowledge of his [secret|E].\n\nThere may be repercussions to my blackmail but for now the day is mine. I am finally a [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!"
  kingdoms_hre.0007.a: "You can get anything with a little leverage..."
+ # Emperor died mid petition
+ kingdoms_hre.0009.title: "Return To Sender"
+ kingdoms_hre.0009.desc: "What do you mean [emperor.GetName] is dead?!\n\nA courtier, with my petition in hand, is frantically trying explain the events that led to the death of the late [emperor.GetFirstName] but I have since stopped listening.\n\nAll that work crafting the most eloquent of petitions, wasted!\n\nI sigh. [new_emperor.GetName] is the Emperor now. It is their opinion I must try and sway."
+ kingdoms_hre.0009.a: "Fetch my quill and a fresh bottle of ink..."
+ # Emperor lost title mid petition
+ kingdoms_hre.0010.title: "Return To Sender"
+ kingdoms_hre.0010.desc: "What do you mean [emperor.GetName] is no longer in charge?!\n\nA courtier, with my petition in hand, is frantically trying explain the events that led to [emperor.GetFirstName] losing the title of Holy Roman Emperor but I have since stopped listening.\n\nAll that work crafting the most eloquent of petitions, wasted!\n\nI sigh. [new_emperor.GetName] is the Emperor now. It is their opinion I must try and sway."
+ kingdoms_hre.0010.a: "Fetch my quill and a fresh bottle of ink..."
