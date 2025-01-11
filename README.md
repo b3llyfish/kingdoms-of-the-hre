@@ -135,6 +135,7 @@ The `culture_conversion.0001` event has been overridden and the following adding
 ## 867 Start Date
 This mod has largely been designed around start dates with an established HRE, however there has been some attempt to 
 cater for the 867 start date. Specifically the situation where all of Francia becomes de jure part of the HRE. 
+
 In this scenario Brittany, France and Aquitaine can only be formed via the petition decision.
 
 The Kingdom of Upper Saxony will have slightly easier requirements in the 867 start due to the existence of Sorbia.
@@ -143,14 +144,17 @@ The Kingdom of Upper Saxony will have slightly easier requirements in the 867 st
 
 ### Culture Check
 Whether to impose a culture requirement for certain Kingdoms. 
+
 Options: Required (default), Not Required.
 
 ### Emperor's Acceptance Modifier
 Whether to modifier the Emperor's accept petition chance, making it easier or harder to form a Kingdom. 
+
 Options: Halved, No modifier (default), Doubled 
 
 ### Austria Renown Level
 The dynasty renown level required for the 'Secure the Archduchy' decision. 
+
 Options: Noteworthy, Reputable (default), Well-Known
 
 ### Capital Region Check
@@ -175,16 +179,16 @@ This mod will likely be incompatible with mods in the following areas:
 
 ### Similar Mods
 These mods do similar things and could be use an alternative. They are assumed to be incompatible with this mod.
-* [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2412107778&searchtext=saxony]Restore Saxony[/url] - Implements the Kingdom of Saxony
-* [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms]No HRE Kingdoms[/url] - Prevents the AI from forming HRE Kingdoms
+* [Restore Saxony](https://steamcommunity.com/sharedfiles/filedetails/?id=2412107778&searchtext=saxony) - Implements the Kingdom of Saxony
+* [No HRE Kingdoms](https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms) - Prevents the AI from forming HRE Kingdoms
 
 ## Localization
-Basic localization for supported locales has been provided by using [url=https://github.com/b3llyfish/CK3_LocalizationChanger]CK3_LocalizationChanger[/url].
+Basic localization for supported locales has been provided by using [CK3_LocalizationChanger](https://github.com/b3llyfish/CK3_LocalizationChanger).
 
 I am accepting any localization improvements via mods and will happily link them below. 
 If your chosen language is listed below then this mod must be used to support your localization. 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3090564070]Chinese Localization Mod[/url] - thanks to [url=https://steamcommunity.com/profiles/76561198113539588]無壹[/url]
+[Chinese Localization Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3090564070) - thanks to [無壹](https://steamcommunity.com/profiles/76561198113539588)
 
 ## Bug/Issues
 This mod has been tested to the best of my abilities. If any bugs or issues are found please described them in a comment.
