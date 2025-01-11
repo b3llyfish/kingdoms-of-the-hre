@@ -9,7 +9,6 @@ unite_saxony.0001 = {
 	desc = unite_saxony.0001.desc
 	
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:new_saxon_king

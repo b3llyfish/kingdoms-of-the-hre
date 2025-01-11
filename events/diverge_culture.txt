@@ -9,8 +9,7 @@ diverge_culture.0001 = {
 	title = diverge_culture.title
 	desc = diverge_culture.desc
 	
-	theme = crown
-	background = throne_room
+	theme = culture_change
 	
 	left_portrait = {
 		character = scope:character

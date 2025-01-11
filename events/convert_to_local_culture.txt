@@ -9,8 +9,7 @@ convert_to_local_culture.0001 = {
 	title = convert_to_local_culture.title
 	desc = convert_to_local_culture.desc
 	
-	theme = crown
-	background = throne_room
+	theme = culture_change
 	
 	left_portrait = {
 		character = scope:character

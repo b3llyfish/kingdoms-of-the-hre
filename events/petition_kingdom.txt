@@ -20,7 +20,6 @@ kingdoms_hre.0001 = {
 	desc = kingdoms_hre.0001.desc
 	
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:vassal
@@ -211,7 +210,6 @@ kingdoms_hre.0002 = {
 	desc = kingdoms_hre.0002.desc
 	
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:emperor
@@ -289,7 +287,6 @@ kingdoms_hre.0003 = {
 	title = kingdoms_hre.0003.title
 	desc = kingdoms_hre.0003.desc
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:vassal
@@ -325,7 +322,6 @@ kingdoms_hre.0005 = {
 	desc = kingdoms_hre.0005.desc
 	
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:vassal
@@ -425,7 +421,6 @@ kingdoms_hre.0006 = {
 	desc = kingdoms_hre.0006.desc
 	
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:emperor
@@ -466,7 +461,6 @@ kingdoms_hre.0007 = {
 	desc = kingdoms_hre.0007.desc
 	
 	theme = crown
-	background = throne_room
 	
 	left_portrait = {
 		character = scope:vassal
