@@ -14,7 +14,7 @@
  diverge_culture.0001.a.tooltip.austria.convert: "A portion of [GetGeographicalRegion('custom_core_austria').GetName] will convert to the new culture"
  diverge_culture.0001.a.tooltip.slavinia: "New culture will have the $ethos_spiritual_name$ ethos and $tradition_ruling_caste_name$, $tradition_monastic_communities_name$ and $tradition_adaptive_skirmishing_name$ traditions"
  diverge_culture.0001.a.tooltip.slavinia.convert: "A portion of [GetGeographicalRegion('custom_slavinia').GetName] will convert to the new culture"
- diverge_culture.0001.a.tooltip.lotharingia: "New culture will have the $ethos_egalitarian_name$ ethos and $tradition_family_entrepreneurship_name$, $tradition_reverence_for_veterans_name$ and $tradition_xenophilic_name$ traditions"
+ diverge_culture.0001.a.tooltip.lotharingia: "New culture will have the $ethos_egalitarian_name$ ethos and $tradition_family_entrepreneurship_name$, $tradition_reverence_for_veterans_name$ and $tradition_chivalry_name$ traditions"
  diverge_culture.0001.a.tooltip.lotharingia.convert: "A portion of the [GetTitleByKey('k_lotharingia').GetName] will convert to the new culture"
  diverge_culture.0001.b: "No, too much has changed already"
 

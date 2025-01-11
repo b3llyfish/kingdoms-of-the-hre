@@ -236,7 +236,7 @@ lotharingia_culture_diverge = {
 		clear_culture_traditions = yes
 		add_culture_tradition = tradition_family_entrepreneurship
 		add_culture_tradition = tradition_reverence_for_veterans
-		add_culture_tradition = tradition_xenophilic
+		add_culture_tradition = tradition_chivalry
 	}
 	title:c_puttlingen = {
 		add_to_list = title_list
