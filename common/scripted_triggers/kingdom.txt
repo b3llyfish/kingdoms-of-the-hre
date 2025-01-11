@@ -63,7 +63,6 @@ can_choose_austria = {
 				geographical_region = custom_core_austria
 			}
 		}
-		prestige_level >= medium_prestige_level
 	}
 }
 
@@ -224,7 +223,6 @@ can_choose_upper_saxony = {
 				geographical_region = custom_upper_saxony
 			}
 		}
-		prestige_level >= medium_prestige_level
 		trigger_if = {
 			limit = {
 				has_game_rule = kingdoms_hre_culture_required
@@ -262,7 +260,6 @@ can_choose_switzerland = {
 				geographical_region = custom_core_switzerland
 			}
 		}
-		prestige_level >= medium_prestige_level
 	}
 }
 
@@ -437,7 +434,6 @@ can_choose_lower_saxony = {
 				geographical_region = custom_lower_saxony
 			}
 		}
-		prestige_level >= medium_prestige_level
 		trigger_if = {
 			limit = {
 				has_game_rule = kingdoms_hre_culture_required
@@ -533,7 +529,6 @@ can_choose_slavinia = {
 				geographical_region = custom_slavinia
 			}
 		}
-		prestige_level >= medium_prestige_level
 		trigger_if = {
 			limit = {
 				has_game_rule = kingdoms_hre_culture_required

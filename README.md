@@ -67,8 +67,7 @@ have also been stripped to match the rest of the Kingdoms.
 
 Creatable Kingdoms are created in the same way as existing Kingdoms (i.e control the majority of a particular region) with
 the following additional criteria:
-* Distinguished prestige level
-* Capital is located in the Kingdom's region (can be disabled via game rules)
+* Capital must be located in the creatable Kingdom's region (can be disabled via game rules)
 
 ### Austria
 Control the region comprising the duchies of Osterreich and Steyermark.
