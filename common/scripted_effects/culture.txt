@@ -49,119 +49,94 @@ diverge_culture_with_conversion = {
 	}
 }
 
-# setup unique culture
-# convert south-west upper saxony counties to new culture
-# offer convert to family, courtier and vassals
 upper_saxony_culture_diverge = {
-	$CHARACTER$ = {
-		culture = {
-			save_scope_as = old_culture
-		}
-		create_divergent_culture = yes
-		scope:new_culture = {
-			# respect divergent rules and change culture pillar
-			set_culture_pillar = ethos_courtly
-			# build a unique set of traditions
-			clear_culture_traditions = yes
-			add_culture_tradition = tradition_ruling_caste
-			add_culture_tradition = tradition_formation_fighting
-			add_culture_tradition = tradition_storytellers
-		}
-		# build list of titles whose counties will be converted
-		title:c_magdeburg = {
-			add_to_list = title_list
-		}
-		title:c_dessau = {
-			add_to_list = title_list
-		}
-		title:c_mersenburg = {
-			add_to_list = title_list
-		}
-		title:c_orlamunde = {
-			add_to_list = title_list
-		}
-		title:c_lobdaburg = {
-			add_to_list = title_list
-		}
-		title:c_naumburg = {
-			add_to_list = title_list
-		}
-		title:c_wolkenstein = {
-			add_to_list = title_list
-		}
-		title:c_vogtland = {
-			add_to_list = title_list
-		}
-		title:c_osterland = {
-			add_to_list = title_list
-		}
-		title:c_brene = {
-			add_to_list = title_list
-		}
-		title:c_meissen = {
-			add_to_list = title_list
-		}
-		title:c_dresden = {
-			add_to_list = title_list
-		}
-		title:c_wittenberg = {
-			add_to_list = title_list
-		}
-		every_in_list = {
-			list = title_list
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-				}
-				set_county_culture = scope:new_culture
-			}
-		}
+	culture_diverge_without_county_conversion = {
+		CHARACTER = $CHARACTER$
 	}
-	convert_family_culture_and_notify_vassals_effect = {
-		CONVERTER = $CHARACTER$
-		OLD_CULTURE = scope:old_culture
-		NEW_CULTURE = scope:new_culture
+	# character will have diverged culture at this point
+	$CHARACTER$.culture = {
+		set_culture_pillar = ethos_courtly
+		clear_culture_traditions = yes
+		add_culture_tradition = tradition_ruling_caste
+		add_culture_tradition = tradition_formation_fighting
+		add_culture_tradition = tradition_storytellers
+	}
+	title:c_magdeburg = {
+		add_to_list = title_list
+	}
+	title:c_dessau = {
+		add_to_list = title_list
+	}
+	title:c_mersenburg = {
+		add_to_list = title_list
+	}
+	title:c_orlamunde = {
+		add_to_list = title_list
+	}
+	title:c_lobdaburg = {
+		add_to_list = title_list
+	}
+	title:c_naumburg = {
+		add_to_list = title_list
+	}
+	title:c_wolkenstein = {
+		add_to_list = title_list
+	}
+	title:c_vogtland = {
+		add_to_list = title_list
+	}
+	title:c_osterland = {
+		add_to_list = title_list
+	}
+	title:c_brene = {
+		add_to_list = title_list
+	}
+	title:c_meissen = {
+		add_to_list = title_list
+	}
+	title:c_dresden = {
+		add_to_list = title_list
+	}
+	title:c_wittenberg = {
+		add_to_list = title_list
+	}
+	every_in_list = {
+		list = title_list
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			set_county_culture = $CHARACTER$.culture
+		}
 	}
 }
 
-# setup unique culture
-# convert d_transjurania and d_currezia to swiss
-# offer convert to family, courtier and vassals
 switzerland_culture_diverge = {
-	$CHARACTER$ = {
-		culture = {
-			save_scope_as = old_culture
-		}
-		create_divergent_culture = yes
-		# setup culture with city holding and development theme
-		scope:new_culture = {
-			set_culture_pillar = ethos_bureaucratic
-			clear_culture_traditions = yes
-			add_culture_tradition = tradition_city_keepers
-			add_culture_tradition = tradition_mountain_homes
-			add_culture_tradition = tradition_parochialism
-		}
-		# build list of titles whose counties will be converted
-		title:d_transjurania = {
-			add_to_list = title_list
-		}
-		title:d_currezia = {
-			add_to_list = title_list
-		}
-		every_in_list = {
-			list = title_list
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-				}
-				set_county_culture = scope:new_culture
-			}
-		}
+	culture_diverge_without_county_conversion = {
+		CHARACTER = $CHARACTER$
 	}
-	convert_family_culture_and_notify_vassals_effect = {
-		CONVERTER = $CHARACTER$
-		OLD_CULTURE = scope:old_culture
-		NEW_CULTURE = scope:new_culture
+	# character will have diverged culture at this point
+	$CHARACTER$.culture = {
+		set_culture_pillar = ethos_bureaucratic
+		clear_culture_traditions = yes
+		add_culture_tradition = tradition_city_keepers
+		add_culture_tradition = tradition_mountain_homes
+		add_culture_tradition = tradition_parochialism
+	}
+	title:d_transjurania = {
+		add_to_list = title_list
+	}
+	title:d_currezia = {
+		add_to_list = title_list
+	}
+	every_in_list = {
+		list = title_list
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			set_county_culture = $CHARACTER$.culture
+		}
 	}
 }
 
@@ -169,185 +144,217 @@ switzerland_culture_diverge = {
 # convert d_transjurania and d_currezia to swiss
 # offer convert to family, courtier and vassals
 austria_culture_diverge = {
-	$CHARACTER$ = {
-		culture = {
-			save_scope_as = old_culture
-		}
-		create_divergent_culture = yes
-		# setup culture with diplomacy and feasting theme
-		scope:new_culture = {
-			set_culture_pillar = ethos_communal
-			clear_culture_traditions = yes
-			add_culture_tradition = tradition_music_theory
-			add_culture_tradition = tradition_festivities
-			add_culture_tradition = tradition_welcoming
-		}
-		# build list of titles whose counties will be converted
-		title:d_osterreich = {
-			add_to_list = title_list
-		}
-		title:c_graz = {
-			add_to_list = title_list
-		}
-		title:c_murzzuschlag = {
-			add_to_list = title_list
-		}
-		title:c_pitten = {
-			add_to_list = title_list
-		}
-		every_in_list = {
-			list = title_list
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-				}
-				set_county_culture = scope:new_culture
-			}
-		}
+	culture_diverge_without_county_conversion = {
+		CHARACTER = $CHARACTER$
 	}
-	convert_family_culture_and_notify_vassals_effect = {
-		CONVERTER = $CHARACTER$
-		OLD_CULTURE = scope:old_culture
-		NEW_CULTURE = scope:new_culture
+	# character will have diverged culture at this point
+	$CHARACTER$.culture = {
+		set_culture_pillar = ethos_communal
+		clear_culture_traditions = yes
+		add_culture_tradition = tradition_music_theory
+		add_culture_tradition = tradition_festivities
+		add_culture_tradition = tradition_welcoming
+	}
+	title:d_osterreich = {
+		add_to_list = title_list
+	}
+	title:c_graz = {
+		add_to_list = title_list
+	}
+	title:c_murzzuschlag = {
+		add_to_list = title_list
+	}
+	title:c_pitten = {
+		add_to_list = title_list
+	}
+	every_in_list = {
+		list = title_list
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			set_county_culture = $CHARACTER$.culture
+		}
 	}
 }
 
 slavinia_culture_diverge = {
-	$CHARACTER$ = {
-		culture = {
-			save_scope_as = old_culture
-		}
-		create_divergent_culture = yes
-		scope:new_culture = {
-			set_culture_pillar = ethos_spiritual
-			clear_culture_traditions = yes
-			add_culture_tradition = tradition_ruling_caste
-			add_culture_tradition = tradition_monastic_communities
-			add_culture_tradition = tradition_adaptive_skirmishing
-		}
-		# build list of titles whose counties will be converted
-		title:c_brandenburg = {
-			add_to_list = title_list
-		}
-		title:c_ruppin = {
-			add_to_list = title_list
-		}
-		title:c_havelberg = {
-			add_to_list = title_list
-		}
-		title:c_stendal = {
-			if = {
-				limit = {
-					culture = culture:polabian
-				}
-				add_to_list = title_list
+	culture_diverge_without_county_conversion = {
+		CHARACTER = $CHARACTER$
+	}
+	# character will have diverged culture at this point
+	$CHARACTER$.culture = {
+		set_culture_pillar = ethos_spiritual
+		clear_culture_traditions = yes
+		add_culture_tradition = tradition_ruling_caste
+		add_culture_tradition = tradition_monastic_communities
+		add_culture_tradition = tradition_adaptive_skirmishing
+	}
+	title:c_brandenburg = {
+		add_to_list = title_list
+	}
+	title:c_ruppin = {
+		add_to_list = title_list
+	}
+	title:c_havelberg = {
+		add_to_list = title_list
+	}
+	title:c_stendal = {
+		if = {
+			limit = {
+				culture = culture:polabian
 			}
-		}
-		title:c_dannenberg = {
-			if = {
-				limit = {
-					culture = culture:polabian
-				}
-				add_to_list = title_list
-			}
-		}
-		every_in_list = {
-			list = title_list
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-				}
-				set_county_culture = scope:new_culture
-			}
+			add_to_list = title_list
 		}
 	}
-	convert_family_culture_and_notify_vassals_effect = {
-		CONVERTER = $CHARACTER$
-		OLD_CULTURE = scope:old_culture
-		NEW_CULTURE = scope:new_culture
+	title:c_dannenberg = {
+		if = {
+			limit = {
+				culture = culture:polabian
+			}
+			add_to_list = title_list
+		}
+	}
+	every_in_list = {
+		list = title_list
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			set_county_culture = $CHARACTER$.culture
+		}
 	}
 }
 
 lotharingia_culture_diverge = {
+	culture_diverge_without_county_conversion = {
+		CHARACTER = $CHARACTER$
+	}
+	# character will have diverged culture at this point
+	$CHARACTER$.culture = {
+		set_culture_pillar = ethos_egalitarian
+		clear_culture_traditions = yes
+		add_culture_tradition = tradition_family_entrepreneurship
+		add_culture_tradition = tradition_reverence_for_veterans
+		add_culture_tradition = tradition_xenophilic
+	}
+	title:c_puttlingen = {
+		add_to_list = title_list
+	}
+	title:c_metz = {
+		add_to_list = title_list
+	}
+	title:c_luxembourg = {
+		add_to_list = title_list
+	}
+	title:c_trier = {
+		add_to_list = title_list
+	}
+	title:c_saarbrucken = {
+		add_to_list = title_list
+	}
+	title:c_koblenz = {
+		add_to_list = title_list
+	}
+	title:c_cologne = {
+		add_to_list = title_list
+	}
+	title:c_cleves = {
+		add_to_list = title_list
+	}
+	title:c_maastricht = {
+		add_to_list = title_list
+	}
+	title:c_aachen = {
+		add_to_list = title_list
+	}
+	every_in_list = {
+		list = title_list
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			set_county_culture = $CHARACTER$.culture
+		}
+	}
+}
+
+# figure out which duchy we will try to convert
+# call culture_diverge_without_county_conversion
+# convert the duchy to the new culture
+generic_culture_diverge = {
+	if = {
+		limit = {
+			capital_county.culture = $CHARACTER$.culture
+		}
+		capital_county.duchy = {
+			add_to_list = title_list
+		}
+	}
+	else_if = {
+		limit = {
+			any_held_title = {
+				tier = tier_county
+				culture = $CHARACTER$.culture
+			}
+		}
+		random_held_title = {
+			limit = {
+				tier = tier_county
+				culture = $CHARACTER$.culture
+			}
+			scope:county_check.duchy = {
+				add_to_list = title_list
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			any_sub_realm_county = {
+				culture = $CHARACTER$.culture
+			}
+		}
+		random_sub_realm_county = {
+			limit = {
+				culture = $CHARACTER$.culture
+			}
+			scope:county_check.duchy = {
+				add_to_list = title_list
+			}
+		}
+	}
+	culture_diverge_without_county_conversion = {
+		CHARACTER = $CHARACTER$
+	}
+	# character will have diverged culture at this point
+	every_in_list = {
+		list = title_list
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+			}
+			set_county_culture = $CHARACTER$.culture
+		}
+	}
+}
+
+culture_diverge_without_county_conversion = {
 	$CHARACTER$ = {
 		culture = {
 			save_scope_as = old_culture
 		}
 		create_divergent_culture = yes
-		scope:new_culture = {
-			set_culture_pillar = ethos_egalitarian
-			clear_culture_traditions = yes
-			add_culture_tradition = tradition_family_entrepreneurship
-			add_culture_tradition = tradition_reverence_for_veterans
-			add_culture_tradition = tradition_xenophilic
-		}
-		# build list of titles whose counties will be converted
-		title:c_puttlingen = {
-			add_to_list = title_list
-		}
-		title:c_metz = {
-			add_to_list = title_list
-		}
-		title:c_luxembourg = {
-			add_to_list = title_list
-		}
-		title:c_trier = {
-			add_to_list = title_list
-		}
-		title:c_saarbrucken = {
-			add_to_list = title_list
-		}
-		title:c_koblenz = {
-			add_to_list = title_list
-		}
-		title:c_cologne = {
-			add_to_list = title_list
-		}
-		title:c_cleves = {
-			add_to_list = title_list
-		}
-		title:c_maastricht = {
-			add_to_list = title_list
-		}
-		title:c_aachen = {
-			add_to_list = title_list
-		}
-		every_in_list = {
-			list = title_list
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-				}
-				set_county_culture = scope:new_culture
-			}
-		}
-	}
-	convert_family_culture_and_notify_vassals_effect = {
-		CONVERTER = $CHARACTER$
-		OLD_CULTURE = scope:old_culture
-		NEW_CULTURE = scope:new_culture
-	}
-}
-
-# diverge culture like the AI would
-# convert capital duchy
-# offer convert to family, courtier and vassals
-generic_culture_diverge = {
-	$CHARACTER$ = {
-		culture = {
-			save_scope_as = old_culture
-		}
-		create_divergent_culture_with_side_effects_excluding_cost = yes
 		culture = {
 			save_scope_as = new_culture
 		}
-		capital_county.duchy = {
-			every_in_de_jure_hierarchy = {
-				limit = {
-					tier = tier_county
-				}
-				set_county_culture = scope:new_culture
+	}
+	# undo the 'random chance' county conversion
+	$CHARACTER$.top_liege = {
+		every_sub_realm_county = {
+			limit = {
+				culture = scope:new_culture
 			}
+			set_county_culture = scope:old_culture
 		}
 	}
 	convert_family_culture_and_notify_vassals_effect = {
