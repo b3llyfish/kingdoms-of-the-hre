@@ -15,8 +15,14 @@
  
  rule_kingdoms_hre_austria_renown: "Königreiche des HRE: Österreich Renommee"
  setting_kingdoms_hre_culture_noteworthy: "Bemerkenswert"
- setting_kingdoms_hre_culture_noteworthy_desc: "Die Österreich -Petition erfordert ein renommiertes Maß an #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_noteworthy_desc: "Die Entscheidung 'sicherer Erzduchy' erfordert ein renommiertes Niveau von #Z Noteworthy#!"
  setting_kingdoms_hre_culture_reputable: "Seriös"
- setting_kingdoms_hre_culture_reputable_desc: "Die Österreich -Petition erfordert ein renommiertes Maß an #Z Reputable#!"
+ setting_kingdoms_hre_culture_reputable_desc: "Die Entscheidung 'sicherer Erzduchy' erfordert ein renommiertes Niveau von #Z Reputable#!"
  setting_kingdoms_hre_culture_well_known: "Bekannt"
- setting_kingdoms_hre_culture_well_known_desc: "Die Österreich -Petition erfordert ein renommiertes Maß an #Z Well-Known#!"
+ setting_kingdoms_hre_culture_well_known_desc: "Die Entscheidung 'sicherer Erzduchy' erfordert ein renommiertes Niveau von #Z Well-Known#!"
+ 
+ rule_kingdoms_hre_capital_region_requirement: "Königreiche der HRE: Capital Region Check"
+ setting_kingdoms_hre_capital_region_required: "Erforderlich"
+ setting_kingdoms_hre_capital_region_required_desc: "Schöpferische Königreiche müssen die Hauptstadt eines Charakters in der Region des Königreichs befinden"
+ setting_kingdoms_hre_capital_region_not_required: "Nicht erforderlich"
+ setting_kingdoms_hre_capital_region_not_required_desc: "Erstellbare Königreiche werden #Z not#!Erfordern die Hauptstadt eines Charakters in der Region des Königreichs"

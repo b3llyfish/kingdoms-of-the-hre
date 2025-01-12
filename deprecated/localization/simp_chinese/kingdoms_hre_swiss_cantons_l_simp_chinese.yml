@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ swiss_cantons_decision: "增强州的能力"
+ swiss_cantons_decision_desc: "作为瑞士各州的figurehead，我可以确保他们拥有成长和繁荣的资源。\n \n通过在[GetGeographicalRegion('custom_core_switzerland').GetName]上扩展城市，我们可以创建一个强大的贸易网络​​，以使我们的县蓬勃发展。"
+ swiss_cantons_decision_tooltip: "为瑞士州建立更多城市"
+ swiss_cantons_decision_confirm: "向州提供更多力量！"
+ swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! cities are required in the region of [GetGeographicalRegion('custom_core_switzerland').GetName], (currently: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#！）"
+ swiss_cantons_primogeniture_enacted_title: "县获得了修饰符"
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip]获得[GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]"
+ empowered_swiss_cantons_modifier: "强大的瑞士州"
+ empowered_swiss_cantons_modifier_desc: "这个县受益于瑞士州的影响，以某些自主权为代价"

@@ -15,8 +15,14 @@
  
  rule_kingdoms_hre_austria_renown: "Royaumes du niveau HRE: Autriche de renommée"
  setting_kingdoms_hre_culture_noteworthy: "Remarquable"
- setting_kingdoms_hre_culture_noteworthy_desc: "La pétition autrichienne nécessitera un niveau de renom de #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_noteworthy_desc: "La décision «Secure the Archduchy» nécessitera un niveau de renom de #Z Noteworthy#!"
  setting_kingdoms_hre_culture_reputable: "Honorable"
- setting_kingdoms_hre_culture_reputable_desc: "La pétition autrichienne nécessitera un niveau de renom de #Z Reputable#!"
+ setting_kingdoms_hre_culture_reputable_desc: "La décision «Secure the Archduchy» nécessitera un niveau de renom de #Z Reputable#!"
  setting_kingdoms_hre_culture_well_known: "Bien connu"
- setting_kingdoms_hre_culture_well_known_desc: "La pétition autrichienne nécessitera un niveau de renom de #Z Well-Known#!"
+ setting_kingdoms_hre_culture_well_known_desc: "La décision «Secure the Archduchy» nécessitera un niveau de renom de #Z Well-Known#!"
+ 
+ rule_kingdoms_hre_capital_region_requirement: "Kingdoms of the HRE: Capital Region Check"
+ setting_kingdoms_hre_capital_region_required: "Requis"
+ setting_kingdoms_hre_capital_region_required_desc: "Les royaumes créables exigeront que la capitale d'un personnage soit dans la région du royaume"
+ setting_kingdoms_hre_capital_region_not_required: "Pas requis"
+ setting_kingdoms_hre_capital_region_not_required_desc: "Les royaumes créables seront #Z not#!exiger la capitale d'un personnage pour être dans la région du Royaume"

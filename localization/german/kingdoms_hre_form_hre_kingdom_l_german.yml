@@ -13,65 +13,95 @@
  choose_kingdom: "Petition für ein Königreich."
  required_amount_of_titles: "Muss mindestens 2 [duchy|E] [titles|E] haben."
  
- choose_bavaria_name: "[GetTitleByKey('k_bavaria').GetNameNoTooltip]"
- choose_bavaria_tooltip: "Petition für [GetTitleByKey('k_bavaria').GetName]"
+ choose_bavaria_name: "Fürstentum von [GetTitleByKey('k_bavaria').GetNameNoTierNoTooltip]"
+ choose_bavaria_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_bavaria').GetNameNoTier]"
  not_enough_bavaria_counties: "You only have [SCOPE.ScriptValue('kingdom_bavaria_county_count')|0] of [SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0] required [counties|E].
  
  choose_bohemia_name: "[GetTitleByKey('k_bohemia').GetNameNoTooltip]"
- choose_bohemia_tooltip: "Petition für [GetTitleByKey('k_bohemia').GetName]"
+ choose_bohemia_tooltip: "Petition für die [GetTitleByKey('k_bohemia').GetNameNoTier]"
  not_enough_bohemia_counties: "You only have [SCOPE.ScriptValue('kingdom_bohemia_county_count')|0] of [SCOPE.ScriptValue('kingdom_bohemia_required_county_total')|0] required [counties|E].
  require_bohemia_culture: "Kultur muss tschechisch sein oder daraus abgeleitet sein"
  
- choose_frisia_name: "[GetTitleByKey('k_frisia').GetNameNoTooltip]"
- choose_frisia_tooltip: "Petition für [GetTitleByKey('k_frisia').GetName]"
+ choose_frisia_name: "Fürstentum von [GetTitleByKey('k_frisia').GetNameNoTierNoTooltip]"
+ choose_frisia_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_frisia').GetNameNoTier]"
  not_enough_frisia_counties: "You only have [SCOPE.ScriptValue('kingdom_frisia_county_count')|0] of [SCOPE.ScriptValue('kingdom_frisia_required_county_total')|0] required [counties|E].
  require_frisia_culture: "Kultur muss friesisch sein oder daraus abgeleitet sein"
 
- choose_lotharingia_name: "[GetTitleByKey('k_lotharingia').GetNameNoTooltip]"
- choose_lotharingia_tooltip: "Petition für [GetTitleByKey('k_lotharingia').GetName]"
+ choose_lotharingia_name: "Fürstentum von [GetTitleByKey('k_lotharingia').GetNameNoTierNoTooltip]"
+ choose_lotharingia_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_lotharingia').GetNameNoTier]"
  not_enough_lotharingia_counties: "You only have [SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0] of [SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0] required [counties|E].
  
- choose_italy_name: "[GetTitleByKey('k_italy').GetNameNoTooltip]"
- choose_italy_tooltip: "Petition für [GetTitleByKey('k_italy').GetName]"
+ choose_italy_name: "Fürstentum von [GetTitleByKey('k_italy').GetNameNoTierNoTooltip]"
+ choose_italy_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_italy').GetNameNoTier]"
  not_enough_italy_counties: "You only have [SCOPE.ScriptValue('kingdom_italy_county_count')|0] of [SCOPE.ScriptValue('kingdom_italy_required_county_total')|0] required [counties|E].
- require_italy_culture: "Kultur muss Cisalpin/Italienisch sein oder daraus abgeleitet sein"
+ require_italy_culture: "Kultur muss lateinisches Erbe haben"
  
- choose_brittany_name: "[GetTitleByKey('k_brittany').GetNameNoTooltip]"
- choose_brittany_tooltip: "Petition für [GetTitleByKey('k_brittany').GetName]"
+ choose_brittany_name: "Fürstentum von [GetTitleByKey('k_brittany').GetNameNoTierNoTooltip]"
+ choose_brittany_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_brittany').GetNameNoTier]"
  not_enough_brittany_counties: "You only have [SCOPE.ScriptValue('kingdom_brittany_county_count')|0] of [SCOPE.ScriptValue('kingdom_brittany_required_county_total')|0] required [counties|E].
  require_brittany_culture: "Kultur muss Breton sein oder daraus abgeleitet sein"
  
- choose_aquitaine_name: "[GetTitleByKey('k_aquitaine').GetNameNoTooltip]"
- choose_aquitaine_tooltip: "Petition für [GetTitleByKey('k_aquitaine').GetName]"
+ choose_aquitaine_name: "Fürstentum von [GetTitleByKey('k_aquitaine').GetNameNoTierNoTooltip]"
+ choose_aquitaine_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_aquitaine').GetNameNoTier]"
  not_enough_aquitaine_counties: "You only have [SCOPE.ScriptValue('kingdom_aquitaine_county_count')|0] of [SCOPE.ScriptValue('kingdom_aquitaine_required_county_total')|0] required [counties|E].
  require_aquitaine_culture: "Kultur muss vorkommen oder daraus abgeleitet sein"
  
- choose_france_name: "[GetTitleByKey('k_france').GetNameNoTooltip]"
- choose_france_tooltip: "Petition für [GetTitleByKey('k_france').GetName]"
+ choose_france_name: "Fürstentum von [GetTitleByKey('k_france').GetNameNoTierNoTooltip]"
+ choose_france_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_france').GetNameNoTier]"
  not_enough_france_counties: "You only have [SCOPE.ScriptValue('kingdom_france_county_count')|0] of [SCOPE.ScriptValue('kingdom_france_required_county_total')|0] required [counties|E].
  require_france_culture: "Kultur muss französisch sein oder daraus abgeleitet sein"
  
- choose_burgundy_name: "[GetTitleByKey('k_burgundy').GetNameNoTooltip]"
- choose_burgundy_tooltip: "Petition für [GetTitleByKey('k_burgundy').GetName]"
+ choose_burgundy_name: "Fürstentum von [GetTitleByKey('k_burgundy').GetNameNoTierNoTooltip]"
+ choose_burgundy_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_burgundy').GetNameNoTier]"
  not_enough_burgundy_counties: "You only have [SCOPE.ScriptValue('kingdom_burgundy_county_count')|0] of [SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0] required [counties|E].
- require_burgundy_culture: "Kultur muss Französisch/Occitan sein oder daraus abgeleitet sein"
+ require_burgundy_culture: "Kultur muss fränkisches Erbe haben"
 
  choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]"
- choose_austria_tooltip: "Petition für die [GetTitleByKey('k_austria').GetName] \n \n Der [GetTitleByKey('k_austria').GetNameNoTooltip] wird mit dem {@@} und dem [GetTitleByKey('d_osterreich').GetName] als De -Jure -Herzautiouen gebildet.[GetTitleByKey('d_steyermark').GetName], die \n und \n werden auch ein De -Jure -Teil des [GetTitleByKey('d_carinthia').GetName]. [GetTitleByKey('d_carinthia').GetNameNoTooltip] [GetTitleByKey('d_krain').GetName], der dieses Königreich bildet, wird Ihnen das Primogenitur -Nachfolgegesetz gewähren."
+ choose_austria_tooltip: "Petition für die [GetTitleByKey('k_austria').GetName] \n \n Der [GetTitleByKey('k_austria').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_osterreich').GetName] und dem [GetTitleByKey('d_steyermark').GetName] als De -Jure -Herzherdies gebildet."
+ not_enough_austria_counties: "[SCOPE.ScriptValue('kingdom_austria_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_core_austria').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_austria_county_count')|0]."
 
  choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]"
- choose_switzerland_tooltip: "Petition für die [GetTitleByKey('k_switzerland').GetName] \n \n Der [GetTitleByKey('k_switzerland').GetNameNoTooltip] wird mit dem {@@} und dem [GetTitleByKey('d_transjurania').GetName] als De -Jure -Herzautiouen gebildet.[GetTitleByKey('d_currezia').GetName] wird auch ein De -Jure -Teil des \n. \n [GetTitleByKey('d_savoie').GetName], der dieses Königreich bildet, wird Ihnen das absolute Crown Authority -Gesetz gewähren."
- swiss_not_enough_development: "Benötigt mindestens [SCOPE.ScriptValue('swiss_development_required_amount')|0] Entwicklung in [counties|E] innerhalb [GetGeographicalRegion('custom_core_switzerland').GetName] (derzeit [SCOPE.ScriptValue('kingdom_swiss_development_county_total')|0])"
- random_switzerland_culture_convert: "Zufällige Zufallsgeschwindigkeitsbesitzer französischer oder cisalpiner Kulturbezirke innerhalb der [GetTitleByKey('d_savoie').GetNameNoTooltip] werden sich in Ihre Kultur ändern"
- 
- choose_saxony_name: "[GetTitleByKey('k_saxony').GetNameNoTooltip]"
- choose_saxony_tooltip: "Petition für [GetTitleByKey('k_saxony').GetName] \n \n Der [GetTitleByKey('k_saxony').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_anhalt').GetName]. \n \n Gebildet, wenn Sie die [GetTitleByKey('d_lausitz').GetName] vollständig steuern oder es ist ein De -Jure -Teil des [GetTitleByKey('e_hre').GetName] Dann wird der [GetTitleByKey('d_lausitz').GetNameNoTooltip] auch ein De -Jure -Teil des [GetTitleByKey('k_saxony').GetNameNoTooltip]. \n \n, wenn Sie das [GetTitleByKey('d_meissen').GetName] vollständig kontrollieren, oder es ist ein De -Jure -Teil des [GetTitleByKey('e_hre').GetNameNoTooltip], dann [GetTitleByKey('d_meissen').GetNameNoTooltip]Wird auch ein De -Jure -Teil des [GetTitleByKey('k_saxony').GetNameNoTooltip]. \n \n, wenn Sie den {@@} vollständig kontrollieren, wird der [GetTitleByKey('d_thuringia').GetName] auch ein De -Jure -Teil des [GetTitleByKey('d_thuringia').GetNameNoTooltip]. [GetTitleByKey('k_saxony').GetNameNoTooltip] \n Die Bildung dieses Königreichs gewährt Ihnen das sächsische elektive Nachfolgegesetz."
+ choose_switzerland_tooltip: "Petition für die [GetTitleByKey('k_switzerland').GetName] \n \n Der [GetTitleByKey('k_switzerland').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_transjurania').GetName] und dem [GetTitleByKey('d_currezia').GetName] als De -Jure -Herzherdies gebildet."
+ not_enough_switzerland_counties: "[SCOPE.ScriptValue('kingdom_switzerland_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_core_switzerland').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_switzerland_county_count')|0]."
+
  require_saxony_culture: "Kultur muss sächsische oder daraus abgeleitet sein"
- custom_core_saxony: "Sachsen"
- core_saxony_duchies_required: "Erfordert die vollständige Kontrolle von [GetTitleByKey('d_anhalt').GetName] und die vollständige Kontrolle eines anderen [duchy|E] in der Region von [GetGeographicalRegion('custom_core_saxony').GetName]"
- saxon_military_strength_requirement: "Die aktuelle militärische Stärke von [SCOPE.ScriptValue('saxon_military_strength_value')|0] oder höher erfordern (derzeit [SCOPE.ScriptValue('military_strength_value')|0])"
- random_saxony_culture_convert: "Zufällige Chance -Besitz der polabischen Kulturbezirke innerhalb der [GetTitleByKey('k_saxony').GetNameNoTooltip] wird in Ihre Kultur verändern"
+ 
+ choose_upper_saxony_name: "Fürstentum von [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip]"
+ choose_upper_saxony_tooltip: "Petition für die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTier] \n \n Die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] wird mit [GetTitleByKey('d_anhalt').GetName], [GetTitleByKey('d_thuringia').GetName], [GetTitleByKey('d_meissen').GetName] und [GetTitleByKey('d_lausitz').GetName] als De -Jure -Herzherdies gebildet."
+ not_enough_upper_saxony_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_upper_saxony').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
+ choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$"
+ choose_upper_saxony_without_sorbia_tooltip: "Petition für die Prinzipität von [GetTitleByKey('k_upper_saxony').GetName] \n \n Die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_anhalt').GetName] und dem [GetTitleByKey('d_thuringia').GetName] als De -Jure -Herzogs gebildet. \n \n, Wenn Sie die {{vollständig steuern@} oder [GetTitleByKey('d_meissen').GetName] Dann werden diese beiden Herzogtümer ein De -Jure -Teil der Prinzipität von [GetTitleByKey('d_lausitz').GetName] und der Title [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] wird zerstört."
+ not_enough_upper_saxony_without_sorbia_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
+ 
+ choose_lower_saxony_name: "Fürstentum von [GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip]"
+ choose_lower_saxony_tooltip: "Petition für die Prinzipität von [GetTitleByKey('k_lower_saxony').GetNameNoTier] \n \n Die Prinzipität von [GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip] wird mit [GetTitleByKey('d_angria').GetName], [GetTitleByKey('d_holstein').GetName], [GetTitleByKey('d_ostfalen').GetName] und [GetTitleByKey('d_westfalen').GetName] als De -Jure -Herzherdies gebildet."
+ not_enough_lower_saxony_counties: "[SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_lower_saxony').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]."
+
+ k_upper_saxony: "Obere Sachsen"
+ k_upper_saxony_adj: "Oberer Sachsen"
+ k_upper_saxony_pre: "Oberer Saxo"
+ k_lower_saxony: "Niedrigere Sachsen"
+ k_lower_saxony_adj: "Untersaxon"
+ k_lower_saxony_pre: "Unterer Saxo"
+
+ custom_upper_saxony: "Obere Sachsen"
+ custom_upper_saxony_without_sorbia: "$custom_upper_saxony$"
+ custom_lower_saxony: "Niedrigere Sachsen"
  
  is_hre_vassal: "Ist ein Vasall des heiligen römischen Kaisers."
  requires_culture: "Muss ein Kind von [root.culture.GetName] Kultur haben oder sein"
  kingdom_already_exists: "Dieses Königreich existiert bereits"
+ saxony_kingdom_already_exists: "Das Königreich Sachsen ersetzt dieses Königreich"
+
+ choose_pomerania_name: "Fürstentum von [GetTitleByKey('k_pomerania').GetNameNoTierNoTooltip]"
+ choose_pomerania_tooltip: "Petition für die Fürstentum von [GetTitleByKey('k_pomerania').GetNameNoTier]"
+ not_enough_pomerania_counties: "You only have [SCOPE.ScriptValue('kingdom_pomerania_county_count')|0] of [SCOPE.ScriptValue('kingdom_pomerania_required_county_total')|0] required [counties|E].
+ require_pomerania_culture: "Kultur muss pommerisch sein oder daraus abgeleitet sein"
+
+ choose_slavinia_name: "[GetTitleByKey('k_slavinia').GetNameNoTooltip]"
+ choose_slavinia_tooltip: "Petition für die [GetTitleByKey('k_slavinia').GetName] \n \n Der [GetTitleByKey('k_slavinia').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_nordmark').GetName] und dem [GetTitleByKey('d_ostmark').GetName] als De -Jure -Herzherdies gebildet."
+ not_enough_slavinia_counties: "[SCOPE.ScriptValue('kingdom_slavinia_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_slavinia').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_slavinia_county_count')|0]."
+ require_slavinia_culture: "Kultur muss ein zentralgermanisches Erbe haben"
+ k_slavinia: "Slavinien"
+ k_slavinia_adj: "Slawinisch"
+ custom_slavinia: "Slavinien"

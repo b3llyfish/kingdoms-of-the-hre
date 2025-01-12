@@ -1,0 +1,10 @@
+﻿l_russian:
+ swiss_cantons_decision: "Расширить возможности кантонов"
+ swiss_cantons_decision_desc: "В качестве подставного лица для швейцарских кантонов мне нужно убедиться, что у них есть ресурсы для роста и процветания. \n \n, Расширяя города через [GetGeographicalRegion('custom_core_switzerland').GetName], мы могли бы создать сильную торговую сеть, чтобы позволить нашим округам процветатьПолем"
+ swiss_cantons_decision_tooltip: "Создайте больше городов для швейцарских кантонов"
+ swiss_cantons_decision_confirm: "Больше энергии в кантонах!"
+ swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! cities are required in the region of [GetGeographicalRegion('custom_core_switzerland').GetName], (currently: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)"
+ swiss_cantons_primogeniture_enacted_title: "Округ получил модификатор"
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] получил [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]"
+ empowered_swiss_cantons_modifier: "Мощные швейцарские кантоны"
+ empowered_swiss_cantons_modifier_desc: "Этот округ извлекает выгоду из влияния швейцарских кантонов за счет некоторой автономии"

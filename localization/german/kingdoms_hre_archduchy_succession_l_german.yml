@@ -1,0 +1,7 @@
+﻿l_german:
+ archduchy_succession_decision: "Sichern Sie die $archduchy$"
+ archduchy_succession_decision_desc: "Es ist wichtig, dass die Länder, die zur [GetTitleByKey('k_austria').GetNameNoTooltip] gehören, nicht nur für uns, sondern für Europa selbst stabil bleiben!Sichern wir uns die Nachfolge unter einem einzelnen Lineal, damit \n für die kommenden Generationen stark bleibt."
+ archduchy_succession_decision_tooltip: "Erbliche Herrschaft für die [GetTitleByKey('k_austria').GetNameNoTooltip] und andere gehaltene Titel erlassen."
+ archduchy_succession_decision_confirm: "Die Nachfolge ist sicher"
+ archduchy_succession_primogeniture_enacted_title: "Ein neues Nachfolgegesetz erlangt"
+ archduchy_succession_primogeniture_enacted_desc: "Ihr Nachfolgegesetz lautet jetzt [GetLaw('single_heir_succession_law').GetName]"

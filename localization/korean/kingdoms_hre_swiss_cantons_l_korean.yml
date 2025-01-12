@@ -1,0 +1,10 @@
+﻿l_korean:
+ swiss_cantons_decision: "캔톤의 권한을 부여하십시오"
+ swiss_cantons_decision_desc: "스위스 캔톤의 인물은 그들이 성장하고 번성 할 자원을 갖도록하는 것이 저에게 달려 있습니다. \n \n 도시를 [GetGeographicalRegion('custom_core_switzerland').GetName]을 가로 질러 확장하여 카운티가 번성 할 수 있도록 강력한 무역 네트워크를 만들 수 있습니다.."
+ swiss_cantons_decision_tooltip: "스위스 캔톤을 위해 더 많은 도시를 설립하십시오"
+ swiss_cantons_decision_confirm: "더 많은 힘!"
+ swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! cities are required in the region of [GetGeographicalRegion('custom_core_switzerland').GetName], (currently: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)"
+ swiss_cantons_primogeniture_enacted_title: "카운티는 수정자를 얻었습니다"
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] 획득 [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]"
+ empowered_swiss_cantons_modifier: "강력한 스위스 캔톤"
+ empowered_swiss_cantons_modifier_desc: "이 카운티"

@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ divided_kingdom: "[CHARACTER.GetShortUIName|U]，[TARGET_CHARACTER.GetShortUIName]成为一个新王国后成为竞争对手。"
+ broke_apart_my_kingdom: "破裂我的王国"
+ favouritism: "皇帝赋予另一个附庸的冠军"
+ rejected_title_kingdom: "皇帝拒绝了我的王国请愿书"
+ rejected_title_kingdom_minor: "皇帝拒绝了我的王国请愿书，但这没关系..."
+ letter_positive: "收到令人信服的信"
+ letter_negative: "收到一封令人信服的信"
+ blackmailed_title_kingdom: "勒索我为一个王国"
+ declared_saxon_king: "宣布自己是所有萨克森的统治者"

@@ -1,0 +1,7 @@
+﻿l_spanish:
+ archduchy_succession_decision: "Secure the $archduchy$"
+ archduchy_succession_decision_desc: "Es importante que las tierras pertenecientes a la [GetTitleByKey('k_austria').GetNameNoTooltip] permanezcan estables, no solo para nosotros sino para Europa misma!Aseguremos la sucesión bajo una sola regla para que \n permanezca fuerte para las generaciones venideras."
+ archduchy_succession_decision_tooltip: "Promulgar regla hereditaria para el [GetTitleByKey('k_austria').GetNameNoTooltip] y otros títulos sostenidos."
+ archduchy_succession_decision_confirm: "La sucesión es segura"
+ archduchy_succession_primogeniture_enacted_title: "Ganó una nueva ley de sucesión"
+ archduchy_succession_primogeniture_enacted_desc: "Tu ley de sucesión ahora es [GetLaw('single_heir_succession_law').GetName]"

@@ -2,3 +2,5 @@
  hre_cannot_create_kingdom: "이 [kingdom|E]는 신성 로마 제국의 영향력의 영역 안에 있습니다. \n는 신성 로마 제국의 [vassal|E] $form_hre_kingdom_decision$ 결정을 통해 만들어 져야합니다."
  coronation_culture_acceptance_bonus_desc: "[vassal.GetShortUIName]에 의해 [emperor.GetShortUIName]의 대관식"
  petition_gift_modifier: "트렌디 한 장신구"
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 의 [target_title.GetNameNoTier]"
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 의 [target_title.GetNameNoTierNoTooltip]"

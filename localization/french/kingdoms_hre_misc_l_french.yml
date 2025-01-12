@@ -2,3 +2,5 @@
  hre_cannot_create_kingdom: "Ce [kingdom|E] se trouve dans la sphère d'influence de l'Empire du Saint-Romain."
  coronation_culture_acceptance_bonus_desc: "Coronation de [vassal.GetShortUIName] par [emperor.GetShortUIName]"
  petition_gift_modifier: "Bibelots à la mode"
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTier]"
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip]"

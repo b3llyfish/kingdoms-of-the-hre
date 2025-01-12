@@ -15,8 +15,14 @@
  
  rule_kingdoms_hre_austria_renown: "HRE의 왕국 : 오스트리아 명성 수준"
  setting_kingdoms_hre_culture_noteworthy: "주목할만한"
- setting_kingdoms_hre_culture_noteworthy_desc: "오스트리아 청원에는 #Z Noteworthy#의 유명한 수준이 필요합니다!"
+ setting_kingdoms_hre_culture_noteworthy_desc: "'Archduchy의 보안'결정은 #Z Noteworthy#의 명성 수준이 필요합니다!"
  setting_kingdoms_hre_culture_reputable: "평판"
- setting_kingdoms_hre_culture_reputable_desc: "오스트리아 청원에는 #Z Reputable#의 유명한 수준이 필요합니다!"
+ setting_kingdoms_hre_culture_reputable_desc: "'Archduchy의 보안'결정은 #Z Reputable#의 명성 수준이 필요합니다!"
  setting_kingdoms_hre_culture_well_known: "잘 알려진"
- setting_kingdoms_hre_culture_well_known_desc: "오스트리아 청원에는 #Z Well-Known#의 유명한 수준이 필요합니다!"
+ setting_kingdoms_hre_culture_well_known_desc: "'Archduchy의 보안'결정은 #Z Well-Known#의 명성 수준이 필요합니다!"
+ 
+ rule_kingdoms_hre_capital_region_requirement: "HRE의 왕국 : 수도 지역 수표"
+ setting_kingdoms_hre_capital_region_required: "필수의"
+ setting_kingdoms_hre_capital_region_required_desc: "창조 가능한 왕국은 캐릭터의 수도가 왕국 지역 내에 있어야합니다."
+ setting_kingdoms_hre_capital_region_not_required: "필요하지 않습니다"
+ setting_kingdoms_hre_capital_region_not_required_desc: "생성 된 왕국은 #Z not#!캐릭터의 수도가 왕국 지역 내에 있어야합니다."

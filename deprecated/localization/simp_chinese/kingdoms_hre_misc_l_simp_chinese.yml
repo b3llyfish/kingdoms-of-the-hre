@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ hre_cannot_create_kingdom: "这个[kingdom|E]在神圣罗马帝国的影响力领域。"
+ coronation_culture_acceptance_bonus_desc: "[vassal.GetShortUIName]的加冕[emperor.GetShortUIName]"
+ petition_gift_modifier: "时尚小饰品"
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 的 [target_title.GetNameNoTier]"
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 的 [target_title.GetNameNoTierNoTooltip]"

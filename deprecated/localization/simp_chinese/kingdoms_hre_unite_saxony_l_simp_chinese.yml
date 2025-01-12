@@ -1,0 +1,20 @@
+﻿l_simp_chinese:
+ unite_saxony_decision: "团结撒克逊人"
+ unite_saxony_decision_desc: "撒克逊人的人们已经分裂了很长时间，在彼此之间吵架，而外国大国渗透到了该地区。\n \n已经获得了足够的影响力和降落，我现在可以终止这一点。我将在真正的撒克逊统治者下团结撒克逊人。"
+ unite_saxony_decision_tooltip: "将撒克逊地区团结成一个王国。"
+ unite_saxony_decision_confirm: "建立萨克森王国"
+ unite_saxony_decision_merge_new_kingdom_tooltip: "获得[GetTitleByKey('k_saxony').GetName]"
+ unite_saxony_decision_merge_kingdoms_tooltip: "[GetGeographicalRegion('custom_upper_saxony').GetName]和[GetGeographicalRegion('custom_lower_saxony').GetName]区域内的所有公国将成为[GetTitleByKey('k_saxony').GetNameNoTooltip]的部分"
+ unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip: "[GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName]和[GetGeographicalRegion('custom_lower_saxony').GetName]区域内的所有公国将成为[GetTitleByKey('k_saxony').GetNameNoTooltip]的一部分"
+ unite_saxony_decision_title_law_tooltip: "[GetTitleByKey('k_saxony').GetNameNoTooltip]将具有继任法[GetLaw('saxon_elective_succession_law').GetName]"
+ 
+ unite_saxony_lower_saxony_counties_requirement: "在[SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0]的区域内拥有[counties|E] #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#（当前拥有[GetGeographicalRegion('custom_lower_saxony').GetName]！）"
+ unite_saxony_upper_saxony_counties_requirement: "在[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0]的区域内拥有[counties|E] #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#（当前拥有[GetGeographicalRegion('custom_upper_saxony').GetName]！）"
+ unite_saxony_upper_saxony_without_sorbia_counties_requirement: "在[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0]的区域内拥有[counties|E] #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#（当前拥有[GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName]！）"
+
+ unite_saxony.0001.title: "撒克逊[new_saxon_king.Custom('GetQueenKing')|U]"
+ unite_saxony.0001.desc: "在您的法庭上[new_saxon_king.GetCapitalLocation.GetNameNoTooltip]举行了盛大的仪式。房间里装满了来自萨克森上层和下部地区的各种贵宾和人物。当[messenger.GetShortUIName]接近房间的中心。\n \n [messenger.GetShortUIName]发表令人振奋的演讲突出了多年来的困境。他说，皇帝没有给撒克逊人应得的尊重。他得出的结论是，我们必须在撒克逊人\n下团结起来，正确的人是[new_saxon_king.Custom('GetQueenKing')|U]！[new_saxon_king.GetName] \n每个参与者在您的宝座之前一个一个跪下，并承诺自己对萨克斯尼的新[new_saxon_king.Custom('GetQueenKing')|U]。\n \n {@}皇帝对此不满意，但是在这样令人信服的仪式之后，他们将无法驳回您的新标题。"
+ unite_saxony.0001.a: "所有冰雹[new_saxon_king.GetFirstName]，[new_saxon_king.Custom('GetQueenKing')|U]的萨克斯群岛！"
+
+ unite_saxony_saxon_elective_enacted_title: "获得新的标题继承法"
+ unite_saxony_saxon_elective_enacted_desc: "[GetTitleByKey('k_saxony').GetName]的标题继承法现在[GetLaw('saxon_elective_succession_law').GetName]"

@@ -15,8 +15,14 @@
  
  rule_kingdoms_hre_austria_renown: "Королевства HRE: Австрия слава"
  setting_kingdoms_hre_culture_noteworthy: "Примечательно"
- setting_kingdoms_hre_culture_noteworthy_desc: "Австрийская петиция потребует известного уровня #Z Noteworthy#!"
+ setting_kingdoms_hre_culture_noteworthy_desc: "Решение «Безопасно архих -архия» потребует известного уровня #Z Noteworthy#!"
  setting_kingdoms_hre_culture_reputable: "Уважаемый"
- setting_kingdoms_hre_culture_reputable_desc: "Австрийская петиция потребует известного уровня #Z Reputable#!"
+ setting_kingdoms_hre_culture_reputable_desc: "Решение «Безопасно архих -архия» потребует известного уровня #Z Reputable#!"
  setting_kingdoms_hre_culture_well_known: "Хорошо известный"
- setting_kingdoms_hre_culture_well_known_desc: "Австрийская петиция потребует известного уровня #Z Well-Known#!"
+ setting_kingdoms_hre_culture_well_known_desc: "Решение «Безопасно архих -архия» потребует известного уровня #Z Well-Known#!"
+ 
+ rule_kingdoms_hre_capital_region_requirement: "Королевства HRE: Проверка капитала региона"
+ setting_kingdoms_hre_capital_region_required: "Необходимый"
+ setting_kingdoms_hre_capital_region_required_desc: "Творческие королевства потребуют столицы персонажа в пределах региона королевства"
+ setting_kingdoms_hre_capital_region_not_required: "Не обязательно"
+ setting_kingdoms_hre_capital_region_not_required_desc: "Творческие королевства будут #Z not#!Требовать капитала персонажа в пределах региона королевства"
