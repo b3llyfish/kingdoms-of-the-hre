@@ -124,11 +124,13 @@ Upon receiving a Kingdom the following check will happen:
 * is the character **not** a cultural head?
 
 If the above checks passes another check is done to see if culture divergence is possible. If it is the character will 
-be given an event to either trigger culture divergence or not. If culture divergence it not possible then the will get an event
-to either convert to local culture or not. Note that the AI will always take the option to either diverge or convert to local culture.
+be given an event to either trigger culture divergence or not. If culture divergence is not possible then the character 
+will get an event to either convert to local culture or not. 
+
+Note that the AI will always take the option to either diverge or convert to local culture.
 
 Certain Kingdom titles will have special divergence rules and will their diverged culture will be thematically crafted
-(e.g Austrian will have traditions promoting diplomacy and festivities). Otherwise the divergence will happen randomly.
+(e.g Austrian will have traditions promoting diplomacy and festivities). Otherwise, the divergence will happen randomly.
 
 ## Event Overrides
 The `culture_conversion.0001` event has been overridden and the following adding:
