@@ -1,0 +1,122 @@
+﻿create_golden_bull_artifact = {
+	scope:owner = {
+		set_artifact_rarity_famed = yes
+		create_artifact = {
+			name = golden_bull_court_artifact_name
+			creator = scope:emperor
+			description = golden_bull_court_artifact_desc
+			rarity = famed
+			visuals = scroll
+			type = pedestal
+			modifier = artifact_placeholder_modifier
+			wealth = scope:wealth
+			quality = scope:quality
+			save_scope_as = golden_bull_artifact
+		}
+	}
+	hidden_effect_new_object = {
+		scope:golden_bull_artifact = {
+			get_artifact_feature_references_effect = yes
+			add_artifact_modifier = artifact_court_grandeur_baseline_add_4_modifier
+			add_artifact_modifier = artifact_monthly_dynasty_prestige_2_modifier
+			add_artifact_modifier = artifact_short_reign_duration_mult_5_modifier
+			remove_artifact_modifier = artifact_placeholder_modifier
+		}
+	}
+}
+
+create_masterwork_crown_artifact = {
+	scope:owner = {
+		set_artifact_rarity_masterwork = yes
+		create_artifact = {
+			name = crown_artifact_name
+			description = crown_artifact_desc
+			rarity = masterwork
+			visuals = crown
+			type = helmet
+			modifier = artifact_placeholder_modifier
+			wealth = scope:wealth
+			quality = scope:quality
+			save_scope_as = hre_crown_artifact
+		}
+	}
+}
+
+create_famed_crown_artifact = {
+	scope:owner = {
+		set_artifact_rarity_famed = yes
+		create_artifact = {
+			name = crown_artifact_name
+			description = crown_artifact_desc
+			rarity = famed
+			visuals = crown
+			type = helmet
+			modifier = artifact_placeholder_modifier
+			wealth = scope:wealth
+			quality = scope:quality
+			save_scope_as = hre_crown_artifact
+		}
+	}
+}
+
+create_hre_crown_artifact = {
+	scope:vassal = {
+		save_scope_as = owner
+	}
+	if = {
+		limit = {
+			scope:target_title = title:k_bohemia
+		}
+		create_famed_crown_artifact = yes
+		hidden_effect_new_object = {
+			scope:hre_crown_artifact = {
+				add_artifact_modifier = artifact_monthly_prestige_5_modifier
+				add_artifact_modifier = artifact_courtly_vassal_opinion_3_modifier
+				add_artifact_modifier = artifact_courtier_and_guest_opinion_5_modifier
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_austria
+		}
+		create_masterwork_crown_artifact = yes
+		hidden_effect_new_object = {
+			scope:hre_crown_artifact = {
+				add_artifact_modifier = artifact_monthly_prestige_4_modifier
+				add_artifact_modifier = artifact_owned_personal_scheme_success_chance_add_5_modifier
+				add_artifact_modifier = artifact_monthly_diplomacy_lifestyle_xp_2_modifier
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_switzerland
+		}
+		create_masterwork_crown_artifact = yes
+		hidden_effect_new_object = {
+			scope:hre_crown_artifact = {
+				add_artifact_modifier = artifact_monthly_prestige_4_modifier
+				add_artifact_modifier = artifact_parochial_vassal_opinion_2_modifier
+				add_artifact_modifier = artifact_monthly_stewardship_lifestyle_xp_2_modifier
+			}
+		}
+	}
+	else = {
+		# generic prince
+		create_masterwork_crown_artifact = yes
+		hidden_effect_new_object = {
+			scope:hre_crown_artifact = {
+				add_artifact_modifier = artifact_monthly_prestige_4_modifier
+				add_artifact_modifier = artifact_courtly_vassal_opinion_2_modifier
+				add_artifact_modifier = artifact_courtier_and_guest_opinion_4_modifier
+			}
+		}
+	}
+	hidden_effect_new_object = {
+		scope:hre_crown_artifact = {
+			get_artifact_feature_references_effect = yes
+			remove_artifact_modifier = artifact_placeholder_modifier
+		}
+	}
+}

@@ -1,7 +1,7 @@
 ﻿l_german:
  # Common
  kingdoms_hre.kingdom_of: "Der $loc_title_no_tooltip$"
- kingdoms_hre.golden_bull: "Der goldene Bulle von [emperor.GetCapitalLocation.GetNameNoTooltip]"
+ kingdoms_hre.golden_bull: "Der goldene Bulle von [GetCurrentDate.GetYear]"
  kingdoms_hre.powerful_vassals_irritated: "Das Schreiben eines [kingdom|E] irritieren Ihre leistungsstarken [duchy|E] -Vassalen"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] wird geschützte Titelrechtsrechte für den Titel zu ihrem Vasallvertrag hinzugefügt"
  # Vassal prepares the petition

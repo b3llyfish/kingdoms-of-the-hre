@@ -23,6 +23,10 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 * As an archduke of Austria establish your dynasty to gain early access to single heir succession
 * As the leader of the Swiss Confederation build cities to receive region wide buffs from the Cantons
 
+[b]Artifacts[/b]
+* Gain a crown to kick-start your reign upon gaining a Kingdom
+* Also receive the Golden Bull used to justify your reign as a court artifact
+
 For a detailed explanation of the changes visit the mod's [url=https://github.com/b3llyfish/kingdoms-of-the-hre/blob/main/README.md]README[/url].
 
 [h2]FAQ[/h2]

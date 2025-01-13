@@ -1,0 +1,5 @@
+﻿l_english:
+ golden_bull_court_artifact_name: "Golden Bull of [GetCurrentDate.GetYear]"
+ golden_bull_court_artifact_desc: "A decree issued by [emperor.GetFirstNameRegnal] dictating [vassal.GetFirstNameRegnal] and their descendants the imperial right to rule over the [target_title.GetName]"
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] Crown"
+ crown_artifact_desc: "Crown forged for the coronation of [vassal.GetFirstNameRegnal], first [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))] of [target_title.GetNameNoTierNoTooltip]"

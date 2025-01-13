@@ -1,7 +1,7 @@
 ﻿l_korean:
  # Common
  kingdoms_hre.kingdom_of: "$loc_title_no_tooltip$"
- kingdoms_hre.golden_bull: "[emperor.GetCapitalLocation.GetNameNoTooltip]의 황금 황소"
+ kingdoms_hre.golden_bull: "[GetCurrentDate.GetYear]의 황금 황소"
  kingdoms_hre.powerful_vassals_irritated: "[kingdom|E]를 수여하면 강력한 [duchy|E] vassals를 자극합니다"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U]는 vassal 계약에 추가 된 소유권 취소 권한이 추가됩니다."
  # Vassal prepares the petition

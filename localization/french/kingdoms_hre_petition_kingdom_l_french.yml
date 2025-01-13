@@ -1,7 +1,7 @@
 ﻿l_french:
  # Common
  kingdoms_hre.kingdom_of: "The $loc_title_no_tooltip$"
- kingdoms_hre.golden_bull: "Le taureau d'or de [emperor.GetCapitalLocation.GetNameNoTooltip]"
+ kingdoms_hre.golden_bull: "Le taureau d'or de [GetCurrentDate.GetYear]"
  kingdoms_hre.powerful_vassals_irritated: "Concéder à un [kingdom|E] irritera vos puissants vassaux [duchy|E]"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] aura des droits de révocation au titre protégés ajoutés à leur contrat de vassal"
  # Vassal prepares the petition

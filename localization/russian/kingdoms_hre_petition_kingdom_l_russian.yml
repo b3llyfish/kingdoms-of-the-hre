@@ -1,7 +1,7 @@
 ﻿l_russian:
  # Common
  kingdoms_hre.kingdom_of: "$loc_title_no_tooltip$"
- kingdoms_hre.golden_bull: "Золотой бык [emperor.GetCapitalLocation.GetNameNoTooltip]"
+ kingdoms_hre.golden_bull: "Золотой бык [GetCurrentDate.GetYear]"
  kingdoms_hre.powerful_vassals_irritated: "Держа [kingdom|E] будет раздражать ваши мощные [duchy|E] Вассалы"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] будет иметь защитные права на отзыв титула, добавленные в их договор на вассал"
  # Vassal prepares the petition

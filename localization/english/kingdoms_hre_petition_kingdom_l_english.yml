@@ -1,7 +1,7 @@
 ﻿l_english:
  # Common
  kingdoms_hre.kingdom_of: "The $loc_title_no_tooltip$"
- kingdoms_hre.golden_bull: "The Golden Bull of [emperor.GetCapitalLocation.GetNameNoTooltip]"
+ kingdoms_hre.golden_bull: "The Golden Bull of [GetCurrentDate.GetYear]"
  kingdoms_hre.powerful_vassals_irritated: "Bestowing a [kingdom|E] will irritate your powerful [duchy|E] vassals"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] will have protected title revocation rights added to their vassal contract"
  # Vassal prepares the petition

@@ -1,7 +1,7 @@
 ﻿l_simp_chinese:
  # Common
  kingdoms_hre.kingdom_of: "这 $loc_title_no_tooltip$"
- kingdoms_hre.golden_bull: "[emperor.GetCapitalLocation.GetNameNoTooltip]的金牛"
+ kingdoms_hre.golden_bull: "[GetCurrentDate.GetYear]的金牛"
  kingdoms_hre.powerful_vassals_irritated: "赋予[kingdom|E]会激怒您的功能[duchy|E]柜员"
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U]将添加到其附庸合同中的保护标题撤销权利"
  # Vassal prepares the petition

@@ -293,6 +293,26 @@ kingdoms_hre.0003 = {
 	
 	immediate = {
 		play_music_cue = "mx_cue_epic_sacral_moment"
+		create_hre_crown_artifact = yes
+		if = {
+			limit = {
+				has_dlc_feature = court_artifacts
+			}
+			create_golden_bull_artifact = yes
+		}
+	}
+	
+	artifact = {
+		target = scope:hre_crown_artifact
+		position = lower_left_portrait
+	}
+	
+	artifact = {
+		target = scope:golden_bull_artifact
+		position = lower_center_portrait
+		trigger = {
+			has_dlc_feature = court_artifacts
+		}
 	}
 	
 	option = {
@@ -467,6 +487,26 @@ kingdoms_hre.0007 = {
 	
 	immediate = {
 		play_music_cue = "mx_cue_epic_sacral_moment"
+		create_hre_crown_artifact = yes
+		if = {
+			limit = {
+				has_dlc_feature = court_artifacts
+			}
+			create_golden_bull_artifact = yes
+		}
+	}
+	
+	artifact = {
+		target = scope:hre_crown_artifact
+		position = lower_left_portrait
+	}
+	
+	artifact = {
+		target = scope:golden_bull_artifact
+		position = lower_center_portrait
+		trigger = {
+			has_dlc_feature = court_artifacts
+		}
 	}
 	
 	option = {

@@ -22,6 +22,10 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 * As an archduke of Austria establish your dynasty to gain early access to single heir succession
 * As the leader of the Swiss Confederation build cities to receive region wide buffs from the Cantons
 
+**Artifacts**
+* Gain a crown to kick-start your reign upon gaining a Kingdom
+* Also receive the Golden Bull used to justify your reign as a court artifact
+
 ## Petition the Emperor for a Kingdom Decision
 New decision for Dukes and Counts that are members of the HRE. 
 Select a specific Kingdom to petition the Emperor for, providing the character meets the Kingdom's specific requirements.
