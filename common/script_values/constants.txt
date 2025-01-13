@@ -24,4 +24,10 @@ austria_required_renown_level = {
 
 swiss_cantons_cities_required = 4
 
-petition_trigger_event_delay_days = 7
+petition_trigger_event_delay_days_lower = 5
+
+petition_trigger_event_delay_days_upper = 15
+
+culture_trigger_event_delay_days_lower = 20
+
+culture_trigger_event_delay_days_upper = 31

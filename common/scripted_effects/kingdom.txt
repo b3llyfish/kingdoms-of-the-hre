@@ -1,4 +1,4 @@
-﻿grant_kingdom_title = {
+grant_kingdom_title = {
 	hidden_effect = {
 		if = {
 			limit = {
@@ -110,7 +110,7 @@
 			}
 			trigger_event = {
 				id = diverge_culture.0001
-				days = 7
+				days = { culture_trigger_event_delay_days_lower culture_trigger_event_delay_days_upper }
 			}
 		}
 		# convert to local culture?
@@ -128,7 +128,7 @@
 			}
 			trigger_event = {
 				id = convert_to_local_culture.0001
-				days = 7
+				days = { culture_trigger_event_delay_days_lower culture_trigger_event_delay_days_upper }
 			}
 		}
 	}

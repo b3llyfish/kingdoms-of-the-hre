@@ -40,7 +40,7 @@ kingdoms_hre.0001 = {
 		custom_tooltip = kingdoms_hre.0001.tooltip
 		trigger_event = {
 			id = kingdoms_hre.0008
-			days = petition_trigger_event_delay_days
+			days = { petition_trigger_event_delay_days_lower petition_trigger_event_delay_days_upper }
 		}
 		ai_chance = {
 			base = 50
@@ -107,7 +107,7 @@ kingdoms_hre.0001 = {
 		custom_tooltip = kingdoms_hre.0001.tooltip
 		trigger_event = {
 			id = kingdoms_hre.0008
-			days = petition_trigger_event_delay_days
+			days = { petition_trigger_event_delay_days_lower petition_trigger_event_delay_days_upper }
 		}
 		stress_impact = {
 			shy = minor_stress_gain
@@ -150,7 +150,7 @@ kingdoms_hre.0001 = {
 		custom_tooltip = kingdoms_hre.0001.tooltip
 		trigger_event = {
 			id = kingdoms_hre.0008
-			days = petition_trigger_event_delay_days
+			days = { petition_trigger_event_delay_days_lower petition_trigger_event_delay_days_upper }
 		}
 		stress_impact = {
 			greedy = minor_stress_gain
@@ -195,7 +195,7 @@ kingdoms_hre.0001 = {
 		}
 		trigger_event = {
 			id = kingdoms_hre.0008
-			days = petition_trigger_event_delay_days
+			days = { petition_trigger_event_delay_days_lower petition_trigger_event_delay_days_upper }
 		}
 		ai_chance = {
 			base = 1000
