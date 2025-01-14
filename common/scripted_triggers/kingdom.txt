@@ -542,3 +542,57 @@ can_choose_slavinia = {
 		}
 	}
 }
+
+# performs simplified versions of the creation_names triggers
+# the aim is to generate unique kingdoms as defined in the creation_names directory
+# since they will have formed the kingdom at this point we will assume they hold enough land
+# note that culture requirement needs to be enforced here
+diverges_to_unique_culture = {
+	$CHARACTER$ = {
+		OR = {
+			# Austrian
+			AND = {
+				has_primary_title = title:k_austria
+				culture = {
+					has_cultural_pillar = heritage_central_germanic
+				}
+			}
+			# Lothringian or Lorrainian
+			has_primary_title = title:k_lotharingia
+			# Swiss
+			AND = {
+				has_primary_title = title:k_switzerland
+				culture = {
+					has_cultural_pillar = heritage_central_germanic
+				}
+			}
+			# Upper Saxon
+			AND = {
+				has_primary_title = title:k_upper_saxony
+				culture = {
+					is_culture_or_is_descendant_culture_of = {
+						TARGET_CULTURE = culture:saxon
+					}
+				}
+			}
+			# Arpitan, Burgundian or Provancale
+			AND = {
+				has_primary_title = title:k_burgundy
+				culture = {
+					has_cultural_pillar = heritage_frankish
+				}
+			}
+		}
+	}
+}
+
+# true if the capital culture is missing a culture head
+# or if the capital culture has a culture head but they are only a duke or less
+capital_culture_lacks_strong_culture_head = {
+	$CAPITAL_CULTURE$ = {
+		OR = {
+			NOT = { exists = culture_head }
+			culture_head.highest_held_title_tier <= tier_duchy
+		}
+	}
+}

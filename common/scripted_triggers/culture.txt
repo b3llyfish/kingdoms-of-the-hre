@@ -1,11 +1,5 @@
 ﻿# all triggers defined here are assumed to have a culture scope
 
-does_not_have_same_culture_heritage = {
-	NOT = {
-		has_same_culture_heritage = $TARGET_CULTURE$
-	}
-}
-
 is_culture_or_is_descendant_culture_of = {
 	OR = {
 		this = $TARGET_CULTURE$

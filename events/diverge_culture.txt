@@ -77,13 +77,6 @@ diverge_culture.0001 = {
 		}
 		else_if = {
 			limit = {
-				primary_title = title:k_slavinia
-			}
-			custom_tooltip = diverge_culture.0001.a.tooltip.slavinia
-			custom_tooltip = diverge_culture.0001.a.tooltip.slavinia.convert
-		}
-		else_if = {
-			limit = {
 				primary_title = title:k_lotharingia
 			}
 			custom_tooltip = diverge_culture.0001.a.tooltip.lotharingia

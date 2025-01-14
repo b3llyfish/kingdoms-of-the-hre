@@ -1,4 +1,4 @@
-grant_kingdom_title = {
+﻿grant_kingdom_title = {
 	hidden_effect = {
 		if = {
 			limit = {
@@ -90,16 +90,8 @@ grant_kingdom_title = {
 		# diverge culture?
 		if = {
 			limit = {
-				# target title has unique diverge rules or has a least one county with the owner's culture
-				OR = {
-					scope:target_title = title:k_upper_saxony
-					scope:target_title = title:k_switzerland
-					scope:target_title = title:k_austria
-					scope:target_title = title:k_slavinia
-					scope:target_title = title:k_lotharingia
-					any_sub_realm_county = {
-						culture = $OWNER$.culture
-					}
+				diverges_to_unique_culture = {
+					CHARACTER = $OWNER$
 				}
 			}
 			$OWNER$ = {
@@ -116,11 +108,13 @@ grant_kingdom_title = {
 		# convert to local culture?
 		else_if = {
 			limit = {
-				# realm has no counties with the owner's culture
-				NOT = {
-					any_sub_realm_county = {
-						culture = $OWNER$.culture
-					}
+				# avoid changing heritage
+				$OWNER$.culture = {
+					has_same_culture_heritage = $OWNER$.capital_province.culture
+				}
+				# only switch is there a good chance of become the culture head
+				capital_culture_lacks_strong_culture_head = {
+					CAPITAL_CULTURE = $OWNER$.capital_province.culture
 				}
 			}
 			$OWNER$ = {

@@ -27,14 +27,6 @@ diverge_culture_with_conversion = {
 		}
 		else_if = {
 			limit = {
-				primary_title = title:k_slavinia
-			}
-			slavinia_culture_diverge = {
-				CHARACTER = $CHARACTER$
-			}
-		}
-		else_if = {
-			limit = {
 				primary_title = title:k_lotharingia
 			}
 			lotharingia_culture_diverge = {
@@ -166,54 +158,6 @@ austria_culture_diverge = {
 	}
 	title:c_pitten = {
 		add_to_list = title_list
-	}
-	every_in_list = {
-		list = title_list
-		every_in_de_jure_hierarchy = {
-			limit = {
-				tier = tier_county
-			}
-			set_county_culture = $CHARACTER$.culture
-		}
-	}
-}
-
-slavinia_culture_diverge = {
-	culture_diverge_without_county_conversion = {
-		CHARACTER = $CHARACTER$
-	}
-	# character will have diverged culture at this point
-	$CHARACTER$.culture = {
-		set_culture_pillar = ethos_spiritual
-		clear_culture_traditions = yes
-		add_culture_tradition = tradition_ruling_caste
-		add_culture_tradition = tradition_monastic_communities
-		add_culture_tradition = tradition_adaptive_skirmishing
-	}
-	title:c_brandenburg = {
-		add_to_list = title_list
-	}
-	title:c_ruppin = {
-		add_to_list = title_list
-	}
-	title:c_havelberg = {
-		add_to_list = title_list
-	}
-	title:c_stendal = {
-		if = {
-			limit = {
-				culture = culture:polabian
-			}
-			add_to_list = title_list
-		}
-	}
-	title:c_dannenberg = {
-		if = {
-			limit = {
-				culture = culture:polabian
-			}
-			add_to_list = title_list
-		}
 	}
 	every_in_list = {
 		list = title_list

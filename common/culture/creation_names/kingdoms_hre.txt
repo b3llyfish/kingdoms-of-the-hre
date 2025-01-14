@@ -1,4 +1,7 @@
 ﻿swiss_diverged = {
+	name = swiss_name
+	collective_noun = swiss_collective_noun
+	prefix = swiss_prefix
 	trigger = {
 		OR = {
 			capital_county ?= {
@@ -27,29 +30,110 @@
 	}
 }
 
-slavinian = {
+# allow if holding k_lotharingia
+lothringian = {
 	trigger = {
 		OR = {
 			capital_county = {
-				title:d_nordmark = {
+				title:d_upper_lorraine = {
 					is_de_jure_liege_or_above_target = prev
 				}
 			}
 			capital_county = {
-				title:d_ostmark = {
+				title:d_lower_lorraine = {
 					is_de_jure_liege_or_above_target = prev
 				}
 			}
-			has_primary_title = title:d_nordmark
-			has_primary_title = title:d_ostmark
-			has_primary_title = title:k_slavinia
+			has_primary_title = title:d_lower_lorraine
+			has_primary_title = title:d_upper_lorraine
+			has_primary_title = title:k_lotharingia
 		}
 		culture = { has_cultural_pillar = heritage_central_germanic }
+		OR = {
+			has_primary_title = title:k_lotharingia
+			any_sub_realm_county = {
+				culture = { has_cultural_pillar = heritage_central_germanic }
+				OR = {
+					duchy = title:d_lower_lorraine
+					duchy = title:d_upper_lorraine
+				}
+			}
+		}
+	}
+}
+
+# allow if holding k_lotharingia
+lorrainian = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_upper_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_lower_lorraine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			has_primary_title = title:d_lower_lorraine
+			has_primary_title = title:d_upper_lorraine
+			has_primary_title = title:k_lotharingia
+		}
+		OR = {
+			has_primary_title = title:k_lotharingia
+			any_sub_realm_county = {
+				OR = {
+					duchy = title:d_lower_lorraine
+					duchy = title:d_upper_lorraine
+				}
+			}
+		}
+	}
+}
+
+# restrict provence so that provancale can form
+arpitan = {
+	trigger = {
+		OR = {
+			capital_county = {
+				title:d_dauphine = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			capital_county = {
+				title:d_savoie = {
+					is_de_jure_liege_or_above_target = prev
+				}
+			}
+			AND = {
+				capital_county = {
+					title:d_provence = {
+						is_de_jure_liege_or_above_target = prev
+					}
+				}
+				NOR = {
+					culture = culture:occitan
+					culture = culture:french
+				}
+			}
+			has_primary_title = title:d_dauphine
+			has_primary_title = title:d_savoie
+			AND = {
+				has_primary_title = title:d_provence
+				NOR = {
+					culture = culture:occitan
+					culture = culture:french
+				}
+			}
+		}
+		culture = { has_cultural_pillar = heritage_frankish }
 		any_sub_realm_county = {
-			culture = { has_cultural_pillar = heritage_central_germanic }
+			culture = { has_cultural_pillar = heritage_frankish }
 			OR = {
-				duchy = title:d_nordmark
-				duchy = title:d_ostmark
+				duchy = title:d_dauphine
+				duchy = title:d_savoie
+				duchy = title:d_provence
 			}
 		}
 	}
