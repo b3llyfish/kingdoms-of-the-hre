@@ -77,7 +77,7 @@
 	# give option to change culture if criteria met
 	if = {
 		limit = {
-			has_dlc_feature = royal_court
+			has_dlc_feature = diverge_culture
 			# is not AI with disabled AI diverge culture game rule
 			NAND = {
 				is_ai = yes
@@ -85,7 +85,10 @@
 			}
 			# is not a culture head
 			NOT = { culture.culture_head = $OWNER$ }
-			
+			# capital is within the created kingdom
+			capital_county = {
+				kingdom = scope:target_title
+			}
 		}
 		# diverge culture?
 		if = {

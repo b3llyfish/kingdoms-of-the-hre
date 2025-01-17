@@ -4,3 +4,4 @@
  petition_gift_modifier: "Trendy Trinkets"
  loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTier]"
  loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] of [target_title.GetNameNoTierNoTooltip]"
+ preparing_culture_conversion: "Preparing to diverge their culture"

@@ -31,3 +31,7 @@ petition_trigger_event_delay_days_upper = 15
 culture_trigger_event_delay_days_lower = 20
 
 culture_trigger_event_delay_days_upper = 31
+
+enhanced_diverge_conversion_immediate_counties_convert_chance = 100
+
+enhanced_diverge_conversion_secondary_counties_convert_chance = 25

@@ -1,0 +1,56 @@
+﻿on_culture_created = {
+	on_actions = {
+		enhanced_diverged_culture_conversion
+	}
+}
+
+enhanced_diverged_culture_conversion = {
+	effect = {
+		scope:founder = {
+			if = {
+				limit = {
+					culture = {
+						is_divergent_culture = yes
+					}
+					has_character_flag = kingdoms_hre_diverge_cost_reduction
+				}
+				# has diverged now, so remove flag
+				remove_character_flag = kingdoms_hre_diverge_cost_reduction
+			}
+			if = {
+				limit = {
+					culture = {
+						is_divergent_culture = yes
+					}
+					has_character_flag = kingdoms_hre_do_enhanced_diverge_conversion
+				}
+				culture = {
+					random_parent_culture = {
+						# only 1 parent so won't be random
+						save_scope_as = parent_culture
+					}
+				}
+				undo_diverged_culture_conversion = {
+					CHARACTER = scope:founder
+				}
+				capital_county = {
+					set_county_culture = scope:new_culture
+					enhanced_expand_diverged_culture_from_origin_point = {
+						CHARACTER = scope:founder
+					}
+				}
+				# with counties flipped vassals may be more likely to convert
+				offer_vassal_culture_convert = {
+					CHARACTER = scope:founder
+				}
+				remove_character_flag = kingdoms_hre_do_enhanced_diverge_conversion
+				if = {
+					limit = {
+						has_variable = kingdoms_hre_enhanced_diverge_kingdom_title
+					}
+					remove_variable = kingdoms_hre_enhanced_diverge_kingdom_title
+				}
+			}
+		}
+	}
+}
