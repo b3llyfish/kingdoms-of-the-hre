@@ -105,3 +105,10 @@
  k_slavinia: "Slavinia"
  k_slavinia_adj: "Slavinian"
  custom_slavinia: "Slavinia"
+
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTooltip]"
+ choose_carinthia_tooltip: "Petition for the [GetTitleByKey('k_carinthia').GetName]\n\nThe [GetTitleByKey('k_carinthia').GetNameNoTooltip] will be formed with the [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] and the [GetTitleByKey('d_istria').GetName] as de jure duchies."
+ not_enough_carinthia_counties: "[SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E] within the region of [GetGeographicalRegion('custom_carinthia').GetName] are required to petition for this title. You currently have [SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]."
+ k_carinthia: "Carinthia"
+ k_carinthia_adj: "Carinthian"
+ custom_carinthia: "Carinthia"

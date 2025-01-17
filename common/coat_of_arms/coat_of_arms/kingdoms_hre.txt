@@ -40,3 +40,22 @@ k_slavinia = {
 		instance = { position = { 0.542 0.073 } rotation = 12 scale = { 0.161 0.161 }  }
 	}
 }
+
+k_carinthia = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	color2 = "black"
+	colored_emblem = {
+		texture = "ce_panther.dds"
+		color1 = "black"
+		color2 = "red"
+		color3 = "white"
+		instance = { position = { 0.5 0.49 } scale = { 0.9 1.0 }  }
+	}
+	colored_emblem = {
+		texture = "ce_crown_small.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.531 0.088 } rotation = 5 scale = { 0.161 0.161 }  }
+	}
+}

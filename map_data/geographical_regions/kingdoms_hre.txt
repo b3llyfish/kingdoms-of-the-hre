@@ -21,3 +21,9 @@ custom_slavinia = {
 		d_nordmark d_ostmark
 	}
 }
+
+custom_carinthia = {
+	duchies = {
+		d_carinthia d_krain d_istria
+	}
+}

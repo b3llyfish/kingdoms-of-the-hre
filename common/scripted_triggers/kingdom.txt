@@ -543,6 +543,30 @@ can_choose_slavinia = {
 	}
 }
 
+can_choose_carinthia = {
+	custom_tooltip = {
+		text = kingdom_already_exists
+		NOT = { exists = title:k_carinthia.holder }
+	}
+	$CHARACTER$ = {
+		custom_tooltip = {
+			text = not_enough_carinthia_counties
+			controls_enough_of_region = {
+				CHARACTER = root
+				TARGET_REGION = custom_carinthia
+			}
+		}
+		trigger_if = {
+			limit = {
+				has_game_rule = kingdoms_hre_capital_region_required
+			}
+			capital_province = {
+				geographical_region = custom_carinthia
+			}
+		}
+	}
+}
+
 # performs simplified versions of the creation_names triggers
 # the aim is to generate unique kingdoms as defined in the creation_names directory
 # since they will have formed the kingdom at this point we will assume they hold enough land

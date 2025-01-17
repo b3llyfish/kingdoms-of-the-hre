@@ -3,7 +3,7 @@
 	gender = male
 	priority = 100
 	tier = kingdom
-	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy k_upper_saxony k_lower_saxony k_pomerania k_slavinia }
+	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy k_upper_saxony k_lower_saxony k_pomerania k_slavinia k_carinthia }
 	flavourization_rules = {
 		top_liege = yes
 		only_vassals = yes
@@ -16,7 +16,7 @@ hre_vassal_principality_female_title = {
 	gender = female
 	priority = 100
 	tier = kingdom
-	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy k_upper_saxony k_lower_saxony k_pomerania k_slavinia }
+	titles = { k_bavaria k_frisia k_lotharingia k_aquitaine k_brittany k_burgundy k_france k_italy k_upper_saxony k_lower_saxony k_pomerania k_slavinia k_carinthia }
 	flavourization_rules = {
 		top_liege = yes
 		only_vassals = yes

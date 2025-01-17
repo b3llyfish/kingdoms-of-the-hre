@@ -1,0 +1,26 @@
+﻿create_carinthia_title = {
+	$OWNER$ = {
+		title:d_carinthia = { set_de_jure_liege_title = title:k_carinthia }
+		title:d_krain = { set_de_jure_liege_title = title:k_carinthia }
+		title:d_istria = { set_de_jure_liege_title = title:k_carinthia }
+		
+		title:k_carinthia = { set_de_jure_liege_title = title:e_hre }
+		
+		# if Bavarian king exists form a rivalry and worsen their opinion of the Emperor
+		if = {
+			limit = {
+				exists = title:k_bavaria.holder
+			}
+			set_relation_rival = {
+				target = title:k_bavaria.holder
+				reason = divided_kingdom
+			}
+			title:k_bavaria.holder = {
+				add_opinion = {
+					target = title:e_hre.holder
+					modifier = broke_apart_my_kingdom
+				}
+			}
+		}
+	}
+}
