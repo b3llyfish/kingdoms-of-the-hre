@@ -8,13 +8,13 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 * HRE vassals will need to petition the Emperor in order to be granted a Kingdom title
 * The Emperor will be given the options to either bestow the Kingdom title or reject the petition, risking further trouble with the vassal
 * Improve your change of acceptance by swaying the Emperor, or guarantee it with a strong hook blackmail...
-* Form new HRE Kingdoms of Upper Saxony, Lower Saxony or Slavinia
+* Form new HRE Kingdoms of Upper Saxony, Lower Saxony, Carinthia or Slavinia
 * Flavorization changes rename Kingdoms (with some exceptions) to Principalities to better reflect the structure of the HRE
 
 **Cultures**
 * Requires the Royal Court DLC
-* Upon gaining a Kingdom characters you are not a cultural head will receive an event to diverge their culture
-* See more unique cultures such as Austrian, Swiss, or Lothringian
+* Characters who are not culture heads may be given the option to diverge or convert culture
+* See more unique cultures such as Austrian, Lothringian or Upper Saxon
 
 **Decisions**
 * Decisions to form Austria and Switzerland have been removed and instead incorporated into this mod
@@ -117,20 +117,43 @@ Control the region comprising the duchies of Nordmark and Ostmark.
 
 Requires a culture with Central Germanic heritage (can be disabled via game rules).
 
+### Carinthia
+Control the region comprising the duchies Carinthia, Krain and Istria.
+
+Included to break up the large Bavaria Kingdom.
+
 ## Culture
 Upon receiving a Kingdom the following check will happen:
 * is dlc Royal Court enabled?
 * is the character AI and game rule allows AI culture divergence?
 * is the character **not** a cultural head?
+* is the characters capital within their new Kingdom?
 
-If the above checks passes another check is done to see if culture divergence is possible. If it is the character will 
-be given an event to either trigger culture divergence or not. If culture divergence is not possible then the character 
-will get an event to either convert to local culture or not. 
+If the above checks pass another check will be done to determine if diverging will result in any of the  unique culture 
+listed below:
+* Austrian
+* Lothringian 
+* Lorrainian
+* Upper Saxon
+* Arpitan
+* Burgundian 
+* Provancale
 
-Note that the AI will always take the option to either diverge or convert to local culture.
+If it will then an event will fire offering culture divergence. 
 
-Certain Kingdom titles will have special divergence rules and will their diverged culture will be thematically crafted
-(e.g Austrian will have traditions promoting diplomacy and festivities). Otherwise, the divergence will happen randomly.
+The first option can be taken to randomly diverge their culture. The culture conversion effect will be more powerful, 
+and will convert the capital and neighbouring provinces regardless of their culture. The AI will always take this option.
+
+Two additional player only options exist. The first gives the player a culture divergence cost reduction buff and lets 
+the player delay divergence and instead customise their new culture normal through the divergence window. 
+Should the player diverge culture in their character's lifetime they will use the same powerful culture conversion effect 
+as described above.
+
+The third option simple does nothing and allows the player to keep their current culture.
+
+If the character doesn't pass the above checks then a final check will be done to see if converting to their capital's
+local culture would make it likely they become its culture head. If so an event fire which has the option to convert
+to local culture or do nothing. The AI will always convert if it gets this event.
 
 ## Event Overrides
 The `culture_conversion.0001` event has been overridden and the following adding:

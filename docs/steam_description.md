@@ -9,13 +9,13 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 * HRE vassals will need to petition the Emperor in order to be granted a Kingdom title
 * The Emperor will be given the options to either bestow the Kingdom title or reject the petition, risking further trouble with the vassal
 * Improve your change of acceptance by swaying the Emperor, or guarantee it with a strong hook blackmail...
-* Form new HRE Kingdoms of Upper Saxony, Lower Saxony or Slavinia
+* Form new HRE Kingdoms of Upper Saxony, Lower Saxony, Carinthia or Slavinia
 * Flavorization changes rename Kingdoms (with some exceptions) to Principalities to better reflect the structure of the HRE
 
 [b]Cultures[/b]
 * Requires the Royal Court DLC
-* Upon gaining a Kingdom characters you are not a cultural head will receive an event to diverge their culture
-* See more unique cultures such as Austrian, Swiss, or Lothringian
+* Characters who are not culture heads may be given the option to diverge or convert culture
+* See more unique cultures such as Austrian, Lothringian or Upper Saxon
 
 [b]Decisions[/b]
 * Decisions to form Austria and Switzerland have been removed and instead incorporated into this mod
