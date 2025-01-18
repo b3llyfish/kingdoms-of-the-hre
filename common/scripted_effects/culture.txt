@@ -97,32 +97,75 @@ enhanced_expand_diverged_culture_from_origin_point = {
 		save_scope_as = character
 	}
 	every_title_to_title_neighboring_and_across_water_county = {
+		save_temporary_scope_as = county
 		limit = {
 			holder.top_liege = scope:character.top_liege
 			OR = {
 				NOT = { exists = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title }
 				kingdom = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title
 			}
+			NOT = { culture = scope:character.culture }
 		}
 		
 		random = {
 			chance = {
 				value = enhanced_diverge_conversion_immediate_counties_convert_chance
 			}
-			set_county_culture = scope:character.culture
+			
+			holder = {
+				if = {
+					limit = {
+						NOT = { this = scope:character }
+						is_ai = no
+					}
+					send_interface_message = {
+						title = county_culture_converted_title
+						scope:county = {
+							set_county_culture = scope:character.culture
+						}
+					}
+				}
+				else = {
+					scope:county = {
+						set_county_culture = scope:character.culture
+					}
+				}
+			}
+		
 			every_title_to_title_neighboring_and_across_water_county = {
+				save_temporary_scope_as = county
 				limit = {
 					holder.top_liege = scope:character.top_liege
 					OR = {
 						NOT = { exists = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title }
 						kingdom = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title
 					}
+					NOT = { culture = scope:character.culture }
 				}
 				random = {
 					chance = {
 						value = enhanced_diverge_conversion_secondary_counties_convert_chance
 					}
-					set_county_culture = scope:character.culture
+					
+					holder = {
+						if = {
+							limit = {
+								NOT = { this = scope:character }
+								is_ai = no
+							}
+							send_interface_message = {
+								title = county_culture_converted_title
+								scope:county = {
+									set_county_culture = scope:character.culture
+								}
+							}
+						}
+						else = {
+							scope:county = {
+								set_county_culture = scope:character.culture
+							}
+						}
+					}
 				}
 			}
 		}
