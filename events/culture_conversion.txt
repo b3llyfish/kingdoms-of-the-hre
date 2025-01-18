@@ -1,10 +1,6 @@
-﻿
-namespace = culture_conversion
+﻿namespace = kingdoms_hre_culture_conversion
 
-### BASE GAME OVERRIDE - encourage vassals to convert if they hold no counties of the old culture
-
-### My Liege converted culture
-culture_conversion.0001 = {
+kingdoms_hre_culture_conversion.0001 = {
 	type = character_event
 	title = culture_conversion.0001.t
 	desc = culture_conversion.0001.desc
@@ -17,23 +13,14 @@ culture_conversion.0001 = {
 	option = { # Good for them, I suppose
 		name = culture_conversion.0001.a
 		trigger = {
-			NOT = { culture = scope:new_culture }
-			NOT = { culture = scope:old_culture }
-		}
-		show_as_tooltip = {
-			scope:converting_character = {
-				set_culture = scope:converting_character.culture
+			OR = {
+				# different heritage
+				NOT = {
+					culture = {
+						has_same_culture_heritage = scope:new_culture
+					}
+				}
 			}
-		}
-		ai_chance = {
-			base = 100
-		}
-	}
-
-	option = { # It's a bad idea to leave the old ways behind
-		name = culture_conversion.0001.b
-		trigger = {
-			culture = scope:old_culture
 		}
 		show_as_tooltip = {
 			scope:converting_character = {
@@ -45,13 +32,56 @@ culture_conversion.0001 = {
 		}
 	}
 	
+	option = { # It's a bad idea to leave the old ways behind
+		name = culture_conversion.0001.b
+		trigger = {
+			culture = {
+				has_same_culture_heritage = scope:new_culture
+			}
+		}
+		show_as_tooltip = {
+			scope:converting_character = {
+				set_culture = scope:converting_character.culture
+			}
+		}
+		ai_chance = {
+			base = 100
+			modifier = {
+				factor = {
+					value = total_held_counties_with_current_culture
+					divide = total_held_counties
+				}
+			}
+			modifier = {
+				add = 40
+				NOT = {
+					any_held_title = {
+						tier = tier_county
+						OR = {
+							culture = root.culture
+							culture = scope:new_culture
+						}
+					}
+				}
+			}
+		}
+	}
+	
 	option = { # Better move with the times
 		name = culture_conversion.0001.c
 		trigger = {
-			culture = scope:old_culture
+			culture = {
+				has_same_culture_heritage = scope:new_culture
+			}
+		}
+		scope:new_culture = {
+			random_parent_culture = {
+				# only 1 parent so won't be random
+				save_scope_as = old_culture
+			}
 		}
 		convert_family_culture_and_notify_vassals_effect = {
-			CONVERTER = scope:converter
+			CONVERTER = scope:converting_character
 			OLD_CULTURE = scope:old_culture
 			NEW_CULTURE = scope:new_culture
 		}
@@ -59,40 +89,25 @@ culture_conversion.0001 = {
 			stubborn = medium_stress_impact_gain
 		}
 		ai_chance = {
-			base = 20
+			base = 100
 			modifier = {
-				add = 80
-				any_held_title = {
-					OR = {
-						tier = tier_county
-						tier = tier_barony
-					}
-					culture = scope:new_culture
+				factor = {
+					value = total_held_counties_with_new_culture
+					divide = total_held_counties
 				}
 			}
 			modifier = {
-				add = 100
-				is_landed = yes
-				capital_province.culture = scope:new_culture
-			}
-			# if none of their counties have the old culture then encourage the convert
-			modifier = {
-				add = 100
+				add = 60
 				NOT = {
 					any_held_title = {
+						tier = tier_county
 						OR = {
-							tier = tier_county
-							tier = tier_barony
+							culture = root.culture
+							culture = scope:new_culture
 						}
-						culture = scope:old_culture
 					}
 				}
-			}
-			modifier = {
-				factor = 0.2
-				has_trait = stubborn
 			}
 		}
 	}
 }
-
