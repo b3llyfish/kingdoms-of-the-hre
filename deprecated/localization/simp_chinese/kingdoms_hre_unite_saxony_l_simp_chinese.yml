@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  unite_saxony_decision: "团结撒克逊人"
- unite_saxony_decision_desc: "撒克逊人的人们已经分裂了很长时间，在彼此之间吵架，而外国大国渗透到了该地区。\n \n已经获得了足够的影响力和降落，我现在可以终止这一点。我将在真正的撒克逊统治者下团结撒克逊人。"
+ unite_saxony_decision_desc: "撒克逊人的人们已经分裂了很长时间，在彼此之间吵架，而外国大国则渗透到了该地区。\n \n获得了足够的影响力和陆地，我现在有能力结束这一点。我将在真正的撒克逊统治者下团结撒克逊人。"
  unite_saxony_decision_tooltip: "将撒克逊地区团结成一个王国。"
  unite_saxony_decision_confirm: "建立萨克森王国"
  unite_saxony_decision_merge_new_kingdom_tooltip: "获得[GetTitleByKey('k_saxony').GetName]"

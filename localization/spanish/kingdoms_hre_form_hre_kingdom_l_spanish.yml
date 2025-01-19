@@ -1,6 +1,6 @@
 ﻿l_spanish:
  form_hre_kingdom_decision: "Petición al emperador de un reino"
- form_hre_kingdom_decision_desc: "Mi influencia sobre la región es sin duda y mi derecho a la regla se demuestra en todo aparte del nombre. \n \n Es hora de que Emperor reconozca esto y me otorgue el [title|E] de un [kingdom|E]."
+ form_hre_kingdom_decision_desc: "Mi influencia sobre la región es sin lugar a dudas y mi derecho a la regla se demuestra en todo aparte del nombre. \n \n Es hora de que Emperor reconozca esto y me otorgue el [title|E] de un [kingdom|E]."
  form_hre_kingdom_decision_tooltip: "Petición al emperador para un [kingdom|E] [title|E]."
  form_hre_kingdom_decision_confirm: "¡Envía la petición!"
  form_hre_kingdom_decision_kingdom_criteria_met: "Cumple con al menos uno de los requisitos específicos del reino"
@@ -70,7 +70,7 @@
  choose_upper_saxony_tooltip: "Petición para el principio de [GetTitleByKey('k_upper_saxony').GetNameNoTier] \n \n El principio de [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] se formará con [GetTitleByKey('d_anhalt').GetName], el [GetTitleByKey('d_thuringia').GetName], el [GetTitleByKey('d_meissen').GetName] y el [GetTitleByKey('d_lausitz').GetName] as de Jure Duchies."
  not_enough_upper_saxony_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] dentro de la región de [GetGeographicalRegion('custom_upper_saxony').GetName] se requiere para solicitar este título.Actualmente tienes [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
  choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$"
- choose_upper_saxony_without_sorbia_tooltip: "Petición para el principio de [GetTitleByKey('k_upper_saxony').GetName] \n \n el principal de [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] se formará con [GetTitleByKey('d_anhalt').GetName] y el [GetTitleByKey('d_thuringia').GetName] as de jure duchies. \n \n@} o [GetTitleByKey('d_meissen').GetName] entonces ambos ducados se convertirán en una parte de jure del principado de [GetTitleByKey('d_lausitz').GetName] y el título [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] será destruido."
+ choose_upper_saxony_without_sorbia_tooltip: "Petición para el principal de [GetTitleByKey('k_upper_saxony').GetName] \n \n el principal de [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] se formará con el [GetTitleByKey('d_anhalt').GetName] y el [GetTitleByKey('d_thuringia').GetName] as de jure duchies. \n \n@} o [GetTitleByKey('d_meissen').GetName] entonces ambos ducados se convertirán en una parte de jure del principado de [GetTitleByKey('d_lausitz').GetName] y el título [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] será destruido."
  not_enough_upper_saxony_without_sorbia_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] dentro de la región de [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] se requiere para solicitar este título.Actualmente tienes [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
  
  choose_lower_saxony_name: "Principado de [GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip]"
@@ -105,3 +105,10 @@
  k_slavinia: "Slavinia"
  k_slavinia_adj: "Slavinian"
  custom_slavinia: "Slavinia"
+
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTooltip]"
+ choose_carinthia_tooltip: "Petición para la [GetTitleByKey('k_carinthia').GetName] \n \n El [GetTitleByKey('k_carinthia').GetNameNoTooltip] se formará con [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] y el [GetTitleByKey('d_istria').GetName] como de jure duchies."
+ not_enough_carinthia_counties: "[SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E] dentro de la región de [GetGeographicalRegion('custom_carinthia').GetName] se requiere para solicitar este título.Actualmente tienes [SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]."
+ k_carinthia: "Carintia"
+ k_carinthia_adj: "Carintio"
+ custom_carinthia: "Carintia"

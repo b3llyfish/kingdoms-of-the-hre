@@ -1,6 +1,6 @@
 ﻿l_simp_chinese:
  archduchy_succession_decision: "保护$archduchy$"
- archduchy_succession_decision_desc: "重要的是，[GetTitleByKey('k_austria').GetNameNoTooltip]的土地保持稳定，不仅对我们，而且对于欧洲本身！。\n \n [ROOT.Char.GetDynastyName|U] [GetTitleByKey('k_austria').GetNameNoTierNoTooltip]朝代已证明自己是值得信赖的和享有声望的。让我们确保单个标尺下的继任，以使{@}几代人保持强大。"
+ archduchy_succession_decision_desc: "重要的是要保持[GetTitleByKey('k_austria').GetNameNoTooltip]的土地保持稳定，不仅适合我们，而且对于欧洲本身！。\n \n [ROOT.Char.GetDynastyName|U]王朝已证明自己是值得信赖的和享有声望的。让我们确保单个标尺下的继任，以使[GetTitleByKey('k_austria').GetNameNoTierNoTooltip]几代人保持强大。"
  archduchy_succession_decision_tooltip: "为[GetTitleByKey('k_austria').GetNameNoTooltip]和其他持有的头衔制定遗传规则。"
  archduchy_succession_decision_confirm: "继承是安全的"
  archduchy_succession_primogeniture_enacted_title: "获得新的继承法"

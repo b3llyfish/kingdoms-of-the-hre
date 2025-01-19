@@ -6,7 +6,7 @@
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U]는 vassal 계약에 추가 된 소유권 취소 권한이 추가됩니다."
  # Vassal prepares the petition
  kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$"
- kingdoms_hre.0001.desc: "교활함과 전투를 통해 나는 [target_title.GetNameNoTierNoTooltip] 지역의 주요 힘으로 자신을 확립했습니다.토지와 소유권의 축적은 단지 [vassal.Custom('DuchessDuke')|U]의 축적을 초과합니다.\n \n 나는 이름을 제외한 모든 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이며, 그것은 바뀌었고 시간이 바뀌 었습니다. \n \n 나는 황제에게 탄원서를 제시하여 $loc_title$에게 부여 할 것을 요청합니다.\n \n 모든 것이 갈 준비가되었지만 궁금합니다.아마도 황제의 결정을 확보하기 위해 내가 할 수있는 일이 더 있을까요?"
+ kingdoms_hre.0001.desc: "을 통해 #help_light_background cunning#!그리고 전투는 [target_title.GetNameNoTierNoTooltip] 지역의 주요 권력으로 자리 잡았습니다.토지와 소유권의 축적은 단지 [vassal.Custom('DuchessDuke')|U]의 축적을 초과합니다.\n \n 나는 이름을 제외한 모든 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이며, 그것은 바뀌었고 시간이 바뀌 었습니다. \n \n 나는 황제에게 탄원서를 제시하여 $loc_title$에게 부여 할 것을 요청합니다.\n \n 모든 것이 갈 준비가되었지만 궁금합니다.아마도 황제의 결정을 확보하기 위해 내가 할 수있는 일이 더 있을까요?"
  kingdoms_hre.0001.tooltip: "당신은 황제의 응답을 기다리고 있습니다"
  kingdoms_hre.0001.a: "내 주장은 단지, 청원으로 충분할 것입니다"
  kingdoms_hre.0001.b: "나는 황제에게 개인 편지를 포함 할 것이다"
@@ -29,7 +29,7 @@
  kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] #Z [GetTitleByKey('e_hre').GetName]#에 대한 주장을 제작할 수 있습니다 !!"
  # Emperor accepts the petition
  kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$"
- kingdoms_hre.0003.desc: "[emperor.GetCapitalLocation.GetNameNoTooltip]의 정교한 행사에서 황제는 새로운 골든 황소를 결정했습니다.\n \n [vassal.GetName]는 [target_title.GetNameNoTierNoTooltip]를 배제 할 수있는 제국의 권리를 가지고 있으며 해당 지역의 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]로 그들의 주장을 공식화한다고 선언합니다. \n \n 오늘은 {@에 대한 정말 멋진 날입니다.} 왕조!"
+ kingdoms_hre.0003.desc: "[emperor.GetCapitalLocation.GetNameNoTooltip]의 정교한 행사에서 황제는 새로운 골든 황소를 결정했습니다.\n {\n [vassal.GetName]는 [target_title.GetNameNoTierNoTooltip]를 배제 할 수있는 제국의 권리를 가지고 있으며 해당 지역의 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]로 그들의 주장을 공식화한다고 선언합니다. \n \n 오늘은 {@{@{@{@{[vassal.GetDynastyName|U]입니다.} 왕조!"
  kingdoms_hre.0003.a: "황제는 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]의 정당한 [target_title.GetNameNoTierNoTooltip]를 인정했습니다!"
  kingdoms_hre.0003.a.interface.title: "황제 부여 [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]"
  kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U]는 [target_title.GetNameNoTooltip]에 부여되었습니다."
@@ -50,10 +50,10 @@
  kingdoms_hre.0007.desc: "그의 비밀이 나오는 것을 두려워하여 황제가 탄원을 받아 들였다.[emperor.GetCapitalLocation.GetNameNoTooltip]의 서두르는 행사에서 골든 황소는 저를 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]의 새로운 [target_title.GetNameNoTierNoTooltip]로 발표하여 저를 위에 올라 오자마자 저를 법정에서 안내하고 말했습니다.빨리 떠납니다.황제는 발견 될 곳이 없으며, 그의 \n에 대한 나의 지식에 여전히 흔들리고 있습니다. \n [secret|E] 내 협박에 영향을 줄 수 있지만 지금은 그날은 내 것입니다.나는 마침내 \n입니다!"
  kingdoms_hre.0007.a: "약간의 레버리지로 무엇이든 얻을 수 있습니다 ..."
  # Emperor died mid petition
- kingdoms_hre.0009.title: "발신자에게 돌아갑니다"
- kingdoms_hre.0009.desc: "[emperor.GetName]가 죽었다는 것을 의미 하는가?! \n \n 저의 청원서와 함께, [emperor.GetFirstName]의 사망으로 이어진 사건을 열렬히 설명하려고하지만 그 이후로 듣기를 멈췄습니다.\n \n 가장 웅변적인 청원을 제작하는 모든 작업, 낭비! \n \n 나는 한숨을 쉬었다.[new_emperor.GetName]는 지금 황제입니다.내가 시도하고 흔들어야한다는 것은 그들의 의견이다."
+ kingdoms_hre.0009.title: "발신자로 돌아갑니다"
+ kingdoms_hre.0009.desc: "[emperor.GetName]가 죽었다는 것을 의미하는 것은 무엇입니까?! \n \n 저의 탄원서와 함께, 내 청원서가 [emperor.GetFirstName]의 사망으로 이어진 사건을 열렬히 설명하려고하지만 그 후 듣기를 중단했습니다.\n \n 가장 웅변적인 청원을 제작하는 모든 작업, 낭비! \n \n 나는 한숨을 쉬었다.[new_emperor.GetName]는 지금 황제입니다.내가 시도하고 흔들어야한다는 것은 그들의 의견이다."
  kingdoms_hre.0009.a: "내 퀼과 신선한 잉크 병을 가져 오세요 ..."
  # Emperor lost title mid petition
- kingdoms_hre.0010.title: "발신자에게 돌아갑니다"
+ kingdoms_hre.0010.title: "발신자로 돌아갑니다"
  kingdoms_hre.0010.desc: "[emperor.GetName]가 더 이상 담당자가 아니라는 것을 의미합니까?! \n \n 저의 청원과 함께 구애받는 사람은 [emperor.GetFirstName]가 거룩한 로마 황제의 제목을 잃어버린 사건을 열렬히 설명하고 있습니다.그 후 듣기를 중단했습니다. \n \n 가장 웅변적인 청원을 제작하는 모든 작업, 낭비! \n \n 나는 한숨을 쉬었다.[new_emperor.GetName]는 지금 황제입니다.내가 시도하고 흔들어야한다는 것은 그들의 의견이다."
  kingdoms_hre.0010.a: "내 퀼과 신선한 잉크 병을 가져 오세요 ..."

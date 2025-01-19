@@ -1,0 +1,5 @@
+﻿l_russian:
+ golden_bull_court_artifact_name: "Золотой бык [GetCurrentDate.GetYear]"
+ golden_bull_court_artifact_desc: "Указ, выпущенный [emperor.GetFirstNameRegnal] диктов, [vassal.GetFirstNameRegnal] и их потомки Императорское право править над [target_title.GetName]"
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] Корона"
+ crown_artifact_desc: "Корона подделана для коронации [vassal.GetFirstNameRegnal], первого [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))] of [target_title.GetNameNoTierNoTooltip]"

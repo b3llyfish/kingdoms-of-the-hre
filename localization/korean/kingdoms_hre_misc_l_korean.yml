@@ -4,3 +4,5 @@
  petition_gift_modifier: "트렌디 한 장신구"
  loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 의 [target_title.GetNameNoTier]"
  loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 의 [target_title.GetNameNoTierNoTooltip]"
+ preparing_culture_conversion: "그들의 문화를 분기 할 준비"
+ county_culture_converted_title: "카운티 문화는 개종했습니다"

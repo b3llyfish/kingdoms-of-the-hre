@@ -4,3 +4,5 @@
  petition_gift_modifier: "时尚小饰品"
  loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 的 [target_title.GetNameNoTier]"
  loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] 的 [target_title.GetNameNoTierNoTooltip]"
+ preparing_culture_conversion: "准备分歧他们的文化"
+ county_culture_converted_title: "县文化converted依"

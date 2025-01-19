@@ -4,3 +4,5 @@
  petition_gift_modifier: "Baratijas de moda"
  loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTier]"
  loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip]"
+ preparing_culture_conversion: "Preparándose para divergir su cultura"
+ county_culture_converted_title: "Cultura del condado convertida"

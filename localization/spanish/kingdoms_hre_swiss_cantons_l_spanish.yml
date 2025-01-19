@@ -2,7 +2,7 @@
  swiss_cantons_decision: "Empoderar a los cantones"
  swiss_cantons_decision_desc: "Como figura decorativa de los cantones suizos, depende de mí asegurarme de que tengan los recursos para crecer y prosperar.."
  swiss_cantons_decision_tooltip: "Establecer más ciudades para los cantones suizos"
- swiss_cantons_decision_confirm: "¡Más poder para los cantones!"
+ swiss_cantons_decision_confirm: "More power to the Cantons!"
  swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! cities are required in the region of [GetGeographicalRegion('custom_core_switzerland').GetName], (currently: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)"
  swiss_cantons_primogeniture_enacted_title: "Condado ganó modificador"
  swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] ganado [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]"

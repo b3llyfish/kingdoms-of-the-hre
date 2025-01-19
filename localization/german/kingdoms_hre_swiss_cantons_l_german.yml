@@ -1,6 +1,6 @@
 ﻿l_german:
  swiss_cantons_decision: "Die Kantone befähigen"
- swiss_cantons_decision_desc: "Als Aushängeschild für die Schweizer Kantonen liegt es an mir, sicherzustellen, dass sie über die Ressourcen verfügen, um zu wachsen und zu gedeihen. \n \n, Indem wir die Städte in [GetGeographicalRegion('custom_core_switzerland').GetName] erweitern, können ein starkes Handelsnetz erstellen, damit unsere Landkreise gedeihen können."
+ swiss_cantons_decision_desc: "Als Aushängeschild für die Schweizer Kantonen liegt es an mir, sicherzustellen, dass sie über die Ressourcen verfügen, um zu wachsen und zu gedeihen. \n \n, Indem wir die Städte über [GetGeographicalRegion('custom_core_switzerland').GetName] erweitern, können ein starkes Handelsnetz erstellen, damit unsere Landkreise gedeihen können."
  swiss_cantons_decision_tooltip: "Geben Sie mehr Städte für die Schweizer Kantone ein"
  swiss_cantons_decision_confirm: "Mehr Kraft für die Kantonen!"
  swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! cities are required in the region of [GetGeographicalRegion('custom_core_switzerland').GetName], (currently: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)"

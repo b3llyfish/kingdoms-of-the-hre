@@ -6,7 +6,7 @@
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] tendrá los derechos de revocación de títulos protegidos agregados a su contrato vasallos"
  # Vassal prepares the petition
  kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$"
- kingdoms_hre.0001.desc: "A través de la astucia y el combate, me he establecido como un poder principal en la región de [target_title.GetNameNoTierNoTooltip].Mi acumulación de tierra y títulos excede la de mera [vassal.Custom('DuchessDuke')|U].\n \n Soy [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] en todos menos en el nombre y es el momento que cambió. \n \n Presentaré una petición al Emperador, solicitando que me otorguen el $loc_title$.\n \n Todo está listo para funcionar, pero me pregunto.¿Quizás hay algo más que puedo hacer para asegurar la decisión del emperador?"
+ kingdoms_hre.0001.desc: "A través de #help_light_background cunning#!y combate me he establecido como un poder principal en la región de [target_title.GetNameNoTierNoTooltip].Mi acumulación de tierra y títulos excede la de mera [vassal.Custom('DuchessDuke')|U].\n \n Soy [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] en todos menos en el nombre y es el momento que cambió. \n \n Presentaré una petición al Emperador, solicitando que me otorguen el $loc_title$.\n \n Todo está listo para funcionar, pero me pregunto.¿Quizás hay algo más que puedo hacer para asegurar la decisión del emperador?"
  kingdoms_hre.0001.tooltip: "Esperas una respuesta del emperador"
  kingdoms_hre.0001.a: "Mi reclamo es justo, la petición será suficiente"
  kingdoms_hre.0001.b: "Incluiré una carta personal al emperador"

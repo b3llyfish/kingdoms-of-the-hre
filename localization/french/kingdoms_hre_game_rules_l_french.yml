@@ -3,7 +3,7 @@
  setting_kingdoms_hre_culture_required: "Requis"
  setting_kingdoms_hre_culture_required_desc: "Certaines pétitions du Royaume nécessiteront un contrôle culturel pertinent"
  setting_kingdoms_hre_culture_not_required: "Pas requis"
- setting_kingdoms_hre_culture_not_required_desc: "Les pétitions du Royaume seront #Z not#!exiger une vérification culturelle pertinente"
+ setting_kingdoms_hre_culture_not_required_desc: "Les pétitions du Royaume seront #Z not#!exiger un contrôle culturel pertinent"
  
  rule_kingdoms_hre_emperor_acceptance_modifier: "Kingdoms of the HRE: Emperor's Acceptance Modificateur"
  setting_kingdoms_hre_emperor_acceptance_modifier_default: "Pas de modificateur"

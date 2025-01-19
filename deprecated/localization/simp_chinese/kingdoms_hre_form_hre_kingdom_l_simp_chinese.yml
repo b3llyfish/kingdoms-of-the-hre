@@ -105,3 +105,10 @@
  k_slavinia: "斯拉维尼亚"
  k_slavinia_adj: "斯拉维尼亚人"
  custom_slavinia: "斯拉维尼亚"
+
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTooltip]"
+ choose_carinthia_tooltip: "[GetTitleByKey('k_carinthia').GetName] \n \n的请愿书将与[GetTitleByKey('k_carinthia').GetNameNoTooltip]，[GetTitleByKey('d_carinthia').GetName]和[GetTitleByKey('d_krain').GetName]一起形成[GetTitleByKey('d_istria').GetName]。"
+ not_enough_carinthia_counties: "[SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E]在[GetGeographicalRegion('custom_carinthia').GetName]的区域内需要请求此标题。您当前有[SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]。"
+ k_carinthia: "卡林西亚"
+ k_carinthia_adj: "卡林蒂安"
+ custom_carinthia: "卡林西亚"

@@ -4,3 +4,5 @@
  petition_gift_modifier: "Trendige Schmuckstücke"
  loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTier]"
  loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTierNoTooltip]"
+ preparing_culture_conversion: "Bereiten Sie sich darauf vor, ihre Kultur zu unterscheiden"
+ county_culture_converted_title: "Bezirkskultur umgewandelt"

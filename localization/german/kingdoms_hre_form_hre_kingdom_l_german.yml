@@ -7,7 +7,7 @@
  form_hre_kingdom_decision_effect_selected: "Sie beantragen den Kaiser für das ausgewählte Königreich"
  form_hre_kingdom_decision_emperor_opinion: "Die Meinung des Kaisers über Sie wird ihre Entscheidung stark beeinflussen"
  form_hre_kingdom_decision_hook: "Ein starker Haken am Kaiser zu haben kann den Erfolg garantieren"
- form_hre_kingdom_decision_vassal_contract_change: "Wenn Sie erfolgreich sind, werden Sie geschützte Titelrechte für die Titelbeschwerde in Ihrem Vasall -Vertrag hinzugefügt"
+ form_hre_kingdom_decision_vassal_contract_change: "Wenn Sie erfolgreich sind, haben Sie geschützte Titelrechte für Titelbeweisrechte in Ihrem Vasall -Vertrag hinzugefügt"
  form_hre_kingdom_decision_gain_heroic_legend_seed: "Wenn Sie erfolgreich sind, erhalten Sie eine heldenhafte [legend_seed|E]"
  
  choose_kingdom: "Petition für ein Königreich."
@@ -70,7 +70,7 @@
  choose_upper_saxony_tooltip: "Petition für die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTier] \n \n Die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] wird mit [GetTitleByKey('d_anhalt').GetName], [GetTitleByKey('d_thuringia').GetName], [GetTitleByKey('d_meissen').GetName] und [GetTitleByKey('d_lausitz').GetName] als De -Jure -Herzherdies gebildet."
  not_enough_upper_saxony_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_upper_saxony').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
  choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$"
- choose_upper_saxony_without_sorbia_tooltip: "Petition für die Prinzipität von [GetTitleByKey('k_upper_saxony').GetName] \n \n Die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_anhalt').GetName] und dem [GetTitleByKey('d_thuringia').GetName] als De -Jure -Herzogs gebildet. \n \n, Wenn Sie die {{vollständig steuern@} oder [GetTitleByKey('d_meissen').GetName] Dann werden diese beiden Herzogtümer ein De -Jure -Teil der Prinzipität von [GetTitleByKey('d_lausitz').GetName] und der Title [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] wird zerstört."
+ choose_upper_saxony_without_sorbia_tooltip: "Petition für die Prinzipität von [GetTitleByKey('k_upper_saxony').GetName] \n \n Die Prinzipität von [GetTitleByKey('k_upper_saxony').GetNameNoTooltip] wird mit dem [GetTitleByKey('d_anhalt').GetName] und dem [GetTitleByKey('d_thuringia').GetName] als De -Jure -Herz. \n \n Gebildet, wenn Sie die {{vollständig steuern@} oder [GetTitleByKey('d_meissen').GetName] Dann werden diese beiden Herzogtümer zu einem De -Jure -Teil der Prinzipität von [GetTitleByKey('d_lausitz').GetName] und der@@} -Titel wird zerstört."
  not_enough_upper_saxony_without_sorbia_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]."
  
  choose_lower_saxony_name: "Fürstentum von [GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip]"
@@ -105,3 +105,10 @@
  k_slavinia: "Slavinien"
  k_slavinia_adj: "Slawinisch"
  custom_slavinia: "Slavinien"
+
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTooltip]"
+ choose_carinthia_tooltip: "Petition für [GetTitleByKey('k_carinthia').GetName] \n \n Der [GetTitleByKey('k_carinthia').GetNameNoTooltip] wird mit [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName] und [GetTitleByKey('d_istria').GetName] als De -Jure -Herzogs gebildet."
+ not_enough_carinthia_counties: "[SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E] innerhalb der Region von [GetGeographicalRegion('custom_carinthia').GetName] müssen für diesen Titel beantragen.Sie haben derzeit [SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]."
+ k_carinthia: "Kärnten"
+ k_carinthia_adj: "Carinthian"
+ custom_carinthia: "Kärnten"

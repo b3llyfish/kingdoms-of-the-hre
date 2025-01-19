@@ -6,7 +6,7 @@
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] aura des droits de révocation au titre protégés ajoutés à leur contrat de vassal"
  # Vassal prepares the petition
  kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$"
- kingdoms_hre.0001.desc: "Grâce à la ruse et au combat, je me suis établi comme une puissance principale dans la région de [target_title.GetNameNoTierNoTooltip].Mon accumulation de terres et de titres dépasse celle de simple [vassal.Custom('DuchessDuke')|U].\n \n Je suis un [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] dans tout sauf dans le nom et il est temps qui a changé. \n \n Je présenterai une pétition à l'empereur, demandant qu'ils me donnent le $loc_title$.\n \n Tout est prêt à partir, mais je me demande.Peut-être y a-t-il quelque chose de plus que je peux faire pour obtenir la décision de l'empereur?"
+ kingdoms_hre.0001.desc: "À travers #help_light_background cunning#!Et le combat que je me suis imposé comme un pouvoir de premier plan dans la région de [target_title.GetNameNoTierNoTooltip].Mon accumulation de terres et de titres dépasse celle de simple [vassal.Custom('DuchessDuke')|U].\n \n Je suis un [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] dans tout sauf dans le nom et il est temps qui a changé. \n \n Je présenterai une pétition à l'empereur, demandant qu'ils me donnent le $loc_title$.\n \n Tout est prêt à partir, mais je me demande.Peut-être y a-t-il quelque chose de plus que je peux faire pour obtenir la décision de l'empereur?"
  kingdoms_hre.0001.tooltip: "Vous attendez une réponse de l'empereur"
  kingdoms_hre.0001.a: "Ma réclamation est juste, la pétition suffira"
  kingdoms_hre.0001.b: "Je vais inclure une lettre personnelle à l'empereur"
@@ -29,7 +29,7 @@
  kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] peut fabriquer une réclamation sur #Z [GetTitleByKey('e_hre').GetName]# !!"
  # Emperor accepts the petition
  kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$"
- kingdoms_hre.0003.desc: "Dans une cérémonie élaborée dans [emperor.GetCapitalLocation.GetNameNoTooltip], l'empereur a décrété un nouveau Golden Bull.\n \n Il déclare que [vassal.GetName] a un droit impérial de gouverner [target_title.GetNameNoTierNoTooltip] et formalise leur affirmation en tant que [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de la région. \n \n C'est vraiment un jour magnifique pour le {@ @} Dynastie!"
+ kingdoms_hre.0003.desc: "Dans une cérémonie élaborée dans [emperor.GetCapitalLocation.GetNameNoTooltip], l'empereur a décrété un nouveau Golden Bull.\n \n Il déclare que [vassal.GetName] a un droit impérial de gouverner [target_title.GetNameNoTierNoTooltip] et formalise leur revendication comme [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de la région. \n \n C'est vraiment un jour magnifique pour le {@ @} Dynastie!"
  kingdoms_hre.0003.a: "L'empereur a reconnu le [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip]!"
  kingdoms_hre.0003.a.interface.title: "L'empereur accorde un [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]"
  kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] a obtenu le [target_title.GetNameNoTooltip]"

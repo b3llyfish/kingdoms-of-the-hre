@@ -70,7 +70,7 @@
  choose_upper_saxony_tooltip: "[GetTitleByKey('k_upper_saxony').GetNameNoTier] \n \n의 공국에 대한 청원 [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip]의 공국은 [GetTitleByKey('d_anhalt').GetName], [GetTitleByKey('d_thuringia').GetName], [GetTitleByKey('d_meissen').GetName] 및 [GetTitleByKey('d_lausitz').GetName]와 함께 De Jure Duchies로 형성됩니다."
  not_enough_upper_saxony_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] [GetGeographicalRegion('custom_upper_saxony').GetName] 영역 내 에서이 제목에 대한 청원이 필요합니다.현재 [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]가 있습니다."
  choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$"
- choose_upper_saxony_without_sorbia_tooltip: "[GetTitleByKey('k_upper_saxony').GetName] \n \n의 공국에 대한 청원 [GetTitleByKey('k_upper_saxony').GetNameNoTooltip]의 공국은 [GetTitleByKey('d_anhalt').GetName]와 [GetTitleByKey('d_thuringia').GetName]를 de jure duchies로 형성합니다. \n \n {[GetTitleByKey('d_meissen').GetName] {}@} 또는 [GetTitleByKey('d_lausitz').GetName] 그러면이 공작은 [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip]의 공국의 일부가 될 것이며 [GetTitleByKey('k_sorbia').GetName] 제목은 파괴됩니다."
+ choose_upper_saxony_without_sorbia_tooltip: "[GetTitleByKey('k_upper_saxony').GetName] \n \n의 공국에 대한 청원 [GetTitleByKey('k_upper_saxony').GetNameNoTooltip]의 공국은 [GetTitleByKey('d_anhalt').GetName]와 [GetTitleByKey('d_thuringia').GetName]를 de jure duchies로 형성합니다. \n \n {[GetTitleByKey('d_meissen').GetName] {}.@} 또는 [GetTitleByKey('d_lausitz').GetName] 그러면이 공작은 [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip]의 공국의 일부가 될 것이며 [GetTitleByKey('k_sorbia').GetName] 제목은 파괴됩니다."
  not_enough_upper_saxony_without_sorbia_counties: "[SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] 영역 내 에서이 제목에 대한 청원이 필요합니다.현재 [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]가 있습니다."
  
  choose_lower_saxony_name: "[GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip]의 공국"
@@ -105,3 +105,10 @@
  k_slavinia: "슬라비니아"
  k_slavinia_adj: "슬라비니아"
  custom_slavinia: "슬라비니아"
+
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTooltip]"
+ choose_carinthia_tooltip: "[GetTitleByKey('k_carinthia').GetName] \n \n에 대한 청원 [GetTitleByKey('k_carinthia').GetNameNoTooltip]는 [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName]와 [GetTitleByKey('d_istria').GetName]가 de Jure Duchies로 형성됩니다."
+ not_enough_carinthia_counties: "[SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E] [GetGeographicalRegion('custom_carinthia').GetName] 영역 내 에서이 제목에 대한 청원이 필요합니다.현재 [SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]가 있습니다."
+ k_carinthia: "카린 티아"
+ k_carinthia_adj: "카린티안"
+ custom_carinthia: "카린 티아"

@@ -6,7 +6,7 @@
  kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U]将添加到其附庸合同中的保护标题撤销权利"
  # Vassal prepares the petition
  kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$"
- kingdoms_hre.0001.desc: "通过狡猾和战斗，我将自己确立为[target_title.GetNameNoTierNoTooltip]地区的领先力量。我的土地和标题的积累超过了[vassal.Custom('DuchessDuke')|U]的堆积。\n \n我是[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]，除了名称外，是时候了。\n \n一切都准备就绪，但是我想知道。也许我还能做些什么来确保皇帝的决定？"
+ kingdoms_hre.0001.desc: "通过 #help_light_background cunning#！战斗我已经确立了[target_title.GetNameNoTierNoTooltip]地区的领先力量。我的土地和标题的积累超过了[vassal.Custom('DuchessDuke')|U]的堆积。\n \n我是[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]，除了名称外，是时候了。\n \n一切都准备就绪，但是我想知道。也许我还能做些什么来确保皇帝的决定？"
  kingdoms_hre.0001.tooltip: "您正在等待皇帝的回应"
  kingdoms_hre.0001.a: "我的主张只是，请愿书应足够"
  kingdoms_hre.0001.b: "我将包括给皇帝的私人信"
