@@ -471,7 +471,7 @@ k_slavinia = {
 	capital = c_brandenburg
 }
 k_carinthia = {
-	color = { 151 171 145 }
+	color = { 135 206 235 }
 	
 	capital = c_karnten
 }
