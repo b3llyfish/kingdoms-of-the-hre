@@ -14,7 +14,7 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 
 [b]Cultures[/b]
 * Requires the Royal Court DLC
-* Characters who are not culture heads may be given the option to diverge or convert culture
+* Characters who are not culture heads may be given the option to diverge or convert their culture
 * See more unique cultures such as Austrian, Lothringian or Upper Saxon
 
 [b]Decisions[/b]

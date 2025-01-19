@@ -13,7 +13,7 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 
 **Cultures**
 * Requires the Royal Court DLC
-* Characters who are not culture heads may be given the option to diverge or convert culture
+* Characters who are not culture heads may be given the option to diverge or convert their culture
 * See more unique cultures such as Austrian, Lothringian or Upper Saxon
 
 **Decisions**
@@ -129,36 +129,38 @@ Upon receiving a Kingdom the following check will happen:
 * is the character **not** a cultural head?
 * is the characters capital within their new Kingdom?
 
-If the above checks pass another check will be done to determine if diverging will result in any of the  unique culture 
-listed below:
+If these checks pass then the mod will attempt to diverge the character's culture or convert to the local culture. The
+aim of this functionality is to diversify the cultures within the HRE.
+
+### Diverge Culture
+The culture diverge event will trigger if the character is able to diverge into any of the below cultures:
 * Austrian
 * Lothringian 
 * Lorrainian
 * Upper Saxon
+* Swiss
 * Arpitan
 * Burgundian 
 * Provancale
 
-If it will then an event will fire offering culture divergence. 
+Note that some base game rules have been relaxed to allow more unique diverges (see miscellaneous section below).
+ 
+The event has three options:
+* randomly diverge culture - performs culture divergence like the AI would. (AI will always choose this)
+* gain diverge culture cost reduction - allows the player to defer divergence for later so that they can hand-craft the changes
+* stay with your current culture
 
-The first option can be taken to randomly diverge their culture. The culture conversion effect will be more powerful, 
-and will convert the capital and neighbouring provinces regardless of their culture. The AI will always take this option.
+If either option one or two are picked then **enhanced** culture conversion will happen once the culture diverges. This
+is simply a stronger culture conversion effect, and will convert your capital and surrounding lands regardless of the
+counties culture. (Note that it will be confined to land within your Kingdom title as well as within your top liege's 
+borders). Vassals will be more likely to convert than the base game effect also.
 
-Two additional player only options exist. The first gives the player a culture divergence cost reduction buff and lets 
-the player delay divergence and instead customise their new culture normal through the divergence window. 
-Should the player diverge culture in their character's lifetime they will use the same powerful culture conversion effect 
-as described above.
+### Convert to Local Culture
+This event will trigger if the divergence event above cannot happen and if the character's capital culture lacks a strong
+culture head. The event has two options:
 
-The third option simple does nothing and allows the player to keep their current culture.
-
-If the character doesn't pass the above checks then a final check will be done to see if converting to their capital's
-local culture would make it likely they become its culture head. If so an event fire which has the option to convert
-to local culture or do nothing. The AI will always convert if it gets this event.
-
-## Event Overrides
-The `culture_conversion.0001` event has been overridden and the following adding:
-* vassals will be more likely to convert if they hold **no** counties with their old culture
-* barony titles are now included in the modifier checks which should encourage barony holders to convert
+* convert to local culture - has the same effect as the base game decision (AI will always choose this)
+* stay with your current culture
 
 ## 867 Start Date
 This mod has largely been designed around start dates with an established HRE, however there has been some attempt to 
@@ -198,6 +200,13 @@ This mod applies the following flavorization to HRE vassals holding HRE Kingdoms
 The exception to this rule is Bohemia, which historically was allowed to be the only Kingdom in the HRE.
 
 The mod also enables the Switzerland flavorization, which already existed in game but for whatever reason was disabled.
+
+## Miscellaneous Changes
+* City leaders will now take their culture from the county culture, rather than their predecessor
+* Swiss can now be diverged by any culture with Central Germanic Heritage
+* Lothringian/Lorrainian can now be diverged if holding the Kingdom of Lothringian as your primary title
+* Provancale culture divergence will now be prioritised over Arpitan
+* Saxon Elective Realm Law can now be applied to the Kingdom of Saxony title
 
 ## Compatibility
 This mod will likely be incompatible with mods in the following areas:
