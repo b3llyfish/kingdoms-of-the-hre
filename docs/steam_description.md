@@ -31,28 +31,25 @@ For a detailed explanation of the changes visit the mod's [url=https://github.co
 
 [h2]FAQ[/h2]
 
-[h3]Would you be able to add in _some other_ Kingdom title?[/h3]
+[h3]Would you be able to add in [i]some other[/i] Kingdom title?[/h3]
 In regard to adding new Kingdoms this mod's purpose was to break up the German (East Francia) Kingdom into smaller parts.
-I feel that this has been achieved with* *the addition of Lower and Upper Saxony therefore I am unlikely to add more Kingdoms.
+I feel that this has been achieved with the addition of Lower and Upper Saxony therefore I am unlikely to add more Kingdoms.
 
 The code should be easy enough to follow for modders who are interested.
 
 [h3]Does this work with the 867 start date?[/h3]
-This mod works with the 867 start date (more specifically the 'Restore Holy Roman Empire' decision) and special 
-consideration has made for the French Kingdoms.
+This mod works with the 867 start date (more specifically the 'Restore Holy Roman Empire' decision) and special consideration has made for the French Kingdoms.
 
-Should the Empire to formed with the French Kingdoms as de jure (i.e Charles 'the Bald' restores the Empire), then the 
-French Kingdoms will be added to the petition options.
+Should the Empire to formed with the French Kingdoms as de jure (i.e Charles 'the Bald' restores the Empire), then the French Kingdoms will be added to the petition options.
 
 The Kingdom of Upper Saxony will have slightly easier requirements in the 867 start due to the existence of Sorbia.
 
-[h3]Is this mod compatible with _mod that adds/changes/removes titles_?[/h3]
-Unfortunately due to code limitations the major changes made by this mod are static. Any changes that go about adding/changing/removing
-titles that this mod changes will most likely be incompatible.
+[h3]Is this mod compatible with [i]mod that adds/changes/removes titles[/i]?[/h3]
+Unfortunately due to code limitations the major changes made by this mod are static. Any changes that go about adding/changing/removing titles that this mod changes will most likely be incompatible.
 
 Whilst unlikely to crash your game you may see things like orphaned duchy titles which may have a negative impact.
 
-[h3]Could you make a compatibility patch for _mod that adds/changes/removes titles_?[/h3]
+[h3]Could you make a compatibility patch for [i]mod that adds/changes/removes titles[/i]?[/h3]
 Apologies but due to the large amount of mods out there I am not interested in making compatibility patches at this point in time.
 
 [h3] Similar Mods [/h3]
