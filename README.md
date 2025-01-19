@@ -202,7 +202,7 @@ The exception to this rule is Bohemia, which historically was allowed to be the 
 The mod also enables the Switzerland flavorization, which already existed in game but for whatever reason was disabled.
 
 ## Miscellaneous Changes
-* City leaders will now take their culture from the county culture, rather than their predecessor
+* New mayors for cities will now prefer to use the county's culture over their predecessor's culture
 * Swiss can now be diverged by any culture with Central Germanic Heritage
 * Lothringian/Lorrainian can now be diverged if holding the Kingdom of Lothringian as your primary title
 * Provancale culture divergence will now be prioritised over Arpitan
