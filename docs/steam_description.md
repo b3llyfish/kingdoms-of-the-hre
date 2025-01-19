@@ -33,7 +33,7 @@ For a detailed explanation of the changes visit the mod's [url=https://github.co
 
 [h3]Would you be able to add in _some other_ Kingdom title?[/h3]
 In regard to adding new Kingdoms this mod's purpose was to break up the German (East Francia) Kingdom into smaller parts.
-I feel that this has been achieved with the addition of Lower and Upper Saxony therefore I am unlikely to add more Kingdoms.
+I feel that this has been achieved with* *the addition of Lower and Upper Saxony therefore I am unlikely to add more Kingdoms.
 
 The code should be easy enough to follow for modders who are interested.
 
@@ -61,10 +61,11 @@ These mods do similar things and could be use an alternative. They are assumed t
 * [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms]No HRE Kingdoms[/url] - Prevents the AI from forming HRE Kingdoms
 
 [h2] Localization [/h2]
-Basic localization for supported locales has been provided by using [url=https://github.com/b3llyfish/CK3_LocalizationChanger]CK3_LocalizationChanger[/url].
+This mod only supports [b]English[/b] localization at present. I'm hoping to find a solution to support basic localization for all
+supported languages in the near future.
 
-I am accepting any localization improvements via mods and will happily link them below.
-If your chosen language is listed below then this mod must be used to support your localization.
+Below lists localization support from other modders. If your preferred locale appears below please download that mod as I will
+not be providing any basic localization for this language.
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3090564070]Chinese Localization Mod[/url] - thanks to [url=https://steamcommunity.com/profiles/76561198113539588]無壹[/url]
 

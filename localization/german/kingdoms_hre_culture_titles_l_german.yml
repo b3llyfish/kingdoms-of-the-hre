@@ -1,7 +1,0 @@
-﻿l_german:
- hre_vassal_principality_male_title: "$title_prince$"
- hre_vassal_principality_female_title: "$title_princess$"
- hre_vassal_principality_title: "$title_principality$"
- hre_vassal_kingdom_male_title: "$king_feudal_male$"
- hre_vassal_kingdom_female_title: "$king_feudal_female$"
- hre_vassal_kingdom_title: "$kingdom_feudal$"

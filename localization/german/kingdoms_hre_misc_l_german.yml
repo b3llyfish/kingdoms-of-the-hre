@@ -1,8 +1,0 @@
-﻿l_german:
- hre_cannot_create_kingdom: "Dieser [kingdom|E] befindet sich im Einflussbereich des Heiligen Römischen Reiches."
- coronation_culture_acceptance_bonus_desc: "Krönung von [vassal.GetShortUIName] durch [emperor.GetShortUIName]"
- petition_gift_modifier: "Trendige Schmuckstücke"
- loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTier]"
- loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTierNoTooltip]"
- preparing_culture_conversion: "Bereiten Sie sich darauf vor, ihre Kultur zu unterscheiden"
- county_culture_converted_title: "Bezirkskultur umgewandelt"

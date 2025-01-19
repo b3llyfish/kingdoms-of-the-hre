@@ -1,7 +1,0 @@
-﻿l_french:
- archduchy_succession_decision: "Sécuriser le $archduchy$"
- archduchy_succession_decision_desc: "Il est important que les terres appartenant aux [GetTitleByKey('k_austria').GetNameNoTooltip] restent stables, non seulement pour nous mais pour l'Europe elle-même !. \n \n La dynastie [ROOT.Char.GetDynastyName|U] s'est avérée fiable et prestigieuse.Sécurions la succession sous une seule règle afin que [GetTitleByKey('k_austria').GetNameNoTierNoTooltip] reste fort pour les générations à venir."
- archduchy_succession_decision_tooltip: "Adactiver la règle héréditaire pour les [GetTitleByKey('k_austria').GetNameNoTooltip] et autres titres détenus."
- archduchy_succession_decision_confirm: "La succession est sûre"
- archduchy_succession_primogeniture_enacted_title: "A obtenu une nouvelle loi sur la succession"
- archduchy_succession_primogeniture_enacted_desc: "Votre loi sur la succession est maintenant [GetLaw('single_heir_succession_law').GetName]"

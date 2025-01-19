@@ -1,7 +1,0 @@
-﻿l_russian:
- archduchy_succession_decision: "Закрепить $archduchy$"
- archduchy_succession_decision_desc: "Важно, чтобы земли, принадлежащие к [GetTitleByKey('k_austria').GetNameNoTooltip], оставались стабильными не только для нас, но и для самой Европы!. \n \n Династия [ROOT.Char.GetDynastyName|U] оказалась заслуживающей доверия и престижной.Давайте обеспечим последовательность под одним правителем, чтобы [GetTitleByKey('k_austria').GetNameNoTierNoTooltip] оставалось сильным для будущих поколений."
- archduchy_succession_decision_tooltip: "Принять наследственное правило для [GetTitleByKey('k_austria').GetNameNoTooltip] и других удерживаемых названий."
- archduchy_succession_decision_confirm: "Прессфера безопасна"
- archduchy_succession_primogeniture_enacted_title: "Получил новый закон преемственности"
- archduchy_succession_primogeniture_enacted_desc: "Ваш закон преемственности теперь [GetLaw('single_heir_succession_law').GetName]"

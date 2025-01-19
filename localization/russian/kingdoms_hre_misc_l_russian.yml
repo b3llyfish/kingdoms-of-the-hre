@@ -1,8 +1,0 @@
-﻿l_russian:
- hre_cannot_create_kingdom: "Это [kingdom|E] находится в сфере влияния Священной Римской империи."
- coronation_culture_acceptance_bonus_desc: "Коронация [vassal.GetShortUIName] by [emperor.GetShortUIName]"
- petition_gift_modifier: "Модные безделушки"
- loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTier]"
- loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTierNoTooltip]"
- preparing_culture_conversion: "Подготовка расходится на их культуру"
- county_culture_converted_title: "Культура округа преобразована"

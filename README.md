@@ -220,10 +220,11 @@ These mods do similar things and could be use an alternative. They are assumed t
 * [No HRE Kingdoms](https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms) - Prevents the AI from forming HRE Kingdoms
 
 ## Localization
-Basic localization for supported locales has been provided by using [CK3_LocalizationChanger](https://github.com/b3llyfish/CK3_LocalizationChanger).
+This mod only supports **English** localization at present. I'm hoping to find a solution to support basic localization for all
+supported languages in the near future.
 
-I am accepting any localization improvements via mods and will happily link them below. 
-If your chosen language is listed below then this mod must be used to support your localization. 
+Below lists localization support from other modders. If your preferred locale appears below please download that mod as I will
+not be providing any basic localization for this language.
 
 [Chinese Localization Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3090564070) - thanks to [無壹](https://steamcommunity.com/profiles/76561198113539588)
 
