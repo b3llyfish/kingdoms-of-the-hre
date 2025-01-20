@@ -1,0 +1,59 @@
+﻿l_russian:
+  # Common 
+ kingdoms_hre.kingdom_of: "$loc_title_no_tooltip$" #NT!
+ kingdoms_hre.golden_bull: "Золотой Бык [GetCurrentDate.GetYear]" #NT!
+ kingdoms_hre.powerful_vassals_irritated: "Дарование [kingdom|E] вызовет раздражение у ваших могущественных [duchy|E] вассалов" #NT!
+ kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] будут иметь защищенные права отзыва титула, добавленные к их вассальному договору" #NT!
+  # Vassal prepares the petition 
+ kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0001.desc: "Благодаря хитрости и сражениям я утвердился в качестве ведущей силы в регионе [target_title.GetNameNoTierNoTooltip]. Мое накопление земель и титулов превышает то, что есть у простого [vassal.Custom('DuchessDuke')|U]. \n\nЯ [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] во всем, кроме названия, и пришло время это изменить.\n\nЯ представлю Императору прошение, прося даровать мне $loc_title$.\n\nВсе готово к отправке, но я задаюсь вопросом. Может быть, я могу сделать что-то еще, чтобы обеспечить решение Императора?" #NT!
+ kingdoms_hre.0001.tooltip: "Вы ждете ответа от Императора" #NT!
+ kingdoms_hre.0001.a: "Мое требование справедливо, петиции будет достаточно." #NT!
+ kingdoms_hre.0001.b: "Я приложу личное письмо к императору" #NT!
+ kingdoms_hre.0001.b.tooltip: "Это может существенно помочь или помешать вашей петиции." #NT!
+ kingdoms_hre.0001.b.success: "Письмо хорошо принято." #NT!
+ kingdoms_hre.0001.b.success.tooltip: "Император будет более восприимчив к вашей петиции." #NT!
+ kingdoms_hre.0001.b.failure: "Письмо плохо воспринято." #NT!
+ kingdoms_hre.0001.b.failure.tooltip: "Император будет более критично относиться к вашей петиции." #NT!
+ kingdoms_hre.0001.c: "Отправьте вместе с петицией модные безделушки от наших мастеров." #NT!
+ kingdoms_hre.0001.c.tooltip: "Это поможет вашей петиции" #NT!
+ kingdoms_hre.0001.d: "Секреты Императора ценнее этой петиции..." #NT!
+ kingdoms_hre.0001.d.tooltip: "Вы шантажируете Императора!" #NT!
+  # Emperor receives the petition 
+ kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0002.desc: "Пришла петиция от [vassal.GetShortUIName], в которой утверждается, что [vassal.GetHerHis] претендует на $loc_title$, и содержится просьба даровать им титул. \n\nЯ мог бы принять петицию и получить влиятельного сторонника в [target_title.GetNameNoTierNoTooltip]. Однако другие вассалы в Империи не будут благосклонно относиться к этому предполагаемому «фаворитизму».\n\nЕсли я отклоню петицию, то [vassal.GetShortUIName] наверняка отреагирует плохо, и я рискую обострением с [vassal.GetHerHim].\n\nМои придворные собираются вокруг меня, терпеливо ждут моего ответа..." #NT!
+ kingdoms_hre.0002.a: "Их претензии достойны, они будут [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!" #NT!
+ kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] становится [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTierNoTooltip]" #NT!
+ kingdoms_hre.0002.c: "Равновесие в Империи превыше всего, я должен отклонить их петицию." #NT!
+ kingdoms_hre.0002.c.tooltip: "Ваши отношения с [vassal.GetShortUIName] резко ухудшаются" #NT!
+ kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] может сфабриковать претензию на #Z [GetTitleByKey('e_hre').GetName]#!!" #NT!
+  # Emperor accepts the petition 
+ kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0003.desc: "На тщательно продуманной церемонии в [emperor.GetCapitalLocation.GetNameNoTooltip] император издал указ о новой Золотой булле. \n\nВ ней провозглашается, что [vassal.GetName] имеет императорское право править [target_title.GetNameNoTierNoTooltip], и формализуются его претензии как [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] региона.\n\nЭто поистине великолепный день для династии [vassal.GetDynastyName|U]!" #NT!
+ kingdoms_hre.0003.a: "Император признал законного [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTierNoTooltip]!" #NT!
+ kingdoms_hre.0003.a.interface.title: "Император дарует [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]" #NT!
+ kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] получил [target_title.GetNameNoTooltip]" #NT!
+  # Emperor rejects the petition 
+ kingdoms_hre.0005.title: "Император отвергает!" #NT!
+ kingdoms_hre.0005.desc: "Император отклонил мою петицию!\n\nВ своем ответе он делает расплывчатые заявления о стабильности и традициях, но он и я оба знаем, почему он это сделал. Император чувствует угрозу от меня!\n\nПока $loc_title$ вне моей досягаемости.\nЯ должен уйти и обдумать свои дальнейшие действия." #NT!
+ kingdoms_hre.0005.a: "У этого напыщенного болвана нет ни малейшего понятия о порядочности и чести!" #NT!
+ kingdoms_hre.0005.b: "Если я не могу иметь королевство, тогда я создам империю..." #NT!
+ kingdoms_hre.0005.c: "Как это разочаровывает..." #NT!
+  # Emperor blackmailed by vassal 
+ kingdoms_hre.0006.title: "Шантажировать!" #NT!
+ kingdoms_hre.0006.desc: "Пришла петиция от [vassal.GetShortUIName], в которой они заявляют о своих претензиях к $loc_title$. Она чрезвычайно краткая, едва ли предоставляющая какие-либо доказательства их претензии.\n\nЯ готов отмахнуться от нее как от какой-то странной шутки, когда прочитаю последний абзац.\n\n[vassal.GetShortUIName] знает о моем [secret|E]! Более того, они угрожают раскрыть ее, если я не приму петицию." #NT!
+ kingdoms_hre.0006.a: "У меня нет выбора, кроме как подчиниться их требованию..." #NT!
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName|U] и [TARGET_CHARACTER.GetShortUIName|U] стали соперниками после успешного шантажа." #NT!
+ kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] использует свой крючок против вас." #NT!
+  # Vassal gains title via blackmail 
+ kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0007.desc: "Опасаясь, что его тайна выйдет наружу, Император принял петицию. На спешной церемонии в [emperor.GetCapitalLocation.GetNameNoTooltip] подписана Золотая булла, объявляющая меня новым [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTierNoTooltip].\n\nКак только она закончилась, меня и мою свиту вывели из зала суда и приказали быстро уйти. Императора нигде не было, он явно все еще потрясен тем, что я узнал о его [secret|E].\n\nМожно ожидать последствий моего шантажа, но сейчас день за мной. Я наконец-то [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!" #NT!
+ kingdoms_hre.0007.a: "С небольшим рычагом можно получить все, что угодно..." #NT!
+  # Emperor died mid petition 
+ kingdoms_hre.0009.title: "Вернуть отправителю" #NT!
+ kingdoms_hre.0009.desc: "Что значит [emperor.GetName] мертв?!\n\nПридворный с моей петицией в руке лихорадочно пытается объяснить события, которые привели к смерти покойного [emperor.GetFirstName], но с тех пор я перестал его слушать.\n\nВся эта работа по составлению самой красноречивой петиции напрасна!\n\nЯ вздыхаю. Теперь император [new_emperor.GetName]. Это их мнение я должен попытаться склонить на свою сторону." #NT!
+ kingdoms_hre.0009.a: "Принеси мне перо и свежую бутылочку чернил..." #NT!
+  # Emperor lost title mid petition 
+ kingdoms_hre.0010.title: "Вернуть отправителю" #NT!
+ kingdoms_hre.0010.desc: "Что значит [emperor.GetName] больше не у власти?!\n\nПридворный с моей петицией в руке лихорадочно пытается объяснить события, которые привели к потере [emperor.GetFirstName] титула императора Священной Римской империи, но с тех пор я перестал его слушать.\n\nВся эта работа по составлению самых красноречивых петиций напрасна!\n\nЯ вздыхаю. Теперь император [new_emperor.GetName]. Это их мнение я должен попытаться склонить на свою сторону." #NT!
+ kingdoms_hre.0010.a: "Принеси мне перо и свежую бутылочку чернил..." #NT!

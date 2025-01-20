@@ -1,0 +1,8 @@
+﻿l_spanish:
+ hre_cannot_create_kingdom: "Este [kingdom|E] está dentro de la esfera de influencia del Sacro Imperio Romano Germánico.\nComo un [vassal|E] del Sacro Imperio Romano Germánico, esto debe crearse mediante la decisión $form_hre_kingdom_decision$" #NT!
+ coronation_culture_acceptance_bonus_desc: "Coronación de [vassal.GetShortUIName] por [emperor.GetShortUIName]" #NT!
+ petition_gift_modifier: "Baratijas de moda" #NT!
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTier]" #NT!
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip]" #NT!
+ preparing_culture_conversion: "Preparándose para divergir su cultura" #NT!
+ county_culture_converted_title: "La cultura del condado se transformó" #NT!

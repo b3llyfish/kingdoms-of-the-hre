@@ -1,0 +1,20 @@
+﻿l_spanish:
+ unite_saxony_decision: "Unir a los sajones" #NT!
+ unite_saxony_decision_desc: "Durante demasiado tiempo, el pueblo sajón ha estado dividido, peleándose entre sí mientras potencias extranjeras se infiltraban en la región.\n\nAhora que he ganado suficiente influencia y tierra, estoy en condiciones de poner fin a esto. Unificaré a los sajones bajo un verdadero gobernante sajón." #NT!
+ unite_saxony_decision_tooltip: "Unir las regiones sajonas en un solo reino." #NT!
+ unite_saxony_decision_confirm: "Establecimiento del Reino de Sajonia" #NT!
+ unite_saxony_decision_merge_new_kingdom_tooltip: "Gana el [GetTitleByKey('k_saxony').GetName]" #NT!
+ unite_saxony_decision_merge_kingdoms_tooltip: "Todos los ducados dentro de las regiones de [GetGeographicalRegion('custom_upper_saxony').GetName] y [GetGeographicalRegion('custom_lower_saxony').GetName] pasarán a ser parte de iure de [GetTitleByKey('k_saxony').GetNameNoTooltip]." #NT!
+ unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip: "Todos los ducados dentro de las regiones de [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] y [GetGeographicalRegion('custom_lower_saxony').GetName] pasarán a ser de iure parte de [GetTitleByKey('k_saxony').GetNameNoTooltip]" #NT!
+ unite_saxony_decision_title_law_tooltip: "El [GetTitleByKey('k_saxony').GetNameNoTooltip] tendrá la ley de sucesión [GetLaw('saxon_elective_succession_law').GetName]" #NT!
+  
+ unite_saxony_lower_saxony_counties_requirement: "Posee [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] (actualmente posee #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) dentro de la región de [GetGeographicalRegion('custom_lower_saxony').GetName]" #NT!
+ unite_saxony_upper_saxony_counties_requirement: "Posee [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (actualmente posee #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) dentro de la región de [GetGeographicalRegion('custom_upper_saxony').GetName]" #NT!
+ unite_saxony_upper_saxony_without_sorbia_counties_requirement: "Posee [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (actualmente posee #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) dentro de la región de [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName]" #NT!
+  
+ unite_saxony.0001.title: "El sajón [new_saxon_king.Custom('GetQueenKing')|U]" #NT!
+ unite_saxony.0001.desc: "En tu corte en [new_saxon_king.GetCapitalLocation.GetNameNoTooltip] se está llevando a cabo una gran ceremonia. La sala está repleta de varios dignatarios y figuras de las regiones superior e inferior de Sajonia. El parloteo de la corte se detiene cuando [messenger.GetShortUIName] se acerca al centro de la sala.\n\n[messenger.GetShortUIName] pronuncia un discurso conmovedor que resalta la difícil situación del pueblo sajón a lo largo de los años. Afirma que el Emperador no les da a los sajones el respeto que merecen.\nMuchos en la sala asienten con la cabeza. Concluye que debemos unirnos bajo un [new_saxon_king.Custom('GetQueenKing')|U] sajón, ¡y la persona adecuada es [new_saxon_king.GetName]!\nUno por uno, cada participante se arrodilla ante tu trono y se compromete con el nuevo [new_saxon_king.Custom('GetQueenKing')|U] de Sajonia.\n\nEl Emperador no estará contento con esto, sin embargo, después de una ceremonia tan convincente, no podrá rechazar tu nuevo título." #NT!
+ unite_saxony.0001.a: "¡Salud a los [new_saxon_king.GetFirstName], [new_saxon_king.Custom('GetQueenKing')|U] de los sajones!" #NT!
+  
+ unite_saxony_saxon_elective_enacted_title: "Obtuvo nuevo título Ley de sucesión" #NT!
+ unite_saxony_saxon_elective_enacted_desc: "La ley de sucesión del título de [GetTitleByKey('k_saxony').GetName] ahora es [GetLaw('saxon_elective_succession_law').GetName]" #NT!

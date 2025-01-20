@@ -1,0 +1,10 @@
+﻿l_russian:
+ swiss_cantons_decision: "Расширение прав и возможностей кантонов" #NT!
+ swiss_cantons_decision_desc: "Как номинальный глава швейцарских кантонов, я должен обеспечить их ресурсами для роста и процветания.\n\nРасширяя города по всему [GetGeographicalRegion('custom_core_switzerland').GetName], мы могли бы создать сильную торговую сеть, которая позволит нашим округам процветать." #NT!
+ swiss_cantons_decision_tooltip: "Создание большего количества городов для швейцарских кантонов" #NT!
+ swiss_cantons_decision_confirm: "Больше власти кантонам!" #NT!
+ swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! города требуются в регионе [GetGeographicalRegion('custom_core_switzerland').GetName], (в настоящее время: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)" #NT!
+ swiss_cantons_primogeniture_enacted_title: "Графство получило модификатор" #NT!
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] получил [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]" #NT!
+ empowered_swiss_cantons_modifier: "Могущественные швейцарские кантоны" #NT!
+ empowered_swiss_cantons_modifier_desc: "Этот округ пользуется влиянием швейцарских кантонов за счет некоторой автономии." #NT!

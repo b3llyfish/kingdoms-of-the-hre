@@ -1,0 +1,10 @@
+﻿l_korean:
+ divided_kingdom: "[CHARACTER.GetShortUIName|U]과 [TARGET_CHARACTER.GetShortUIName]은 새로운 왕국이 건국된 후 라이벌이 되었습니다." #NT!
+ broke_apart_my_kingdom: "내 왕국을 갈라놓으셨다" #NT!
+ favouritism: "황제는 다른 가신에게 칭호를 하사했다" #NT!
+ rejected_title_kingdom: "황제는 내 왕국 청원을 거부했습니다." #NT!
+ rejected_title_kingdom_minor: "황제께서 제 왕국 청원을 거부하셨지만, 괜찮습니다..." #NT!
+ letter_positive: "설득력 있는 편지를 받았다" #NT!
+ letter_negative: "설득력 없는 편지를 받았다" #NT!
+ blackmailed_title_kingdom: "왕국을 위해 나를 협박했다" #NT!
+ declared_saxon_king: "자신을 작센 전체의 통치자로 선언했습니다." #NT!

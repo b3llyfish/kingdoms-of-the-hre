@@ -1,0 +1,28 @@
+﻿l_german:
+ rule_kingdoms_hre_culture_requirement: "Königreiche des Heiligen Römischen Reichs: Kulturcheck" #NT!
+ setting_kingdoms_hre_culture_required: "Erforderlich" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Bestimmte Königreichspetitionen erfordern eine entsprechende Kulturprüfung" #NT!
+ setting_kingdoms_hre_culture_not_required: "Nicht erforderlich" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Königreichspetitionen erfordern #Z nicht#! eine entsprechende Kulturprüfung" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Königreiche des Heiligen Römischen Reichs: Akzeptanzmodifikator des Kaisers" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Kein Modifikator" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Die Annahmechance des Kaisers für die Königreichspetition bleibt unverändert" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Verdoppelt" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Die Annahmechance des Kaisers für die Königreichspetition wird verdoppelt" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Halbiert" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Die Annahmechance des Kaisers für die Königreichspetition wird halbiert" #NT!
+  
+ rule_kingdoms_hre_austria_renown: "Königreiche des Heiligen Römischen Reichs: Österreichs Ansehensstufe" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "Bemerkenswert" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "Die Entscheidung „Das Erzherzogtum sichern“ erfordert einen Bekanntheitsgrad von #Z. Bemerkenswert #!" #NT!
+ setting_kingdoms_hre_culture_reputable: "Seriös" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "Die Entscheidung „Das Erzherzogtum sichern“ erfordert einen Ansehensgrad von #Z Reputation#!" #NT!
+ setting_kingdoms_hre_culture_well_known: "Bekannt" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "Die Entscheidung „Das Erzherzogtum sichern“ erfordert einen Bekanntheitsgrad von #Z Bekannt#!" #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "Königreiche des Heiligen Römischen Reichs: Überprüfung der Hauptstadtregion" #NT!
+ setting_kingdoms_hre_capital_region_required: "Erforderlich" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Um Königreiche erstellen zu können, muss die Hauptstadt eines Charakters in der Region des Königreichs liegen." #NT!
+ setting_kingdoms_hre_capital_region_not_required: "Nicht erforderlich" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Erstellbare Königreiche erfordern #Z nicht#!, dass die Hauptstadt eines Charakters innerhalb der Region des Königreichs liegt" #NT!

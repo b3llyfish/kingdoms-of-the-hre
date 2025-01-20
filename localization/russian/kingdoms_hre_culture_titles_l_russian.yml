@@ -1,0 +1,7 @@
+﻿l_russian:
+ hre_vassal_principality_male_title: "$title_prince$" #NT!
+ hre_vassal_principality_female_title: "$title_princess$" #NT!
+ hre_vassal_principality_title: "$title_principality$" #NT!
+ hre_vassal_kingdom_male_title: "$king_feudal_male$" #NT!
+ hre_vassal_kingdom_female_title: "$king_feudal_female$" #NT!
+ hre_vassal_kingdom_title: "$kingdom_feudal$" #NT!

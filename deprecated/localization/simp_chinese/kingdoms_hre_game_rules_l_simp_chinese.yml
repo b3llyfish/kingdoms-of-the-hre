@@ -1,0 +1,28 @@
+﻿l_simp_chinese:
+ rule_kingdoms_hre_culture_requirement: "神圣罗马帝国：文化检查" #NT!
+ setting_kingdoms_hre_culture_required: "必需的" #NT!
+ setting_kingdoms_hre_culture_required_desc: "某些王国请愿书需要相关文化检查" #NT!
+ setting_kingdoms_hre_culture_not_required: "不要求" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "王国请愿#Z 不#! 需要相关文化检查" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "神圣罗马帝国：皇帝的接受修正" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "无修饰符" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "皇帝接受王国请愿的几率将保持不变" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "加倍" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "皇帝接受王国请愿的几率将翻倍" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "减半" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "皇帝接受王国请愿的机会将减半" #NT!
+  
+ rule_kingdoms_hre_austria_renown: "神圣罗马帝国：奥地利声望等级" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "值得注意的是" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "“保卫大公国”决议需要声望等级达到#Z 值得注意#!" #NT!
+ setting_kingdoms_hre_culture_reputable: "信誉良好" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "“保卫大公国”决议需要声望等级达到#Z 声誉良好#!" #NT!
+ setting_kingdoms_hre_culture_well_known: "知名" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "“保卫大公国”决议需要声望等级达到#Z 知名#!" #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "神圣罗马帝国：首都地区检查" #NT!
+ setting_kingdoms_hre_capital_region_required: "必需的" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "可创建的王国需要角色的首都位于王国区域内" #NT!
+ setting_kingdoms_hre_capital_region_not_required: "不要求" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "可创建的王国#Z 不#! 要求角色的首都位于王国区域内" #NT!

@@ -1,0 +1,114 @@
+﻿l_simp_chinese:
+ form_hre_kingdom_decision: "向皇帝请愿建立王国" #NT!
+ form_hre_kingdom_decision_desc: "我对该地区的影响力是毋庸置疑的，除了名字之外，我的统治权在一切方面都得到了证明。\n\n现在是皇帝承认这一点并授予我[title|E] [kingdom|E] 的时候了。" #NT!
+ form_hre_kingdom_decision_tooltip: "向皇帝请愿[kingdom|E][title|E]。" #NT!
+ form_hre_kingdom_decision_confirm: "发送请愿书！" #NT!
+ form_hre_kingdom_decision_kingdom_criteria_met: "满足至少一项英国特定要求" #NT!
+ form_hre_kingdom_decision_effect_selected: "你向皇帝请愿，选择王国" #NT!
+ form_hre_kingdom_decision_emperor_opinion: "皇帝对你的看法将极大地影响他们的决定" #NT!
+ form_hre_kingdom_decision_hook: "牢牢抓住皇帝的把柄就能确保成功" #NT!
+ form_hre_kingdom_decision_vassal_contract_change: "如果成功，你将在你的附庸合同中添加受保护的头衔撤销权" #NT!
+ form_hre_kingdom_decision_gain_heroic_legend_seed: "如果成功，你将获得英雄[legend_seed|E]" #NT!
+  
+ choose_kingdom: "请愿建立一个王国。" #NT!
+ required_amount_of_titles: "必须至少有 2 [duchy|E] [titles|E]。" #NT!
+  
+ choose_bavaria_name: "[GetTitleByKey('k_bavaria').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_bavaria_tooltip: "请愿公国[GetTitleByKey('k_bavaria').GetNameNoTier]" #NT!
+ not_enough_bavaria_counties: "您只需要[SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_bavaria_county_count')|0][counties|E]。" #NT!
+  
+ choose_bohemia_name: "[GetTitleByKey('k_bohemia').GetNameNoTooltip]" #NT!
+ choose_bohemia_tooltip: "请愿书[GetTitleByKey('k_bohemia').GetName]" #NT!
+ not_enough_bohemia_counties: "您只需要[SCOPE.ScriptValue('kingdom_bohemia_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_bohemia_county_count')|0][counties|E]。" #NT!
+ require_bohemia_culture: "文化必须是捷克文化或源自捷克文化" #NT!
+  
+ choose_frisia_name: "[GetTitleByKey('k_frisia').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_frisia_tooltip: "请愿公国[GetTitleByKey('k_frisia').GetNameNoTier]" #NT!
+ not_enough_frisia_counties: "您只需要[SCOPE.ScriptValue('kingdom_frisia_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_frisia_county_count')|0][counties|E]。" #NT!
+ require_frisia_culture: "文化必须是弗里斯兰文化或源自弗里斯兰文化" #NT!
+  
+ choose_lotharingia_name: "[GetTitleByKey('k_lotharingia').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_lotharingia_tooltip: "请愿公国[GetTitleByKey('k_lotharingia').GetNameNoTier]" #NT!
+ not_enough_lotharingia_counties: "您只需要[SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0][counties|E]。" #NT!
+  
+ choose_italy_name: "[GetTitleByKey('k_italy').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_italy_tooltip: "请愿公国[GetTitleByKey('k_italy').GetNameNoTier]" #NT!
+ not_enough_italy_counties: "您只需要[SCOPE.ScriptValue('kingdom_italy_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_italy_county_count')|0][counties|E]。" #NT!
+ require_italy_culture: "文化必须具有拉丁传统" #NT!
+  
+ choose_brittany_name: "[GetTitleByKey('k_brittany').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_brittany_tooltip: "请愿公国[GetTitleByKey('k_brittany').GetNameNoTier]" #NT!
+ not_enough_brittany_counties: "您只需要[SCOPE.ScriptValue('kingdom_brittany_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_brittany_county_count')|0][counties|E]。" #NT!
+ require_brittany_culture: "文化必须是布列塔尼文化或源自布列塔尼文化" #NT!
+  
+ choose_aquitaine_name: "[GetTitleByKey('k_aquitaine').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_aquitaine_tooltip: "请愿公国[GetTitleByKey('k_aquitaine').GetNameNoTier]" #NT!
+ not_enough_aquitaine_counties: "您只需要[SCOPE.ScriptValue('kingdom_aquitaine_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_aquitaine_county_count')|0][counties|E]。" #NT!
+ require_aquitaine_culture: "文化必须是奥克语或源自奥克语" #NT!
+  
+ choose_france_name: "[GetTitleByKey('k_france').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_france_tooltip: "请愿公国[GetTitleByKey('k_france').GetNameNoTier]" #NT!
+ not_enough_france_counties: "您只需要[SCOPE.ScriptValue('kingdom_france_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_france_county_count')|0][counties|E]。" #NT!
+ require_france_culture: "文化必须是法国文化或源自法国文化" #NT!
+  
+ choose_burgundy_name: "[GetTitleByKey('k_burgundy').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_burgundy_tooltip: "请愿公国[GetTitleByKey('k_burgundy').GetNameNoTier]" #NT!
+ not_enough_burgundy_counties: "您只需要[SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_burgundy_county_count')|0][counties|E]。" #NT!
+ require_burgundy_culture: "文化必须具有法兰克传统" #NT!
+  
+ choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]" #NT!
+ choose_austria_tooltip: "请愿[GetTitleByKey('k_austria').GetName]\n\n[GetTitleByKey('k_austria').GetNameNoTooltip] 将与[GetTitleByKey('d_osterreich').GetName] 和[GetTitleByKey('d_steyermark').GetName] 一起组成法理公国。" #NT!
+ not_enough_austria_counties: "[GetGeographicalRegion('custom_core_austria').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_austria_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_austria_county_count')|0]。" #NT!
+  
+ choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]" #NT!
+ choose_switzerland_tooltip: "请愿[GetTitleByKey('k_switzerland').GetName]\n\n[GetTitleByKey('k_switzerland').GetNameNoTooltip] 将与[GetTitleByKey('d_transjurania').GetName] 和[GetTitleByKey('d_currezia').GetName] 一起组成法理公国。" #NT!
+ not_enough_switzerland_counties: "[GetGeographicalRegion('custom_core_switzerland').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_switzerland_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_switzerland_county_count')|0]。" #NT!
+  
+ require_saxony_culture: "文化必定是撒克逊文化，或源自撒克逊文化" #NT!
+  
+ choose_upper_saxony_name: "[GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_upper_saxony_tooltip: "[GetTitleByKey('k_upper_saxony').GetNameNoTier] 公国请愿书\n\n[GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 公国将由 [GetTitleByKey('d_anhalt').GetName]、[GetTitleByKey('d_thuringia').GetName]、[GetTitleByKey('d_meissen').GetName] 和 [GetTitleByKey('d_lausitz').GetName] 组成，为法理上的公国。" #NT!
+ not_enough_upper_saxony_counties: "[GetGeographicalRegion('custom_upper_saxony').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]。" #NT!
+ choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$" #NT!
+ choose_upper_saxony_without_sorbia_tooltip: "[GetTitleByKey('k_upper_saxony').GetNameNoTier] 公国请愿书\n\n[GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 公国将由 [GetTitleByKey('d_anhalt').GetName] 和 [GetTitleByKey('d_thuringia').GetName] 作为法理公国组成。\n\n如果你完全控制 [GetTitleByKey('d_meissen').GetName] 或 [GetTitleByKey('d_lausitz').GetName]，那么这两个公国都将成为 [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 公国的法理组成部分，而 [GetTitleByKey('k_sorbia').GetName] 头衔将被摧毁。" #NT!
+ not_enough_upper_saxony_without_sorbia_counties: "[GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]。" #NT!
+  
+ choose_lower_saxony_name: "[GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_lower_saxony_tooltip: "[GetTitleByKey('k_lower_saxony').GetNameNoTier] 公国请愿书\n\n[GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip] 公国将由 [GetTitleByKey('d_angria').GetName]、[GetTitleByKey('d_holstein').GetName]、[GetTitleByKey('d_ostfalen').GetName] 和 [GetTitleByKey('d_westfalen').GetName] 组成，为法理上的公国。" #NT!
+ not_enough_lower_saxony_counties: "[GetGeographicalRegion('custom_lower_saxony').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]。" #NT!
+  
+ k_upper_saxony: "上萨克森州" #NT!
+ k_upper_saxony_adj: "上撒克逊人" #NT!
+ k_upper_saxony_pre: "上萨克索" #NT!
+ k_lower_saxony: "下萨克森州" #NT!
+ k_lower_saxony_adj: "下撒克逊语" #NT!
+ k_lower_saxony_pre: "下萨克索" #NT!
+  
+ custom_upper_saxony: "上萨克森州" #NT!
+ custom_upper_saxony_without_sorbia: "$custom_upper_saxony$" #NT!
+ custom_lower_saxony: "下萨克森州" #NT!
+  
+ is_hre_vassal: "是神圣罗马帝国皇帝的附庸。" #NT!
+ requires_culture: "必须拥有或属于 [root.culture.GetName] 文化" #NT!
+ kingdom_already_exists: "这个王国已经存在" #NT!
+ saxony_kingdom_already_exists: "萨克森王国取代了这个王国" #NT!
+  
+ choose_pomerania_name: "[GetTitleByKey('k_pomerania').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_pomerania_tooltip: "请愿公国[GetTitleByKey('k_pomerania').GetNameNoTier]" #NT!
+ not_enough_pomerania_counties: "您只需要[SCOPE.ScriptValue('kingdom_pomerania_required_county_total')|0]中的[SCOPE.ScriptValue('kingdom_pomerania_county_count')|0][counties|E]。" #NT!
+ require_pomerania_culture: "文化必须是波美拉尼亚文化或源自波美拉尼亚文化" #NT!
+  
+ choose_slavinia_name: "[GetTitleByKey('k_slavinia').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_slavinia_tooltip: "[GetTitleByKey('k_slavinia').GetNameNoTier] 公国请愿书\n\n[GetTitleByKey('k_slavinia').GetNameNoTierNoTooltip] 公国将与 [GetTitleByKey('d_nordmark').GetName] 和 [GetTitleByKey('d_ostmark').GetName] 一起组成法理上的公国。" #NT!
+ not_enough_slavinia_counties: "[GetGeographicalRegion('custom_slavinia').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_slavinia_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_slavinia_county_count')|0]。" #NT!
+ require_slavinia_culture: "文化必须具有中日耳曼传统" #NT!
+ k_slavinia: "斯拉维尼亚" #NT!
+ k_slavinia_adj: "斯拉夫语" #NT!
+ custom_slavinia: "斯拉维尼亚" #NT!
+  
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTierNoTooltip] 公国" #NT!
+ choose_carinthia_tooltip: "[GetTitleByKey('k_carinthia').GetNameNoTier] 公国请愿书\n\n[GetTitleByKey('k_carinthia').GetNameNoTierNoTooltip] 公国将与 [GetTitleByKey('d_carinthia').GetName]、[GetTitleByKey('d_krain').GetName] 和 [GetTitleByKey('d_istria').GetName] 一起组成法理上的公国。" #NT!
+ not_enough_carinthia_counties: "[GetGeographicalRegion('custom_carinthia').GetName] 区域内的 [SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E] 需要申请该称号。您目前有 [SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]。" #NT!
+ k_carinthia: "克恩顿州" #NT!
+ k_carinthia_adj: "卡林西亚" #NT!
+ custom_carinthia: "克恩顿州" #NT!

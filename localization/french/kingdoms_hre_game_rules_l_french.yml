@@ -1,0 +1,28 @@
+﻿l_french:
+ rule_kingdoms_hre_culture_requirement: "Royaumes de la Sainte-Reine : Contrôle de la culture" #NT!
+ setting_kingdoms_hre_culture_required: "Requis" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Certaines pétitions du royaume nécessiteront un contrôle culturel pertinent" #NT!
+ setting_kingdoms_hre_culture_not_required: "Non requis" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Les pétitions du Royaume ne nécessiteront pas de vérification culturelle pertinente." #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Royaumes du HRE : Modificateur d'acceptation de l'empereur" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Aucun modificateur" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Les chances d'acceptation de la pétition du royaume par l'empereur ne seront pas modifiées" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Doublé" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Les chances d'acceptation de la pétition du royaume par l'empereur seront doublées" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Réduit de moitié" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Les chances de l'empereur d'accepter la pétition du royaume seront réduites de moitié" #NT!
+  
+ rule_kingdoms_hre_austria_renown: "Royaumes de la HRE : Autriche Niveau de renommée" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "Remarquable" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "La décision « Sécuriser l'archiduché » nécessitera un niveau de renommée de #Z Remarquable#!" #NT!
+ setting_kingdoms_hre_culture_reputable: "Honorable" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "La décision « Sécuriser l'archiduché » nécessitera un niveau de renommée de #Z Réputé#!" #NT!
+ setting_kingdoms_hre_culture_well_known: "Bien connu" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "La décision « Sécuriser l'archiduché » nécessitera un niveau de renommée de #Z Bien connu#!" #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "Royaumes de la HRE : Vérification de la région capitale" #NT!
+ setting_kingdoms_hre_capital_region_required: "Requis" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Les royaumes créables nécessiteront que la capitale d'un personnage se trouve dans la région du royaume" #NT!
+ setting_kingdoms_hre_capital_region_not_required: "Non requis" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Les royaumes créables nécessiteront #Z et non #! que la capitale d'un personnage se trouve dans la région du royaume" #NT!

@@ -1,0 +1,59 @@
+﻿l_simp_chinese:
+  # Common 
+ kingdoms_hre.kingdom_of: "$loc_title_no_tooltip$" #NT!
+ kingdoms_hre.golden_bull: "[GetCurrentDate.GetYear] 的金牛" #NT!
+ kingdoms_hre.powerful_vassals_irritated: "授予[kingdom|E] 会激怒你强大的[duchy|E] 封臣" #NT!
+ kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] 将在其附庸合同中添加受保护的头衔撤销权" #NT!
+  # Vassal prepares the petition 
+ kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0001.desc: "通过狡诈手段和战斗，我已成为 [target_title.GetNameNoTierNoTooltip] 地区的领导力量。我积累的土地和头衔超过了 [vassal.Custom('DuchessDuke')|U]。\n\n除了名义上，我实际上是 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]，现在是时候改变了。\n\n我将向皇帝提交请愿书，请求他们授予我 $loc_title$。\n\n一切都准备就绪，但我还是想知道。也许我还能做更多的事情来确保皇帝的决定？" #NT!
+ kingdoms_hre.0001.tooltip: "你等待皇帝的回复" #NT!
+ kingdoms_hre.0001.a: "我的诉求是公正的，请愿就足够了" #NT!
+ kingdoms_hre.0001.b: "我将附上一封致皇帝的亲笔信" #NT!
+ kingdoms_hre.0001.b.tooltip: "这可能会极大地帮助或阻碍你的请愿" #NT!
+ kingdoms_hre.0001.b.success: "这封信受到了热烈欢迎" #NT!
+ kingdoms_hre.0001.b.success.tooltip: "皇帝会更愿意接受你的请愿" #NT!
+ kingdoms_hre.0001.b.failure: "这封信反响不佳" #NT!
+ kingdoms_hre.0001.b.failure.tooltip: "皇帝会更加严厉地批评你的请愿" #NT!
+ kingdoms_hre.0001.c: "请愿书中附上我们工匠制作的时尚饰品" #NT!
+ kingdoms_hre.0001.c.tooltip: "这将有助于你的请愿" #NT!
+ kingdoms_hre.0001.d: "皇帝的秘密比这份请愿书更有价值……" #NT!
+ kingdoms_hre.0001.d.tooltip: "你敲诈皇帝！" #NT!
+  # Emperor receives the petition 
+ kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0002.desc: "[vassal.GetShortUIName] 发来一份请愿书，声称[vassal.GetHerHis] 对$loc_title$ 拥有主权，并请求我授予他们头衔。\n\n我可以接受请愿书，并在[target_title.GetNameNoTierNoTooltip] 获得强有力的支持者。然而，帝国的其他附庸国不会接受这种明显的“偏袒”。\n\n如果我拒绝请愿书，那么[vassal.GetShortUIName] 肯定会做出糟糕的回应，而且我冒着与[vassal.GetHerHim] 升级冲突的风险。\n\n我的廷臣们聚集在我身边，耐心等待我的回应……" #NT!
+ kingdoms_hre.0002.a: "他们的主张是值得的，他们应该是[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]！" #NT!
+ kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] 变成 [target_title.GetNameNoTierNoTooltip] 的 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]" #NT!
+ kingdoms_hre.0002.c: "帝国的平衡至关重要，我必须拒绝他们的请愿" #NT!
+ kingdoms_hre.0002.c.tooltip: "你和[vassal.GetShortUIName]的关系严重恶化" #NT!
+ kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] 可能捏造关于 #Z [GetTitleByKey('e_hre').GetName]#!! 的声明" #NT!
+  # Emperor accepts the petition 
+ kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0003.desc: "在[emperor.GetCapitalLocation.GetNameNoTooltip] 举行的盛大仪式上，皇帝颁布了新的金诏书。\n\n它宣告[vassal.GetName] 拥有统治[target_title.GetNameNoTierNoTooltip] 的帝国权利，并正式确立了他们作为[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] 对该地区的主权。\n\n对于[vassal.GetDynastyName|U] 王朝来说，这真是辉煌的一天！" #NT!
+ kingdoms_hre.0003.a: "皇帝已经承认了[target_title.GetNameNoTierNoTooltip]的合法性[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]！" #NT!
+ kingdoms_hre.0003.a.interface.title: "皇帝赐予[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]" #NT!
+ kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] 已被授予 [target_title.GetNameNoTooltip]" #NT!
+  # Emperor rejects the petition 
+ kingdoms_hre.0005.title: "皇帝拒绝！" #NT!
+ kingdoms_hre.0005.desc: "皇帝拒绝了我的请求！\n\n在他的回复中，他含糊其辞地谈论了稳定和传统，但他和我都知道他为什么这样做。皇帝感到受到了我的威胁！\n\n现在$loc_title$ 不在我的掌控之中。\n我必须离开并考虑我的下一步行动。" #NT!
+ kingdoms_hre.0005.a: "那个自大的傻瓜没有一点体面和荣誉感！" #NT!
+ kingdoms_hre.0005.b: "如果我不能拥有一个王国，那么我将建立一个帝国......" #NT!
+ kingdoms_hre.0005.c: "真令人失望……" #NT!
+  # Emperor blackmailed by vassal 
+ kingdoms_hre.0006.title: "勒索！" #NT!
+ kingdoms_hre.0006.desc: "[vassal.GetShortUIName] 发来了一份请愿书，陈述了他们对 $loc_title$ 的主张。请愿书非常简短，几乎没有提供任何证据来证明他们的主张。\n\n当我读到最后一段时，我准备把它当作某种奇怪的笑话来驳斥。\n\n[vassal.GetShortUIName] 知道我的 [secret|E]！更重要的是，他们威胁说，如果我不接受请愿书，他们就会揭露它。" #NT!
+ kingdoms_hre.0006.a: "我别无选择，只能屈服于他们的要求......" #NT!
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName|U] 和 [TARGET_CHARACTER.GetShortUIName|U] 在一次成功的勒索之后成为了对手。" #NT!
+ kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] 利用他们的钩子钩住了你。" #NT!
+  # Vassal gains title via blackmail 
+ kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0007.desc: "皇帝担心他的秘密被泄露，接受了请愿。在[emperor.GetCapitalLocation.GetNameNoTooltip] 的匆忙仪式上，签署了金牛奖章，宣布我成为[target_title.GetNameNoTierNoTooltip] 的新[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]。\n\n仪式一结束，我和我的随行人员就被带出宫廷，并被要求迅速离开。皇帝不见了，显然他对我知道他的[secret|E] 感到震惊。\n\n我的勒索可能会产生影响，但现在我终于是[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] 了！" #NT!
+ kingdoms_hre.0007.a: "只要利用一点杠杆，你就能得到任何东西……" #NT!
+  # Emperor died mid petition 
+ kingdoms_hre.0009.title: "退回寄件人" #NT!
+ kingdoms_hre.0009.desc: "你是什​​么意思，[emperor.GetName] 死了？！\n\n一位朝臣手里拿着我的请愿书，疯狂地试图解释导致已故[emperor.GetFirstName] 死亡的事件，但我已经不再听了。\n\n所有为写出最雄辩的请愿书所做的努力都白费了！\n\n我叹了口气。[new_emperor.GetName] 现在是皇帝。我必须试图影响他们的意见。" #NT!
+ kingdoms_hre.0009.a: "拿我的羽毛笔和一瓶新墨水来……" #NT!
+  # Emperor lost title mid petition 
+ kingdoms_hre.0010.title: "退回寄件人" #NT!
+ kingdoms_hre.0010.desc: "你是什​​么意思，[emperor.GetName] 不再掌权了？！\n\n一位朝臣拿着我的请愿书，疯狂地试图解释导致[emperor.GetFirstName] 失去神圣罗马帝国皇帝头衔的事件，但我已经不再听了。\n\n所有为起草最雄辩的请愿书所做的努力都白费了！\n\n我叹了口气。[new_emperor.GetName] 现在是皇帝了。我必须试图影响他们的意见。" #NT!
+ kingdoms_hre.0010.a: "拿我的羽毛笔和一瓶新墨水来……" #NT!

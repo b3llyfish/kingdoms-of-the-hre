@@ -1,0 +1,20 @@
+﻿l_german:
+ unite_saxony_decision: "Vereint die Sachsen" #NT!
+ unite_saxony_decision_desc: "Zu lange war das sächsische Volk gespalten und stritt sich untereinander, während ausländische Mächte in die Region eindrangen.\n\nNachdem ich genügend Einfluss und Land gewonnen habe, bin ich nun in der Lage, dem ein Ende zu setzen. Ich werde die Sachsen unter einem wahren sächsischen Herrscher vereinen." #NT!
+ unite_saxony_decision_tooltip: "Vereinen Sie die sächsischen Gebiete zu einem einzigen Königreich." #NT!
+ unite_saxony_decision_confirm: "Gründung des Königreichs Sachsen" #NT!
+ unite_saxony_decision_merge_new_kingdom_tooltip: "Erhalte den [GetTitleByKey('k_saxony').GetName]" #NT!
+ unite_saxony_decision_merge_kingdoms_tooltip: "Alle Herzogtümer in den Regionen [GetGeographicalRegion('custom_upper_saxony').GetName] und [GetGeographicalRegion('custom_lower_saxony').GetName] werden de jure Teil von [GetTitleByKey('k_saxony').GetNameNoTooltip]." #NT!
+ unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip: "Alle Herzogtümer in den Regionen [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] und [GetGeographicalRegion('custom_lower_saxony').GetName] werden de jure Teil von [GetTitleByKey('k_saxony').GetNameNoTooltip]." #NT!
+ unite_saxony_decision_title_law_tooltip: "Für [GetTitleByKey('k_saxony').GetNameNoTooltip] gilt das Erbrecht [GetLaw('saxon_elective_succession_law').GetName]" #NT!
+  
+ unite_saxony_lower_saxony_counties_requirement: "Besitze [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] (besitze derzeit #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) in der Region [GetGeographicalRegion('custom_lower_saxony').GetName]" #NT!
+ unite_saxony_upper_saxony_counties_requirement: "Besitze [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (besitze derzeit #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) in der Region [GetGeographicalRegion('custom_upper_saxony').GetName]" #NT!
+ unite_saxony_upper_saxony_without_sorbia_counties_requirement: "Besitze [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (besitze derzeit #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) in der Region [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName]" #NT!
+  
+ unite_saxony.0001.title: "Der Sächsische [new_saxon_king.Custom('GetQueenKing')|U]" #NT!
+ unite_saxony.0001.desc: "An Ihrem Hof ​​in [new_saxon_king.GetCapitalLocation.GetNameNoTooltip] findet eine große Zeremonie statt. Der Raum ist voll mit verschiedenen Würdenträgern und Persönlichkeiten aus den oberen und unteren Regionen Sachsens. Das Geplapper des Hofes verstummt, als [messenger.GetShortUIName] sich der Mitte des Raumes nähert.\n\n[messenger.GetShortUIName] hält eine mitreißende Rede, in der er die Not des sächsischen Volkes im Laufe der Jahre hervorhebt. Er erklärt, dass der Kaiser den Sachsen nicht den Respekt entgegenbringt, den sie verdienen.\nViele im Raum nicken zustimmend. Er kommt zu dem Schluss, dass wir uns unter einem sächsischen [new_saxon_king.Custom('GetQueenKing')|U] vereinen müssen, und die richtige Person ist [new_saxon_king.GetName]!\nEiner nach dem anderen kniet jeder Teilnehmer vor Ihrem Thron nieder und gelobt den neuen [new_saxon_king.Custom('GetQueenKing')|U] von Sachsen.\n\nDer Kaiser wird damit nicht zufrieden sein, aber nach einer so überzeugenden Zeremonie wird er Ihren neuen Titel nicht ablehnen können." #NT!
+ unite_saxony.0001.a: "Ein Hoch auf [new_saxon_king.GetFirstName], [new_saxon_king.Custom('GetQueenKing')|U] der Sachsen!" #NT!
+  
+ unite_saxony_saxon_elective_enacted_title: "Neues Titelnachfolgerecht gewonnen" #NT!
+ unite_saxony_saxon_elective_enacted_desc: "Das Titelnachfolgegesetz von [GetTitleByKey('k_saxony').GetName] ist jetzt [GetLaw('saxon_elective_succession_law').GetName]" #NT!

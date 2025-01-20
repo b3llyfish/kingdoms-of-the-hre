@@ -1,0 +1,17 @@
+﻿l_korean:
+ diverge_culture.title: "새로운 문화적 방향?" #NT!
+ diverge_culture.desc: "[primary_title.GetNameNoTierNoTooltip]의 새로운 [character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U]으로서 저는 이 지역의 큰 변화를 감독하고 있습니다. 그 사람들의 관습과 전통도 예외는 아닙니다.\n\n[current_culture.GetNameNoTooltip] 라이프스타일에서 벗어나 새로운 미래로 나아갈 기회가 있습니다. 저는 손을 내밀어 그것을 붙잡기만 하면 됩니다..." #NT!
+ diverge_culture.0001.a: "새로운 길을 개척합시다!" #NT!
+ diverge_culture.0001.a.random_diverge: "당신은 무작위로 당신의 문화를 [current_culture.GetNameNoTooltip]에서 분리할 것입니다" #NT!
+ diverge_culture.0001.a.enhanced_culture_conversion: "분기된 문화는 [enhanced_culture_conversion|E]을 트리거합니다." #NT!
+ diverge_culture.0001.b: "변화는 필요하지만, 통제되어야 합니다." #NT!
+ diverge_culture.0001.b.diverge_cost_reduction: "[character.GetName]이 죽을 때까지 다양한 문화에 대한 비용이 50% 감소합니다." #NT!
+ diverge_culture.0001.b.enhanced_culture_conversion: "[character.GetName]의 죽음 전에 문화를 분기시키면 분기된 문화가 [enhanced_culture_conversion|E]을 트리거합니다." #NT!
+ diverge_culture.0001.c: "아니, 이미 너무 많은 것이 바뀌었어요" #NT!
+ diverge_culture.0001.c.remain: "귀하의 문화는 [current_culture.GetNameNoTooltip]로 유지됩니다." #NT!
+  
+ convert_to_local_culture.title: "사람들의 [character.Custom('GetQueenKing')|U]?" #NT!
+ convert_to_local_culture.desc: "[primary_title.GetNameNoTierNoTooltip]의 새로운 [character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U]으로서, 나는 내가 따르는 관습과 전통이 내가 통치하는 사람들과 다르다는 것을 알고 있습니다.\n\n내가 [character.GetCapitalLocation.GetCounty.GetCulture.GetName] 방식을 채택한다면 내 통치가 더 순조로울 것입니다..." #NT!
+ convert_to_local_culture.0001.a: "나는 진정한 [character.GetCapitalLocation.GetCounty.GetCulture.GetName] [character.Custom('GetQueenKing')|U]이 되겠어요!" #NT!
+ convert_to_local_culture.0001.a.tooltip: "당신은 [character.GetCapitalLocation.GetCounty.GetCulture.GetName] 문화로 변환할 것입니다" #NT!
+ convert_to_local_culture.0001.b: "옛날 방식을 소중히 여기고 [character.GetCulture.GetName]로 남읍시다" #NT!

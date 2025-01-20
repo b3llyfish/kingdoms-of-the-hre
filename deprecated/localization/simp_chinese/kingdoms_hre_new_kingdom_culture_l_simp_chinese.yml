@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+ diverge_culture.title: "新的文化方向？" #NT!
+ diverge_culture.desc: "作为[primary_title.GetNameNoTierNoTooltip]的新[character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U]，我目睹了该地区的巨大变化。该地区人民的风俗和传统也不例外。\n\n我们有机会摆脱[current_culture.GetNameNoTooltip]的生活方式，走向新的未来。我只需伸出手去抓住它……" #NT!
+ diverge_culture.0001.a: "让我们开辟一条新的道路！" #NT!
+ diverge_culture.0001.a.random_diverge: "你将随机地将你的文化与[current_culture.GetNameNoTooltip]分开" #NT!
+ diverge_culture.0001.a.enhanced_culture_conversion: "文化差异会引发[enhanced_culture_conversion|E]" #NT!
+ diverge_culture.0001.b: "需要改变，但必须控制改变……" #NT!
+ diverge_culture.0001.b.diverge_cost_reduction: "获得 50% 的文化差异成本降低，直至 [character.GetName] 消亡" #NT!
+ diverge_culture.0001.b.enhanced_culture_conversion: "如果你在 [character.GetName] 死亡之前分化你的文化，那么分化的文化将触发 [enhanced_culture_conversion|E]" #NT!
+ diverge_culture.0001.c: "不，已经改变太多了" #NT!
+ diverge_culture.0001.c.remain: "你的文化将保持不变[current_culture.GetNameNoTooltip]" #NT!
+  
+ convert_to_local_culture.title: "人民的[character.Custom('GetQueenKing')|U]？" #NT!
+ convert_to_local_culture.desc: "作为[primary_title.GetNameNoTierNoTooltip] 的新[character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U]，我意识到我遵循的风俗和传统与我统治的人民不同。\n\n如果我采用[character.GetCapitalLocation.GetCounty.GetCulture.GetName] 方式，我的统治将会更加顺利......" #NT!
+ convert_to_local_culture.0001.a: "我将成为一个真正的[character.GetCapitalLocation.GetCounty.GetCulture.GetName][character.Custom('GetQueenKing')|U]！" #NT!
+ convert_to_local_culture.0001.a.tooltip: "你将转变为[character.GetCapitalLocation.GetCounty.GetCulture.GetName] 文化" #NT!
+ convert_to_local_culture.0001.b: "让我们珍惜旧的方式并保持[character.GetCulture.GetName]" #NT!

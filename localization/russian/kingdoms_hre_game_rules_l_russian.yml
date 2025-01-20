@@ -1,0 +1,28 @@
+﻿l_russian:
+ rule_kingdoms_hre_culture_requirement: "Королевства СРИ: проверка культуры" #NT!
+ setting_kingdoms_hre_culture_required: "Необходимый" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Для некоторых петиций королевства потребуется соответствующая проверка культуры." #NT!
+ setting_kingdoms_hre_culture_not_required: "Не требуется" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Петиции Королевства #Z не#! потребуют соответствующей проверки культуры" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Королевства СРИ: Модификатор принятия императора" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Без модификатора" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Шанс принятия императором петиции о королевстве останется неизменным" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Удвоенный" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Шансы на одобрение императором петиции о создании королевства удвоятся" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Разделенный пополам" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Шансы императора принять петицию о королевстве будут уменьшены вдвое" #NT!
+  
+ rule_kingdoms_hre_austria_renown: "Королевства СРИ: Уровень известности Австрии" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "Примечательно" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "Решение «Защитить эрцгерцогство» потребует уровень известности #Z. Примечательно#!." #NT!
+ setting_kingdoms_hre_culture_reputable: "Уважаемый" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "Решение «Защитить эрцгерцогство» потребует уровень известности #Z Уважаемый#!" #NT!
+ setting_kingdoms_hre_culture_well_known: "Известный" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "Решение «Защитить эрцгерцогство» потребует уровень известности #Z Известный#!" #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "Королевства СРИ: проверка столичного региона" #NT!
+ setting_kingdoms_hre_capital_region_required: "Необходимый" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Для создания королевств потребуется, чтобы столица персонажа находилась в регионе королевства." #NT!
+ setting_kingdoms_hre_capital_region_not_required: "Не требуется" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Создаваемые королевства #Z не#! требуют, чтобы столица персонажа находилась в регионе королевства" #NT!

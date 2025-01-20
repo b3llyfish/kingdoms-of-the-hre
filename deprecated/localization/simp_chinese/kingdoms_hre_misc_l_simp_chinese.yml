@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ hre_cannot_create_kingdom: "这个[kingdom|E] 位于神圣罗马帝国的势力范围内。\n作为神圣罗马帝国的[vassal|E]，这必须通过$form_hre_kingdom_decision$ 决议来创建" #NT!
+ coronation_culture_acceptance_bonus_desc: "[emperor.GetShortUIName] 为 [vassal.GetShortUIName] 加冕" #NT!
+ petition_gift_modifier: "流行饰品" #NT!
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] / [target_title.GetNameNoTier]" #NT!
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] / [target_title.GetNameNoTierNoTooltip]" #NT!
+ preparing_culture_conversion: "准备分化文化" #NT!
+ county_culture_converted_title: "郡文化转变" #NT!

@@ -1,0 +1,20 @@
+﻿l_polish:
+ unite_saxony_decision: "Zjednoczcie Sasów" #NT!
+ unite_saxony_decision_desc: "Przez długi czas lud Sasów był podzielony, kłócąc się między sobą, podczas gdy obce mocarstwa infiltrowały region.\n\nZdobywszy wystarczająco dużo wpływów i ziemi, jestem teraz w pozycji, aby to zakończyć. Zjednoczę Sasów pod prawdziwym saskim władcą." #NT!
+ unite_saxony_decision_tooltip: "Zjednoczyć regiony saskie w jedno Królestwo." #NT!
+ unite_saxony_decision_confirm: "Ustanowić Królestwo Saksonii" #NT!
+ unite_saxony_decision_merge_new_kingdom_tooltip: "Zdobądź [GetTitleByKey('k_saxony').GetName]" #NT!
+ unite_saxony_decision_merge_kingdoms_tooltip: "Wszystkie księstwa w regionach [GetGeographicalRegion('custom_upper_saxony').GetName] i [GetGeographicalRegion('custom_lower_saxony').GetName] staną się de jure częścią [GetTitleByKey('k_saxony').GetNameNoTooltip]" #NT!
+ unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip: "Wszystkie księstwa w regionach [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] i [GetGeographicalRegion('custom_lower_saxony').GetName] staną się de jure częścią [GetTitleByKey('k_saxony').GetNameNoTooltip]" #NT!
+ unite_saxony_decision_title_law_tooltip: "[GetTitleByKey('k_saxony').GetNameNoTooltip] będzie miało prawo sukcesji [GetLaw('saxon_elective_succession_law').GetName]" #NT!
+  
+ unite_saxony_lower_saxony_counties_requirement: "Posiadam [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] (aktualnie posiadam #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) w regionie [GetGeographicalRegion('custom_lower_saxony').GetName]" #NT!
+ unite_saxony_upper_saxony_counties_requirement: "Posiadam [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (aktualnie posiadam #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) w regionie [GetGeographicalRegion('custom_upper_saxony').GetName]" #NT!
+ unite_saxony_upper_saxony_without_sorbia_counties_requirement: "Posiadam [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (aktualnie posiadam #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) w regionie [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName]" #NT!
+  
+ unite_saxony.0001.title: "Saksoński [new_saxon_king.Custom('GetQueenKing')|U]" #NT!
+ unite_saxony.0001.desc: "Na twoim dworze w [new_saxon_king.GetCapitalLocation.GetNameNoTooltip] odbywa się wielka ceremonia. Sala jest wypełniona różnymi dygnitarzami i osobistościami z górnych i dolnych regionów Saksonii. Rozmowy dworskie cichną, gdy [messenger.GetShortUIName] zbliża się do środka sali.\n\n[messenger.GetShortUIName] wygłasza porywającą mowę, w której podkreśla trudną sytuację ludu saskiego na przestrzeni lat. Stwierdza, że ​​cesarz nie okazuje Sasom szacunku, na jaki zasługują.\nWielu obecnych kiwa głowami na znak zgody. Dochodzi do wniosku, że musimy zjednoczyć się pod wodzą Sasa [new_saxon_king.Custom('GetQueenKing')|U], a właściwą osobą jest [new_saxon_king.GetName]!\nPo kolei każdy uczestnik klęka przed twoim tronem i ślubuje wierność nowemu [new_saxon_king.Custom('GetQueenKing')|U] Saksonii.\n\nCesarz nie będzie z tego zadowolony, jednak po tak przekonującej ceremonii nie będzie w stanie odrzucić twojego nowego tytułu." #NT!
+ unite_saxony.0001.a: "Niech żyje [new_saxon_king.GetFirstName], [new_saxon_king.Custom('GetQueenKing')|U] Sasów!" #NT!
+  
+ unite_saxony_saxon_elective_enacted_title: "Uzyskał nowe prawo sukcesji tytułu" #NT!
+ unite_saxony_saxon_elective_enacted_desc: "Prawo o sukcesji tytułu [GetTitleByKey('k_saxony').GetName] jest teraz [GetLaw('saxon_elective_succession_law').GetName]" #NT!

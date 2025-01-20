@@ -1,0 +1,28 @@
+﻿l_polish:
+ rule_kingdoms_hre_culture_requirement: "Królestwa HRE: Kontrola kultury" #NT!
+ setting_kingdoms_hre_culture_required: "Wymagany" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Niektóre petycje królestwa będą wymagały odpowiedniej kontroli kultury" #NT!
+ setting_kingdoms_hre_culture_not_required: "Nie wymagane" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Petycje królestwa #Z nie#! będą wymagały odpowiedniej kontroli kultury" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Królestwa HRE: Modyfikator akceptacji cesarza" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Brak modyfikatora" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Szansa na akceptację petycji królestwa przez cesarza pozostanie niezmieniona" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Podwoił się" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Szansa na akceptację petycji królestwa przez cesarza zostanie podwojona" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Przepołowiony" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Szansa na akceptację petycji królestwa przez cesarza zostanie zmniejszona o połowę" #NT!
+  
+ rule_kingdoms_hre_austria_renown: "Królestwa HRE: Austria Poziom sławy" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "Godny uwagi" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "Decyzja „Zabezpieczyć Arcyksięstwo” będzie wymagać poziomu sławy #Z Godne uwagi#!" #NT!
+ setting_kingdoms_hre_culture_reputable: "Renomowany" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "Decyzja „Zabezpieczyć Arcyksięstwo” będzie wymagać poziomu sławy #Z Reputable#!" #NT!
+ setting_kingdoms_hre_culture_well_known: "Dobrze znany" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "Decyzja „Zabezpieczyć Arcyksięstwo” będzie wymagać poziomu sławy #Z Dobrze znany#!" #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "Królestwa HRE: Sprawdź region stołeczny" #NT!
+ setting_kingdoms_hre_capital_region_required: "Wymagany" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "W przypadku tworzenia królestw stolica postaci musi znajdować się w regionie królestwa" #NT!
+ setting_kingdoms_hre_capital_region_not_required: "Nie wymagane" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Królestwa, które można tworzyć, #Z nie#! będą wymagać, aby stolica postaci znajdowała się w regionie królestwa" #NT!

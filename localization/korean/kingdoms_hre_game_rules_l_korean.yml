@@ -1,0 +1,28 @@
+﻿l_korean:
+ rule_kingdoms_hre_culture_requirement: "HRE 왕국: 문화 확인" #NT!
+ setting_kingdoms_hre_culture_required: "필수의" #NT!
+ setting_kingdoms_hre_culture_required_desc: "특정 왕국 청원에는 관련 문화 검사가 필요합니다." #NT!
+ setting_kingdoms_hre_culture_not_required: "필요하지 않음" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "왕국 청원에는 관련 문화 검사가 #Z 필요하지#! 않습니다." #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "HRE 왕국: 황제의 수용 수정자" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "수정자 없음" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "황제의 왕국 청원 수락 가능성은 변경되지 않습니다." #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "두 배로 늘었다" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "황제의 왕국 청원 수락 확률이 2배로 증가합니다." #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "반으로 나누다" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "황제의 왕국 청원 수락 확률이 절반으로 줄어듭니다." #NT!
+  
+ rule_kingdoms_hre_austria_renown: "HRE 왕국: 오스트리아 명성 레벨" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "주목할만한" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "'대공국 확보' 결정에는 #Z의 명성 레벨이 필요합니다. 주목할 점#!" #NT!
+ setting_kingdoms_hre_culture_reputable: "신뢰할 수 있는" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "'대공국 확보' 결정에는 #Z 명성 수준#!이 필요합니다." #NT!
+ setting_kingdoms_hre_culture_well_known: "잘 알려진" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "'대공국 확보' 결정에는 #Z 잘 알려짐#!의 명성 레벨이 필요합니다." #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "HRE 왕국: 수도권 확인" #NT!
+ setting_kingdoms_hre_capital_region_required: "필수의" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "생성 가능한 왕국을 만들려면 캐릭터의 수도가 왕국 지역 내에 있어야 합니다." #NT!
+ setting_kingdoms_hre_capital_region_not_required: "필요하지 않음" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "생성 가능한 왕국은 캐릭터의 수도가 왕국 지역 내에 있을 필요가 #Z 없습니다#!." #NT!

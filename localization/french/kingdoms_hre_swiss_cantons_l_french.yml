@@ -1,0 +1,10 @@
+﻿l_french:
+ swiss_cantons_decision: "Donner du pouvoir aux cantons" #NT!
+ swiss_cantons_decision_desc: "En tant que figure de proue des cantons suisses, il m'appartient de veiller à ce qu'ils disposent des ressources nécessaires pour croître et prospérer.\n\nEn étendant les villes à travers [GetGeographicalRegion('custom_core_switzerland').GetName], nous pourrions créer un réseau commercial solide pour permettre à nos comtés de prospérer." #NT!
+ swiss_cantons_decision_tooltip: "Créer davantage de villes pour les cantons suisses" #NT!
+ swiss_cantons_decision_confirm: "Plus de pouvoir aux Cantons !" #NT!
+ swiss_cantons_decision_num_cities: "#Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! villes sont requises dans la région de [GetGeographicalRegion('custom_core_switzerland').GetName], (actuellement : #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)" #NT!
+ swiss_cantons_primogeniture_enacted_title: "Le comté a gagné un modificateur" #NT!
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] a gagné [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]" #NT!
+ empowered_swiss_cantons_modifier: "Les puissants cantons suisses" #NT!
+ empowered_swiss_cantons_modifier_desc: "Ce comté bénéficie de l'influence des cantons suisses, au prix d'une certaine autonomie" #NT!

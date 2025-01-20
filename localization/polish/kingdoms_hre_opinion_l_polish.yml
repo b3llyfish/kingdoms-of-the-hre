@@ -1,0 +1,10 @@
+﻿l_polish:
+ divided_kingdom: "[CHARACTER.GetShortUIName|U] i [TARGET_CHARACTER.GetShortUIName] stali się rywalami po utworzeniu nowego Królestwa." #NT!
+ broke_apart_my_kingdom: "Rozbiło moje królestwo" #NT!
+ favouritism: "Cesarz nadał tytuł innemu wasalowi" #NT!
+ rejected_title_kingdom: "Cesarz odrzucił moją petycję o Królestwo" #NT!
+ rejected_title_kingdom_minor: "Cesarz odrzucił moją petycję o Królestwo, ale to nic..." #NT!
+ letter_positive: "Otrzymałem przekonujący list" #NT!
+ letter_negative: "Otrzymałem nieprzekonujący list" #NT!
+ blackmailed_title_kingdom: "Szantażowali mnie, żebym dostał Królestwo" #NT!
+ declared_saxon_king: "Ogłosili się władcami całej Saksonii" #NT!

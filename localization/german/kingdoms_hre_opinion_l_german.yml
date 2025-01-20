@@ -1,0 +1,10 @@
+﻿l_german:
+ divided_kingdom: "[CHARACTER.GetShortUIName|U] und [TARGET_CHARACTER.GetShortUIName] wurden nach der Gründung eines neuen Königreichs zu Rivalen." #NT!
+ broke_apart_my_kingdom: "Zerbrach mein Königreich" #NT!
+ favouritism: "Der Kaiser verlieh einem anderen Vasallen einen Titel" #NT!
+ rejected_title_kingdom: "Der Kaiser lehnte meine Königreichsbitte ab" #NT!
+ rejected_title_kingdom_minor: "Der Kaiser hat meinen Antrag auf ein Königreich abgelehnt, aber das ist ok …" #NT!
+ letter_positive: "Einen überzeugenden Brief erhalten" #NT!
+ letter_negative: "Habe einen nicht überzeugenden Brief erhalten" #NT!
+ blackmailed_title_kingdom: "Hat mich um ein Königreich erpresst" #NT!
+ declared_saxon_king: "Erklärten sich zum Herrscher von ganz Sachsen" #NT!

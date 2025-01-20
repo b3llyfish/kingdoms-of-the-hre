@@ -1,0 +1,5 @@
+﻿l_spanish:
+ golden_bull_court_artifact_name: "Toro Dorado de [GetCurrentDate.GetYear]" #NT!
+ golden_bull_court_artifact_desc: "Un decreto emitido por [emperor.GetFirstNameRegnal] que dicta a [vassal.GetFirstNameRegnal] y sus descendientes el derecho imperial de gobernar sobre [target_title.GetName]" #NT!
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] Corona" #NT!
+ crown_artifact_desc: "Corona forjada para la coronación de [vassal.GetFirstNameRegnal], primer [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))] de [target_title.GetNameNoTierNoTooltip]" #NT!

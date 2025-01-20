@@ -1,0 +1,10 @@
+﻿l_german:
+ swiss_cantons_decision: "Stärkung der Kantone" #NT!
+ swiss_cantons_decision_desc: "Als Aushängeschild der Schweizer Kantone ist es meine Aufgabe, dafür zu sorgen, dass sie über die nötigen Ressourcen verfügen, um zu wachsen und zu gedeihen.\n\nDurch die Ausweitung der Städte über [GetGeographicalRegion('custom_core_switzerland').GetName] könnten wir ein starkes Handelsnetzwerk aufbauen, das unseren Landkreisen zu Wohlstand verhelfen würde." #NT!
+ swiss_cantons_decision_tooltip: "Weitere Städte für die Schweizer Kantone gründen" #NT!
+ swiss_cantons_decision_confirm: "Mehr Macht für die Kantone!" #NT!
+ swiss_cantons_decision_num_cities: "Es werden #Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! Städte in der Region [GetGeographicalRegion('custom_core_switzerland').GetName] benötigt (aktuell: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)" #NT!
+ swiss_cantons_primogeniture_enacted_title: "Landkreis erhält Modifikator" #NT!
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] gewonnen [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]" #NT!
+ empowered_swiss_cantons_modifier: "Mächtige Schweizer Kantone" #NT!
+ empowered_swiss_cantons_modifier_desc: "Dieses Land profitiert vom Einfluss der Schweizer Kantone, auf Kosten einer gewissen Autonomie." #NT!

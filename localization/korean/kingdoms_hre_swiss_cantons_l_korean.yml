@@ -1,0 +1,10 @@
+﻿l_korean:
+ swiss_cantons_decision: "캔톤에 힘을 실어주세요" #NT!
+ swiss_cantons_decision_desc: "스위스 주의 대표자로서, 저는 그들이 성장하고 번영할 수 있는 자원을 확보하도록 보장해야 할 책임이 있습니다. [GetGeographicalRegion('custom_core_switzerland').GetName] 전역의 도시를 확장하면 각 주가 번영할 수 있는 강력한 무역 네트워크를 구축할 수 있습니다." #NT!
+ swiss_cantons_decision_tooltip: "스위스 주에 더 많은 도시를 건설하세요" #NT!
+ swiss_cantons_decision_confirm: "캔톤에 더 많은 힘을!" #NT!
+ swiss_cantons_decision_num_cities: "[GetGeographicalRegion('custom_core_switzerland').GetName] 지역에 #Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#!개의 도시가 필요합니다(현재: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)" #NT!
+ swiss_cantons_primogeniture_enacted_title: "카운티 획득 수정자" #NT!
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip] 을 얻었습니다" #NT!
+ empowered_swiss_cantons_modifier: "강력한 스위스 주" #NT!
+ empowered_swiss_cantons_modifier_desc: "이 카운티는 일부 자율권을 희생하고 스위스 주의 영향력으로부터 이익을 얻었습니다." #NT!

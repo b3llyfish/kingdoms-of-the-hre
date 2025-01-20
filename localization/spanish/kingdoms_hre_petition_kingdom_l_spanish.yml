@@ -1,0 +1,59 @@
+﻿l_spanish:
+  # Common 
+ kingdoms_hre.kingdom_of: "El $loc_title_no_tooltip$" #NT!
+ kingdoms_hre.golden_bull: "El Toro Dorado de [GetCurrentDate.GetYear]" #NT!
+ kingdoms_hre.powerful_vassals_irritated: "Otorgar un [kingdom|E] irritará a tus poderosos vasallos [duchy|E]" #NT!
+ kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] tendrá derechos de revocación de título protegidos agregados a su contrato de vasallaje" #NT!
+  # Vassal prepares the petition 
+ kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0001.desc: "A través de la astucia y el combate, me he establecido como una potencia líder en la región de [target_title.GetNameNoTierNoTooltip]. Mi acumulación de tierras y títulos supera la de un simple [vassal.Custom('DuchessDuke')|U]. \n\nSoy un [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] en todo, excepto en el nombre, y es hora de que eso cambie.\n\nPresentaré una petición al Emperador, solicitando que me otorguen el $loc_title$.\n\nTodo está listo para empezar, pero me pregunto. ¿Quizás haya algo más que pueda hacer para asegurar la decisión del Emperador?" #NT!
+ kingdoms_hre.0001.tooltip: "Esperas una respuesta del Emperador." #NT!
+ kingdoms_hre.0001.a: "Mi reclamo es justo, la petición será suficiente." #NT!
+ kingdoms_hre.0001.b: "Incluiré una carta personal al Emperador." #NT!
+ kingdoms_hre.0001.b.tooltip: "Esto podría ayudar o dificultar mucho su petición." #NT!
+ kingdoms_hre.0001.b.success: "La carta es bien recibida." #NT!
+ kingdoms_hre.0001.b.success.tooltip: "El Emperador estará más receptivo a tu petición." #NT!
+ kingdoms_hre.0001.b.failure: "La carta es mal recibida" #NT!
+ kingdoms_hre.0001.b.failure.tooltip: "El Emperador será más crítico con tu petición." #NT!
+ kingdoms_hre.0001.c: "Envía baratijas de moda de nuestros artesanos con la petición" #NT!
+ kingdoms_hre.0001.c.tooltip: "Esto ayudará a tu petición." #NT!
+ kingdoms_hre.0001.d: "Los secretos del Emperador valen más que esta petición..." #NT!
+ kingdoms_hre.0001.d.tooltip: "¡Chantajeas al Emperador!" #NT!
+  # Emperor receives the petition 
+ kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0002.desc: "Ha llegado una petición de [vassal.GetShortUIName], en la que [vassal.GetHerHis] reclama el título de $loc_title$ y solicita que le conceda el título. \n\nPodría aceptar la petición y conseguir un poderoso partidario en [target_title.GetNameNoTierNoTooltip]. Sin embargo, otros vasallos del Imperio no verán con buenos ojos este supuesto "favoritismo".\n\nSi rechazo la petición, seguramente [vassal.GetShortUIName] responderá mal y me arriesgo a una escalada con [vassal.GetHerHim].\n\nMis cortesanos se reúnen a mi alrededor y esperan pacientemente mi respuesta..." #NT!
+ kingdoms_hre.0002.a: "Su reclamo es digno, ¡serán un [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!" #NT!
+ kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] se convierte en el [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip]" #NT!
+ kingdoms_hre.0002.c: "El equilibrio en el Imperio es primordial, debo rechazar su petición." #NT!
+ kingdoms_hre.0002.c.tooltip: "Tu relación con [vassal.GetShortUIName] empeora gravemente" #NT!
+ kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] puede inventar una reclamación sobre #Z [GetTitleByKey('e_hre').GetName]#!!" #NT!
+  # Emperor accepts the petition 
+ kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0003.desc: "En una elaborada ceremonia en [emperor.GetCapitalLocation.GetNameNoTooltip], el Emperador ha decretado una nueva Bula de Oro. \n\nDeclara que [vassal.GetName] tiene derecho imperial a gobernar sobre [target_title.GetNameNoTierNoTooltip] y formaliza su reclamo como [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de la región.\n\n¡Este es verdaderamente un día magnífico para la dinastía [vassal.GetDynastyName|U]!" #NT!
+ kingdoms_hre.0003.a: "¡El Emperador ha reconocido el legítimo [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip]!" #NT!
+ kingdoms_hre.0003.a.interface.title: "El emperador otorga un [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]" #NT!
+ kingdoms_hre.0003.a.interface.desc: "A [vassal.GetShortUIName|U] se le ha concedido el [target_title.GetNameNoTooltip]" #NT!
+  # Emperor rejects the petition 
+ kingdoms_hre.0005.title: "¡El Emperador rechaza!" #NT!
+ kingdoms_hre.0005.desc: "¡El Emperador ha rechazado mi petición!\n\nEn su respuesta hace declaraciones vagas sobre la estabilidad y la tradición, pero tanto él como yo sabemos por qué lo ha hecho. ¡El Emperador se siente amenazado por mí!\n\nPor ahora el $loc_title$ está fuera de mi alcance.\nDebo irme y considerar mis próximas acciones." #NT!
+ kingdoms_hre.0005.a: "¡Ese patán pomposo no tiene sentido de la decencia ni del honor!" #NT!
+ kingdoms_hre.0005.b: "Si no puedo tener un Reino entonces tomaré un Imperio..." #NT!
+ kingdoms_hre.0005.c: "¡Qué decepción...!" #NT!
+  # Emperor blackmailed by vassal 
+ kingdoms_hre.0006.title: "¡Chantaje!" #NT!
+ kingdoms_hre.0006.desc: "Ha llegado una petición de [vassal.GetShortUIName] en la que declaran su derecho a $loc_title$. Es extremadamente breve y apenas aporta pruebas de su derecho.\n\nEstoy dispuesto a descartarla como una especie de broma extraña cuando lea el párrafo final.\n\n¡[vassal.GetShortUIName] sabe de mi [secret|E]! Es más, amenazan con revelarlo a menos que acepte la petición." #NT!
+ kingdoms_hre.0006.a: "No tengo más remedio que ceder a su demanda..." #NT!
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName|U] y [TARGET_CHARACTER.GetShortUIName|U] se convirtieron en rivales después de un chantaje exitoso." #NT!
+ kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] usa su gancho en ti." #NT!
+  # Vassal gains title via blackmail 
+ kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0007.desc: "Temiendo que su secreto salga a la luz, el Emperador ha aceptado la petición. En una ceremonia apresurada en [emperor.GetCapitalLocation.GetNameNoTooltip], se firma una bula dorada que me anuncia como el nuevo [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] de [target_title.GetNameNoTierNoTooltip].\n\nEn cuanto termina, mi séquito y yo salimos de la corte y nos dicen que nos vayamos rápidamente. El Emperador no está por ningún lado, claramente todavía está conmocionado por mi conocimiento de su [secret|E].\n\nPuede que mi chantaje tenga repercusiones, pero por ahora el día es mío. ¡Por fin soy un [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!" #NT!
+ kingdoms_hre.0007.a: "Con un poco de influencia puedes conseguir cualquier cosa..." #NT!
+  # Emperor died mid petition 
+ kingdoms_hre.0009.title: "Devolver al remitente" #NT!
+ kingdoms_hre.0009.desc: "¿¡Qué quieres decir con que [emperor.GetName] está muerto!?\n\nUn cortesano, con mi petición en la mano, está tratando frenéticamente de explicar los eventos que llevaron a la muerte del difunto [emperor.GetFirstName], pero desde entonces dejé de escuchar.\n\n¡Todo ese trabajo de elaborar la más elocuente de las peticiones fue en vano!\n\nSuspiro. [new_emperor.GetName] es ​​el Emperador ahora. Es su opinión la que debo intentar influir." #NT!
+ kingdoms_hre.0009.a: "Trae mi pluma y una botella de tinta nueva..." #NT!
+  # Emperor lost title mid petition 
+ kingdoms_hre.0010.title: "Devolver al remitente" #NT!
+ kingdoms_hre.0010.desc: "¿Cómo que [emperor.GetName] ya no está al mando?\n\nUn cortesano, con mi petición en la mano, está intentando desesperadamente explicar los acontecimientos que llevaron a [emperor.GetFirstName] a perder el título de Emperador del Sacro Imperio Romano Germánico, pero desde entonces he dejado de escuchar.\n\n¡Todo ese trabajo de elaborar la más elocuente de las peticiones fue en vano!\n\nSuspiro. [new_emperor.GetName] es ​​el Emperador ahora. Es su opinión la que debo intentar convencer." #NT!
+ kingdoms_hre.0010.a: "Trae mi pluma y una botella de tinta nueva..." #NT!

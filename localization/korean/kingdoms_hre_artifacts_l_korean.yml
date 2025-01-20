@@ -1,0 +1,5 @@
+﻿l_korean:
+ golden_bull_court_artifact_name: "[GetCurrentDate.GetYear]의 황금 황소" #NT!
+ golden_bull_court_artifact_desc: "[emperor.GetFirstNameRegnal]이 [vassal.GetFirstNameRegnal]과 그 후손에게 [target_title.GetName]에 대한 제국의 통치권을 부여하는 법령을 발표했습니다." #NT!
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] 크라운" #NT!
+ crown_artifact_desc: "[vassal.GetFirstNameRegnal]의 대관식을 위해 만들어진 왕관, [target_title.GetNameNoTierNoTooltip]의 첫 번째 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))]" #NT!

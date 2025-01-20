@@ -1,0 +1,59 @@
+﻿l_korean:
+  # Common 
+ kingdoms_hre.kingdom_of: "$loc_title_no_tooltip$" #NT!
+ kingdoms_hre.golden_bull: "[GetCurrentDate.GetYear]의 황금 황소" #NT!
+ kingdoms_hre.powerful_vassals_irritated: "[kingdom|E]을 부여하면 강력한 [duchy|E] 가신을 짜증나게 할 것입니다." #NT!
+ kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U]은 가신 계약에 보호된 소유권 취소 권리가 추가됩니다." #NT!
+  # Vassal prepares the petition 
+ kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0001.desc: "교활함과 전투를 통해 나는 [target_title.GetNameNoTierNoTooltip] 지역에서 주도적인 세력으로 자리매김했습니다. 내가 축적한 토지와 직함은 [vassal.Custom('DuchessDuke')|U]보다 더 많습니다. \n\n나는 이름만 빼면 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이고, 이제 바뀔 때가 되었습니다.\n\n나는 황제에게 청원서를 제출하여 $loc_title$을 수여해 달라고 요청하겠습니다.\n\n모든 것이 준비되었지만, 궁금합니다. 아마도 황제의 결정을 확보하기 위해 내가 할 수 있는 일이 더 있을까요?" #NT!
+ kingdoms_hre.0001.tooltip: "당신은 황제의 답변을 기다리고 있습니다" #NT!
+ kingdoms_hre.0001.a: "내 주장은 정당하니 청원서만 있으면 족합니다" #NT!
+ kingdoms_hre.0001.b: "나는 황제에게 보내는 개인 서한을 포함시킬 것이다." #NT!
+ kingdoms_hre.0001.b.tooltip: "이는 귀하의 청원에 큰 도움이 될 수도 있고 방해가 될 수도 있습니다." #NT!
+ kingdoms_hre.0001.b.success: "편지는 잘 전달되었습니다" #NT!
+ kingdoms_hre.0001.b.success.tooltip: "황제께서는 귀하의 청원에 더욱 호의적일 것입니다." #NT!
+ kingdoms_hre.0001.b.failure: "그 편지는 잘 받아들여지지 않았다" #NT!
+ kingdoms_hre.0001.b.failure.tooltip: "황제는 당신의 청원에 대해 더욱 비판적일 것입니다." #NT!
+ kingdoms_hre.0001.c: "청원서와 함께 우리 장인이 만든 세련된 장신구를 보내세요." #NT!
+ kingdoms_hre.0001.c.tooltip: "이것은 귀하의 청원에 도움이 될 것입니다" #NT!
+ kingdoms_hre.0001.d: "황제의 비밀은 이 청원서보다 더 가치가 있습니다..." #NT!
+ kingdoms_hre.0001.d.tooltip: "너는 황제를 협박하잖아!" #NT!
+  # Emperor receives the petition 
+ kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0002.desc: "[vassal.GetShortUIName]에서 청원이 도착했습니다. $loc_title$에 대한 [vassal.GetHerHis]의 주장을 주장하고, 제가 그들에게 작위를 내려줄 것을 요청합니다. \n\n저는 청원을 수락하고 [target_title.GetNameNoTierNoTooltip]에서 강력한 지지자를 얻을 수 있습니다. 그러나 제국의 다른 가신들은 이러한 인식된 '편애'를 호의적으로 여기지 않을 것입니다.\n\n청원을 거부하면 [vassal.GetShortUIName]은 확실히 나쁜 반응을 보일 것이고, 저는 [vassal.GetHerHim]와의 갈등을 감수할 것입니다.\n\n제 신하들이 제 주변에 모여서 제 답변을 참을성 있게 기다립니다..." #NT!
+ kingdoms_hre.0002.a: "그들의 주장은 타당합니다. 그들은 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이 될 것입니다!" #NT!
+ kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U]은 [target_title.GetNameNoTierNoTooltip]의 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이 됩니다." #NT!
+ kingdoms_hre.0002.c: "제국의 균형이 가장 중요하므로 그들의 청원을 거부해야 합니다." #NT!
+ kingdoms_hre.0002.c.tooltip: "[vassal.GetShortUIName]와의 관계가 심각하게 악화됩니다" #NT!
+ kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U]은 #Z [GetTitleByKey('e_hre').GetName]#!!에 대한 클레임을 조작할 수 있습니다." #NT!
+  # Emperor accepts the petition 
+ kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0003.desc: "황제는 [emperor.GetCapitalLocation.GetNameNoTooltip]에서 정교한 의식을 통해 새로운 황금 황소를 선포했습니다. \n\n이것은 [vassal.GetName]이 [target_title.GetNameNoTierNoTooltip]를 통치할 제국의 권리가 있으며 해당 지역의 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이라는 주장을 공식화했음을 선언합니다.\n\n이것은 [vassal.GetDynastyName|U] 왕조에 있어서 참으로 위대한 날입니다!" #NT!
+ kingdoms_hre.0003.a: "황제께서는 [target_title.GetNameNoTierNoTooltip]의 정당한 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]을 인정하셨습니다!" #NT!
+ kingdoms_hre.0003.a.interface.title: "황제께서 [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]을 수여합니다" #NT!
+ kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U]에게 [target_title.GetNameNoTooltip]이 부여되었습니다." #NT!
+  # Emperor rejects the petition 
+ kingdoms_hre.0005.title: "황제는 거부한다!" #NT!
+ kingdoms_hre.0005.desc: "황제께서 제 청원을 기각하셨습니다!\n\n그는 답변에서 안정과 전통에 대한 모호한 진술을 하지만, 그와 저는 그가 왜 이런 짓을 했는지 알고 있습니다. 황제께서 저 때문에 위협을 느끼시는 것 같습니다!\n\n지금은 $loc_title$이 제 손이 닿지 않습니다.\n저는 떠나서 다음 행동을 생각해야 합니다." #NT!
+ kingdoms_hre.0005.a: "저 거만한 멍청이는 예의도 명예도 없는 놈이야!" #NT!
+ kingdoms_hre.0005.b: "왕국을 가질 수 없다면 제국을 가지겠습니다." #NT!
+ kingdoms_hre.0005.c: "얼마나 실망스러운지..." #NT!
+  # Emperor blackmailed by vassal 
+ kingdoms_hre.0006.title: "약탈!" #NT!
+ kingdoms_hre.0006.desc: "[vassal.GetShortUIName]에서 $loc_title$에 대한 주장을 명시한 청원이 도착했습니다. 매우 간략해서 주장에 대한 증거를 거의 제공하지 않습니다.\n\n마지막 문단을 읽으면 이상한 농담으로 치부할 준비가 되었습니다.\n\n[vassal.GetShortUIName]은 제 [secret|E]에 대해 알고 있습니다! 게다가 청원을 수락하지 않으면 공개하겠다고 위협하고 있습니다." #NT!
+ kingdoms_hre.0006.a: "나는 그들의 요구에 굴복할 수밖에 없었다..." #NT!
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName|U]과 [TARGET_CHARACTER.GetShortUIName|U]은 성공적인 협박 이후 라이벌이 되었습니다." #NT!
+ kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U]이 당신을 낚으려고 합니다." #NT!
+  # Vassal gains title via blackmail 
+ kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0007.desc: "황제는 자신의 비밀이 알려질까 두려워 청원을 수락했습니다. [emperor.GetCapitalLocation.GetNameNoTooltip]에서 서둘러 열린 의식에서 황금 황소가 서명되어 저를 [target_title.GetNameNoTierNoTooltip]의 새로운 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]로 발표했습니다.\n\n그 의식이 끝나자마자 저와 제 일행은 법정에서 쫓겨나 재빨리 떠나라는 말을 들었습니다. 황제는 어디에도 보이지 않았고, 제가 그의 [secret|E]에 대해 알고 있다는 사실에 여전히 충격을 받은 듯했습니다.\n\n제 협박에 대한 반발이 있을 수 있지만 지금은 그날이 제 것입니다. 저는 마침내 [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]이 되었습니다!" #NT!
+ kingdoms_hre.0007.a: "약간의 레버리지만 있으면 무엇이든 얻을 수 있다..." #NT!
+  # Emperor died mid petition 
+ kingdoms_hre.0009.title: "발신자에게 반송" #NT!
+ kingdoms_hre.0009.desc: "[emperor.GetName]이 죽었다는 건 무슨 말이에요?!\n\n제 청원서를 손에 든 신하가 미친 듯이 [emperor.GetFirstName]의 죽음으로 이어진 사건을 설명하려 하지만 그 이후로는 듣지 않게 됐어요.\n\n가장 웅변적인 청원서를 만드는 데 들인 모든 노력이 헛수고였어요!\n\n한숨을 쉬어요. 이제 [new_emperor.GetName]가 황제예요. 그들의 의견을 설득해야 해요." #NT!
+ kingdoms_hre.0009.a: "깃펜과 새로운 잉크 한 병을 가져와..." #NT!
+  # Emperor lost title mid petition 
+ kingdoms_hre.0010.title: "발신자에게 반송" #NT!
+ kingdoms_hre.0010.desc: "[emperor.GetName]이 더 이상 책임지지 않는다는 건 무슨 말이에요?!\n\n제 청원서를 손에 든 신하가 [emperor.GetFirstName]이 신성 로마 제국의 황제라는 칭호를 잃게 된 사건을 필사적으로 설명하려 하고 있지만, 그 이후로는 듣지 않게 됐어요.\n\n가장 웅변적인 청원서를 만드는 데 들인 모든 노력이 헛수고였어요!\n\n한숨을 쉬어요. 이제 [new_emperor.GetName]가 황제예요. 그들의 의견을 설득하려고 노력해야 해요." #NT!
+ kingdoms_hre.0010.a: "깃펜과 새로운 잉크 한 병을 가져와..." #NT!

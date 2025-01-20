@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ swiss_cantons_decision: "赋予各州权力" #NT!
+ swiss_cantons_decision_desc: "作为瑞士各州的领袖，我有责任确保他们拥有发展和繁荣的资源。\n\n通过扩展[GetGeographicalRegion('custom_core_switzerland').GetName] 的城市，我们可以创建一个强大的贸易网络​​，使我们的县繁荣起来。" #NT!
+ swiss_cantons_decision_tooltip: "为瑞士各州建立更多城市" #NT!
+ swiss_cantons_decision_confirm: "赋予各州更多权力！" #NT!
+ swiss_cantons_decision_num_cities: "[GetGeographicalRegion('custom_core_switzerland').GetName] 区域内需要 #Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! 个城市（目前为：#Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!）" #NT!
+ swiss_cantons_primogeniture_enacted_title: "郡县获得修正" #NT!
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] 获得 [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]" #NT!
+ empowered_swiss_cantons_modifier: "瑞士各州实力雄厚" #NT!
+ empowered_swiss_cantons_modifier_desc: "这个县受益于瑞士各州的影响，但牺牲了一些自治权" #NT!

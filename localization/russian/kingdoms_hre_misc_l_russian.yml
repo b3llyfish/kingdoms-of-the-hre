@@ -1,0 +1,8 @@
+﻿l_russian:
+ hre_cannot_create_kingdom: "Этот [kingdom|E] находится в сфере влияния Священной Римской империи.\nКак [vassal|E] Священной Римской империи это должно быть создано через решение $form_hre_kingdom_decision$" #NT!
+ coronation_culture_acceptance_bonus_desc: "Коронация [vassal.GetShortUIName] [emperor.GetShortUIName]" #NT!
+ petition_gift_modifier: "Модные безделушки" #NT!
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTier]" #NT!
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] из [target_title.GetNameNoTierNoTooltip]" #NT!
+ preparing_culture_conversion: "Подготовка к изменению своей культуры" #NT!
+ county_culture_converted_title: "Конвертированная культура округа" #NT!

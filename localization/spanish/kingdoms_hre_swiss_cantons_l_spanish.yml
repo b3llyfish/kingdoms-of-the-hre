@@ -1,0 +1,10 @@
+﻿l_spanish:
+ swiss_cantons_decision: "Empoderar a los cantones" #NT!
+ swiss_cantons_decision_desc: "Como representante de los cantones suizos, me corresponde garantizar que tengan los recursos para crecer y prosperar.\n\nAl expandir las ciudades en [GetGeographicalRegion('custom_core_switzerland').GetName] podríamos crear una red comercial sólida que permita que nuestros condados prosperen." #NT!
+ swiss_cantons_decision_tooltip: "Crear más ciudades para los cantones suizos" #NT!
+ swiss_cantons_decision_confirm: "¡Más poder para los cantones!" #NT!
+ swiss_cantons_decision_num_cities: "Se requieren #Z [SCOPE.ScriptValue('swiss_cantons_cities_required')|0]#! ciudades en la región de [GetGeographicalRegion('custom_core_switzerland').GetName], (actualmente: #Z [SCOPE.ScriptValue('kingdom_switzerland_num_cities_total')|0]#!)" #NT!
+ swiss_cantons_primogeniture_enacted_title: "El condado ganó modificador" #NT!
+ swiss_cantons_primogeniture_enacted_desc: "[county.GetNameNoTooltip] ganado [GetModifier('empowered_swiss_cantons_modifier').GetNameWithTooltip]" #NT!
+ empowered_swiss_cantons_modifier: "Poderosos cantones suizos" #NT!
+ empowered_swiss_cantons_modifier_desc: "Este condado se beneficia de la influencia de los cantones suizos, a costa de cierta autonomía." #NT!

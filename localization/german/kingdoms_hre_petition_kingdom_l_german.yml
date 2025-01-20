@@ -1,0 +1,59 @@
+﻿l_german:
+  # Common 
+ kingdoms_hre.kingdom_of: "Die $loc_title_no_tooltip$" #NT!
+ kingdoms_hre.golden_bull: "Der Goldene Bulle von [GetCurrentDate.GetYear]" #NT!
+ kingdoms_hre.powerful_vassals_irritated: "Die Vergabe eines [kingdom|E] wird Ihre mächtigen [duchy|E] Vasallen irritieren" #NT!
+ kingdoms_hre.protected_revoke_rights: "[vassal.GetShortUIName|U] erhalten geschützte Rechte zum Widerruf des Titels, die in ihren Vasallenvertrag aufgenommen werden" #NT!
+  # Vassal prepares the petition 
+ kingdoms_hre.0001.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0001.desc: "Durch List und Kampf habe ich mich als führende Macht in der Region [target_title.GetNameNoTierNoTooltip] etabliert. Meine Ansammlung an Land und Titeln übersteigt die von bloßem [vassal.Custom('DuchessDuke')|U]. \n\nIch bin ein [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] in allem außer dem Namen und es ist Zeit, dass sich das ändert.\n\nIch werde dem Kaiser eine Petition vorlegen und darum bitten, dass er mir den $loc_title$ verleiht.\n\nAlles ist bereit, aber ich frage mich. Vielleicht gibt es noch etwas, das ich tun kann, um die Entscheidung des Kaisers sicherzustellen?" #NT!
+ kingdoms_hre.0001.tooltip: "Sie warten auf eine Antwort des Kaisers" #NT!
+ kingdoms_hre.0001.a: "Mein Anspruch ist gerecht, die Bitte genügt" #NT!
+ kingdoms_hre.0001.b: "Ich werde einen persönlichen Brief an den Kaiser beifügen" #NT!
+ kingdoms_hre.0001.b.tooltip: "Dies könnte Ihre Petition erheblich unterstützen oder behindern" #NT!
+ kingdoms_hre.0001.b.success: "Der Brief kommt gut an" #NT!
+ kingdoms_hre.0001.b.success.tooltip: "Der Kaiser wird für Ihre Bitte empfänglicher sein" #NT!
+ kingdoms_hre.0001.b.failure: "Der Brief wird schlecht angenommen" #NT!
+ kingdoms_hre.0001.b.failure.tooltip: "Der Kaiser wird kritischer auf Ihre Petition reagieren" #NT!
+ kingdoms_hre.0001.c: "Senden Sie modische Schmuckstücke unserer Kunsthandwerker mit der Petition" #NT!
+ kingdoms_hre.0001.c.tooltip: "Dies wird Ihre Petition unterstützen" #NT!
+ kingdoms_hre.0001.d: "Die Geheimnisse des Kaisers sind mehr wert als diese Petition …" #NT!
+ kingdoms_hre.0001.d.tooltip: "Sie erpressen den Kaiser!" #NT!
+  # Emperor receives the petition 
+ kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$" #NT!
+ kingdoms_hre.0002.desc: "Eine Petition von [vassal.GetShortUIName] ist eingetroffen, in der [vassal.GetHerHis] seinen Anspruch auf $loc_title$ geltend macht und darum bittet, dass ich ihnen den Titel verleihe. \n\nIch könnte die Petition annehmen und einen mächtigen Unterstützer in [target_title.GetNameNoTierNoTooltip] gewinnen. Andere Vasallen im Imperium werden diese vermeintliche „Bevorzugung“ jedoch nicht gutheißen.\n\nWenn ich die Petition ablehne, wird [vassal.GetShortUIName] sicherlich schlecht reagieren und ich riskiere eine Eskalation mit [vassal.GetHerHim].\n\nMeine Höflinge versammeln sich um mich und warten geduldig auf meine Antwort …" #NT!
+ kingdoms_hre.0002.a: "Ihr Anspruch ist würdig, sie sollen ein [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] sein!" #NT!
+ kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] wird zum [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTierNoTooltip]" #NT!
+ kingdoms_hre.0002.c: "Das Gleichgewicht im Imperium ist von größter Bedeutung, ich muss ihre Petition ablehnen" #NT!
+ kingdoms_hre.0002.c.tooltip: "Ihre Beziehung zu [vassal.GetShortUIName] verschlechtert sich erheblich" #NT!
+ kingdoms_hre.0002.c.tooltip.claim: "[vassal.GetShortUIName|U] kann einen Anspruch auf #Z [GetTitleByKey('e_hre').GetName]#!! erfinden" #NT!
+  # Emperor accepts the petition 
+ kingdoms_hre.0003.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0003.desc: "In einer aufwändigen Zeremonie in [emperor.GetCapitalLocation.GetNameNoTooltip] hat der Kaiser eine neue Goldene Bulle erlassen. \n\nSie erklärt, dass [vassal.GetName] das kaiserliche Recht hat, über [target_title.GetNameNoTierNoTooltip] zu herrschen, und formalisiert ihren Anspruch als [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] auf die Region.\n\nDies ist wahrlich ein großartiger Tag für die [vassal.GetDynastyName|U]-Dynastie!" #NT!
+ kingdoms_hre.0003.a: "Der Kaiser hat das rechtmäßige [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTierNoTooltip] anerkannt!" #NT!
+ kingdoms_hre.0003.a.interface.title: "Kaiser verleiht ein [vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U]" #NT!
+ kingdoms_hre.0003.a.interface.desc: "[vassal.GetShortUIName|U] wurde das [target_title.GetNameNoTooltip] verliehen" #NT!
+  # Emperor rejects the petition 
+ kingdoms_hre.0005.title: "Der Kaiser lehnt ab!" #NT!
+ kingdoms_hre.0005.desc: "Der Kaiser hat meine Bitte abgelehnt!\n\nIn seiner Antwort macht er vage Aussagen über Stabilität und Tradition, aber er und ich wissen beide, warum er das getan hat. Der Kaiser fühlt sich von mir bedroht!\n\nDerzeit ist das $loc_title$ außerhalb meiner Reichweite.\nIch muss gehen und über meine nächsten Schritte nachdenken." #NT!
+ kingdoms_hre.0005.a: "Dieser aufgeblasene Trottel hat keinen Sinn für Anstand oder Ehre!" #NT!
+ kingdoms_hre.0005.b: "Wenn ich kein Königreich haben kann, dann nehme ich ein Imperium ..." #NT!
+ kingdoms_hre.0005.c: "Wie enttäuschend ..." #NT!
+  # Emperor blackmailed by vassal 
+ kingdoms_hre.0006.title: "Erpressung!" #NT!
+ kingdoms_hre.0006.desc: "Von [vassal.GetShortUIName] ist eine Petition eingetroffen, in der ihr Anspruch auf $loc_title$ erklärt wird. Sie ist extrem kurz und liefert kaum Beweise für ihren Anspruch.\n\nNachdem ich den letzten Absatz gelesen habe, bin ich kurz davor, sie als eine Art bizarren Witz abzutun.\n\n[vassal.GetShortUIName] weiß von meinem [secret|E]! Außerdem drohen sie, es preiszugeben, wenn ich die Petition nicht akzeptiere." #NT!
+ kingdoms_hre.0006.a: "Mir bleibt keine andere Wahl, als ihrer Forderung nachzugeben …" #NT!
+ kingdoms_hre.0006.rival.reason: "[CHARACTER.GetShortUIName|U] und [TARGET_CHARACTER.GetShortUIName|U] wurden nach einer erfolgreichen Erpressung zu Rivalen." #NT!
+ kingdoms_hre.0006.use.hook: "[vassal.GetShortUIName|U] benutzt seinen Haken bei dir." #NT!
+  # Vassal gains title via blackmail 
+ kingdoms_hre.0007.title: "$kingdoms_hre.golden_bull$" #NT!
+ kingdoms_hre.0007.desc: "Aus Angst, dass sein Geheimnis ans Licht kommt, hat der Kaiser die Petition angenommen. Bei einer überstürzten Zeremonie in [emperor.GetCapitalLocation.GetNameNoTooltip] wird eine Goldene Bulle unterzeichnet, die mich zum neuen [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] von [target_title.GetNameNoTierNoTooltip] erklärt.\n\nSobald die Zeremonie vorbei ist, werden ich und mein Gefolge aus dem Hof ​​geführt und aufgefordert, schnell zu gehen. Der Kaiser ist nirgends zu finden, offensichtlich immer noch erschüttert, dass ich von seinem [secret|E] weiß.\n\nMeine Erpressung könnte Konsequenzen haben, aber jetzt gehört mir der Tag. Ich bin endlich ein [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!" #NT!
+ kingdoms_hre.0007.a: "Mit ein wenig Hebelwirkung kann man alles erreichen ..." #NT!
+  # Emperor died mid petition 
+ kingdoms_hre.0009.title: "Zurück an den Absender" #NT!
+ kingdoms_hre.0009.desc: "Was soll das heißen, [emperor.GetName] ist tot?!\n\nEin Höfling versucht mit meiner Petition in der Hand verzweifelt, die Ereignisse zu erklären, die zum Tod des verstorbenen [emperor.GetFirstName] geführt haben, aber ich höre ihm seitdem nicht mehr zu.\n\nAll die Arbeit, die in die Ausarbeitung der beredtesten aller Petitionen gesteckt wurde, war umsonst!\n\nIch seufze. [new_emperor.GetName] ist jetzt der Kaiser. Es ist ihre Meinung, die ich versuchen muss zu beeinflussen." #NT!
+ kingdoms_hre.0009.a: "Hol meine Feder und ein frisches Tintenfass …" #NT!
+  # Emperor lost title mid petition 
+ kingdoms_hre.0010.title: "Zurück an den Absender" #NT!
+ kingdoms_hre.0010.desc: "Was soll das heißen, [emperor.GetName] hat nicht mehr das Sagen?!\n\nEin Höfling versucht verzweifelt, mit meiner Petition in der Hand die Ereignisse zu erklären, die dazu geführt haben, dass [emperor.GetFirstName] den Titel des Heiligen Römischen Kaisers verlor, aber ich höre ihm seitdem nicht mehr zu.\n\nAll die Arbeit, die eloquenteste aller Petitionen zu verfassen, war umsonst!\n\nIch seufze. [new_emperor.GetName] ist jetzt der Kaiser. Ich muss versuchen, seine Meinung zu beeinflussen." #NT!
+ kingdoms_hre.0010.a: "Hol meine Feder und ein frisches Tintenfass …" #NT!

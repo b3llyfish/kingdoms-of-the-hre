@@ -1,0 +1,28 @@
+﻿l_spanish:
+ rule_kingdoms_hre_culture_requirement: "Reinos del Sacro Imperio Romano Germánico: Control cultural" #NT!
+ setting_kingdoms_hre_culture_required: "Requerido" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Ciertas peticiones del reino requerirán una verificación cultural relevante" #NT!
+ setting_kingdoms_hre_culture_not_required: "No requerido" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Las peticiones del reino #Z no#! requerirán una verificación cultural relevante" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_modifier: "Reinos del Sacro Imperio Romano Germánico: Modificador de aceptación del Emperador" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default: "Sin modificador" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "La posibilidad de que el Emperador acepte la petición del reino no se modificará" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Duplicado" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "La posibilidad de que el Emperador acepte la petición del reino se duplicará" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Reducido a la mitad" #NT!
+ setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "La posibilidad de que el Emperador acepte la petición del reino se reducirá a la mitad" #NT!
+  
+ rule_kingdoms_hre_austria_renown: "Reinos del Sacro Imperio Romano Germánico: Nivel de renombre de Austria" #NT!
+ setting_kingdoms_hre_culture_noteworthy: "Notable" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "La decisión de 'Asegurar el Archiducado' requerirá un nivel de renombre de #Z Notable#!" #NT!
+ setting_kingdoms_hre_culture_reputable: "Acreditado" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "La decisión de 'Asegurar el Archiducado' requerirá un nivel de renombre de #Z Reputable#!" #NT!
+ setting_kingdoms_hre_culture_well_known: "Bien conocido" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "La decisión de 'Asegurar el Archiducado' requerirá un nivel de renombre de #Z Bien conocido#!" #NT!
+  
+ rule_kingdoms_hre_capital_region_requirement: "Reinos del Sacro Imperio Romano Germánico: Comprobación de la región capital" #NT!
+ setting_kingdoms_hre_capital_region_required: "Requerido" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Los reinos creables requerirán que la capital de un personaje esté dentro de la región del reino." #NT!
+ setting_kingdoms_hre_capital_region_not_required: "No requerido" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Los reinos creables no requerirán que la capital de un personaje esté dentro de la región del reino." #NT!

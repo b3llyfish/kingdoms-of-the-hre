@@ -1,0 +1,5 @@
+﻿l_polish:
+ golden_bull_court_artifact_name: "Złoty Byk [GetCurrentDate.GetYear]" #NT!
+ golden_bull_court_artifact_desc: "Dekret wydany przez [emperor.GetFirstNameRegnal], nakazujący [vassal.GetFirstNameRegnal] i ich potomkom cesarskie prawo do rządzenia [target_title.GetName]" #NT!
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] Korona" #NT!
+ crown_artifact_desc: "Korona wykuta na koronację [vassal.GetFirstNameRegnal], pierwszy [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))] z [target_title.GetNameNoTierNoTooltip]" #NT!

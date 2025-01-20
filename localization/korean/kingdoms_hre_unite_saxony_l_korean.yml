@@ -1,0 +1,20 @@
+﻿l_korean:
+ unite_saxony_decision: "색슨족을 통합하다" #NT!
+ unite_saxony_decision_desc: "색슨족은 너무 오랫동안 분열되어 있었고, 외국 세력이 그 지역에 침투하는 동안 서로 다투고 있었습니다.\n\n충분한 영향력과 땅을 얻었으므로 이제 이것을 끝낼 위치에 있습니다. 저는 색슨족을 진정한 색슨족 통치자 아래로 통합할 것입니다." #NT!
+ unite_saxony_decision_tooltip: "색슨 지역을 하나의 왕국으로 통합하세요." #NT!
+ unite_saxony_decision_confirm: "작센 왕국을 건국하다" #NT!
+ unite_saxony_decision_merge_new_kingdom_tooltip: "[GetTitleByKey('k_saxony').GetName]을 얻으세요" #NT!
+ unite_saxony_decision_merge_kingdoms_tooltip: "[GetGeographicalRegion('custom_upper_saxony').GetName] 및 [GetGeographicalRegion('custom_lower_saxony').GetName] 지역 내의 모든 공국은 사실상 [GetTitleByKey('k_saxony').GetNameNoTooltip]의 일부가 됩니다." #NT!
+ unite_saxony_decision_merge_kingdoms_without_sorbia_tooltip: "[GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] 및 [GetGeographicalRegion('custom_lower_saxony').GetName] 지역 내의 모든 공국은 사실상 [GetTitleByKey('k_saxony').GetNameNoTooltip]의 일부가 됩니다." #NT!
+ unite_saxony_decision_title_law_tooltip: "[GetTitleByKey('k_saxony').GetNameNoTooltip]은 계승법 [GetLaw('saxon_elective_succession_law').GetName]을 갖게 됩니다." #NT!
+  
+ unite_saxony_lower_saxony_counties_requirement: "소유 [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E] (현재 소유 #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) [GetGeographicalRegion('custom_lower_saxony').GetName] 지역 내)" #NT!
+ unite_saxony_upper_saxony_counties_requirement: "소유 [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (현재 소유 #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) [GetGeographicalRegion('custom_upper_saxony').GetName] 지역 내)" #NT!
+ unite_saxony_upper_saxony_without_sorbia_counties_requirement: "소유 [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E] (현재 소유 #Z [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]#!) [GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] 지역 내)" #NT!
+  
+ unite_saxony.0001.title: "색슨 [new_saxon_king.Custom('GetQueenKing')|U]" #NT!
+ unite_saxony.0001.desc: "[new_saxon_king.GetCapitalLocation.GetNameNoTooltip]에 있는 당신의 궁정에서 웅장한 의식이 진행되고 있습니다. 이 방은 작센의 상하부 지역에서 온 다양한 고위 인사와 인물들로 가득 차 있습니다. [messenger.GetShortUIName]이 방 중앙에 다가가자 궁정의 수다가 멈춥니다.\n\n[messenger.GetShortUIName]은 수년에 걸쳐 작센 사람들의 곤경을 강조하는 감동적인 연설을 합니다. 그는 황제가 작센 사람들에게 그들이 받을 만한 존경심을 베풀지 않는다고 말합니다.\n방에 있는 많은 사람들이 동의하며 고개를 끄덕입니다. 그는 우리가 작센 [new_saxon_king.Custom('GetQueenKing')|U] 아래에서 연합해야 한다고 결론지었고, 적임자는 [new_saxon_king.GetName]입니다!\n참석자 각자가 차례로 당신의 왕좌 앞에 무릎을 꿇고 작센의 새로운 [new_saxon_king.Custom('GetQueenKing')|U]에 자신을 맹세합니다.\n\n황제는 이에 만족하지 않겠지만, 그렇게 설득력 있는 의식을 거친 후에는 당신의 새로운 직함을 해임할 수 없을 것입니다." #NT!
+ unite_saxony.0001.a: "색슨족의 [new_saxon_king.GetFirstName], [new_saxon_king.Custom('GetQueenKing')|U]에게 경의를 표합니다!" #NT!
+  
+ unite_saxony_saxon_elective_enacted_title: "새로운 타이틀을 획득했습니다. 상속법" #NT!
+ unite_saxony_saxon_elective_enacted_desc: "[GetTitleByKey('k_saxony').GetName]의 직위 계승법은 이제 [GetLaw('saxon_elective_succession_law').GetName]입니다." #NT!

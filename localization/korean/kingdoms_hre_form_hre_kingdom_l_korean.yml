@@ -1,0 +1,114 @@
+﻿l_korean:
+ form_hre_kingdom_decision: "황제에게 왕국을 청원하다" #NT!
+ form_hre_kingdom_decision_desc: "이 지역에 대한 내 영향력에는 의심의 여지가 없으며, 내 통치권은 이름을 제외한 모든 면에서 증명되었습니다.\n\n황제께서 이를 인정하시고 나에게 [kingdom|E]의 [title|E]을 수여하실 때가 되었습니다." #NT!
+ form_hre_kingdom_decision_tooltip: "황제에게 [kingdom|E] [title|E]을 청원하세요." #NT!
+ form_hre_kingdom_decision_confirm: "청원서를 보내세요!" #NT!
+ form_hre_kingdom_decision_kingdom_criteria_met: "왕국의 특정 요구 사항 중 하나 이상을 충족합니다." #NT!
+ form_hre_kingdom_decision_effect_selected: "당신은 선택된 왕국을 위해 황제에게 청원합니다." #NT!
+ form_hre_kingdom_decision_emperor_opinion: "황제께서 당신에 대해 어떻게 생각하시는지는 황제의 결정에 큰 영향을 미칠 것입니다." #NT!
+ form_hre_kingdom_decision_hook: "황제를 강력하게 낚는 것은 성공을 보장할 수 있습니다." #NT!
+ form_hre_kingdom_decision_vassal_contract_change: "성공하면 귀하의 가신 계약에 보호된 소유권 취소 권리가 추가됩니다." #NT!
+ form_hre_kingdom_decision_gain_heroic_legend_seed: "성공하면 영웅적 [legend_seed|E]을 얻게 됩니다." #NT!
+  
+ choose_kingdom: "왕국을 위한 청원." #NT!
+ required_amount_of_titles: "최소 2개의 [duchy|E] [titles|E]이 있어야 합니다." #NT!
+  
+ choose_bavaria_name: "[GetTitleByKey('k_bavaria').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_bavaria_tooltip: "[GetTitleByKey('k_bavaria').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_bavaria_counties: "필요한 [SCOPE.ScriptValue('kingdom_bavaria_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_bavaria_county_count')|0]개만 있습니다. [counties|E]" #NT!
+  
+ choose_bohemia_name: "[GetTitleByKey('k_bohemia').GetNameNoTooltip]" #NT!
+ choose_bohemia_tooltip: "[GetTitleByKey('k_bohemia').GetName]에 대한 청원" #NT!
+ not_enough_bohemia_counties: "필요한 [SCOPE.ScriptValue('kingdom_bohemia_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_bohemia_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_bohemia_culture: "문화는 체코의 것이거나 체코에서 유래되어야 합니다." #NT!
+  
+ choose_frisia_name: "[GetTitleByKey('k_frisia').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_frisia_tooltip: "[GetTitleByKey('k_frisia').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_frisia_counties: "필요한 [SCOPE.ScriptValue('kingdom_frisia_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_frisia_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_frisia_culture: "문화는 프리지아 문화이거나 프리지아 문화에서 유래되어야 합니다." #NT!
+  
+ choose_lotharingia_name: "[GetTitleByKey('k_lotharingia').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_lotharingia_tooltip: "[GetTitleByKey('k_lotharingia').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_lotharingia_counties: "필요한 [SCOPE.ScriptValue('kingdom_lotharingia_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_lotharingia_county_count')|0]개만 있습니다. [counties|E]" #NT!
+  
+ choose_italy_name: "[GetTitleByKey('k_italy').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_italy_tooltip: "[GetTitleByKey('k_italy').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_italy_counties: "필요한 [SCOPE.ScriptValue('kingdom_italy_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_italy_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_italy_culture: "문화에는 라틴 유산이 있어야 합니다." #NT!
+  
+ choose_brittany_name: "[GetTitleByKey('k_brittany').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_brittany_tooltip: "[GetTitleByKey('k_brittany').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_brittany_counties: "필요한 [SCOPE.ScriptValue('kingdom_brittany_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_brittany_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_brittany_culture: "문화는 브르타뉴 문화이거나 브르타뉴 문화에서 유래되어야 합니다." #NT!
+  
+ choose_aquitaine_name: "[GetTitleByKey('k_aquitaine').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_aquitaine_tooltip: "[GetTitleByKey('k_aquitaine').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_aquitaine_counties: "필요한 [SCOPE.ScriptValue('kingdom_aquitaine_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_aquitaine_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_aquitaine_culture: "문화는 오크어 문화이거나 오크어 문화에서 유래되어야 합니다." #NT!
+  
+ choose_france_name: "[GetTitleByKey('k_france').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_france_tooltip: "[GetTitleByKey('k_france').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_france_counties: "필요한 [SCOPE.ScriptValue('kingdom_france_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_france_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_france_culture: "문화는 프랑스 문화이거나 프랑스에서 유래되어야 합니다." #NT!
+  
+ choose_burgundy_name: "[GetTitleByKey('k_burgundy').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_burgundy_tooltip: "[GetTitleByKey('k_burgundy').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_burgundy_counties: "필요한 [SCOPE.ScriptValue('kingdom_burgundy_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_burgundy_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_burgundy_culture: "문화에는 프랑크 유산이 있어야 합니다." #NT!
+  
+ choose_austria_name: "[GetTitleByKey('k_austria').GetNameNoTooltip]" #NT!
+ choose_austria_tooltip: "[GetTitleByKey('k_austria').GetName]\n\n에 대한 청원서 [GetTitleByKey('k_austria').GetNameNoTooltip]은 [GetTitleByKey('d_osterreich').GetName]와 [GetTitleByKey('d_steyermark').GetName]을 명목상의 공국으로 하여 구성될 것입니다." #NT!
+ not_enough_austria_counties: "[GetGeographicalRegion('custom_core_austria').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_austria_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_austria_county_count')|0]이 있습니다." #NT!
+  
+ choose_switzerland_name: "[GetTitleByKey('k_switzerland').GetNameNoTooltip]" #NT!
+ choose_switzerland_tooltip: "[GetTitleByKey('k_switzerland').GetName]\n\n에 대한 청원서 [GetTitleByKey('k_switzerland').GetNameNoTooltip]은 [GetTitleByKey('d_transjurania').GetName]와 [GetTitleByKey('d_currezia').GetName]을 명목상의 공국으로 하여 구성될 것입니다." #NT!
+ not_enough_switzerland_counties: "[GetGeographicalRegion('custom_core_switzerland').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_switzerland_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_switzerland_county_count')|0]이 있습니다." #NT!
+  
+ require_saxony_culture: "문화는 색슨 문화이거나 색슨 문화에서 유래되어야 합니다." #NT!
+  
+ choose_upper_saxony_name: "[GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_upper_saxony_tooltip: "[GetTitleByKey('k_upper_saxony').GetNameNoTier] 공국을 위한 청원\n\n[GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 공국은 [GetTitleByKey('d_anhalt').GetName], [GetTitleByKey('d_thuringia').GetName], [GetTitleByKey('d_meissen').GetName], [GetTitleByKey('d_lausitz').GetName]를 사실상 공국으로 하여 형성됩니다." #NT!
+ not_enough_upper_saxony_counties: "[GetGeographicalRegion('custom_upper_saxony').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]이 있습니다." #NT!
+ choose_upper_saxony_without_sorbia_name: "$choose_upper_saxony_name$" #NT!
+ choose_upper_saxony_without_sorbia_tooltip: "[GetTitleByKey('k_upper_saxony').GetNameNoTier] 공국 청원\n\n[GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 공국은 [GetTitleByKey('d_anhalt').GetName]와 [GetTitleByKey('d_thuringia').GetName]을 사실상 공국으로 하여 형성됩니다.\n\n[GetTitleByKey('d_meissen').GetName] 또는 [GetTitleByKey('d_lausitz').GetName]를 완전히 통제하는 경우 이 두 공국은 모두 [GetTitleByKey('k_upper_saxony').GetNameNoTierNoTooltip] 공국의 사실상 일부가 되고 [GetTitleByKey('k_sorbia').GetName] 타이틀은 소멸됩니다." #NT!
+ not_enough_upper_saxony_without_sorbia_counties: "[GetGeographicalRegion('custom_upper_saxony_without_sorbia').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_upper_saxony_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_upper_saxony_county_count')|0]이 있습니다." #NT!
+  
+ choose_lower_saxony_name: "[GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_lower_saxony_tooltip: "[GetTitleByKey('k_lower_saxony').GetNameNoTier] 공국을 위한 청원\n\n[GetTitleByKey('k_lower_saxony').GetNameNoTierNoTooltip] 공국은 [GetTitleByKey('d_angria').GetName], [GetTitleByKey('d_holstein').GetName], [GetTitleByKey('d_ostfalen').GetName], [GetTitleByKey('d_westfalen').GetName]를 사실상 공국으로 하여 형성됩니다." #NT!
+ not_enough_lower_saxony_counties: "[GetGeographicalRegion('custom_lower_saxony').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_lower_saxony_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_lower_saxony_county_count')|0]이 있습니다." #NT!
+  
+ k_upper_saxony: "오버작센" #NT!
+ k_upper_saxony_adj: "어퍼 색슨" #NT!
+ k_upper_saxony_pre: "어퍼 삭소" #NT!
+ k_lower_saxony: "니더작센" #NT!
+ k_lower_saxony_adj: "니더작슨" #NT!
+ k_lower_saxony_pre: "로어 삭소" #NT!
+  
+ custom_upper_saxony: "오버작센" #NT!
+ custom_upper_saxony_without_sorbia: "$custom_upper_saxony$" #NT!
+ custom_lower_saxony: "니더작센" #NT!
+  
+ is_hre_vassal: "신성 로마 황제의 가신입니다." #NT!
+ requires_culture: "[root.culture.GetName] 문화의 자식이거나 그 문화에 속해야 함" #NT!
+ kingdom_already_exists: "이 왕국은 이미 존재합니다" #NT!
+ saxony_kingdom_already_exists: "작센 왕국은 이 왕국을 대체합니다." #NT!
+  
+ choose_pomerania_name: "[GetTitleByKey('k_pomerania').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_pomerania_tooltip: "[GetTitleByKey('k_pomerania').GetNameNoTier] 공국을 위한 청원" #NT!
+ not_enough_pomerania_counties: "필요한 [SCOPE.ScriptValue('kingdom_pomerania_required_county_total')|0]개 중 [SCOPE.ScriptValue('kingdom_pomerania_county_count')|0]개만 있습니다. [counties|E]" #NT!
+ require_pomerania_culture: "문화는 포메라니안 문화이거나 포메라니안 문화에서 유래되어야 합니다." #NT!
+  
+ choose_slavinia_name: "[GetTitleByKey('k_slavinia').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_slavinia_tooltip: "[GetTitleByKey('k_slavinia').GetNameNoTier] 공국을 위한 청원\n\n[GetTitleByKey('k_slavinia').GetNameNoTierNoTooltip] 공국은 [GetTitleByKey('d_nordmark').GetName]와 [GetTitleByKey('d_ostmark').GetName]을 사실상의 공국으로 하여 형성됩니다." #NT!
+ not_enough_slavinia_counties: "[GetGeographicalRegion('custom_slavinia').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_slavinia_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_slavinia_county_count')|0]이 있습니다." #NT!
+ require_slavinia_culture: "문화는 중부 게르만 유산을 가져야 합니다." #NT!
+ k_slavinia: "슬라비니아" #NT!
+ k_slavinia_adj: "슬라비니아어" #NT!
+ custom_slavinia: "슬라비니아" #NT!
+  
+ choose_carinthia_name: "[GetTitleByKey('k_carinthia').GetNameNoTierNoTooltip] 공국" #NT!
+ choose_carinthia_tooltip: "[GetTitleByKey('k_carinthia').GetNameNoTier] 공국을 위한 청원\n\n[GetTitleByKey('k_carinthia').GetNameNoTierNoTooltip] 공국은 [GetTitleByKey('d_carinthia').GetName], [GetTitleByKey('d_krain').GetName], [GetTitleByKey('d_istria').GetName]를 사실상의 공국으로 하여 형성됩니다." #NT!
+ not_enough_carinthia_counties: "[GetGeographicalRegion('custom_carinthia').GetName] 지역 내의 [SCOPE.ScriptValue('kingdom_carinthia_required_county_total')|0] [counties|E]이 이 타이틀에 대한 청원을 해야 합니다. 현재 [SCOPE.ScriptValue('kingdom_carinthia_county_count')|0]이 있습니다." #NT!
+ k_carinthia: "케린티아" #NT!
+ k_carinthia_adj: "케린토스" #NT!
+ custom_carinthia: "케린티아" #NT!

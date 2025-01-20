@@ -1,0 +1,8 @@
+﻿l_french:
+ hre_cannot_create_kingdom: "Ce [kingdom|E] se trouve dans la sphère d'influence du Saint-Empire romain germanique.\nEn tant que [vassal|E] du Saint-Empire romain germanique, cela doit être créé via la décision $form_hre_kingdom_decision$" #NT!
+ coronation_culture_acceptance_bonus_desc: "Couronnement de [vassal.GetShortUIName] par [emperor.GetShortUIName]" #NT!
+ petition_gift_modifier: "Des bibelots à la mode" #NT!
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] sur [target_title.GetNameNoTier]" #NT!
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] sur [target_title.GetNameNoTierNoTooltip]" #NT!
+ preparing_culture_conversion: "Se préparer à diverger de culture" #NT!
+ county_culture_converted_title: "La culture du comté convertie" #NT!

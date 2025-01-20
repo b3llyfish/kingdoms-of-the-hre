@@ -1,0 +1,17 @@
+﻿l_french:
+ diverge_culture.title: "Une nouvelle orientation culturelle ?" #NT!
+ diverge_culture.desc: "En tant que nouveau [character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U] de [primary_title.GetNameNoTierNoTooltip], je suis témoin d'un grand changement dans la région. Les coutumes et les traditions de ses habitants ne font pas exception.\n\nIl y a une opportunité de nous éloigner du style de vie [current_culture.GetNameNoTooltip] et d'entrer dans un nouvel avenir. Il me suffit de tendre la main et de la saisir..." #NT!
+ diverge_culture.0001.a: "Forgeons un nouveau chemin !" #NT!
+ diverge_culture.0001.a.random_diverge: "Vous différerez aléatoirement de votre culture [current_culture.GetNameNoTooltip]" #NT!
+ diverge_culture.0001.a.enhanced_culture_conversion: "La culture divergente déclenchera [enhanced_culture_conversion|E]" #NT!
+ diverge_culture.0001.b: "Le changement est nécessaire mais il doit être contrôlé..." #NT!
+ diverge_culture.0001.b.diverge_cost_reduction: "Bénéficiez d'une réduction de coût de 50 % pour les cultures divergentes jusqu'à la mort de [character.GetName]" #NT!
+ diverge_culture.0001.b.enhanced_culture_conversion: "Si vous faites diverger votre culture avant la mort de [character.GetName], alors la culture divergente déclenchera [enhanced_culture_conversion|E]" #NT!
+ diverge_culture.0001.c: "Non, trop de choses ont déjà changé" #NT!
+ diverge_culture.0001.c.remain: "Votre culture restera comme [current_culture.GetNameNoTooltip]" #NT!
+  
+ convert_to_local_culture.title: "Un [character.Custom('GetQueenKing')|U] du peuple ?" #NT!
+ convert_to_local_culture.desc: "En tant que nouveau [character.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('primary_title'))|U] de [primary_title.GetNameNoTierNoTooltip], je suis conscient que les coutumes et les traditions que je suis diffèrent de celles du peuple sur lequel je règne.\n\nMon règne serait plus doux si j'adoptais les méthodes [character.GetCapitalLocation.GetCounty.GetCulture.GetName]..." #NT!
+ convert_to_local_culture.0001.a: "Je deviendrai un vrai [character.GetCapitalLocation.GetCounty.GetCulture.GetName] [character.Custom('GetQueenKing')|U] !" #NT!
+ convert_to_local_culture.0001.a.tooltip: "Vous vous convertirez à la culture [character.GetCapitalLocation.GetCounty.GetCulture.GetName]" #NT!
+ convert_to_local_culture.0001.b: "Apprécions les anciennes méthodes et restons comme [character.GetCulture.GetName]" #NT!

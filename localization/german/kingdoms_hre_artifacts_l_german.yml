@@ -1,0 +1,5 @@
+﻿l_german:
+ golden_bull_court_artifact_name: "Goldener Bulle von [GetCurrentDate.GetYear]" #NT!
+ golden_bull_court_artifact_desc: "Ein Dekret von [emperor.GetFirstNameRegnal], das [vassal.GetFirstNameRegnal] und ihren Nachkommen das kaiserliche Recht zur Herrschaft über [target_title.GetName] zusprach" #NT!
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] Krone" #NT!
+ crown_artifact_desc: "Krone geschmiedet für die Krönung von [vassal.GetFirstNameRegnal], erster [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))] von [target_title.GetNameNoTierNoTooltip]" #NT!

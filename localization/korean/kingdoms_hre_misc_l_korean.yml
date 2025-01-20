@@ -1,0 +1,8 @@
+﻿l_korean:
+ hre_cannot_create_kingdom: "이 [kingdom|E]은 신성로마제국의 영향권 내에 있습니다.\n신성로마제국의 [vassal|E]이므로 $form_hre_kingdom_decision$ 결정을 통해 생성되어야 합니다." #NT!
+ coronation_culture_acceptance_bonus_desc: "[emperor.GetShortUIName]의 [vassal.GetShortUIName] 대관식" #NT!
+ petition_gift_modifier: "트렌디한 장신구" #NT!
+ loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] / [target_title.GetNameNoTier]" #NT!
+ loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] / [target_title.GetNameNoTierNoTooltip]" #NT!
+ preparing_culture_conversion: "문화의 차이를 준비하다" #NT!
+ county_culture_converted_title: "카운티 문화가 전환됨" #NT!

@@ -1,0 +1,5 @@
+﻿l_french:
+ golden_bull_court_artifact_name: "Taureau d'or de [GetCurrentDate.GetYear]" #NT!
+ golden_bull_court_artifact_desc: "Un décret émis par [emperor.GetFirstNameRegnal] dictant à [vassal.GetFirstNameRegnal] et à leurs descendants le droit impérial de régner sur les [target_title.GetName]" #NT!
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] Couronne" #NT!
+ crown_artifact_desc: "Couronne forgée pour le couronnement de [vassal.GetFirstNameRegnal], premier [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))] de [target_title.GetNameNoTierNoTooltip]" #NT!

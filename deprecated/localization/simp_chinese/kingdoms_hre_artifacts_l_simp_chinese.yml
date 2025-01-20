@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ golden_bull_court_artifact_name: "[GetCurrentDate.GetYear] 的金牛" #NT!
+ golden_bull_court_artifact_desc: "[emperor.GetFirstNameRegnal] 颁布法令，规定[vassal.GetFirstNameRegnal] 及其后代拥有统治[target_title.GetName] 的皇权" #NT!
+ crown_artifact_name: "[target_title.GetAdjectiveNoTooltip] 皇冠" #NT!
+ crown_artifact_desc: "为[vassal.GetFirstNameRegnal] 的加冕典礼锻造的王冠，[target_title.GetNameNoTierNoTooltip] 中的第一个[vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))]" #NT!
