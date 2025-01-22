@@ -1,3 +1,3 @@
 ﻿l_french:
  game_concept_enhanced_culture_conversion: "Conversion culturelle améliorée" #NT!
- game_concept_enhanced_culture_conversion_desc: "Votre capitale et les comtés voisins se convertiront à la nouvelle culture. Les comtés situés à deux comtés de votre capitale auront une petite chance de se convertir également.\n\nLa conversion ne se produira que pour les comtés situés à l'intérieur de votre [primary_title|E]." #NT!
+ game_concept_enhanced_culture_conversion_desc: "Votre capitale et les comtés voisins se convertiront à la nouvelle culture, quelle que soit la culture des comtés. Les comtés qui se trouvent à deux comtés de votre capitale auront une petite chance de se convertir également.\n\nLa conversion ne se produira que pour les comtés qui se trouvent dans votre [primary_title|E]." #NT!

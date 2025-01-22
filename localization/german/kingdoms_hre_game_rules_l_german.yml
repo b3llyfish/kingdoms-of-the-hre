@@ -25,4 +25,4 @@
  setting_kingdoms_hre_capital_region_required: "Erforderlich" #NT!
  setting_kingdoms_hre_capital_region_required_desc: "Um Königreiche erstellen zu können, muss die Hauptstadt eines Charakters in der Region des Königreichs liegen." #NT!
  setting_kingdoms_hre_capital_region_not_required: "Nicht erforderlich" #NT!
- setting_kingdoms_hre_capital_region_not_required_desc: "Erstellbare Königreiche erfordern #Z nicht#!, dass die Hauptstadt eines Charakters innerhalb der Region des Königreichs liegt" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Für erstellbare Königreiche ist #Z nicht#! erforderlich, dass die Hauptstadt eines Charakters innerhalb der Region des Königreichs liegt." #NT!

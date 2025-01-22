@@ -196,7 +196,7 @@ diverge_culture = {
 				has_character_flag = kingdoms_hre_diverge_cost_reduction
 			}
 			multiply = {
-				value = 0.5
+				value = 0 # this is just the base cost and won't include tradition changes
 				desc = preparing_culture_conversion
 			}
 		}

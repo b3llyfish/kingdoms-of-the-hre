@@ -1,0 +1,23 @@
+﻿tradition_replacement_cost_if_relevant = {
+	value = 1
+	if = {
+		limit = {
+			scope:replacing = yes
+		}
+		multiply = {
+			value = tradition_replacement_cost_factor
+			desc = replacing_tradition_cost_penalty_desc
+		}
+	}
+	if = {
+		limit = {
+			scope:character = {
+				has_character_flag = kingdoms_hre_diverge_cost_reduction
+			}
+		}
+		multiply = {
+			value = 0.5
+			desc = preparing_culture_conversion
+		}
+	}
+}

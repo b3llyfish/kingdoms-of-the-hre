@@ -21,7 +21,7 @@
  kingdoms_hre.0001.d.tooltip: "Szantażujesz Imperatora!" #NT!
   # Emperor receives the petition 
  kingdoms_hre.0002.title: "$kingdoms_hre.kingdom_of$" #NT!
- kingdoms_hre.0002.desc: "Dotarła do mnie petycja od [vassal.GetShortUIName], w której [vassal.GetHerHis] rości sobie prawa do $loc_title$ i prosi mnie o nadanie im tego tytułu. \n\nMogę przyjąć petycję i zyskać potężnego zwolennika w [target_title.GetNameNoTierNoTooltip]. Jednak inni wasale w Imperium nie przyjmą łaskawie tego rzekomego „faworyzowania”.\n\nJeśli odrzucę petycję, [vassal.GetShortUIName] z pewnością zareaguje źle i zaryzykuję eskalacją z [vassal.GetHerHim].\n\nMoi dworzanie gromadzą się wokół mnie i cierpliwie czekają na moją odpowiedź..." #NT!
+ kingdoms_hre.0002.desc: "Dotarła do mnie petycja od [vassal.GetShortUIName], w której [vassal.GetHerHis] rości sobie prawa do $loc_title$ i prosi mnie o nadanie im tego tytułu. \n\nMogę przyjąć petycję i zyskać potężnego zwolennika w [target_title.GetNameNoTierNoTooltip]. Jednak inni wasale w Imperium nie przyjmą łaskawie tego rzekomego „faworyzowania”.\n\nJeśli odrzucę petycję, [vassal.GetShortUIName] z pewnością zareaguje źle i zaryzykuję eskalację z [vassal.GetHerHim].\n\nMoi dworzanie gromadzą się wokół mnie i cierpliwie czekają na moją odpowiedź..." #NT!
  kingdoms_hre.0002.a: "Ich roszczenie jest godne uwagi, powinni być [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U]!" #NT!
  kingdoms_hre.0002.a.tooltip: "[vassal.GetShortUIName|U] staje się [vassal.Custom2_Title('GetHreMaleFemaleTitle', SCOPE.sTitle('target_title'))|U] z [target_title.GetNameNoTierNoTooltip]" #NT!
  kingdoms_hre.0002.c: "Równowaga w Imperium jest najważniejsza, muszę odrzucić ich petycję" #NT!

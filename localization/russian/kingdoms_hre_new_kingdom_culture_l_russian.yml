@@ -5,7 +5,7 @@
  diverge_culture.0001.a.random_diverge: "Вы будете случайным образом отклоняться от своей культуры [current_culture.GetNameNoTooltip]" #NT!
  diverge_culture.0001.a.enhanced_culture_conversion: "Различная культура вызовет [enhanced_culture_conversion|E]" #NT!
  diverge_culture.0001.b: "Изменения необходимы, но их необходимо контролировать..." #NT!
- diverge_culture.0001.b.diverge_cost_reduction: "Получите 50%-ную скидку на расходящуюся культуру до самой смерти [character.GetName]" #NT!
+ diverge_culture.0001.b.diverge_cost_reduction: "До смерти [character.GetName], отклонение от вашей культуры будет бесплатным, и вы получите #Z 50%#! скидку на любые изменения традиций" #NT!
  diverge_culture.0001.b.enhanced_culture_conversion: "Если вы измените свою культуру до смерти [character.GetName], то измененная культура сработает [enhanced_culture_conversion|E]." #NT!
  diverge_culture.0001.c: "Нет, слишком многое уже изменилось." #NT!
  diverge_culture.0001.c.remain: "Ваша культура останется такой же [current_culture.GetNameNoTooltip]" #NT!

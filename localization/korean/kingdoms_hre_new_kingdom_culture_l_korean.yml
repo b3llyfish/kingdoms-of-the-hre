@@ -5,7 +5,7 @@
  diverge_culture.0001.a.random_diverge: "당신은 무작위로 당신의 문화를 [current_culture.GetNameNoTooltip]에서 분리할 것입니다" #NT!
  diverge_culture.0001.a.enhanced_culture_conversion: "분기된 문화는 [enhanced_culture_conversion|E]을 트리거합니다." #NT!
  diverge_culture.0001.b: "변화는 필요하지만, 통제되어야 합니다." #NT!
- diverge_culture.0001.b.diverge_cost_reduction: "[character.GetName]이 죽을 때까지 다양한 문화에 대한 비용이 50% 감소합니다." #NT!
+ diverge_culture.0001.b.diverge_cost_reduction: "[character.GetName]의 죽음까지 문화를 분산하는 것은 무료이며 전통 변경 시 비용이 #Z 50%#! 감소합니다." #NT!
  diverge_culture.0001.b.enhanced_culture_conversion: "[character.GetName]의 죽음 전에 문화를 분기시키면 분기된 문화가 [enhanced_culture_conversion|E]을 트리거합니다." #NT!
  diverge_culture.0001.c: "아니, 이미 너무 많은 것이 바뀌었어요" #NT!
  diverge_culture.0001.c.remain: "귀하의 문화는 [current_culture.GetNameNoTooltip]로 유지됩니다." #NT!

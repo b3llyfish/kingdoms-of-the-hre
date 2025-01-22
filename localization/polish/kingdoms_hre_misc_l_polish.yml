@@ -1,8 +1,7 @@
 ﻿l_polish:
  hre_cannot_create_kingdom: "Ten [kingdom|E] znajduje się w strefie wpływów Świętego Cesarstwa Rzymskiego.\nJako [vassal|E] Świętego Cesarstwa Rzymskiego musi zostać utworzony poprzez decyzję $form_hre_kingdom_decision$" #NT!
- coronation_culture_acceptance_bonus_desc: "Koronacja [vassal.GetShortUIName] przez [emperor.GetShortUIName]" #NT!
  petition_gift_modifier: "Modne drobiazgi" #NT!
  loc_title: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] z [target_title.GetNameNoTier]" #NT!
  loc_title_no_tooltip: "[vassal.Custom2_Title('GetHreTitleTier', SCOPE.sTitle('target_title'))|U] z [target_title.GetNameNoTierNoTooltip]" #NT!
- preparing_culture_conversion: "Przygotowując się do odejścia od swojej kultury" #NT!
+ preparing_culture_conversion: "Staranne planowanie zmian kulturowych" #NT!
  county_culture_converted_title: "Kultura powiatu przekonwertowana" #NT!

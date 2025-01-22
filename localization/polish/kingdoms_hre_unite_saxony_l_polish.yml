@@ -17,4 +17,4 @@
  unite_saxony.0001.a: "Niech żyje [new_saxon_king.GetFirstName], [new_saxon_king.Custom('GetQueenKing')|U] Sasów!" #NT!
   
  unite_saxony_saxon_elective_enacted_title: "Uzyskał nowe prawo sukcesji tytułu" #NT!
- unite_saxony_saxon_elective_enacted_desc: "Prawo o sukcesji tytułu [GetTitleByKey('k_saxony').GetName] jest teraz [GetLaw('saxon_elective_succession_law').GetName]" #NT!
+ unite_saxony_saxon_elective_enacted_desc: "Prawo sukcesji tytułu [GetTitleByKey('k_saxony').GetName] jest teraz [GetLaw('saxon_elective_succession_law').GetName]" #NT!

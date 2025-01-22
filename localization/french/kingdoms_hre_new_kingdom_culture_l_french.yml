@@ -5,7 +5,7 @@
  diverge_culture.0001.a.random_diverge: "Vous différerez aléatoirement de votre culture [current_culture.GetNameNoTooltip]" #NT!
  diverge_culture.0001.a.enhanced_culture_conversion: "La culture divergente déclenchera [enhanced_culture_conversion|E]" #NT!
  diverge_culture.0001.b: "Le changement est nécessaire mais il doit être contrôlé..." #NT!
- diverge_culture.0001.b.diverge_cost_reduction: "Bénéficiez d'une réduction de coût de 50 % pour les cultures divergentes jusqu'à la mort de [character.GetName]" #NT!
+ diverge_culture.0001.b.diverge_cost_reduction: "Jusqu'à la mort de [character.GetName], la divergence de votre culture sera gratuite et vous obtiendrez une réduction de coût de #Z 50%#! sur tout changement de tradition" #NT!
  diverge_culture.0001.b.enhanced_culture_conversion: "Si vous faites diverger votre culture avant la mort de [character.GetName], alors la culture divergente déclenchera [enhanced_culture_conversion|E]" #NT!
  diverge_culture.0001.c: "Non, trop de choses ont déjà changé" #NT!
  diverge_culture.0001.c.remain: "Votre culture restera comme [current_culture.GetNameNoTooltip]" #NT!

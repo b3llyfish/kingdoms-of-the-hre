@@ -55,5 +55,5 @@
  kingdoms_hre.0009.a: "깃펜과 새로운 잉크 한 병을 가져와..." #NT!
   # Emperor lost title mid petition 
  kingdoms_hre.0010.title: "발신자에게 반송" #NT!
- kingdoms_hre.0010.desc: "[emperor.GetName]이 더 이상 책임지지 않는다는 건 무슨 말이에요?!\n\n제 청원서를 손에 든 신하가 [emperor.GetFirstName]이 신성 로마 제국의 황제라는 칭호를 잃게 된 사건을 필사적으로 설명하려 하고 있지만, 그 이후로는 듣지 않게 됐어요.\n\n가장 웅변적인 청원서를 만드는 데 들인 모든 노력이 헛수고였어요!\n\n한숨을 쉬어요. 이제 [new_emperor.GetName]가 황제예요. 그들의 의견을 설득하려고 노력해야 해요." #NT!
+ kingdoms_hre.0010.desc: "[emperor.GetName]이 더 이상 책임지지 않는다는 건 무슨 말이에요?!\n\n제 청원서를 손에 든 신하가 [emperor.GetFirstName]이 신성 로마 제국의 황제라는 칭호를 잃게 된 사건을 필사적으로 설명하려 하고 있지만, 그 이후로는 듣지 않게 됐어요.\n\n가장 웅변적인 청원서를 만드는 데 들인 모든 노력이 헛수고였어요!\n\n한숨을 쉬어요. 이제 [new_emperor.GetName]가 황제예요. 그들의 의견을 설득해야 해요." #NT!
  kingdoms_hre.0010.a: "깃펜과 새로운 잉크 한 병을 가져와..." #NT!

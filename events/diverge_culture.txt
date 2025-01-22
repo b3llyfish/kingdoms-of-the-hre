@@ -74,6 +74,7 @@ diverge_culture.0001 = {
 		name = diverge_culture.0001.b
 		
 		custom_tooltip = diverge_culture.0001.b.diverge_cost_reduction
+		custom_tooltip = diverge_culture.0001.b.enhanced_culture_conversion
 		
 		hidden_effect = {
 			add_character_flag = kingdoms_hre_diverge_cost_reduction
