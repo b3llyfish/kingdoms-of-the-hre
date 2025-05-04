@@ -1,4 +1,6 @@
 ﻿l_spanish:
+ game_rule_category_kingdoms_hre: "Reinos del Sacro Imperio Romano Germánico"
+
  rule_kingdoms_hre_culture_requirement: "Reinos del Sacro Imperio Romano Germánico: Control cultural" #NT!
  setting_kingdoms_hre_culture_required: "Requerido" #NT!
  setting_kingdoms_hre_culture_required_desc: "Ciertas peticiones del reino requerirán una verificación cultural relevante" #NT!

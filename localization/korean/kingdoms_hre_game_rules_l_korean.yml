@@ -1,4 +1,6 @@
 ﻿l_korean:
+ game_rule_category_kingdoms_hre: "HRE 왕국"
+
  rule_kingdoms_hre_culture_requirement: "HRE 왕국: 문화 확인" #NT!
  setting_kingdoms_hre_culture_required: "필수의" #NT!
  setting_kingdoms_hre_culture_required_desc: "특정 왕국 청원에는 관련 문화 검사가 필요합니다." #NT!

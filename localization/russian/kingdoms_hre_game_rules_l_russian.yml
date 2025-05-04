@@ -1,4 +1,6 @@
 ﻿l_russian:
+ game_rule_category_kingdoms_hre: "Королевства СРИ"
+
  rule_kingdoms_hre_culture_requirement: "Королевства СРИ: проверка культуры" #NT!
  setting_kingdoms_hre_culture_required: "Необходимый" #NT!
  setting_kingdoms_hre_culture_required_desc: "Для некоторых петиций королевства потребуется соответствующая проверка культуры." #NT!

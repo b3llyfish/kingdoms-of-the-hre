@@ -1,4 +1,6 @@
 ﻿l_simp_chinese:
+ game_rule_category_kingdoms_hre: "神圣罗马帝国的王国"
+
  rule_kingdoms_hre_culture_requirement: "神圣罗马帝国：文化检查" #NT!
  setting_kingdoms_hre_culture_required: "必需的" #NT!
  setting_kingdoms_hre_culture_required_desc: "某些王国请愿书需要相关文化检查" #NT!

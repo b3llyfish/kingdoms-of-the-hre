@@ -1,4 +1,6 @@
 ﻿l_french:
+ game_rule_category_kingdoms_hre: "Royaumes de la Sainte-Reine"
+
  rule_kingdoms_hre_culture_requirement: "Royaumes de la Sainte-Reine : Contrôle de la culture" #NT!
  setting_kingdoms_hre_culture_required: "Requis" #NT!
  setting_kingdoms_hre_culture_required_desc: "Certaines pétitions du royaume nécessiteront un contrôle culturel pertinent" #NT!

@@ -1,6 +1,6 @@
 ﻿kingdoms_hre_culture_requirement = {
 	
-	categories = { difficulty tweaks ai }
+	categories = { kingdoms_hre difficulty tweaks ai }
 	
 	default = kingdoms_hre_culture_required
 	
@@ -11,7 +11,7 @@
 
 kingdoms_hre_emperor_acceptance_modifier = {
 	
-	categories = { difficulty tweaks ai }
+	categories = { kingdoms_hre difficulty tweaks ai }
 	
 	default = kingdoms_hre_emperor_acceptance_modifier_default
 	
@@ -24,7 +24,7 @@ kingdoms_hre_emperor_acceptance_modifier = {
 
 kingdoms_hre_austria_renown = {
 	
-	categories = { difficulty tweaks ai }
+	categories = { kingdoms_hre difficulty tweaks ai }
 	
 	default = kingdoms_hre_culture_reputable
 	
@@ -37,7 +37,7 @@ kingdoms_hre_austria_renown = {
 
 kingdoms_hre_capital_region_requirement = {
 	
-	categories = { difficulty tweaks ai }
+	categories = { kingdoms_hre difficulty tweaks ai }
 	
 	default = kingdoms_hre_capital_region_required
 	

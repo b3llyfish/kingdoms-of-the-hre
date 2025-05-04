@@ -1,4 +1,6 @@
 ﻿l_german:
+ game_rule_category_kingdoms_hre: "Königreiche des Heiligen Römischen Reichs"
+
  rule_kingdoms_hre_culture_requirement: "Königreiche des Heiligen Römischen Reichs: Kulturcheck" #NT!
  setting_kingdoms_hre_culture_required: "Erforderlich" #NT!
  setting_kingdoms_hre_culture_required_desc: "Bestimmte Königreichspetitionen erfordern eine entsprechende Kulturprüfung" #NT!

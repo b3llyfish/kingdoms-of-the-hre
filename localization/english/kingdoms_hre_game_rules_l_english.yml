@@ -1,4 +1,6 @@
 ﻿l_english:
+ game_rule_category_kingdoms_hre: "Kingdoms of the HRE"
+
  rule_kingdoms_hre_culture_requirement: "Kingdoms of the HRE: Culture Check"
  setting_kingdoms_hre_culture_required: "Required"
  setting_kingdoms_hre_culture_required_desc: "Certain kingdom petitions will require a relevant culture check"

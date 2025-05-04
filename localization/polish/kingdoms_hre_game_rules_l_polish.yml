@@ -1,4 +1,6 @@
 ﻿l_polish:
+ game_rule_category_kingdoms_hre: "Królestwa HRE"
+
  rule_kingdoms_hre_culture_requirement: "Królestwa HRE: Kontrola kultury" #NT!
  setting_kingdoms_hre_culture_required: "Wymagany" #NT!
  setting_kingdoms_hre_culture_required_desc: "Niektóre petycje królestwa będą wymagały odpowiedniej kontroli kultury" #NT!
