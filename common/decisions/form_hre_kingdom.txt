@@ -56,8 +56,9 @@
 	is_valid_showing_failures_only = {
 		custom_tooltip = {
 			text = required_amount_of_titles
-			any_sub_realm_duchy = {
+			any_held_title = {
 				count >= 2
+				tier = tier_duchy
 			}
 		}
 		faith = top_liege.faith	#Must share the faith of your emperor
@@ -601,8 +602,9 @@
 	
 	ai_potential = {
 		highest_held_title_tier = tier_duchy
-		any_sub_realm_duchy = {
+		any_held_title = {
 			count >= 2
+			tier = tier_duchy
 		}
 		is_landed = yes
 		is_at_war = no
