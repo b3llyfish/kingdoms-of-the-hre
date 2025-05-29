@@ -1,30 +1,38 @@
 ﻿l_french:
- game_rule_category_kingdoms_hre: "Royaumes de la Sainte-Reine"
-
- rule_kingdoms_hre_culture_requirement: "Royaumes de la Sainte-Reine : Contrôle de la culture" #NT!
+ game_rule_category_kingdoms_hre: "Royaumes du HRE" #NT!
+ 
+ rule_kingdoms_hre_culture_requirement: "Kingdoms of the HRE: Culture Check" #NT!
  setting_kingdoms_hre_culture_required: "Requis" #NT!
- setting_kingdoms_hre_culture_required_desc: "Certaines pétitions du royaume nécessiteront un contrôle culturel pertinent" #NT!
- setting_kingdoms_hre_culture_not_required: "Non requis" #NT!
- setting_kingdoms_hre_culture_not_required_desc: "Les pétitions du Royaume ne nécessiteront pas de vérification culturelle pertinente." #NT!
-  
- rule_kingdoms_hre_emperor_acceptance_modifier: "Royaumes du HRE : Modificateur d'acceptation de l'empereur" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default: "Aucun modificateur" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Les chances d'acceptation de la pétition du royaume par l'empereur ne seront pas modifiées" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Doublé" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Les chances d'acceptation de la pétition du royaume par l'empereur seront doublées" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Réduit de moitié" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Les chances de l'empereur d'accepter la pétition du royaume seront réduites de moitié" #NT!
-  
- rule_kingdoms_hre_austria_renown: "Royaumes de la HRE : Autriche Niveau de renommée" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Certaines pétitions du Royaume nécessiteront un contrôle culturel pertinent" #NT!
+ setting_kingdoms_hre_culture_not_required: "Pas requis" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Les pétitions du Royaume seront #Z not#! nécessiteront un contrôle de culture pertinent" #NT!
+ 
+ rule_kingdoms_hre_austria_renown: "Royaumes du niveau HRE: Autriche de renommée" #NT!
  setting_kingdoms_hre_culture_noteworthy: "Remarquable" #NT!
- setting_kingdoms_hre_culture_noteworthy_desc: "La décision « Sécuriser l'archiduché » nécessitera un niveau de renommée de #Z Remarquable#!" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "La décision `` sécuriser l'Archduchy '' nécessitera un niveau de renom de #Z remarquable#!" #NT!
  setting_kingdoms_hre_culture_reputable: "Honorable" #NT!
- setting_kingdoms_hre_culture_reputable_desc: "La décision « Sécuriser l'archiduché » nécessitera un niveau de renommée de #Z Réputé#!" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "La décision «sécuriser l'Archduchy» nécessitera un niveau de renom de #Z réputé#!" #NT!
  setting_kingdoms_hre_culture_well_known: "Bien connu" #NT!
- setting_kingdoms_hre_culture_well_known_desc: "La décision « Sécuriser l'archiduché » nécessitera un niveau de renommée de #Z Bien connu#!" #NT!
-  
- rule_kingdoms_hre_capital_region_requirement: "Royaumes de la HRE : Vérification de la région capitale" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "La décision «sécuriser l'Archduchy» nécessitera un niveau de renom de #Z bien connu#!" #NT!
+ 
+ rule_kingdoms_hre_capital_region_requirement: "Kingdoms of the HRE: Capital Region Check" #NT!
  setting_kingdoms_hre_capital_region_required: "Requis" #NT!
- setting_kingdoms_hre_capital_region_required_desc: "Les royaumes créables nécessiteront que la capitale d'un personnage se trouve dans la région du royaume" #NT!
- setting_kingdoms_hre_capital_region_not_required: "Non requis" #NT!
- setting_kingdoms_hre_capital_region_not_required_desc: "Les royaumes créables nécessiteront #Z et non #! que la capitale d'un personnage se trouve dans la région du royaume" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Les royaumes créables exigeront que la capitale d'un personnage soit dans la région du royaume" #NT!
+ setting_kingdoms_hre_capital_region_not_required: "Pas requis" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Les royaumes créables seront #Z not#! exiger la capitale d'un personnage dans la région du royaume" #NT!
+ 
+ rule_kingdoms_hre_emperor_acceptance_base_chance: "Kingdoms of the HRE: Emperor's Acceptance Base Base Chance" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero: "0%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 0% #!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five: "5%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 5% #!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten: "10%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 10% #!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen: "15%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 15% #!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty: "20%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 20% #!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive: "25%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 25% #!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty: "30%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty_desc: "La chance de base pour l'empereur d'accepter la pétition du Royaume sera #Z 30% #!" #NT!

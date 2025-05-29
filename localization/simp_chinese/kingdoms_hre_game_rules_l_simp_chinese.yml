@@ -1,2 +1,20 @@
 ﻿l_simp_chinese:
- game_rule_category_kingdoms_hre: "神圣罗马帝国的王国"
+ game_rule_category_kingdoms_hre: "HRE的王国" #NT!
+ 
+ rule_kingdoms_hre_emperor_acceptance_base_chance: "HRE的王国：皇帝的接受基础机会" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero: "0％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero_desc: "皇帝接受王国请愿的基本机会将为#Z0％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five: "5％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five_desc: "皇帝接受王国请愿书的基本机会将为#Z5％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten: "10％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten_desc: "皇帝接受王国请愿书的基本机会将为#Z10％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen: "15％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen_desc: "皇帝接受王国请愿书的基本机会将为☻__015％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty: "20％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty_desc: "皇帝接受王国请愿的基本机会将为☻__020％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive: "25％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive_desc: "皇帝接受王国请愿的基本机会将为☻__025％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty: "30％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty_desc: "皇帝接受王国请愿的基本机会将为☻__030％#!" #NT!
+
+  

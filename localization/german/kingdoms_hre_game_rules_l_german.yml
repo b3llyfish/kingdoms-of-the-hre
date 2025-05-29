@@ -1,30 +1,38 @@
 ﻿l_german:
- game_rule_category_kingdoms_hre: "Königreiche des Heiligen Römischen Reichs"
-
- rule_kingdoms_hre_culture_requirement: "Königreiche des Heiligen Römischen Reichs: Kulturcheck" #NT!
+ game_rule_category_kingdoms_hre: "Königreiche des HRE" #NT!
+  
+ rule_kingdoms_hre_culture_requirement: "Königreiche der HRE: Kulturprüfung" #NT!
  setting_kingdoms_hre_culture_required: "Erforderlich" #NT!
- setting_kingdoms_hre_culture_required_desc: "Bestimmte Königreichspetitionen erfordern eine entsprechende Kulturprüfung" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Bestimmte Kingdom -Petitionen erfordern eine relevante Kulturprüfung" #NT!
  setting_kingdoms_hre_culture_not_required: "Nicht erforderlich" #NT!
- setting_kingdoms_hre_culture_not_required_desc: "Königreichspetitionen erfordern #Z nicht#! eine entsprechende Kulturprüfung" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Kingdom -Petitionen werden #Z nicht #! eine relevante Kulturprüfung erfordern" #NT!
   
- rule_kingdoms_hre_emperor_acceptance_modifier: "Königreiche des Heiligen Römischen Reichs: Akzeptanzmodifikator des Kaisers" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default: "Kein Modifikator" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Die Annahmechance des Kaisers für die Königreichspetition bleibt unverändert" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Verdoppelt" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Die Annahmechance des Kaisers für die Königreichspetition wird verdoppelt" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Halbiert" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Die Annahmechance des Kaisers für die Königreichspetition wird halbiert" #NT!
-  
- rule_kingdoms_hre_austria_renown: "Königreiche des Heiligen Römischen Reichs: Österreichs Ansehensstufe" #NT!
+ rule_kingdoms_hre_austria_renown: "Königreiche des HRE: Österreich Renommee" #NT!
  setting_kingdoms_hre_culture_noteworthy: "Bemerkenswert" #NT!
- setting_kingdoms_hre_culture_noteworthy_desc: "Die Entscheidung „Das Erzherzogtum sichern“ erfordert einen Bekanntheitsgrad von #Z. Bemerkenswert #!" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "Die Entscheidung von 'Secure the Erzduchy' erfordert ein renommiertes Niveau von #Z bemerkenswert#!" #NT!
  setting_kingdoms_hre_culture_reputable: "Seriös" #NT!
- setting_kingdoms_hre_culture_reputable_desc: "Die Entscheidung „Das Erzherzogtum sichern“ erfordert einen Ansehensgrad von #Z Reputation#!" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "Die Entscheidung "Die Entscheidung" Erzduchy "erfordert eine renommierte Ebene von #Z Requessible#!" #NT!
  setting_kingdoms_hre_culture_well_known: "Bekannt" #NT!
- setting_kingdoms_hre_culture_well_known_desc: "Die Entscheidung „Das Erzherzogtum sichern“ erfordert einen Bekanntheitsgrad von #Z Bekannt#!" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "Die Entscheidung von 'Secure the Erzduchy' erfordert ein renommiertes Maß an #Z bekannt #!" #NT!
   
- rule_kingdoms_hre_capital_region_requirement: "Königreiche des Heiligen Römischen Reichs: Überprüfung der Hauptstadtregion" #NT!
+ rule_kingdoms_hre_capital_region_requirement: "Königreiche der HRE: Capital Region Check" #NT!
  setting_kingdoms_hre_capital_region_required: "Erforderlich" #NT!
- setting_kingdoms_hre_capital_region_required_desc: "Um Königreiche erstellen zu können, muss die Hauptstadt eines Charakters in der Region des Königreichs liegen." #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Schöpferische Königreiche müssen die Hauptstadt eines Charakters in der Region des Königreichs befinden" #NT!
  setting_kingdoms_hre_capital_region_not_required: "Nicht erforderlich" #NT!
- setting_kingdoms_hre_capital_region_not_required_desc: "Für erstellbare Königreiche ist #Z nicht#! erforderlich, dass die Hauptstadt eines Charakters innerhalb der Region des Königreichs liegt." #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Schöpferische Königreiche werden #Z nicht #! verlangen, dass die Hauptstadt eines Charakters in der Region des Königreichs liegt" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_base_chance: "Königreiche des HRE: Kaiser -Akzeptanzbasis -Chance" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero: "0%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 0%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five: "5%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 5%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten: "10%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 10%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen: "15%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 15%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty: "20%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 20%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive: "25%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 25%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty: "30%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty_desc: "Die Basischance für den Kaiser, die Kingdom -Petition zu akzeptieren, lautet #Z 30%#!" #NT!

@@ -1,30 +1,38 @@
 ﻿l_polish:
- game_rule_category_kingdoms_hre: "Królestwa HRE"
-
- rule_kingdoms_hre_culture_requirement: "Królestwa HRE: Kontrola kultury" #NT!
+ game_rule_category_kingdoms_hre: "Królestwa HRE" #NT!
+  
+ rule_kingdoms_hre_culture_requirement: "Królestwo HRE: Kontrola kultury" #NT!
  setting_kingdoms_hre_culture_required: "Wymagany" #NT!
- setting_kingdoms_hre_culture_required_desc: "Niektóre petycje królestwa będą wymagały odpowiedniej kontroli kultury" #NT!
+ setting_kingdoms_hre_culture_required_desc: "Niektóre petycje królestwa będą wymagały odpowiedniego kontroli kultury" #NT!
  setting_kingdoms_hre_culture_not_required: "Nie wymagane" #NT!
- setting_kingdoms_hre_culture_not_required_desc: "Petycje królestwa #Z nie#! będą wymagały odpowiedniej kontroli kultury" #NT!
+ setting_kingdoms_hre_culture_not_required_desc: "Królestwo petycje będą #Z nie wymagają odpowiedniego kontroli kultury" #NT!
   
- rule_kingdoms_hre_emperor_acceptance_modifier: "Królestwa HRE: Modyfikator akceptacji cesarza" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default: "Brak modyfikatora" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "Szansa na akceptację petycji królestwa przez cesarza pozostanie niezmieniona" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "Podwoił się" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "Szansa na akceptację petycji królestwa przez cesarza zostanie podwojona" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved: "Przepołowiony" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "Szansa na akceptację petycji królestwa przez cesarza zostanie zmniejszona o połowę" #NT!
-  
- rule_kingdoms_hre_austria_renown: "Królestwa HRE: Austria Poziom sławy" #NT!
+ rule_kingdoms_hre_austria_renown: "Królestwa HRE: Austria Renown Level" #NT!
  setting_kingdoms_hre_culture_noteworthy: "Godny uwagi" #NT!
- setting_kingdoms_hre_culture_noteworthy_desc: "Decyzja „Zabezpieczyć Arcyksięstwo” będzie wymagać poziomu sławy #Z Godne uwagi#!" #NT!
+ setting_kingdoms_hre_culture_noteworthy_desc: "Decyzja „zabezpiecz archiduchy” będzie wymagać uznanego poziomu #Z godnego uwagi#!" #NT!
  setting_kingdoms_hre_culture_reputable: "Renomowany" #NT!
- setting_kingdoms_hre_culture_reputable_desc: "Decyzja „Zabezpieczyć Arcyksięstwo” będzie wymagać poziomu sławy #Z Reputable#!" #NT!
+ setting_kingdoms_hre_culture_reputable_desc: "Decyzja „zabezpiecz archiduchy” będzie wymagać uznanego poziomu #Z renderble#!" #NT!
  setting_kingdoms_hre_culture_well_known: "Dobrze znany" #NT!
- setting_kingdoms_hre_culture_well_known_desc: "Decyzja „Zabezpieczyć Arcyksięstwo” będzie wymagać poziomu sławy #Z Dobrze znany#!" #NT!
+ setting_kingdoms_hre_culture_well_known_desc: "Decyzja „Zabezpieczenie archiduchy” będzie wymagała uznanego poziomu #Z dobrze znanego#!" #NT!
   
- rule_kingdoms_hre_capital_region_requirement: "Królestwa HRE: Sprawdź region stołeczny" #NT!
+ rule_kingdoms_hre_capital_region_requirement: "Królestwa HRE: Kontrola regionu kapitałowego" #NT!
  setting_kingdoms_hre_capital_region_required: "Wymagany" #NT!
- setting_kingdoms_hre_capital_region_required_desc: "W przypadku tworzenia królestw stolica postaci musi znajdować się w regionie królestwa" #NT!
+ setting_kingdoms_hre_capital_region_required_desc: "Królestwa Creatable będą wymagały, aby stolica postaci znajdowała się w regionie Królestwa" #NT!
  setting_kingdoms_hre_capital_region_not_required: "Nie wymagane" #NT!
- setting_kingdoms_hre_capital_region_not_required_desc: "Królestwa, które można tworzyć, #Z nie#! będą wymagać, aby stolica postaci znajdowała się w regionie królestwa" #NT!
+ setting_kingdoms_hre_capital_region_not_required_desc: "Królestwa Creatable #Z nie wymagają, aby kapitał postaci znajdował się w regionie Królestwa" #NT!
+  
+ rule_kingdoms_hre_emperor_acceptance_base_chance: "Królestwa HRE: szansa na akceptację cesarza" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero: "0%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero_desc: "Podstawową szansą, że cesarz zaakceptuje petycję Królestwa, będzie #Z 0%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five: "5%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five_desc: "Podstawową szansą, że cesarz zaakceptuje petycję Królestwa, będzie #Z 5%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten: "10%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten_desc: "Podstawową szansą dla cesarza zaakceptowania petycji Królestwa będzie #Z 10%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen: "15%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen_desc: "Podstawową szansą na przyjęcie przez cesarza petycji Królestwa będzie #Z 15%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty: "20%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty_desc: "Podstawową szansą dla cesarza zaakceptowania petycji Królestwa będzie #Z 20%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive: "25%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive_desc: "Podstawową szansą na przyjęcie przez cesarza petycji Królestwa będzie #Z 25%#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty: "30%" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty_desc: "Podstawową szansą dla cesarza zaakceptowania petycji Królestwa będzie #Z 30%#!" #NT!

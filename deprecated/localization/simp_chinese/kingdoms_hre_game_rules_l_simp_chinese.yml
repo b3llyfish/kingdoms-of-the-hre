@@ -7,14 +7,6 @@
  setting_kingdoms_hre_culture_not_required: "不要求" #NT!
  setting_kingdoms_hre_culture_not_required_desc: "王国请愿#Z 不#! 需要相关文化检查" #NT!
   
- rule_kingdoms_hre_emperor_acceptance_modifier: "神圣罗马帝国：皇帝的接受修正" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default: "无修饰符" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_default_desc: "皇帝接受王国请愿的几率将保持不变" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled: "加倍" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_doubled_desc: "皇帝接受王国请愿的几率将翻倍" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved: "减半" #NT!
- setting_kingdoms_hre_emperor_acceptance_modifier_halved_desc: "皇帝接受王国请愿的机会将减半" #NT!
-  
  rule_kingdoms_hre_austria_renown: "神圣罗马帝国：奥地利声望等级" #NT!
  setting_kingdoms_hre_culture_noteworthy: "值得注意的是" #NT!
  setting_kingdoms_hre_culture_noteworthy_desc: "“保卫大公国”决议需要声望等级达到#Z 值得注意#!" #NT!
@@ -28,3 +20,19 @@
  setting_kingdoms_hre_capital_region_required_desc: "可创建的王国需要角色的首都位于王国区域内" #NT!
  setting_kingdoms_hre_capital_region_not_required: "不要求" #NT!
  setting_kingdoms_hre_capital_region_not_required_desc: "可创建的王国#Z 不#! 要求角色的首都位于王国区域内" #NT!
+ 
+ rule_kingdoms_hre_emperor_acceptance_base_chance: "HRE的王国：皇帝的接受基础机会" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero: "0％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_zero_desc: "皇帝接受王国请愿的基本机会将为#Z0％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five: "5％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_five_desc: "皇帝接受王国请愿书的基本机会将为#Z5％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten: "10％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_ten_desc: "皇帝接受王国请愿书的基本机会将为#Z10％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen: "15％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_fifteen_desc: "皇帝接受王国请愿书的基本机会将为☻__015％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty: "20％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twenty_desc: "皇帝接受王国请愿的基本机会将为☻__020％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive: "25％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive_desc: "皇帝接受王国请愿的基本机会将为☻__025％#!" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty: "30％" #NT!
+ setting_kingdoms_hre_emperor_acceptance_base_chance_thirty_desc: "皇帝接受王国请愿的基本机会将为☻__030％#!" #NT!
