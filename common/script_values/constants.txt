@@ -1,4 +1,4 @@
-﻿kingdom_gift_amount = 300
+﻿kingdom_gift_amount = 150
 
 austria_required_renown_level = {
 	value = 0

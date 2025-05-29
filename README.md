@@ -41,14 +41,23 @@ Should the Emperor refuse the petition the Vassal may decide it's time to take t
 an unpressed claim on the HRE...
 
 ### Acceptance Chance
-The biggest factor for the Emperor's accept chance is their opinion of you, ranging from -100 to 100.
+The biggest factor for the Emperor's accept chance is their opinion of the character, ranging from -100 to 50 
+(positive relations only contribute half their total).
 
 Other things that can affect the decision are:
-* whether the vassal is an elector
-* whether the vassal is a powerful vassal
+* whether the character is a powerful vassal
 * the vassal options as described above
-* how honorable the Emperor's personality is
-* the Emperor's Acceptance Modifier game rule
+* how honourable the Emperor's personality is
+* the Emperor's Acceptance Base Chance game rule
+
+For example using the default game rules if a character petitioned the Emperor whose opinion of them was 40, then the 
+acceptance chance would be somewhere in the range of 25 - 55, depending on whether they were a powerful vassal and how
+honourable the Emperor is.
+To maximise the acceptance chance the character should look to maximise relations with the Emperor and utilise the Vassal
+Options listed above.
+
+There is also a slightly increased acceptance chance for Czech (or child any cultures) rulers petitioning for the 
+Kingdom of Bohemia.
 
 ## Existing Kingdoms
 The following Kingdoms are considered under the HRE's sphere of influence:
@@ -177,11 +186,6 @@ Whether to impose a culture requirement for certain Kingdoms.
 
 Options: Required (default), Not Required.
 
-### Emperor's Acceptance Modifier
-Whether to modifier the Emperor's accept petition chance, making it easier or harder to form a Kingdom. 
-
-Options: Halved, No modifier (default), Doubled 
-
 ### Austria Renown Level
 The dynasty renown level required for the 'Secure the Archduchy' decision. 
 
@@ -190,6 +194,12 @@ Options: Noteworthy, Reputable (default), Well-Known
 ### Capital Region Check
 Whether to require that capitals are in certain regions for certain Kingdoms.
 Options: Required (default), Not Required.
+
+### Emperor's Acceptance Base Chance
+The base chance for the Emperor to accept the Kingdom petition. It is possible for this to go lower based on the Emperor's
+opinion of the character.
+
+Options: 0%, 5%, 10%, 15%, 20% (default), 25%, 30%
 
 ## Flavorization
 This mod applies the following flavorization to HRE vassals holding HRE Kingdoms:

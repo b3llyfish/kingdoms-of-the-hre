@@ -250,8 +250,10 @@ kingdoms_hre.0002 = {
 			trigger_event = kingdoms_hre.0003
 		}
 		ai_chance = {
-			# emperor base accept chance
-			base = 50
+			base = 0
+			modifier = {
+				add = ai_petition_acceptance_base_chance_percent_value
+			}
 			modifier = {
 				add = ai_petition_acceptance_chance_percent_value
 			}
@@ -266,8 +268,10 @@ kingdoms_hre.0002 = {
 		custom_tooltip = kingdoms_hre.0002.c.tooltip
 		custom_tooltip = kingdoms_hre.0002.c.tooltip.claim
 		ai_chance = {
-			# emperor base reject chance
-			base = 175
+			base = 0
+			modifier = {
+				add = ai_petition_rejection_base_chance_percent_value
+			}
 			modifier = {
 				add = ai_petition_rejection_chance_percent_value
 			}

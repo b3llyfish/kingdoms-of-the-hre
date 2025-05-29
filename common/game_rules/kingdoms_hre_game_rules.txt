@@ -9,19 +9,6 @@
 	kingdoms_hre_culture_not_required = {}
 }
 
-kingdoms_hre_emperor_acceptance_modifier = {
-	
-	categories = { kingdoms_hre difficulty tweaks ai }
-	
-	default = kingdoms_hre_emperor_acceptance_modifier_default
-	
-	kingdoms_hre_emperor_acceptance_modifier_halved = {}
-	
-	kingdoms_hre_emperor_acceptance_modifier_default = {}
-	
-	kingdoms_hre_emperor_acceptance_modifier_doubled = {}
-}
-
 kingdoms_hre_austria_renown = {
 	
 	categories = { kingdoms_hre difficulty tweaks ai }
@@ -44,4 +31,25 @@ kingdoms_hre_capital_region_requirement = {
 	kingdoms_hre_capital_region_required = {}
 	
 	kingdoms_hre_capital_region_not_required = {}
+}
+
+kingdoms_hre_emperor_acceptance_base_chance = {
+	
+	categories = { kingdoms_hre difficulty tweaks ai }
+	
+	default = kingdoms_hre_emperor_acceptance_base_chance_twenty
+	
+	kingdoms_hre_emperor_acceptance_base_chance_zero = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_five = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_ten = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_fifteen = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_twenty = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_twentyfive = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_thirty = {}
 }
