@@ -499,9 +499,7 @@ can_choose_pomerania = {
 			custom_tooltip = {
 				text = require_pomerania_culture
 				culture = {
-					is_culture_or_is_descendant_culture_of = {
-						TARGET_CULTURE = culture:pommeranian
-					}
+					has_cultural_pillar = heritage_west_slavic
 				}
 			}
 		}

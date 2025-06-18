@@ -1,4 +1,4 @@
-﻿@correct_culture_primary_score = 100
+@correct_culture_primary_score = 100
 @better_than_the_alternatives_score = 50
 
 ## existing
@@ -428,14 +428,18 @@ k_pomerania = {
 			limit = {
 				is_ai = yes
 			}
-			culture = culture:pommeranian
+			culture = {
+				has_cultural_pillar = heritage_west_slavic
+			}
 		}
 	}
 	
 	ai_primary_priority = {
 		if = {
 			limit = {
-				culture = culture:pommeranian
+				culture = {
+					has_cultural_pillar = heritage_west_slavic
+				}
 			}
 			add = @correct_culture_primary_score
 		}

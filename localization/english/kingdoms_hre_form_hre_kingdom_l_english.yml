@@ -96,7 +96,7 @@
  choose_pomerania_name: "Principality of [GetTitleByKey('k_pomerania').GetNameNoTierNoTooltip]"
  choose_pomerania_tooltip: "Petition for the Principality of [GetTitleByKey('k_pomerania').GetNameNoTier]"
  not_enough_pomerania_counties: "You only have [SCOPE.ScriptValue('kingdom_pomerania_county_count')|0] of [SCOPE.ScriptValue('kingdom_pomerania_required_county_total')|0] required [counties|E]."
- require_pomerania_culture: "Culture must be Pommeranian or derived from it"
+ require_pomerania_culture: "Culture must have West Slavic heritage"
 
  choose_slavinia_name: "Principality of [GetTitleByKey('k_slavinia').GetNameNoTierNoTooltip]"
  choose_slavinia_tooltip: "Petition for the Principality of [GetTitleByKey('k_slavinia').GetNameNoTier]\n\nThe Principality of [GetTitleByKey('k_slavinia').GetNameNoTierNoTooltip] will be formed with the [GetTitleByKey('d_nordmark').GetName] and the [GetTitleByKey('d_ostmark').GetName] as de jure duchies."
