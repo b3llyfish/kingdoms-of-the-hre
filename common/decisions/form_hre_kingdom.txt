@@ -1,4 +1,4 @@
-﻿form_hre_kingdom_decision = {
+form_hre_kingdom_decision = {
 	ai_goal = yes
 	
 	picture = {
@@ -327,6 +327,9 @@
 		}
 		### slavinia
 		item = {
+			is_shown = {
+				show_slavinia = yes
+			}
 			value = choose_slavinia
 			is_valid = { can_choose_slavinia = { CHARACTER = root } }
 			localization = choose_slavinia_name

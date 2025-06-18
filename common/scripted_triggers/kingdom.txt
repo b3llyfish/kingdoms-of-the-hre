@@ -1,4 +1,4 @@
-﻿controls_enough_of_kingdom = {
+controls_enough_of_kingdom = {
 	$TARGET_KINGDOM$ = {
 		any_de_jure_county = {
 			percent > required_de_jure_county_percentage_as_decimal
@@ -509,6 +509,7 @@ can_choose_pomerania = {
 }
 
 can_choose_slavinia = {
+	show_slavinia = yes
 	custom_tooltip = {
 		text = kingdom_already_exists
 		NOT = { exists = title:k_slavinia.holder }
@@ -541,6 +542,10 @@ can_choose_slavinia = {
 			}
 		}
 	}
+}
+
+show_slavinia = {
+	always = yes
 }
 
 can_choose_carinthia = {
