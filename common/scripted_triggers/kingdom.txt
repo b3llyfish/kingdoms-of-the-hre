@@ -1,4 +1,4 @@
-controls_enough_of_kingdom = {
+﻿controls_enough_of_kingdom = {
 	$TARGET_KINGDOM$ = {
 		any_de_jure_county = {
 			percent > required_de_jure_county_percentage_as_decimal
@@ -32,7 +32,7 @@ is_not_hre_vassal = {
 controls_enough_of_region = {
 	any_county_in_region  = {
 		region = $TARGET_REGION$
-		percent > required_de_jure_county_percentage_as_decimal
+		percent >= required_de_jure_county_percentage_as_decimal
 		OR = {
 			holder = $CHARACTER$
 			holder = {
@@ -540,10 +540,6 @@ can_choose_slavinia = {
 			}
 		}
 	}
-}
-
-show_slavinia = {
-	always = yes
 }
 
 can_choose_carinthia = {

@@ -219,15 +219,12 @@ The mod also enables the Switzerland flavorization, which already existed in gam
 * Saxon Elective Realm Law can now be applied to the Kingdom of Saxony title
 
 ## Compatibility
-This mod will likely be incompatible with mods in the following areas:
-* mods that add/change/remove titles related to the HRE Kingdoms defined above
-* mods that change the form Austria or Switzerland decisions (though the underlying scripted effects are untouched)
-* mods that change flavorization of the HRE Kingdoms
+This mod changes the definition files of the HRE Kingdom and so whilst unlikely to cause crashes you will see strange
+behaviour with other mods that either:
+* add or remove duchies to HRE Kingdoms
+* add or remove Kingdoms to the HRE empire (and surrounding empires)
 
-### Similar Mods
-These mods do similar things and could be use an alternative. They are assumed to be incompatible with this mod.
-* [Restore Saxony](https://steamcommunity.com/sharedfiles/filedetails/?id=2412107778&searchtext=saxony) - Implements the Kingdom of Saxony
-* [No HRE Kingdoms](https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms) - Prevents the AI from forming HRE Kingdoms
+A compatibility mod has been created for Culture Expanded. Subscribe to [this mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3504921484) if you are using it.
 
 ## Localization
 Localization files for all supported languages has been provided by [ModTranslationHelper](https://github.com/JuryReimis/ModTranslationHelper/blob/master/README.md).

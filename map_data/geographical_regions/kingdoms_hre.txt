@@ -27,3 +27,27 @@ custom_carinthia = {
 		d_carinthia d_krain d_istria
 	}
 }
+
+custom_khre_wendia = {
+	duchies = {
+		d_nordmark d_ostmark
+	}
+}
+
+custom_khre_franconia = {
+	duchies = {
+		d_west_franconia d_east_franconia d_hesse
+	}
+}
+
+custom_khre_swabia = {
+	duchies = {
+		d_alsace d_swabia d_augsburg
+	}
+}
+
+custom_khre_frisia = {
+	duchies = {
+		d_frisia d_holland d_gelre d_utrecht
+	}
+}

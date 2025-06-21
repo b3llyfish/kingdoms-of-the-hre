@@ -36,3 +36,11 @@
  setting_kingdoms_hre_emperor_acceptance_base_chance_twentyfive_desc: "Базовая шанс для Императора принять ходатайство о королевстве будет #Z 25%#!" #NT!
  setting_kingdoms_hre_emperor_acceptance_base_chance_thirty: "30%" #NT!
  setting_kingdoms_hre_emperor_acceptance_base_chance_thirty_desc: "Базовая шанс для Императора принять ходатайство о королевстве будет #Z 30%#!" #NT!
+ 
+ choose_franconia_name: "Principality of Franconia"
+ custom_khre_franconia: "Franconia"
+ choose_swabia_name: "Principality of Swabia"
+ custom_khre_swabia: "Swabia"
+ choose_wendia_name: "Principality of Luticia"
+ custom_khre_wendia: "Luticia"
+ custom_khre_frisia: "Frisia"

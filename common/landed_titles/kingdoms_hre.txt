@@ -479,3 +479,8 @@ k_carinthia = {
 	
 	capital = c_karnten
 }
+
+## CE placeholder titles
+k_grand_franconia = {}
+k_grand_swabia = {}
+k_wendia = {}

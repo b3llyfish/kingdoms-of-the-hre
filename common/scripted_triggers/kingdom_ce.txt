@@ -1,0 +1,40 @@
+﻿# triggers to be overwritten by CE compatibility mod
+
+show_slavinia = {
+	always = yes
+}
+
+can_choose_wendia = {
+	show_wendia = yes
+	$CHARACTER$ = {}
+}
+
+show_wendia = {
+	always = no
+}
+
+can_choose_franconia = {
+	show_franconia = yes
+	$CHARACTER$ = {}
+}
+
+show_franconia = {
+	always = no
+}
+
+can_choose_swabia = {
+	show_swabia = yes
+	$CHARACTER$ = {}
+}
+
+show_swabia = {
+	always = no
+}
+
+show_frisia = {
+	always = yes
+}
+
+show_frisia_unformed = {
+	always = no
+}

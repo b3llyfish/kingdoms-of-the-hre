@@ -1,4 +1,4 @@
-form_hre_kingdom_decision = {
+﻿form_hre_kingdom_decision = {
 	ai_goal = yes
 	
 	picture = {
@@ -49,6 +49,9 @@ form_hre_kingdom_decision = {
 				can_choose_pomerania = { CHARACTER = root }
 				can_choose_slavinia = { CHARACTER = root }
 				can_choose_carinthia = { CHARACTER = root }
+				can_choose_franconia = { CHARACTER = root }
+				can_choose_swabia = { CHARACTER = root }
+				can_choose_wendia = { CHARACTER = root }
 			}
 		}
 	}
@@ -152,9 +155,34 @@ form_hre_kingdom_decision = {
 				}
 			}
 		}
+		### franconia - CE only
+		item = {
+			is_shown = {
+				show_franconia = yes
+			}
+			value = choose_franconia
+			is_valid = { can_choose_franconia = { CHARACTER = root } }
+			localization = choose_franconia_name
+			icon = "gfx/interface/icons/kingdoms_hre/franconia.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_khre_franconia
+						}
+					}
+					add = 100
+				}
+			}
+		}
 		### frisia
 		item = {
 			value = choose_frisia
+			is_shown = {
+				show_frisia = yes
+			}
 			is_valid = { can_choose_frisia = { CHARACTER = root } }
 			localization = choose_frisia_name
 			icon = "gfx/interface/icons/kingdoms_hre/frisia.dds"
@@ -165,6 +193,28 @@ form_hre_kingdom_decision = {
 						controls_enough_of_kingdom = {
 							CHARACTER = root
 							TARGET_KINGDOM = title:k_frisia
+						}
+					}
+					add = 100
+				}
+			}
+		}
+		### frisia unformed - CE only
+		item = {
+			value = choose_frisia_unformed
+			is_shown = {
+				show_frisia_unformed = yes
+			}
+			is_valid = { can_choose_frisia = { CHARACTER = root } }
+			localization = choose_frisia_name
+			icon = "gfx/interface/icons/kingdoms_hre/frisia.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_khre_frisia
 						}
 					}
 					add = 100
@@ -203,6 +253,28 @@ form_hre_kingdom_decision = {
 						controls_enough_of_region = {
 							CHARACTER = root
 							TARGET_REGION = custom_lower_saxony
+						}
+					}
+					add = 100
+				}
+			}
+		}
+		### swabia - CE only
+		item = {
+			is_shown = {
+				show_swabia = yes
+			}
+			value = choose_swabia
+			is_valid = { can_choose_swabia = { CHARACTER = root } }
+			localization = choose_swabia_name
+			icon = "gfx/interface/icons/kingdoms_hre/swabia.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_khre_swabia
 						}
 					}
 					add = 100
@@ -347,6 +419,28 @@ form_hre_kingdom_decision = {
 				}
 			}
 		}
+		### wendia - CE only
+		item = {
+			is_shown = {
+				show_wendia = yes
+			}
+			value = choose_wendia
+			is_valid = { can_choose_wendia = { CHARACTER = root } }
+			localization = choose_wendia_name
+			icon = "gfx/interface/icons/kingdoms_hre/wendia.dds"
+			ai_chance = {
+				value = 0
+				if = {
+					limit = {
+						controls_enough_of_region = {
+							CHARACTER = root
+							TARGET_REGION = custom_khre_wendia
+						}
+					}
+					add = 100
+				}
+			}
+		}
 		### aquitaine
 		item = {
 			value = choose_aquitaine
@@ -458,6 +552,16 @@ form_hre_kingdom_decision = {
 		else_if = {
 			limit = {
 				scope:choose_frisia = yes
+			}
+			title:k_frisia = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# frisia (unformed)
+		else_if = {
+			limit = {
+				scope:choose_frisia_unformed = yes
 			}
 			title:k_frisia = {
 				save_scope_as = target_title
@@ -577,6 +681,7 @@ form_hre_kingdom_decision = {
 			}
 			trigger_event = kingdoms_hre.0001
 		}
+		# slavinia
 		else_if = {
 			limit = {
 				scope:choose_slavinia = yes
@@ -586,11 +691,42 @@ form_hre_kingdom_decision = {
 			}
 			trigger_event = kingdoms_hre.0001
 		}
+		# carinthia
 		else_if = {
 			limit = {
 				scope:choose_carinthia = yes
 			}
 			title:k_carinthia = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# wendia
+		else_if = {
+			limit = {
+				scope:choose_wendia = yes
+			}
+			title:k_wendia = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# franconia
+		else_if = {
+			limit = {
+				scope:choose_franconia = yes
+			}
+			title:k_grand_franconia = {
+				save_scope_as = target_title
+			}
+			trigger_event = kingdoms_hre.0001
+		}
+		# swabia
+		else_if = {
+			limit = {
+				scope:choose_swabia = yes
+			}
+			title:k_grand_swabia = {
 				save_scope_as = target_title
 			}
 			trigger_event = kingdoms_hre.0001

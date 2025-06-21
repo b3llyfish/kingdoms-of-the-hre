@@ -1,0 +1,13 @@
+﻿# effects to be overwritten by CE compatibility mod
+
+create_franconia_title = {
+	$OWNER$ = {}
+}
+
+create_swabia_title = {
+	$OWNER$ = {}
+}
+
+create_frisia_title = {
+	$OWNER$ = {}
+}

@@ -2,6 +2,8 @@
 Mod that changes how Kingdoms are formed in the HRE for both the player and AI.
 These changes apply to both existing HRE Kingdoms and creatable ones.
 
+[b]Update[/b]: This mod now has a compatibility mod with Culture Expanded, see the Compatibility section below.
+
 [h2]Key Details[/h2]
 
 [b]Kingdoms[/b]
@@ -29,6 +31,14 @@ These changes apply to both existing HRE Kingdoms and creatable ones.
 
 For a detailed explanation of the changes visit the mod's [url=https://github.com/b3llyfish/kingdoms-of-the-hre/blob/main/README.md]README[/url].
 
+[h2]Compatibility[/h2]
+This mod changes the definition files of the HRE Kingdom and so whilst unlikely to cause crashes you will see strange
+behaviour with other mods that either:
+* add or remove duchies to HRE Kingdoms
+* add or remove Kingdoms to the HRE empire (and surrounding empires)
+
+A compatibility mod has been created for Culture Expanded. Subscribe to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3504921484]this mod[/url] if you are using it.
+
 [h2]FAQ[/h2]
 
 [h3]Would you be able to add in [i]some other[/i] Kingdom title?[/h3]
@@ -52,15 +62,10 @@ Whilst unlikely to crash your game you may see things like orphaned duchy titles
 [h3]Could you make a compatibility patch for [i]mod that adds/changes/removes titles[/i]?[/h3]
 Apologies but due to the large amount of mods out there I am not interested in making compatibility patches at this point in time.
 
-[h3] Similar Mods [/h3]
-These mods do similar things and could be use an alternative. They are assumed to be incompatible with this mod.
-* [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2412107778&searchtext=saxony]Restore Saxony[/url] - Implements the Kingdom of Saxony
-* [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2420327048&searchtext=hre+kingdoms]No HRE Kingdoms[/url] - Prevents the AI from forming HRE Kingdoms
-
 [h2] Localization [/h2]
 Localization files for all supported languages has been provided by [url=https://github.com/JuryReimis/ModTranslationHelper/blob/master/README.md]ModTranslationHelper[/url].
 
-Please note that these files are machine translated and most likely will not be 100% accurate. I welcome any modders out 
+Please note that these files are machine translated and most likely will not be 100% accurate. I welcome any modders out
 there to provide language support for this mod.
 
 Below lists mods which provide localization support for this mod. If your preferred language appears below you must use the

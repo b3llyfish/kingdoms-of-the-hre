@@ -112,3 +112,11 @@
  k_carinthia: "Carinthia"
  k_carinthia_adj: "Carinthian"
  custom_carinthia: "Carinthia"
+
+ choose_franconia_name: "Principality of Franconia"
+ custom_khre_franconia: "Franconia"
+ choose_swabia_name: "Principality of Swabia"
+ custom_khre_swabia: "Swabia"
+ choose_wendia_name: "Principality of Luticia"
+ custom_khre_wendia: "Luticia"
+ custom_khre_frisia: "Frisia"

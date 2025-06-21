@@ -81,6 +81,30 @@
 			OWNER = $OWNER$
 		}
 	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_grand_franconia
+		}
+		create_franconia_title = {
+			OWNER = $OWNER$
+		}
+	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_grand_swabia
+		}
+		create_swabia_title = {
+			OWNER = $OWNER$
+		}
+	}
+	else_if = {
+		limit = {
+			scope:target_title = title:k_frisia
+		}
+		create_frisia_title = {
+			OWNER = $OWNER$
+		}
+	}
 	
 	# give option to change culture if criteria met
 	if = {
