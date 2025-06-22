@@ -120,3 +120,11 @@
  choose_wendia_name: "Principality of Luticia"
  custom_khre_wendia: "Luticia"
  custom_khre_frisia: "Frisia"
+
+ custom_khre_upper_saxony_culture_convert: "region"
+ custom_khre_provence_culture_convert: "region"
+ custom_khre_savoie_dauphine_culture_convert: "region"
+ custom_khre_burgundy_culture_convert: "region"
+ custom_khre_lotharingia_culture_convert: "region"
+ custom_khre_swiss_culture_convert: "region"
+ custom_khre_austria_culture_convert: "region"

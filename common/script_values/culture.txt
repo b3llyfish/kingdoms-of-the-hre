@@ -12,7 +12,7 @@
 	if = {
 		limit = {
 			scope:character = {
-				has_character_flag = kingdoms_hre_diverge_cost_reduction
+				has_character_flag = kingdoms_hre_customise_culture
 			}
 		}
 		multiply = {

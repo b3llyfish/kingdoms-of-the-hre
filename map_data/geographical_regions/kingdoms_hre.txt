@@ -51,3 +51,51 @@ custom_khre_frisia = {
 		d_frisia d_holland d_gelre d_utrecht
 	}
 }
+
+custom_khre_upper_saxony_culture_convert = {
+	counties = {
+		c_vogtland c_wolkenstein c_naumburg c_mersenburg c_osterland c_dessau c_lobdaburg c_orlamunde
+	}
+}
+
+custom_khre_austria_culture_convert = {
+	duchies = {
+		d_osterreich d_steyermark
+	}
+}
+
+custom_khre_provence_culture_convert = {
+	duchies = {
+		d_provence
+	}
+	counties = {
+		c_valentinois
+	}
+}
+
+custom_khre_savoie_dauphine_culture_convert = {
+	duchies = {
+		d_savoie d_dauphine
+	}
+}
+
+custom_khre_burgundy_culture_convert = {
+	duchies = {
+		d_upper_burgundy
+	}
+}
+
+custom_khre_lotharingia_culture_convert = {
+	duchies = {
+		d_upper_lorraine d_lower_lorraine d_julich
+	}
+	counties = {
+		c_luxembourg
+	}
+}
+
+custom_khre_swiss_culture_convert = {
+	duchies = {
+		d_transjurania d_currezia
+	}
+}

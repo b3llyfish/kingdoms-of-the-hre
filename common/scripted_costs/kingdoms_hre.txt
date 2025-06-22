@@ -193,7 +193,7 @@ diverge_culture = {
 		}
 		if = {
 			limit = {
-				has_character_flag = kingdoms_hre_diverge_cost_reduction
+				has_character_flag = kingdoms_hre_enhanced_divergence
 			}
 			multiply = {
 				value = 0 # this is just the base cost and won't include tradition changes

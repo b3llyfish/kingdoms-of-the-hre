@@ -1,0 +1,16 @@
+﻿can_diverge_culture = {
+	culture = { culture_age >= culture_divergence_cooldown }
+	trigger_if = {
+		limit = {
+			NOT = {
+				has_character_flag = kingdoms_hre_enhanced_divergence
+			}
+		}
+		custom_description = {
+			text = culture_present_in_realm_for_divergence
+			any_sub_realm_county = {
+				culture = root.culture
+			}
+		}
+	}
+}

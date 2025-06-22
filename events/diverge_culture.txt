@@ -26,41 +26,58 @@ diverge_culture.0001 = {
 	option = {
 		name = diverge_culture.0001.a
 		
+		custom_tooltip = diverge_culture.0001.a.random_diverge
 		if = {
 			limit = {
-				culture = {
-					has_cultural_parameter = less_likely_to_culture_convert
-				}
-				OR = {
-					has_trait = compassionate
-					has_trait = gregarious
-					has_trait = diligent
-					has_trait = fickle
-					has_trait = humble
-					has_trait = trusting
-				}
+				scope:primary_title = title:k_upper_saxony
 			}
-			add_stress = medium_stress_gain
+			custom_tooltip = diverge_culture.0001.a.upper_saxony
 		}
-		else_if = {
+		if = {
 			limit = {
-				culture = {
-					has_cultural_parameter = less_likely_to_culture_convert
+				scope:primary_title = title:k_austria
+			}
+			custom_tooltip =  diverge_culture.0001.a.austria
+		}
+		if = {
+			limit = {
+				scope:primary_title = title:k_lotharingia
+			}
+			custom_tooltip = diverge_culture.0001.a.lotharingia
+		}
+		if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_burgundy_culture_convert }
+			}
+			custom_tooltip = diverge_culture.0001.a.burgundy
+		}
+		if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				OR = {
+					capital_province = { geographical_region = custom_khre_dauphine_culture_convert }
+					capital_province = { geographical_region = custom_khre_savoie_culture_convert }
 				}
 			}
-			add_stress = major_stress_gain
+			custom_tooltip = diverge_culture.0001.a.savoie
 		}
-		
-		custom_tooltip = diverge_culture.0001.a.random_diverge
-		custom_tooltip = diverge_culture.0001.a.enhanced_culture_conversion
+		if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_provence_culture_convert }
+			}
+			custom_tooltip = diverge_culture.0001.a.provence
+		}
+		if = {
+			limit = {
+				scope:primary_title = title:k_switzerland
+			}
+			custom_tooltip = diverge_culture.0001.a.swiss
+		}
 		
 		hidden_effect = {
-			flip_capital_if_culture_missing_in_sub_realm = {
-				CHARACTER = root
-			}
-			enhanced_expand_diverged_culture_setup_vars = {
-				CHARACTER = root
-			}
+			add_character_flag = kingdoms_hre_enhanced_divergence
 			create_divergent_culture_with_side_effects_excluding_cost = yes
 		}
 
@@ -74,18 +91,58 @@ diverge_culture.0001 = {
 		name = diverge_culture.0001.b
 		
 		custom_tooltip = diverge_culture.0001.b.diverge_cost_reduction
-		custom_tooltip = diverge_culture.0001.b.enhanced_culture_conversion
+		if = {
+			limit = {
+				scope:primary_title = title:k_upper_saxony
+			}
+			custom_tooltip = diverge_culture.0001.a.upper_saxony
+		}
+		if = {
+			limit = {
+				scope:primary_title = title:k_austria
+			}
+			custom_tooltip =  diverge_culture.0001.a.austria
+		}
+		if = {
+			limit = {
+				scope:primary_title = title:k_lotharingia
+			}
+			custom_tooltip = diverge_culture.0001.a.lotharingia
+		}
+		if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_burgundy_culture_convert }
+			}
+			custom_tooltip = diverge_culture.0001.a.burgundy
+		}
+		if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				OR = {
+					capital_province = { geographical_region = custom_khre_dauphine_culture_convert }
+					capital_province = { geographical_region = custom_khre_savoie_culture_convert }
+				}
+			}
+			custom_tooltip = diverge_culture.0001.a.savoie
+		}
+		if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_provence_culture_convert }
+			}
+			custom_tooltip = diverge_culture.0001.a.provence
+		}
+		if = {
+			limit = {
+				scope:primary_title = title:k_switzerland
+			}
+			custom_tooltip = diverge_culture.0001.a.swiss
+		}
 		
 		hidden_effect = {
-			add_character_flag = kingdoms_hre_diverge_cost_reduction
-			enhanced_expand_diverged_culture_setup_vars = {
-				CHARACTER = root
-			}
-		}
-
-		# dont hide this as capital will remain the only converted province until divergence
-		flip_capital_if_culture_missing_in_sub_realm = {
-			CHARACTER = root
+			add_character_flag = kingdoms_hre_customise_culture
+			add_character_flag = kingdoms_hre_enhanced_divergence
 		}
 
 		ai_chance = {

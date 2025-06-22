@@ -1,68 +1,88 @@
-﻿flip_capital_if_culture_missing_in_sub_realm = {
+﻿# convert the defined region to the new culture
+enhanced_diverge_culture_convert = {
 	$CHARACTER$ = {
-		if = {
-			limit = {
-				NOT = {
-					any_sub_realm_county = {
-						count >= 1
-						culture = root.culture
-					}
-				}
-			}
-			capital_county = {
-				set_county_culture = root.culture
-			}
-		}
-	}
-}
-
-# marks the kingdom whose creation triggered the divergence
-enhanced_expand_diverged_culture_setup_vars = {
-	$CHARACTER$ = {
-		add_character_flag = kingdoms_hre_do_enhanced_diverge_conversion
 		if = {
 			limit = {
 				has_primary_title = title:k_upper_saxony
 			}
-			set_variable = {
-				name = kingdoms_hre_enhanced_diverge_kingdom_title
-				value = title:k_upper_saxony
+			every_county_in_region = {
+				region = custom_khre_upper_saxony_culture_convert
+				limit = {
+					culture = { has_cultural_pillar = heritage_west_slavic }
+				}
+				set_county_culture = scope:new_culture
 			}
 		}
 		else_if = {
 			limit = {
 				has_primary_title = title:k_austria
 			}
-			set_variable = {
-				name = kingdoms_hre_enhanced_diverge_kingdom_title
-				value = title:k_austria
+			every_county_in_region = {
+				region = custom_khre_austria_culture_convert
+				limit = {
+					culture = culture:bavarian
+				}
+				set_county_culture = scope:new_culture
 			}
 		}
 		else_if = {
 			limit = {
 				has_primary_title = title:k_lotharingia
 			}
-			set_variable = {
-				name = kingdoms_hre_enhanced_diverge_kingdom_title
-				value = title:k_lotharingia
+			every_county_in_region = {
+				region = custom_khre_lotharingia_culture_convert
+				limit = {
+					culture = culture:franconian
+				}
+				set_county_culture = scope:new_culture
 			}
 		}
 		else_if = {
 			limit = {
 				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_burgundy_culture_convert }
 			}
-			set_variable = {
-				name = kingdoms_hre_enhanced_diverge_kingdom_title
-				value = title:k_burgundy
+			every_county_in_region = {
+				region = custom_khre_burgundy_culture_convert
+				limit = {
+					culture = culture:french
+				}
+				set_county_culture = scope:new_culture
+			}
+		}
+		else_if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_savoie_dauphine_culture_convert }
+			}
+			every_county_in_region = {
+				region = custom_khre_savoie_dauphine_culture_convert
+				limit = {
+					culture = culture:french
+				}
+				set_county_culture = scope:new_culture
+			}
+		}
+		else_if = {
+			limit = {
+				has_primary_title = title:k_burgundy
+				capital_province = { geographical_region = custom_khre_provence_culture_convert }
+			}
+			every_county_in_region = {
+				region = custom_khre_provence_culture_convert
+				limit = {
+					culture = culture:occitan
+				}
+				set_county_culture = scope:new_culture
 			}
 		}
 		else_if = {
 			limit = {
 				has_primary_title = title:k_switzerland
 			}
-			set_variable = {
-				name = kingdoms_hre_enhanced_diverge_kingdom_title
-				value = title:k_switzerland
+			every_county_in_region = {
+				region = custom_khre_swiss_culture_convert
+				set_county_culture = scope:new_culture
 			}
 		}
 	}
@@ -84,99 +104,6 @@ undo_diverged_culture_conversion = {
 					culture = scope:new_culture
 				}
 				set_county_culture = scope:old_culture
-			}
-		}
-	}
-}
-
-# stronger culture conversion from county effect
-# can only convert counties within your top liege's realm
-# can only convert counties within the kingdom defined by var:kingdoms_hre_enhanced_diverge_kingdom_title
-enhanced_expand_diverged_culture_from_origin_point = {
-	$CHARACTER$ = {
-		save_scope_as = character
-	}
-	every_title_to_title_neighboring_and_across_water_county = {
-		save_temporary_scope_as = county
-		limit = {
-			holder.top_liege = scope:character.top_liege
-			OR = {
-				NOT = { exists = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title }
-				kingdom = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title
-			}
-			NOT = { culture = scope:character.culture }
-		}
-		
-		random = {
-			chance = {
-				value = enhanced_diverge_conversion_immediate_counties_convert_chance
-			}
-			
-			holder = {
-				if = {
-					limit = {
-						NOT = { this = scope:character }
-						NOT = {
-							scope:county = {
-								culture = scope:character.culture
-							}
-						}
-						is_ai = no
-					}
-					send_interface_message = {
-						title = county_culture_converted_title
-						scope:county = {
-							set_county_culture = scope:character.culture
-						}
-					}
-				}
-				else = {
-					scope:county = {
-						set_county_culture = scope:character.culture
-					}
-				}
-			}
-		
-			every_title_to_title_neighboring_and_across_water_county = {
-				save_temporary_scope_as = county
-				limit = {
-					holder.top_liege = scope:character.top_liege
-					OR = {
-						NOT = { exists = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title }
-						kingdom = scope:character.var:kingdoms_hre_enhanced_diverge_kingdom_title
-					}
-					NOT = { culture = scope:character.culture }
-				}
-				random = {
-					chance = {
-						value = enhanced_diverge_conversion_secondary_counties_convert_chance
-					}
-					
-					holder = {
-						if = {
-							limit = {
-								NOT = { this = scope:character }
-								NOT = {
-									scope:county = {
-										culture = scope:character.culture
-									}
-								}
-								is_ai = no
-							}
-							send_interface_message = {
-								title = county_culture_converted_title
-								scope:county = {
-									set_county_culture = scope:character.culture
-								}
-							}
-						}
-						else = {
-							scope:county = {
-								set_county_culture = scope:character.culture
-							}
-						}
-					}
-				}
 			}
 		}
 	}
