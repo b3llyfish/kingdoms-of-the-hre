@@ -599,12 +599,17 @@ diverges_to_unique_culture = {
 				}
 			}
 			# Arpitan, Burgundian or Provancale
-			AND = {
-				has_primary_title = title:k_burgundy
-				culture = {
-					has_cultural_pillar = heritage_frankish
-				}
-			}
+			diverges_to_unique_culture_burgundy = yes
+		}
+	}
+}
+
+# separate to allow overriding
+diverges_to_unique_culture_burgundy = {
+	AND = {
+		has_primary_title = title:k_burgundy
+		culture = {
+			has_cultural_pillar = heritage_frankish
 		}
 	}
 }
