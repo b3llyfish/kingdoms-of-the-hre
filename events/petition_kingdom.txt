@@ -297,7 +297,12 @@ kingdoms_hre.0003 = {
 	
 	immediate = {
 		play_music_cue = "mx_cue_epic_sacral_moment"
-		create_hre_crown_artifact = yes
+		if = {
+			limit = {
+				NOT = { has_dlc_feature = coronations }
+			}
+			create_hre_crown_artifact = yes
+		}
 		if = {
 			limit = {
 				has_dlc_feature = court_artifacts
@@ -491,7 +496,12 @@ kingdoms_hre.0007 = {
 	
 	immediate = {
 		play_music_cue = "mx_cue_epic_sacral_moment"
-		create_hre_crown_artifact = yes
+		if = {
+			limit = {
+				NOT = { has_dlc_feature = coronations }
+			}
+			create_hre_crown_artifact = yes
+		}
 		if = {
 			limit = {
 				has_dlc_feature = court_artifacts

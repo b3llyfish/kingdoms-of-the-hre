@@ -2,7 +2,10 @@
 Mod that changes how Kingdoms are formed in the HRE for both the player and AI.
 These changes apply to both existing HRE Kingdoms and creatable ones.
 
-[b]Update[/b]: This mod now has a compatibility mod with Culture Expanded, see the Compatibility section below.
+[h2]Mod Status[/h2]
+This mod is considered complete. I will do my best to ensure compatibility with game version updates.
+
+[b]Please note[/b] that I currently have no intention of buying future CK3 DLCs. If a future DLC breaks this mod I will not be able to fix it.
 
 [h2]Key Details[/h2]
 

@@ -4,5 +4,5 @@ tags={
 	"Historical"
 }
 name="Kingdoms of the HRE"
-supported_version="1.16.*"
+supported_version="1.17.*"
 remote_file_id="3380893224"
