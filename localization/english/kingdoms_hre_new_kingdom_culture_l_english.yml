@@ -6,7 +6,7 @@
  diverge_culture.0001.a.upper_saxony: "Counties whose culture have West Slavic heritage within this [GetGeographicalRegion('custom_khre_upper_saxony_culture_convert').GetName] will convert to your new culture"
  diverge_culture.0001.a.austria: "Counties with Bavarian culture within this [GetGeographicalRegion('custom_khre_austria_culture_convert').GetName] will convert to your new culture"
  diverge_culture.0001.a.provence: "Counties with Occitan culture within this [GetGeographicalRegion('custom_khre_provence_culture_convert').GetName] will convert to your new culture"
- diverge_culture.0001.a.savoie: "Counties with French culture within this [GetGeographicalRegion('custom_khre_savoie_culture_convert').GetName] will convert to your new culture"
+ diverge_culture.0001.a.savoie: "Counties with French culture within this [GetGeographicalRegion('custom_khre_savoie_dauphine_culture_convert').GetName] will convert to your new culture"
  diverge_culture.0001.a.burgundy: "Counties with French culture within this [GetGeographicalRegion('custom_khre_burgundy_culture_convert').GetName] will convert to your new culture"
  diverge_culture.0001.a.lotharingia: "Counties with Franconian culture within this [GetGeographicalRegion('custom_khre_lotharingia_culture_convert').GetName] will convert to your new culture"
  diverge_culture.0001.a.swiss: "Counties within this [GetGeographicalRegion('custom_khre_swiss_culture_convert').GetName] will convert to your new culture"

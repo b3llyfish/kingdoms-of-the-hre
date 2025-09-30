@@ -55,10 +55,7 @@ diverge_culture.0001 = {
 		if = {
 			limit = {
 				has_primary_title = title:k_burgundy
-				OR = {
-					capital_province = { geographical_region = custom_khre_dauphine_culture_convert }
-					capital_province = { geographical_region = custom_khre_savoie_culture_convert }
-				}
+				capital_province = { geographical_region = custom_khre_savoie_dauphine_culture_convert }
 			}
 			custom_tooltip = diverge_culture.0001.a.savoie
 		}
@@ -119,10 +116,7 @@ diverge_culture.0001 = {
 		if = {
 			limit = {
 				has_primary_title = title:k_burgundy
-				OR = {
-					capital_province = { geographical_region = custom_khre_dauphine_culture_convert }
-					capital_province = { geographical_region = custom_khre_savoie_culture_convert }
-				}
+				capital_province = { geographical_region = custom_khre_savoie_dauphine_culture_convert }
 			}
 			custom_tooltip = diverge_culture.0001.a.savoie
 		}
