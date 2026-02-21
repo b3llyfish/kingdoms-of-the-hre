@@ -184,7 +184,7 @@ The Kingdom of Upper Saxony will have slightly easier requirements in the 867 st
 ### Culture Check
 Whether to impose a culture requirement for certain Kingdoms. 
 
-Options: Required (default), Not Required.
+Options: Required (default), Not Required
 
 ### Austria Renown Level
 The dynasty renown level required for the 'Secure the Archduchy' decision. 
@@ -193,13 +193,19 @@ Options: Noteworthy, Reputable (default), Well-Known
 
 ### Capital Region Check
 Whether to require that capitals are in certain regions for certain Kingdoms.
-Options: Required (default), Not Required.
+
+Options: Required (default), Not Required
 
 ### Emperor's Acceptance Base Chance
 The base chance for the Emperor to accept the Kingdom petition. It is possible for this to go lower based on the Emperor's
 opinion of the character.
 
-Options: 0%, 5%, 10%, 15%, 20% (default), 25%, 30%
+Options: -30%, -25%, -20%, -15%, -10%, -5%, 0%, 5%, 10%, 15% (default), 20%, 25%, 30%
+
+### AI Allowed
+Whether the AI is allowed to petition for a Kingdom.
+
+Options: Allowed, Allowed One Time, Bohemia Only, Disallowed
 
 ## Flavorization
 This mod applies the following flavorization to HRE vassals holding HRE Kingdoms:

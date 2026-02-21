@@ -37,7 +37,19 @@ kingdoms_hre_emperor_acceptance_base_chance = {
 	
 	categories = { kingdoms_hre difficulty tweaks ai }
 	
-	default = kingdoms_hre_emperor_acceptance_base_chance_twenty
+	default = kingdoms_hre_emperor_acceptance_base_chance_fifteen
+	
+	kingdoms_hre_emperor_acceptance_base_chance_minus_thirty = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_minus_twentyfive = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_minus_twenty = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_minus_fifteen = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_minus_ten = {}
+	
+	kingdoms_hre_emperor_acceptance_base_chance_minus_five = {}
 	
 	kingdoms_hre_emperor_acceptance_base_chance_zero = {}
 	
@@ -52,4 +64,19 @@ kingdoms_hre_emperor_acceptance_base_chance = {
 	kingdoms_hre_emperor_acceptance_base_chance_twentyfive = {}
 	
 	kingdoms_hre_emperor_acceptance_base_chance_thirty = {}
+}
+
+kingdoms_hre_is_ai_allowed = {
+	
+	categories = { kingdoms_hre difficulty tweaks ai }
+	
+	default = kingdoms_hre_ai_allowed
+	
+	kingdoms_hre_ai_allowed = {}
+	
+	kingdoms_hre_ai_allowed_one_time = {}
+	
+	kingdoms_hre_ai_only_bohemia = {}
+	
+	kingdoms_hre_ai_disallowed = {}
 }

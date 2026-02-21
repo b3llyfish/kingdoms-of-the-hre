@@ -7,7 +7,7 @@
 	
 	decision_group_type = major
 	
-	cooldown = { years = 10 }
+	cooldown = { years = 15 }
 	
 	is_shown = {
 		is_landed = yes
@@ -18,6 +18,20 @@
 			has_title = title:e_hre
 		}
 		highest_held_title_tier <= tier_duchy
+		OR = {
+			is_ai = no
+			OR = {
+				has_game_rule = kingdoms_hre_ai_allowed
+				AND = {
+					has_game_rule = kingdoms_hre_ai_only_bohemia
+					can_choose_bohemia = { CHARACTER = root }
+				}
+				AND = {
+					has_game_rule = kingdoms_hre_ai_allowed_one_time
+					NOT = { has_character_flag = kingdoms_petition_ai_used }
+				}
+			}
+		}
 	}
 	
 	is_valid = {

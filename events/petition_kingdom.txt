@@ -34,6 +34,16 @@ kingdoms_hre.0001 = {
 		animation = personality_honorable
 	}
 	
+	immediate = {
+		if = {
+			limit = {
+				is_ai = yes
+				has_game_rule = kingdoms_hre_ai_allowed_one_time
+			}
+			add_character_flag = kingdoms_petition_ai_used
+		}
+	}
+	
 	# Normal
 	option = {
 		name = kingdoms_hre.0001.a
