@@ -89,6 +89,7 @@
 		gui = "decision_view_widget_generic_multichoice_with_effects"
 		controller = decision_option_list_controller
 		decision_to_second_step_button = "choose_kingdom"
+		show_from_start = yes
 		
 		### austria
 		item = {

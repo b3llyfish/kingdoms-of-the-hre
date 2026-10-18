@@ -65,15 +65,15 @@ pool_city_succession = {
 		modifier = {
 			factor = 5
 			is_female = yes
-			scope:base.faith = {
-				has_doctrine = doctrine_gender_female_dominated
+			scope:base.rite = {
+				rite_has_doctrine = doctrine_gender_female_dominated
 			}
 		}
 		modifier = {
 			factor = 5
 			is_male = yes
-			scope:base.faith = {
-				has_doctrine = doctrine_gender_male_dominated
+			scope:base.rite = {
+				rite_has_doctrine = doctrine_gender_male_dominated
 			}
 		}
 	}

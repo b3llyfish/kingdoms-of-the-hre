@@ -1,0 +1,8 @@
+﻿geographical_region = {
+	global = TITLE_IS_IN_REGION
+	first = TITLE_IS_IN_REGION
+	third = TITLE_IS_IN_REGION
+	global_not = TITLE_IS_NOT_IN_REGION
+	first_not = TITLE_IS_NOT_IN_REGION
+	third_not = TITLE_IS_NOT_IN_REGION
+}
